@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ha" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shafin Admin | مركز محمد بن إبراهيم آل الشيخ رحمه الله</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .admin-container {
+      max-width: 1200px;
+      margin: 30px auto 60px;
+      padding: 0 20px;
+    }
+
+    .admin-header-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-surface);
+      padding: 24px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-gold);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .admin-nav-pills {
+      display: flex;
+      gap: 10px;
+      background: var(--bg-surface-2);
+      padding: 6px;
+      border-radius: var(--radius-xl);
+      flex-wrap: wrap;
+    }
+
+    .admin-pill-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-xl);
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    .admin-pill-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px var(--primary-glow);
+    }
+
+    /* Form Styles */
+    .admin-form-card {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 30px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    .form-control {
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface-2);
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: var(--transition);
+    }
+
+    .form-control:focus {
+      border-color: var(--primary);
+      background: var(--bg-surface);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+
+    /* Tables */
+    .admin-table-wrapper {
+      background: var(--bg-surface);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .admin-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.88rem;
+    }
+
+    body.lang-ar .admin-table {
+      text-align: right;
+    }
+
+    .admin-table th {
+      background: var(--bg-surface-2);
+      padding: 14px 16px;
+      font-weight: 800;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .admin-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-primary);
+    }
+
+    .admin-table tr:hover td {
+      background: var(--primary-glow);
+    }
+
+    .table-actions {
+      display: flex;
+      gap: 6px;
+    }
+
+    .toast-alert {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-lg);
+      z-index: 3000;
+      display: none;
+      animation: fadeIn 0.3s ease;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Simple Nav -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand-wrapper">
+        <div class="brand-emblem">⚙️</div>
+        <div class="brand-text">
+          <h1 data-i18n="adminTitle">Shafin Kula da Dandalin Markazi (Admin Panel)</h1>
+          <p>مركز محمد بن إبراهيم آل الشيخ رحمه الله</p>
+        </div>
+      </div>
+      <div style="display: flex; gap: 10px; align-items: center;">
+        <a href="index.html" class="btn btn-outline-primary btn-sm">
+          <span>🏠 <span data-i18n="navHome">Koma Babban Shafi</span></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Admin Toast Notification -->
+  <div id="adminToast" class="toast-alert"></div>
+
+  <!-- Admin Content Container -->
+  <div class="admin-container">
+    
+    <!-- Navigation & Backup Toolbar -->
+    <div class="admin-header-box">
+      <div class="admin-nav-pills">
+        <button class="admin-pill-btn active" data-admin-tab="books">📚 Littattafai (PDFs)</button>
+        <button class="admin-pill-btn" data-admin-tab="audios">🎧 Sautin Murya (Audios)</button>
+        <button class="admin-pill-btn" data-admin-tab="videos">🎥 Bidiyoyi (Videos)</button>
+        <button class="admin-pill-btn" data-admin-tab="schedule">📅 Jadawali (Schedule)</button>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button id="exportBackupBtn" class="btn btn-gold btn-sm">
+          <span>💾 <span data-i18n="exportData">Fitar da Backup (JSON)</span></span>
+        </button>
+        <button id="importBackupBtn" class="btn btn-outline-primary btn-sm">
+          <span>📥 <span data-i18n="importData">Shigar da Backup</span></span>
+        </button>
+        <input type="file" id="importFileInput" accept=".json" style="display: none;" />
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         TAB 1: MANAGE BOOKS (PDFs)
+         ========================================================== -->
+    <div id="adminTab-books" class="admin-tab-pane active">
+      <!-- Add Book Form -->
+      <div class="admin-form-card">
+        <h3 style="color: var(--primary); margin-bottom: 16px; font-weight: 800;">➕ Sanya Sabon Littafi (PDF)</h3>
+        <form id="addBookForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Sunan Littafi (Hausa/English): *</label>
+              <input type="text" id="bookTitleHa" class="form-control" placeholder="Misali: Sharhin Kitabut Tauhid" required />
+            </div>
+            <div class="form-group">
+              <label>اسم الكتاب بالعربية (Larabci): *</label>
+              <input type="text" id="bookTitleAr" class="form-control" placeholder="مثال: شرح كتاب التوحيد" required />
+            </div>
+            <div class="form-group">
+              <label>Sunan Mawallafi (Author): *</label>
+              <input type="text" id="bookAuthorHa" class="form-control" placeholder="Misali: Sheikh Muhammad bin Ibrahim" required />
+            </div>
+            <div class="form-group">
+              <label>اسم المؤلف بالعربية:</label>
+              <input type="text" id="bookAuthorAr" class="form-control" placeholder="مثال: الشيخ محمد بن إبراهيم آل الشيخ" />
+            </div>
+            <div class="form-group">
+              <label>Bangaren Ilimi (Category): *</label>
+              <select id="bookCategory" class="form-control" required>
+                <option value="aqeedah">العقيدة والتوحيد (Aqeedah)</option>
+                <option value="fiqh">الفقه وأصوله (Fiqh)</option>
+                <option value="hadith">الحديث وعلومه (Hadith)</option>
+                <option value="tafseer">التفسير وعلوم القرآن (Tafseer)</option>
+                <option value="seerah">السيرة النبوية والتاريخ (Seerah)</option>
+                <option value="fatawa">فتاوى ورسائل الشيخ (Fatawa)</option>
+                <option value="arabic">اللغة العربية (Larabci)</option>
+                <option value="lessons">دروس ودورات المركز (Darussa)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Adadin Shafuka (Pages):</label>
+              <input type="number" id="bookPages" class="form-control" placeholder="Misali: 240" />
+            </div>
+            <div class="form-group">
+              <label>Hanyar Hoton Bango (Cover Image URL):</label>
+              <input type="url" id="bookCover" class="form-control" placeholder="https://images.unsplash.com/..." />
+            </div>
+            <div class="form-group">
+              <label>Hanyar Fayil din PDF (PDF URL): *</label>
+              <input type="url" id="bookPdfUrl" class="form-control" placeholder="https://domain.com/book.pdf" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Bayanin Littafi a Takance (Description):</label>
+              <textarea id="bookDesc" class="form-control" rows="3" placeholder="Bayanin abin da littafin ya kunsa..."></textarea>
+            </div>
+          </div>
+          <div style="margin-top: 18px; display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-gold">
+              <span>💾 Ajiye &amp; Wallafa Littafin</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Books Table List -->
+      <div class="admin-table-wrapper">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Hoton Bango</th>
+              <th>Sunan Littafi</th>
+              <th>Mawallafi</th>
+              <th>Bangare</th>
+              <th>Shafuka</th>
+              <th>Ayyuka</th>
+            </tr>
+          </thead>
+          <tbody id="adminBooksTableBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         TAB 2: MANAGE AUDIOS (MP3s)
+         ========================================================== -->
+    <div id="adminTab-audios" class="admin-tab-pane" style="display: none;">
+      <div class="admin-form-card">
+        <h3 style="color: var(--primary); margin-bottom: 16px; font-weight: 800;">➕ Sanya Sabon Karatun Sauti (Audio/MP3)</h3>
+        <form id="addAudioForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Taken Karatu (Hausa/English): *</label>
+              <input type="text" id="audioTitleHa" class="form-control" placeholder="Misali: Sharhin Usulus Salasa - Darasi na 01" required />
+            </div>
+            <div class="form-group">
+              <label>عنوان الدرس بالعربية: *</label>
+              <input type="text" id="audioTitleAr" class="form-control" placeholder="مثال: شرح الأصول الثلاثة - الدرس الأول" required />
+            </div>
+            <div class="form-group">
+              <label>Sunan Malami mai Karatu (Speaker): *</label>
+              <input type="text" id="audioSpeakerHa" class="form-control" placeholder="Misali: Dr. Malam..." required />
+            </div>
+            <div class="form-group">
+              <label>اسم المحاضر بالعربية:</label>
+              <input type="text" id="audioSpeakerAr" class="form-control" placeholder="مثال: فضيلة الشيخ الدكتور..." />
+            </div>
+            <div class="form-group">
+              <label>Bangaren Ilimi (Category):</label>
+              <select id="audioCategory" class="form-control">
+                <option value="aqeedah">العقيدة والتوحيد (Aqeedah)</option>
+                <option value="fiqh">الفقه وأصوله (Fiqh)</option>
+                <option value="hadith">الحديث وعلومه (Hadith)</option>
+                <option value="tafseer">التفسير وعلوم القرآن (Tafseer)</option>
+                <option value="seerah">السيرة النبوية والتاريخ (Seerah)</option>
+                <option value="fatawa">فتاوى ورسائل الشيخ (Fatawa)</option>
+                <option value="lessons">دروس ودورات المركز (Darussa)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Tsayin Karatu (Duration):</label>
+              <input type="text" id="audioDuration" class="form-control" placeholder="Misali: 45:20" />
+            </div>
+            <div class="form-group full-width">
+              <label>Hanyar Fayil din MP3 (Audio URL): *</label>
+              <input type="url" id="audioUrl" class="form-control" placeholder="https://domain.com/audio.mp3" required />
+            </div>
+          </div>
+          <div style="margin-top: 18px; display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-gold">
+              <span>💾 Ajiye &amp; Wallafa Karatun Sauti</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-table-wrapper">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Taken Karatu</th>
+              <th>Malami</th>
+              <th>Bangare</th>
+              <th>Tsawon Lokaci</th>
+              <th>Ayyuka</th>
+            </tr>
+          </thead>
+          <tbody id="adminAudiosTableBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         TAB 3: MANAGE VIDEOS
+         ========================================================== -->
+    <div id="adminTab-videos" class="admin-tab-pane" style="display: none;">
+      <div class="admin-form-card">
+        <h3 style="color: var(--primary); margin-bottom: 16px; font-weight: 800;">➕ Sanya Sabon Bidiyon Karatu (Video)</h3>
+        <form id="addVideoForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Taken Bidiyo (Title): *</label>
+              <input type="text" id="videoTitleHa" class="form-control" placeholder="Misali: Kwas na Musamman kan Aqeedah" required />
+            </div>
+            <div class="form-group">
+              <label>عنوان المحاضرة بالعربية: *</label>
+              <input type="text" id="videoTitleAr" class="form-control" placeholder="مثال: دورة مكثفة في العقيدة السلفية" required />
+            </div>
+            <div class="form-group">
+              <label>Malami mai Gabatarwa (Instructor): *</label>
+              <input type="text" id="videoInstructor" class="form-control" placeholder="Misali: Malamin Markazi" required />
+            </div>
+            <div class="form-group">
+              <label>Tsayin Bidiyo (Duration):</label>
+              <input type="text" id="videoDuration" class="form-control" placeholder="Misali: 55:12" />
+            </div>
+            <div class="form-group">
+              <label>Hanyar Hoton Thumbnail (Image URL):</label>
+              <input type="url" id="videoThumbnail" class="form-control" placeholder="https://images.unsplash.com/..." />
+            </div>
+            <div class="form-group">
+              <label>Hanyar Bidiyon YouTube Embed URL: *</label>
+              <input type="url" id="videoUrl" class="form-control" placeholder="https://www.youtube.com/embed/..." required />
+            </div>
+          </div>
+          <div style="margin-top: 18px; display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-gold">
+              <span>💾 Ajiye &amp; Wallafa Bidiyo</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-table-wrapper">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Hoton Bidiyo</th>
+              <th>Taken Bidiyo</th>
+              <th>Malami</th>
+              <th>Tsawon Lokaci</th>
+              <th>Ayyuka</th>
+            </tr>
+          </thead>
+          <tbody id="adminVideosTableBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ==========================================================
+         TAB 4: MANAGE SCHEDULE
+         ========================================================== -->
+    <div id="adminTab-schedule" class="admin-tab-pane" style="display: none;">
+      <div class="admin-form-card">
+        <h3 style="color: var(--primary); margin-bottom: 16px; font-weight: 800;">➕ Sanya Sabon Zama a Jadawali (Schedule Item)</h3>
+        <form id="addScheduleForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Rana (Day): *</label>
+              <select id="scheduleDay" class="form-control" required>
+                <option value="Asabar (Saturday)">Asabar (السبت)</option>
+                <option value="Lahadi (Sunday)">Lahadi (الأحد)</option>
+                <option value="Litinin (Monday)">Litinin (الإثنين)</option>
+                <option value="Talata (Tuesday)">Talata (الثلاثاء)</option>
+                <option value="Laraba (Wednesday)">Laraba (الأربعاء)</option>
+                <option value="Alhamis (Thursday)">Alhamis (الخميس)</option>
+                <option value="Juma'a (Friday)">Juma'a (الجمعة)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Lokaci (Time): *</label>
+              <input type="text" id="scheduleTime" class="form-control" placeholder="Misali: Bayan Sallar Asr (4:30 PM)" required />
+            </div>
+            <div class="form-group">
+              <label>Darasi / Littafi (Subject): *</label>
+              <input type="text" id="scheduleSubject" class="form-control" placeholder="Misali: Aqeedah (Sharhin Kitabut Tauhid)" required />
+            </div>
+            <div class="form-group">
+              <label>Malamin da ke Karanta (Teacher): *</label>
+              <input type="text" id="scheduleTeacher" class="form-control" placeholder="Misali: Babban Malamin Markazi" required />
+            </div>
+            <div class="form-group full-width">
+              <label>Wurin Zama (Location / Venue): *</label>
+              <input type="text" id="scheduleLocation" class="form-control" placeholder="Misali: Masallacin Markazi & Watsawa Kai Tsaye" required />
+            </div>
+          </div>
+          <div style="margin-top: 18px; display: flex; justify-content: flex-end;">
+            <button type="submit" class="btn btn-gold">
+              <span>💾 Ajiye a Jadawali</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="admin-table-wrapper">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Rana</th>
+              <th>Lokaci</th>
+              <th>Darasi</th>
+              <th>Malami</th>
+              <th>Wurin Zama</th>
+              <th>Ayyuka</th>
+            </tr>
+          </thead>
+          <tbody id="adminScheduleTableBody">
+            <!-- Populated by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

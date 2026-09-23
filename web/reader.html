@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ha" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karanta Littafi | مركز محمد بن إبراهيم آل الشيخ رحمه الله</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Dedicated Reader Styles */
+    body {
+      padding-bottom: 0;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reader-toolbar {
+      height: 60px;
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 50;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .reader-title-area {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      max-width: 40%;
+    }
+
+    .reader-title-area h2 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    [data-theme="dark"] .reader-title-area h2 {
+      color: #FFFFFF;
+    }
+
+    .reader-controls-center {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .page-indicator-box {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--bg-surface-2);
+      padding: 4px 12px;
+      border-radius: var(--radius-md);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .page-input {
+      width: 45px;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      border-radius: 4px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      font-weight: 700;
+      padding: 2px 4px;
+    }
+
+    .reader-controls-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .theme-mode-select {
+      padding: 6px 10px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      background: var(--bg-surface-2);
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    /* Main Reader View Area */
+    .reader-container {
+      flex: 1;
+      display: flex;
+      position: relative;
+      background: #525659;
+      overflow: hidden;
+    }
+
+    .reader-sidebar {
+      width: 280px;
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border-color);
+      display: none;
+      flex-direction: column;
+      overflow-y: auto;
+      z-index: 40;
+    }
+
+    .reader-sidebar.active {
+      display: flex;
+    }
+
+    .reader-sidebar-header {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 10px;
+    }
+
+    .toc-item {
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      cursor: pointer;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+
+    .toc-item:hover {
+      background: var(--primary-glow);
+      color: var(--primary);
+    }
+
+    .reader-viewport {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .reader-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* Reading Modes */
+    .reader-container.mode-sepia {
+      filter: sepia(0.35) contrast(0.95);
+    }
+    .reader-container.mode-night {
+      filter: invert(0.9) hue-rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Reader Top Toolbar -->
+  <header class="reader-toolbar">
+    <div class="reader-title-area">
+      <a href="index.html" class="btn btn-outline-primary btn-sm" title="Koma Babban Shafi">
+        <span>⬅️ <span data-i18n="navHome">Gida</span></span>
+      </a>
+      <h2 id="readerBookTitle">Sunan Littafi</h2>
+    </div>
+
+    <!-- Center Navigation Controls -->
+    <div class="reader-controls-center">
+      <button id="prevPageBtn" class="icon-btn" title="Shafin Baya">◀</button>
+      <div class="page-indicator-box">
+        <input type="number" id="pageNumberInput" class="page-input" value="1" min="1" max="500" />
+        <span>/ <span id="totalPagesCount">--</span></span>
+      </div>
+      <button id="nextPageBtn" class="icon-btn" title="Shafin Gaba">▶</button>
+    </div>
+
+    <!-- Right Controls (Zoom, Theme, Download) -->
+    <div class="reader-controls-right">
+      <select id="readingThemeSelect" class="theme-mode-select">
+        <option value="default">☀️ Farar Fata (Day)</option>
+        <option value="sepia">📜 Tsohuwar Takarda (Sepia)</option>
+        <option value="night">🌙 Daren Karatu (Night)</option>
+      </select>
+
+      <a id="downloadPdfBtn" href="#" download class="btn btn-gold btn-sm">
+        <span>⬇️ <span data-i18n="downloadPdf">Sauke PDF</span></span>
+      </a>
+
+      <button id="fullscreenToggleBtn" class="icon-btn" title="Cikakken Fuska (Fullscreen)">
+        <span>⛶</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main PDF Viewer Body -->
+  <div id="readerContainer" class="reader-container">
+    <div class="reader-viewport">
+      <iframe id="pdfViewerFrame" class="reader-iframe" src=""></iframe>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/storage.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Parse query param
+      const urlParams = new URLSearchParams(window.location.search);
+      const bookId = urlParams.get("bookId") || "b1";
+
+      const books = window.storage.getBooks();
+      const book = books.find(b => b.id === bookId) || books[0];
+
+      if (book) {
+        const title = window.i18n.getLocalizedField(book, "title");
+        document.getElementById("readerBookTitle").textContent = title;
+        document.title = `${title} | مركز محمد بن إبراهيم`;
+        document.getElementById("totalPagesCount").textContent = book.pages || "100";
+        
+        const dlBtn = document.getElementById("downloadPdfBtn");
+        if (dlBtn) {
+          dlBtn.href = book.pdfUrl;
+          dlBtn.setAttribute("download", `${title}.pdf`);
+        }
+
+        // Set PDF frame source
+        const frame = document.getElementById("pdfViewerFrame");
+        frame.src = book.pdfUrl;
+      }
+
+      // Theme toggle
+      const themeSelect = document.getElementById("readingThemeSelect");
+      const readerContainer = document.getElementById("readerContainer");
+      themeSelect.addEventListener("change", (e) => {
+        readerContainer.className = "reader-container";
+        if (e.target.value === "sepia") readerContainer.classList.add("mode-sepia");
+        if (e.target.value === "night") readerContainer.classList.add("mode-night");
+      });
+
+      // Fullscreen toggle
+      const fsBtn = document.getElementById("fullscreenToggleBtn");
+      fsBtn.addEventListener("click", () => {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen().catch(err => console.log(err));
+        } else {
+          document.exitFullscreen();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

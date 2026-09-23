@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ha" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركز محمد بن إبراهيم آل الشيخ رحمه الله | Dandalin Karatu da Ilimi</title>
+  <meta name="description" content="Dandalin Littattafai (PDFs), Karatuttukan Murya (Audios), Bidiyoyi (Videos) da Jadawalin Darussa na Cibiyar Sheikh Muhammad bin Ibrahim Aal Al-Sheikh" />
+  
+  <!-- Favicon / Web Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>🕌</text></svg>">
+
+  <!-- Manifest for PWA -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==========================================================
+       HEADER & NAVIGATION
+       ========================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <!-- Brand & Emblem -->
+      <div class="brand-wrapper">
+        <div class="brand-emblem">🕌</div>
+        <div class="brand-text">
+          <h1 data-i18n="centerName">Markaz Muhammad bin Ibrahim</h1>
+          <p data-i18n="tagline">Hasken yada ingantaccen ilimin Musulunci</p>
+        </div>
+      </div>
+
+      <!-- Desktop Navigation Tabs -->
+      <nav class="desktop-nav">
+        <a href="#" class="nav-tab-link active" data-tab="home">
+          <span>🏠</span> <span data-i18n="navHome">Babban Shafi</span>
+        </a>
+        <a href="#" class="nav-tab-link" data-tab="books">
+          <span>📚</span> <span data-i18n="navBooks">Maktaba (PDFs)</span>
+        </a>
+        <a href="#" class="nav-tab-link" data-tab="audios">
+          <span>🎧</span> <span data-i18n="navAudios">Karatun Sauti</span>
+        </a>
+        <a href="#" class="nav-tab-link" data-tab="videos">
+          <span>🎥</span> <span data-i18n="navVideos">Bidiyoyi</span>
+        </a>
+        <a href="#" class="nav-tab-link" data-tab="schedule">
+          <span>📅</span> <span data-i18n="navSchedule">Jadawali</span>
+        </a>
+        <a href="#" class="nav-tab-link" data-tab="favorites">
+          <span>⭐</span> <span data-i18n="navFavorites">Na Ajiye</span>
+        </a>
+        <a href="admin.html" class="nav-tab-link admin-btn">
+          <span>⚙️</span> <span data-i18n="navAdmin">Admin</span>
+        </a>
+      </nav>
+
+      <!-- Header Utilities (Language, Theme) -->
+      <div class="header-actions">
+        <!-- Language Switcher -->
+        <div class="lang-selector">
+          <button class="lang-btn active" data-lang="ha">Hausa</button>
+          <button class="lang-btn" data-lang="ar">العربية</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <!-- Theme Toggle Button -->
+        <button id="themeToggleBtn" class="icon-btn" title="Canza Launi (Dark/Light)">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================
+       HERO BANNER SECTION
+       ========================================================== -->
+  <section class="hero-section">
+    <div class="hero-pattern"></div>
+    <div class="container hero-grid">
+      <!-- Left Column: Welcome & Search -->
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>✨</span>
+          <span data-i18n="centerFullName">Cibiyar Sheikh Muhammad bin Ibrahim Aal Al-Sheikh Domin Ilimin Musulunci</span>
+        </div>
+        <h2 class="hero-title">
+          Dandalin Karanta Littattafai &amp; <span>Sauraron Darussan Addini</span>
+        </h2>
+        <p class="hero-subtitle" data-i18n="tagline">
+          Hasken yada ingantaccen ilimin addinin Musulunci bisa koyarwar Alkur'ani da Sunnah
+        </p>
+
+        <!-- Live Search Box -->
+        <div class="hero-search-box">
+          <input type="text" class="search-input-field" data-i18n="searchPlaceholder" placeholder="Nemi littafi, karatun sauti, malami, ko maudhu'i..." />
+          <button class="search-btn">
+            <span>🔍</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Column: Featured Book Spotlight Card -->
+      <div id="heroFeaturedContainer" class="hero-featured-wrapper">
+        <!-- Dynamic Featured Card from JS -->
+      </div>
+    </div>
+
+    <!-- Center Stats Ribbon -->
+    <div class="container stats-ribbon">
+      <div class="stat-item">
+        <h4 id="statCountBooks">12+</h4>
+        <p data-i18n="statBooks">Littattafan PDF</p>
+      </div>
+      <div class="stat-item">
+        <h4 id="statCountAudios">25+</h4>
+        <p data-i18n="statAudios">Karatun Sauti (MP3)</p>
+      </div>
+      <div class="stat-item">
+        <h4 id="statCountVideos">10+</h4>
+        <p data-i18n="statVideos">Bidiyoyin Karatu</p>
+      </div>
+      <div class="stat-item">
+        <h4 id="statCountCourses">5</h4>
+        <p data-i18n="statCourses">Darussan Mako-Mako</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       CATEGORY CHIPS HORIZONTAL BAR
+       ========================================================== -->
+  <section class="category-chips-bar">
+    <div class="container">
+      <div id="categoryChipsContainer" class="category-chips-wrapper">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       MAIN CONTENT TAB PANES
+       ========================================================== -->
+  <main class="container" style="margin-top: 15px; margin-bottom: 50px;">
+
+    <!-- TAB 1: HOME PANE -->
+    <div id="tabPane-home" class="tab-pane active">
+      <!-- Featured Books Section -->
+      <section style="margin-bottom: 40px;">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">📚 <span data-i18n="featuredBooks">Fitattun Littattafai &amp; Risaloli</span></h3>
+          </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="switchTab('books')">
+            <span data-i18n="navBooks">Duba Duka</span> ➔
+          </button>
+        </div>
+        <div id="homeFeaturedBooksContainer" class="books-grid-view">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Latest Audios Section -->
+      <section style="margin-bottom: 40px;">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">🎧 <span data-i18n="latestAudios">Sabbin Karatuttukan Murya (Audios)</span></h3>
+          </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="switchTab('audios')">
+            <span data-i18n="navAudios">Duba Duka</span> ➔
+          </button>
+        </div>
+        <div id="homeLatestAudiosContainer" class="audios-list-container">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Latest Videos Section -->
+      <section style="margin-bottom: 40px;">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">🎥 <span data-i18n="latestVideos">Bidiyoyin Karatuttuka &amp; Taruka</span></h3>
+          </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="switchTab('videos')">
+            <span data-i18n="navVideos">Duba Duka</span> ➔
+          </button>
+        </div>
+        <div id="homeLatestVideosContainer" class="videos-grid-view">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- Weekly Schedule Preview -->
+      <section style="margin-bottom: 40px;">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">📅 <span data-i18n="weeklySchedule">Jadawalin Karatuttukan Mako-Mako</span></h3>
+          </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="switchTab('schedule')">
+            <span data-i18n="navSchedule">Cikakken Jadawali</span> ➔
+          </button>
+        </div>
+        <div id="homeScheduleContainer" class="schedule-grid">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="glass-card" style="background: var(--bg-surface); border: 1px solid var(--border-gold); padding: 30px; margin-top: 20px;">
+        <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 12px; font-weight: 800;" data-i18n="aboutCenter">
+          Game da Cibiyar da Sheikh Muhammad bin Ibrahim
+        </h3>
+        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" data-i18n="aboutText">
+          An bude wannan cibiya mai albarka don yada ingantaccen ilimin addinin Musulunci, koyar da Tauhidi, Fiqhu, da Hadisi bisa tafarkin magabata na kwarai (Salafus-Salih), tare da raya ilimin babban malamin nan Sheikh Muhammad bin Ibrahim Aal Al-Sheikh (rahimahullah).
+        </p>
+      </section>
+    </div>
+
+    <!-- TAB 2: BOOKS (PDF LIBRARY) PANE -->
+    <div id="tabPane-books" class="tab-pane">
+      <div class="filter-toolbar">
+        <div>
+          <h3 class="section-title">📚 <span data-i18n="navBooks">Maktabar Littattafai (PDFs)</span></h3>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <div class="sort-group">
+            <label style="font-size: 0.85rem; font-weight: 700; color: var(--text-secondary);" data-i18n="sortBy">Tsara:</label>
+            <select class="sort-select">
+              <option value="newest" data-i18n="sortNewest">Sababbi</option>
+              <option value="popular" data-i18n="sortPopular">Wadanda Aka Fi Saukewa</option>
+              <option value="alphabetical" data-i18n="sortAlphabetical">Bisa Haruffa (A-Z)</option>
+            </select>
+          </div>
+          <div class="view-toggle">
+            <button class="view-btn active" data-view="grid" title="Grid View">🔲</button>
+            <button class="view-btn" data-view="list" title="List View">☰</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books Grid Container -->
+      <div id="booksGridContainer" class="books-grid-view">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 3: AUDIOS PANE -->
+    <div id="tabPane-audios" class="tab-pane">
+      <div class="filter-toolbar">
+        <div>
+          <h3 class="section-title">🎧 <span data-i18n="navAudios">Karatuttukan Murya (Audios/MP3)</span></h3>
+        </div>
+      </div>
+      <div id="audiosListContainer" class="audios-list-container">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 4: VIDEOS PANE -->
+    <div id="tabPane-videos" class="tab-pane">
+      <div class="filter-toolbar">
+        <div>
+          <h3 class="section-title">🎥 <span data-i18n="navVideos">Bidiyoyin Darussa da Taruka</span></h3>
+        </div>
+      </div>
+      <div id="videosGridContainer" class="videos-grid-view">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 5: SCHEDULE PANE -->
+    <div id="tabPane-schedule" class="tab-pane">
+      <div class="filter-toolbar">
+        <div>
+          <h3 class="section-title">📅 <span data-i18n="weeklySchedule">Jadawalin Karatuttuka na Mako-Mako</span></h3>
+        </div>
+      </div>
+      <div id="scheduleGridContainer" class="schedule-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+    <!-- TAB 6: FAVORITES PANE -->
+    <div id="tabPane-favorites" class="tab-pane">
+      <div class="filter-toolbar">
+        <div>
+          <h3 class="section-title">⭐ <span data-i18n="navFavorites">Abubuwan da Na Ajiye (Favorites)</span></h3>
+        </div>
+      </div>
+      <div id="favoritesContainer">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================
+       PERSISTENT AUDIO PLAYER (Bottom Bar)
+       ========================================================== -->
+  <div id="persistentAudioPlayer" class="persistent-audio-player">
+    <div class="player-inner">
+      <!-- Track Details -->
+      <div class="player-track-info">
+        <div class="player-track-icon">🎙️</div>
+        <div class="player-track-details">
+          <h4 id="playerTrackTitle">Sunan Darasi</h4>
+          <p id="playerTrackSpeaker">Malamin Markazi</p>
+        </div>
+      </div>
+
+      <!-- Controls & Progress -->
+      <div class="player-controls-wrapper">
+        <div class="player-buttons">
+          <button id="playerPrevBtn" class="player-btn" title="Karatun Baya">⏮️</button>
+          <button id="playerRewindBtn" class="player-btn" title="Koma Baya 10s">⏪ 10s</button>
+          <button id="playerPlayBtn" class="player-play-btn" title="Kunna/Dakatar">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <button id="playerForwardBtn" class="player-btn" title="Gaba 10s">10s ⏩</button>
+          <button id="playerNextBtn" class="player-btn" title="Karatun Gaba">⏭️</button>
+        </div>
+        <div class="player-progress-row">
+          <span id="playerCurrentTime">00:00</span>
+          <input type="range" id="playerProgressBar" class="player-progress-bar" min="0" max="100" value="0" />
+          <span id="playerTotalTime">00:00</span>
+        </div>
+      </div>
+
+      <!-- Extra Options (Speed, Volume, Download, Close) -->
+      <div class="player-extra-controls">
+        <button id="playerSpeedBtn" class="speed-badge-btn" title="Saurin Kunna Karatu">1.0x</button>
+        <span style="font-size: 14px;">🔊</span>
+        <input type="range" id="playerVolumeSlider" class="volume-slider" min="0" max="1" step="0.05" value="1" />
+        <a id="playerDownloadBtn" href="#" download class="icon-btn" style="width: 32px; height: 32px; font-size: 13px;" title="Sauke MP3">⬇️</a>
+        <button id="playerCloseBtn" class="icon-btn" style="width: 32px; height: 32px; font-size: 13px;" title="Rufe Player">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       MOBILE BOTTOM NAVIGATION BAR
+       ========================================================== -->
+  <div class="mobile-bottom-nav">
+    <div class="mobile-nav-items">
+      <a href="#" class="mobile-nav-link active" data-tab="home">
+        <span>🏠</span>
+        <span data-i18n="navHome">Gida</span>
+      </a>
+      <a href="#" class="mobile-nav-link" data-tab="books">
+        <span>📚</span>
+        <span data-i18n="navBooks">PDFs</span>
+      </a>
+      <a href="#" class="mobile-nav-link" data-tab="audios">
+        <span>🎧</span>
+        <span data-i18n="navAudios">Sauti</span>
+      </a>
+      <a href="#" class="mobile-nav-link" data-tab="videos">
+        <span>🎥</span>
+        <span data-i18n="navVideos">Bidiyo</span>
+      </a>
+      <a href="#" class="mobile-nav-link" data-tab="schedule">
+        <span>📅</span>
+        <span data-i18n="navSchedule">Jadawali</span>
+      </a>
+      <a href="admin.html" class="mobile-nav-link">
+        <span>⚙️</span>
+        <span data-i18n="navAdmin">Admin</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       MODAL: BOOK DETAILS
+       ========================================================== -->
+  <div id="bookDetailsModal" class="modal-wrapper">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modalBookTitle">Bayanin Littafi</h3>
+        <button class="modal-close-btn icon-btn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-book-layout">
+          <img id="modalBookCover" src="" alt="Cover" class="modal-book-cover" />
+          <div class="modal-book-details">
+            <p id="modalBookDesc" style="color: var(--text-secondary); margin-bottom: 14px; font-size: 0.9rem; line-height: 1.6;"></p>
+            <table class="modal-info-table">
+              <tr>
+                <td data-i18n="author">Mawallafi:</td>
+                <td id="modalBookAuthor"></td>
+              </tr>
+              <tr>
+                <td data-i18n="category">Bangare:</td>
+                <td id="modalBookCategory"></td>
+              </tr>
+              <tr>
+                <td data-i18n="pages">Shafuka:</td>
+                <td id="modalBookPages"></td>
+              </tr>
+              <tr>
+                <td data-i18n="size">Girma:</td>
+                <td id="modalBookSize"></td>
+              </tr>
+              <tr>
+                <td data-i18n="year">Shekara:</td>
+                <td id="modalBookYear"></td>
+              </tr>
+            </table>
+            <div style="display: flex; gap: 10px; margin-top: 20px;">
+              <a id="modalBookReadBtn" href="#" class="btn btn-primary" style="flex: 1;">
+                <span>📖 <span data-i18n="readBook">Karanta Yanzu</span></span>
+              </a>
+              <a id="modalBookDownloadBtn" href="#" download class="btn btn-gold">
+                <span>⬇️ <span data-i18n="downloadPdf">Sauke PDF</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       MODAL: VIDEO PLAYER
+       ========================================================== -->
+  <div id="videoPlayerModal" class="modal-wrapper">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card modal-video-card">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalVideoTitle">Kallon Karatu</h3>
+          <p id="modalVideoInstructor" style="font-size: 0.8rem; color: var(--gold);"></p>
+        </div>
+        <button class="modal-close-btn icon-btn">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-video-player-box">
+          <iframe id="videoPlayerIframe" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================
+       FOOTER
+       ========================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3 data-i18n="centerFullName">مركز محمد بن إبراهيم آل الشيخ رحمه الله</h3>
+        <p data-i18n="aboutText">
+          Cibiyar yada ingantaccen ilimin addinin Musulunci bisa koyarwar Alkur'ani da Sunnah da fahimtar magabata na kwarai.
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4 data-i18n="allCategories">Bangarorin Ilimi</h4>
+        <ul>
+          <li>🧭 Aqeedah &amp; Tauhidi</li>
+          <li>⚖️ Fiqhu &amp; Usulinsa</li>
+          <li>📜 Hadisi &amp; Iliminsa</li>
+          <li>📖 Tafseeri &amp; Alkur'ani</li>
+          <li>🖋️ Fatawoyin Sheikh Muhammad bin Ibrahim</li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Sadarwa da Wuri</h4>
+        <ul>
+          <li>📍 Kano, Nigeria</li>
+          <li>📧 info@markaz-alsheikh.org</li>
+          <li>📞 +234 800 000 0000</li>
+          <li>⏰ Lokutan Karatu: Asabar zuwa Juma'a</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 1446H / 2026M مركز محمد بن إبراهيم آل الشيخ رحمه الله للعلوم الشرعية. Dukkan hakki na mallakar cibiyar ne.</p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================
+       SCRIPTS
+       ========================================================== -->
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/audio-player.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Service Worker Registration for PWA -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(err => console.log('SW registration note:', err));
+    }
+  </script>
+</body>
+</html>

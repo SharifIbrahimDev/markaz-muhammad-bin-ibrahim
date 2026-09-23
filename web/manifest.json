@@ -1,0 +1,22 @@
+{
+  "name": "مركز محمد بن إبراهيم آل الشيخ رحمه الله",
+  "short_name": "Markaz Al-Sheikh",
+  "description": "Dandalin Littattafai (PDFs), Karatuttuka da Darussan Addinin Musulunci",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#06281F",
+  "theme_color": "#0A533F",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
