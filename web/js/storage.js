@@ -8,17 +8,28 @@ class StorageManager {
   }
 
   initData() {
-    if (!localStorage.getItem("markaz_books")) {
+    const DATA_VERSION = "v9_markaz_11_pdf_editions_ready";
+    const currentVer = localStorage.getItem("markaz_data_version");
+    
+    if (currentVer !== DATA_VERSION) {
       localStorage.setItem("markaz_books", JSON.stringify(INITIAL_DATA.books));
-    }
-    if (!localStorage.getItem("markaz_audios")) {
       localStorage.setItem("markaz_audios", JSON.stringify(INITIAL_DATA.audios));
-    }
-    if (!localStorage.getItem("markaz_videos")) {
       localStorage.setItem("markaz_videos", JSON.stringify(INITIAL_DATA.videos));
-    }
-    if (!localStorage.getItem("markaz_schedule")) {
       localStorage.setItem("markaz_schedule", JSON.stringify(INITIAL_DATA.schedule));
+      localStorage.setItem("markaz_data_version", DATA_VERSION);
+    } else {
+      if (!localStorage.getItem("markaz_books")) {
+        localStorage.setItem("markaz_books", JSON.stringify(INITIAL_DATA.books));
+      }
+      if (!localStorage.getItem("markaz_audios")) {
+        localStorage.setItem("markaz_audios", JSON.stringify(INITIAL_DATA.audios));
+      }
+      if (!localStorage.getItem("markaz_videos")) {
+        localStorage.setItem("markaz_videos", JSON.stringify(INITIAL_DATA.videos));
+      }
+      if (!localStorage.getItem("markaz_schedule")) {
+        localStorage.setItem("markaz_schedule", JSON.stringify(INITIAL_DATA.schedule));
+      }
     }
     if (!localStorage.getItem("markaz_favorites")) {
       localStorage.setItem("markaz_favorites", JSON.stringify([]));

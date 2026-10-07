@@ -13,6 +13,7 @@ class Book {
   final String descriptionAr;
   final String descriptionHa;
   final bool featured;
+  final bool isUpcoming;
   final int downloads;
 
   Book({
@@ -30,6 +31,7 @@ class Book {
     required this.descriptionAr,
     required this.descriptionHa,
     this.featured = false,
+    this.isUpcoming = false,
     this.downloads = 0,
   });
 
@@ -52,6 +54,7 @@ class Book {
     'descriptionAr': descriptionAr,
     'descriptionHa': descriptionHa,
     'featured': featured,
+    'isUpcoming': isUpcoming,
     'downloads': downloads,
   };
 
@@ -70,6 +73,7 @@ class Book {
     descriptionAr: json['descriptionAr'] ?? '',
     descriptionHa: json['descriptionHa'] ?? '',
     featured: json['featured'] ?? false,
+    isUpcoming: json['isUpcoming'] ?? false,
     downloads: json['downloads'] ?? 0,
   );
 }

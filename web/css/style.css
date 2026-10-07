@@ -773,6 +773,38 @@ body.lang-ar .category-badge {
   right: 10px;
 }
 
+.upcoming-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: #182B24;
+  padding: 4px 10px;
+  border-radius: var(--radius-xl);
+  font-size: 0.72rem;
+  font-weight: 800;
+  box-shadow: 0 2px 8px rgba(197, 160, 89, 0.4);
+  z-index: 2;
+  letter-spacing: 0.3px;
+}
+
+body.lang-ar .upcoming-badge {
+  left: auto;
+  right: 10px;
+}
+
+.badge-status-subtle {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gold-dark);
+  background: rgba(197, 160, 89, 0.12);
+  border: 1px dashed var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  text-align: center;
+}
+
 .book-card-content {
   padding: 16px;
   display: flex;

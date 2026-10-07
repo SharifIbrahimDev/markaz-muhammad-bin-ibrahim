@@ -61,6 +61,16 @@ const TRANSLATIONS = {
     
     // Sections
     featuredBooks: "أبرز الكتب والرسائل",
+    upcomingBooks: "الإصدارات القادمة (قيد النشر)",
+    directorPublications: "مؤلفات إبراهيم شريف أبوبكر",
+    directorHeader: "رئيس المركز والمشرف العام",
+    directorName: "إبراهيم شريف أبوبكر",
+    directorMessage: "كلمة المشرف العام",
+    directorMessageText: "نسأل الله تعالى أن يجعل هذا الصرح العلمي منارة هدى وخير، وأن ينفع بهذه المصنفات والمؤلفات والدروس طلاب العلم والمسلمين في كل مكان.",
+    upcomingBadge: "قريباً بإذن الله",
+    underPublication: "قيد الإعداد والنشر",
+    previewInfo: "تفاصيل الكتاب",
+    viewDetails: "معلومات الكتاب",
     latestAudios: "أحدث الدروس الصوتية",
     latestVideos: "المرئيات والمحاضرات",
     weeklySchedule: "جدول الدروس الأسبوعية بالمركز",
@@ -118,7 +128,7 @@ const TRANSLATIONS = {
     viewList: "A Jere (List)",
     
     // Stats
-    statBooks: "Littattafan PDF",
+    statBooks: "Littattafan Maktaba",
     statAudios: "Karatun Sauti (MP3)",
     statVideos: "Bidiyoyin Karatu",
     statCourses: "Darussan Mako-Mako",
@@ -147,6 +157,16 @@ const TRANSLATIONS = {
     
     // Sections
     featuredBooks: "Fitattun Littattafai & Risaloli",
+    upcomingBooks: "Littattafai Masu Fitowa (Masu Zuwa)",
+    directorPublications: "Wallafe-Wallafen Sheikh Ibrahim Sharif Abubakar",
+    directorHeader: "Shugaban Cibiyar & Babban Mai Kulawa",
+    directorName: "Sheikh Ibrahim Sharif Abubakar",
+    directorMessage: "Jawabin Shugaban Cibiyar",
+    directorMessageText: "Muna rokon Allah Madaukakin Sarki da Ya sanya wannan cibiya ta zama hasken shiriya da alheri, kuma Ya amfanar da daliban ilimi da al'ummar Musulmi da wadannan rubuce-rubuce da darussa.",
+    upcomingBadge: "Yana Nan Tafe",
+    underPublication: "Ana Shirin Wallafawa",
+    previewInfo: "Bayanin Littafi",
+    viewDetails: "Duba Bayani",
     latestAudios: "Sabbin Karatuttukan Murya (Audios)",
     latestVideos: "Bidiyoyin Karatuttuka & Taruka",
     weeklySchedule: "Jadawalin Karatuttukan Mako-Mako na Cibiyar",
@@ -204,7 +224,7 @@ const TRANSLATIONS = {
     viewList: "List",
     
     // Stats
-    statBooks: "PDF Books & Papers",
+    statBooks: "Library Books",
     statAudios: "Audio Lessons",
     statVideos: "Video Classes",
     statCourses: "Weekly Lessons",
@@ -233,6 +253,16 @@ const TRANSLATIONS = {
     
     // Sections
     featuredBooks: "Featured Books & Treatises",
+    upcomingBooks: "Forthcoming Publications",
+    directorPublications: "Publications by Sheikh Ibrahim Sharif Abubakar",
+    directorHeader: "Center Director & General Supervisor",
+    directorName: "Sheikh Ibrahim Sharif Abubakar",
+    directorMessage: "Director's Message",
+    directorMessageText: "We pray that Allah makes this academic foundation a beacon of light, benefiting students of knowledge and the Muslim Ummah through these beneficial works.",
+    upcomingBadge: "Coming Soon",
+    underPublication: "In Preparation & Publishing",
+    previewInfo: "Book Overview",
+    viewDetails: "View Details",
     latestAudios: "Latest Audio Lectures",
     latestVideos: "Video Classes & Events",
     weeklySchedule: "Center Weekly Study Timetable",

@@ -1,0 +1,1620 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المَنْهَلُ الصَّافِي فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ | مركز محمد بن إبراهيم آل الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --primary-dark: #172554;
+      --gold: #C5A059;
+      --gold-dark: #9A7B38;
+      --text-main: #1F2937;
+      --text-muted: #4B5563;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-card: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      background: var(--bg-page);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      width: 100%;
+    }
+    body {
+      font-size: 19.5px;
+      line-height: 2.25;
+    }
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      background: var(--primary-dark);
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-family: 'Scheherazade New', serif;
+    }
+    .no-print-bar .title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.15rem;
+    }
+    .btn-action {
+      background: var(--gold);
+      color: #172554;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-family: 'Amiri', serif;
+      transition: all 0.2s;
+    }
+    .btn-action:hover {
+      background: #D8B26E;
+      transform: translateY(-1px);
+    }
+    .cover-container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #FFFFFF;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+    .cover-frame-outer {
+      border: 4px double var(--gold);
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .cover-frame-inner {
+      border: 2px solid var(--primary-dark);
+      padding: 40px 25px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 980px;
+      background: radial-gradient(circle at center, #FFFFFF 60%, #F8FAFC 100%);
+    }
+    .cover-header-top {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.25rem;
+      color: var(--primary-dark);
+      font-weight: bold;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .cover-basmalah {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.85rem;
+      color: var(--gold-dark);
+      margin: 15px 0 12px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cover-badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: var(--primary-dark);
+      border: 1px solid rgba(30, 58, 138, 0.3);
+      padding: 5px 24px;
+      border-radius: 20px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      margin: 10px auto;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-title-main {
+      font-family: 'Scheherazade New', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.35;
+      margin: 14px 0 8px 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    }
+    .cover-title-sub {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .cover-title-desc {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 18px auto;
+      line-height: 1.7;
+    }
+    .cover-ornament {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin: 10px 0;
+      letter-spacing: 6px;
+    }
+    .cover-box-author {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      padding: 14px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-sharh {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-top: 3px solid var(--primary);
+      border-bottom: 3px solid var(--primary);
+      padding: 16px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-label {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .cover-box-name {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.65rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+      line-height: 1.4;
+    }
+    .cover-box-sheikh {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+      line-height: 1.4;
+    }
+    .cover-box-dua {
+      font-size: 1rem;
+      color: #6B7280;
+      margin-top: 4px;
+    }
+    .cover-footer-block {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1.5px solid #E2E8F0;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-footer-center {
+      font-size: 1.45rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+    }
+    .cover-footer-dept {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .cover-footer-loc {
+      font-size: 1rem;
+      color: var(--gold-dark);
+      font-weight: bold;
+      margin-top: 4px;
+    }
+    .book-wrapper {
+      max-width: 900px;
+      margin: 30px auto;
+      background: var(--bg-card);
+      padding: 55px 70px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-card);
+    }
+    h1.main-heading {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 2.3rem;
+      border-bottom: 2.5px solid var(--gold);
+      padding-bottom: 12px;
+      margin-top: 50px;
+      margin-bottom: 24px;
+      text-align: center;
+      page-break-before: always;
+    }
+    h2.section-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary);
+      font-size: 1.85rem;
+      border-right: 5px solid var(--gold);
+      padding-right: 14px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3.sub-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    h4.sub-sub-title {
+      font-size: 1.25rem;
+      color: var(--gold-dark);
+      margin-top: 22px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    strong {
+      color: var(--primary-dark);
+      font-weight: bold;
+    }
+    .bayt-box {
+      background: #F8FAFC;
+      border: 1.5px solid #CBD5E1;
+      border-right: 6px solid var(--gold);
+      border-left: 6px solid var(--gold);
+      border-radius: 6px;
+      padding: 18px 24px;
+      margin: 24px 0;
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-align: center;
+      line-height: 2.2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .bayt-divider {
+      color: var(--gold-dark);
+      font-weight: normal;
+      padding: 0 14px;
+    }
+    .quote-box {
+      background: #EFF6FF;
+      border-right: 4px solid var(--primary);
+      padding: 16px 22px;
+      margin: 20px 0;
+      border-radius: 0 6px 6px 0;
+      font-style: normal;
+      color: var(--primary-dark);
+      line-height: 2.1;
+      font-size: 1.15rem;
+    }
+    .diagram-box {
+      background: #FDFBF7;
+      color: var(--primary-dark);
+      border: 1.5px solid #E2D9C8;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 22px 0;
+      overflow-x: auto;
+      direction: rtl;
+      text-align: center;
+    }
+    .diagram-box pre {
+      font-family: 'Scheherazade New', 'Amiri', serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    ul.content-list, ol.content-list-ordered {
+      margin: 16px 0 22px 28px;
+      padding-right: 20px;
+    }
+    ul.content-list li, ol.content-list-ordered li {
+      margin-bottom: 12px;
+      line-height: 2.1;
+    }
+    .section-divider {
+      text-align: center;
+      color: var(--gold-dark);
+      margin: 30px 0;
+      font-size: 1.4rem;
+      letter-spacing: 10px;
+      font-family: 'Amiri', 'Scheherazade New', serif;
+    }
+
+    /* ACADEMIC TABLE STYLING */
+    table.academic-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 1rem;
+      direction: rtl;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #CBD5E1;
+      font-family: 'Amiri', serif;
+    }
+    table.academic-table thead {
+      display: table-header-group;
+    }
+    table.academic-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    table.academic-table th, table.academic-table td {
+      border: 1px solid #CBD5E1;
+      padding: 12px 16px;
+      text-align: right;
+      line-height: 1.85;
+      vertical-align: middle;
+    }
+    table.academic-table th {
+      background: #F1F5F9;
+      color: var(--primary-dark);
+      font-family: 'Scheherazade New', 'Amiri', serif;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border-bottom: 2.5px solid var(--gold);
+      border-top: 1px solid #CBD5E1;
+    }
+    table.academic-table tr:nth-child(even) td {
+      background: #F8FAFC;
+    }
+    table.academic-table tr:hover td {
+      background: #F1F5F9;
+    }
+    table.academic-table td strong {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    @page {
+      size: A4;
+      margin-top: 22mm;
+      margin-bottom: 22mm;
+      margin-left: 16mm;
+      margin-right: 16mm;
+      @top-right {
+        content: "«المَنْهَلُ الصَّافِي فِي شَرْحِ مَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ»";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @top-left {
+        content: "شَرْحُ وَتَعْلِيقُ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ)";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Amiri', serif;
+        font-size: 9.5pt;
+        font-weight: bold;
+        color: #854D0E;
+      }
+      @bottom-right {
+        content: "مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+      }
+      @bottom-left {
+        content: "قِسْمُ النَّشْرِ العِلْمِيِّ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+      }
+    }
+    @page :first {
+      margin: 0 !important;
+      @top-right { content: none !important; }
+      @top-left { content: none !important; }
+      @bottom-center { content: none !important; }
+      @bottom-right { content: none !important; }
+      @bottom-left { content: none !important; }
+    }
+      body {
+        background: #FFFFFF !important;
+        font-size: 16px !important;
+        line-height: 1.95 !important;
+      }
+      .no-print-bar { display: none !important; }
+      .cover-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        box-sizing: border-box !important;
+      }
+      .cover-frame-outer {
+        border: 3.5px double var(--gold) !important;
+        padding: 5px !important;
+        box-sizing: border-box !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-frame-inner {
+        border: 1.5px solid var(--primary-dark) !important;
+        min-height: unset !important;
+        height: auto !important;
+        padding: 16px 20px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-header-top {
+        font-size: 1.1rem !important;
+        margin-bottom: 2px !important;
+        line-height: 1.35 !important;
+      }
+      .cover-basmalah {
+        font-size: 1.5rem !important;
+        margin: 6px 0 4px 0 !important;
+      }
+      .cover-badge {
+        font-size: 0.95rem !important;
+        padding: 2px 18px !important;
+        margin: 4px auto !important;
+      }
+      .cover-title-main {
+        font-size: 2.6rem !important;
+        margin: 6px 0 2px 0 !important;
+        line-height: 1.2 !important;
+      }
+      .cover-title-sub {
+        font-size: 1.65rem !important;
+        margin-bottom: 6px !important;
+        line-height: 1.25 !important;
+      }
+      .cover-title-desc {
+        font-size: 1rem !important;
+        margin: 0 auto 6px auto !important;
+        line-height: 1.45 !important;
+        max-width: 650px !important;
+      }
+      .cover-ornament {
+        font-size: 1.1rem !important;
+        margin: 2px 0 !important;
+        letter-spacing: 4px !important;
+      }
+      .cover-box-author {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-sharh {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-label {
+        font-size: 0.85rem !important;
+        margin-bottom: 2px !important;
+      }
+      .cover-box-name {
+        font-size: 1.35rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-sheikh {
+        font-size: 1.6rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-dua {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .cover-footer-block {
+        margin-top: 10px !important;
+        padding-top: 6px !important;
+      }
+      .cover-footer-center {
+        font-size: 1.25rem !important;
+      }
+      .cover-footer-dept {
+        font-size: 1rem !important;
+        margin-top: 1px !important;
+      }
+      .cover-footer-loc {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .book-wrapper {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+      h1.main-heading {
+        page-break-before: always;
+      }
+      .bayt-box, .diagram-box, .quote-box {
+        page-break-inside: avoid;
+      }
+      table.academic-table {
+        page-break-inside: auto;
+        break-inside: auto;
+        font-size: 10.5pt !important;
+        width: 100% !important;
+        margin: 18pt 0 !important;
+      }
+      table.academic-table thead {
+        display: table-header-group;
+      }
+      table.academic-table tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      table.academic-table th, table.academic-table td {
+        border: 0.75pt solid #CBD5E1 !important;
+        padding: 7pt 10pt !important;
+      }
+      table.academic-table th {
+        background: #F1F5F9 !important;
+        color: #1E3A8A !important;
+        border-bottom: 2pt solid #C5A059 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      table.academic-table tr:nth-child(even) td {
+        background: #F8FAFC !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Bar -->
+  <div class="no-print-bar">
+    <div class="title-group">
+      <span>مركز محمد بن إبراهيم آل الشيخ رحمه الله</span>
+      <span>|</span>
+      <span>«المَنْهَلُ الصَّافِي فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ»</span>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <a href="../pdf_editions/4_al_manhal_as_safi.pdf" class="btn-action" target="_blank">📥 تحميل النسخة (PDF)</a>
+      <button class="btn-action" onclick="window.print()">🖨️ طباعة الكتاب</button>
+    </div>
+  </div>
+
+  <!-- HUMBLE & ELEGANT COVER PAGE -->
+  <div class="cover-container">
+    <div class="cover-frame-outer">
+      <div class="cover-frame-inner">
+        <div>
+          <div class="cover-header-top">
+            مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ<br>
+            قِسْمُ النَّشْرِ العِلْمِيِّ
+          </div>
+          <div class="cover-basmalah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+          <div class="cover-badge">سِلْسِلَةُ الكُتُبِ التَّأْصِيلِيَّةِ فِي الفِقْهِ وَأُصُولِهِ (4)</div>
+        </div>
+
+        <div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+          <div class="cover-title-main">المَنْهَلُ الصَّافِي</div>
+          <div class="cover-title-sub">فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ</div>
+          <div class="cover-title-desc">
+            شَرْحٌ مَوْسُوعِيٌّ مُؤَصَّلٌ عَلَى مَذَاهِبِ فُقَهَاءِ أَهْلِ السُّنَّةِ وَالجَمَاعَةِ، يَتَضَمَّنُ تَأْصِيلَ القَوَاعِدِ الكُبْرَى الخَمْسِ، وَشَرْحَ أَبْيَاتِ المَنْظُومَةِ الـ 46 كَامِلَةً، وَتَفْرِيعَاتِ الفِقْهِ المُقَارَنِ.
+          </div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+
+          <div class="cover-box-author">
+            <div class="cover-box-label">مَتْنُ «مَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ» لِلْعَلَّامَةِ الشَّيْخِ:</div>
+            <div class="cover-box-name">عَبْدِ الرَّحْمَنِ بْنِ نَاصِرٍ السَّعْدِيِّ</div>
+            <div class="cover-box-dua">رَحِمَهُ اللهُ تَعَالَى (1307 - 1376 هـ)</div>
+          </div>
+
+          <div class="cover-box-sharh">
+            <div class="cover-box-label">شَرْحُ وَتَحْقِيقُ وَتَعْلِيقُ:</div>
+            <div class="cover-box-sheikh">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ</div>
+            <div class="cover-box-dua">عَفَا اللَّهُ عَنْهُ وَغَفَرَ لَهُ وَلِوَالِدَيْهِ وَلِمَشَايِخِهِ وَلِجَمِيعِ المُسْلِمِينَ</div>
+          </div>
+        </div>
+
+        <div class="cover-footer-block">
+          <div class="cover-footer-center">إِصْدَارَاتُ مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</div>
+          <div class="cover-footer-dept">قِسْمُ العِنَايَةِ بِالفِقْهِ وَأُصُولِهِ وَالنَّشْرِ العِلْمِيِّ</div>
+          <div class="cover-footer-loc">كَادُونَا — جُمْهُورِيَّةُ نَيْجِيرْيَا الِاتِّحَادِيَّةُ</div>
+          <div class="cover-footer-loc" style="font-size:0.95rem;color:#6B7280;margin-top:4px;">الطَّبْعَةُ الأُولَى — 1448 هـ / 2026 م</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-wrapper">
+
+<h1 class="main-heading">المَنْهَلُ الصَّافِي فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ</h1>
+<h3 class="sub-title">الشَّرْحُ الكَبِيرُ المَوْسُوعِيُّ المُؤَصَّلُ عَلَى مَذَاهِبِ فُقَهَاءِ أَهْلِ السُّنَّةِ وَالجَمَاعَةِ</h3>
+<h4 class="sub-sub-title">لِمَنْظُومَةِ «القَوَاعِدِ الفِقْهِيَّةِ» لِلعَلَّامَةِ الشَّيْخِ عَبْدِ الرَّحْمَنِ بْنِ نَاصِرٍ السَّعْدِيِّ رَحِمَهُ اللهُ (1307 - 1376 هـ)</h4>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<p><strong>شَرْحُ وَتَحْقِيقُ وَتَعْلِيقُ:</strong></p>
+<p>إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</p>
+<p>بِمَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ لِلْعُلُومِ الشَّرْعِيَّةِ</p>
+<p><strong>سِلْسِلَةُ المَوَاسِيعِ التَّأْصِيلِيَّةِ فِي الفِقْهِ وَأُصُولِهِ - المُجَلَّدُ الكَبِيرُ الرَّابِعُ</strong></p>
+<p><em>يَشْتَمِلُ عَلَى: التَّأْصِيلِ المَنْهَجِيِّ لِلْقَوَاعِدِ الكُبْرَى الخَمْسِ، تَفْرِيعَاتِ الفِقْهِ المُقَارَنِ عَلَى المَذَاهِبِ الأَرْبَعَةِ (الحَنَفِيِّ، وَالمَالِكِيِّ، وَالشَّافِعِيِّ، وَالحَنْبَلِيِّ)، شَرْحِ جَمِيعِ أَبْيَاتِ المَنْظُومَةِ الـ 46 كَامِلَةً بِلَا خَرْمٍ، ضَوَابِطِ العُرْفِ، تَخْرِيجِ الأَحَادِيثِ الفِقْهِيَّةِ، وَالإِحَالَاتِ المُوَثَّقَةِ إِلَى أُمَّاتِ كُتُبِ القَوَاعِدِ.</em></p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📑 فِهْرِسُ أَبْوَابِ الكِتَابِ المَوْسُوعِيِّ</h2>
+<ul class="content-list">
+  <li><strong>مُقَدِّمَةُ الشَّارِحِ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</strong></li>
+  <li>خُطْبَةُ الحَاجَةِ وَشَرَفُ التَّفَقُّهِ فِي الدِّينِ.</li>
+  <li>بَاعِثُ تَسْطِيرِ الشَّرْحِ وَسَبَبُهُ (مُدَارَسَةُ المَنْظُومَةِ مَعَ طُلَّابِ العِلْمِ وَتَسْهِيلُ المُرَاجَعَةِ وَتَرْسِيخُ المَلَكَةِ).</li>
+  <li><strong>تَمْهِيدٌ تَأْصِيلِيٌّ: مَنْهَجُ الشَّرْحِ وَمَعَالِمُهُ العِلْمِيَّةُ وَمَضَامِينُهُ</strong></li>
+  <li>التَّحْلِيلُ النَّظْمِيُّ، التَّأْصِيلُ الشَّرْعِيُّ، الفِقْهُ المُقَارَنُ عَلَى المَذَاهِبِ الأَرْبَعَةِ، وَالأَمْثِلَةُ المُعَاصِرَةُ.</li>
+  <li><strong>المَدَاخِلُ الثَّلَاثَةُ التَّأْسِيسِيَّةُ قَبْلَ الشَّرْحِ</strong></li>
+  <li><strong>المَدْخَلُ الأَوَّلُ: التَّعْرِيفُ بِمُؤَلِّفِ المَتْنِ (النَّاظِمِ):</strong> سِيرَةُ العَلَّامَةِ الشَّيْخِ عَبْدِ الرَّحْمَنِ بْنِ نَاصِرٍ السَّعْدِيِّ رَحِمَهُ اللهُ (1307 - 1376 هـ).</li>
+  <li><strong>المَدْخَلُ الثَّانِي: التَّعْرِيفُ بِالكِتَابِ/المَتْنِ:</strong> «مَنْظُومَةُ القَوَاعِدِ الفِقْهِيَّةِ» (اسْمُهَا، بَحْرُهَا، مَكَانَتُهَا، وَسِرُّ نَظْمِهَا فِي عُنْفُوَانِ شَبَابِهِ).</li>
+  <li><strong>المَدْخَلُ الثَّالِثُ: التَّعْرِيفُ بِالفَنِّ وَالعِلْمِ:</strong> عِلْمُ القَوَاعِدِ الفِقْهِيَّةِ (حَدُّهُ، الفُرُوقُ بَيْنَ القَاعِدَةِ وَالأُصُولِيَّةِ وَالضَّابِطِ، تَارِيخُ تَدْوِينِهِ، وَثَمَرَتُهُ).</li>
+  <li><em>[جَدْوَلُ 1: الفُرُوقُ الدَّقِيقَةُ بَيْنَ القَاعِدَةِ الفِقْهِيَّةِ، وَالأُصُولِيَّةِ، وَالضَّابِطِ الفِقْهِيِّ]</em></li>
+  <li><strong>النَّصُّ الكَامِلُ لِمَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ لِلسَّعْدِيِّ مَضْبُوطَةً بِالشَّكْلِ التَّامِّ (46 بَيْتًا)</strong></li>
+  <li><strong>القِسْمُ الأَوَّلُ: شَرْحُ المُقَدِّمَةِ النَّظْمِيَّةِ (الأَبْيَاتُ 1 - 10)</strong></li>
+  <li>البَرَاعَةُ الِاسْتِهْلَالِيَّةُ، الحَمْدُ وَالثَّنَاءُ، الصَّلَاةُ عَلَى النَّبِيِّ ﷺ، وَفَضْلُ عِلْمِ القَوَاعِدِ.</li>
+  <li><strong>القِسْمُ الثَّانِي: القَاعِدَةُ الكُبْرَى الأُولَى: «الأُمُورُ بِمَقَاصِدِهَا» وَقَوَاعِدُ المَصَالِحِ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> تَأْصِيلُ قَاعِدَةِ النِّيَّةِ (البَيْتُ 11).</li>
+  <li><strong>البَابُ الثَّانِي:</strong> قَوَاعِدُ رِعَايَةِ المَصَالِحِ وَدَرْءِ المَفَاسِدِ (الأَبْيَاتُ 12 - 14).</li>
+  <li>قَاعِدَةُ «الدِّينُ مَبْنِيٌّ عَلَى المَصَالِحِ»، تَقْدِيمُ أَعْلَى المَصَالِحِ، وَارْتِكَابُ أَخَفِّ الضَّرَرَيْنِ.</li>
+  <li><strong>القِسْمُ الثَّالِثُ: القَاعِدَةُ الكُبْرَى الثَّانِيَةُ: «اليَقِينُ لَا يَزُولُ بِالشَّكِّ»</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> التَّأْصِيلُ وَالأَدِلَّةُ النَّبَوِيَّةُ (البَيْتُ 18).</li>
+  <li><strong>البَابُ الثَّانِي:</strong> القَوَاعِدُ المُتَفَرِّعَةُ عَنِ الاسْتِصْحَابِ (الأَبْيَاتُ 19 - 22).</li>
+  <li>الأَصْلُ فِي المِيَاهِ وَالأَرْضِ وَالثِّيَابِ الطَّهَارَةُ.</li>
+  <li>الأَصْلُ فِي الفُرُوجِ وَاللُّحُومِ وَالأَمْوَالِ وَالنُّفُوسِ التَّحْرِيمُ.</li>
+  <li>الأَصْلُ فِي العَادَاتِ وَالمُعَامَلَاتِ الإِبَاحَةُ.</li>
+  <li><em>[جَدْوَلُ 2: القَوَاعِدُ الكُبْرَى الأُولَى وَالثَّانِيَةُ وَفُرُوعُهُمَا الفِقْهِيَّةُ]</em></li>
+  <li><strong>القِسْمُ الرَّابِعُ: القَاعِدَةُ الكُبْرَى الثَّالِثَةُ: «المَشَقَّةُ تَجْلِبُ التَّيْسِيرَ»</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> التَّأْصِيلُ الشَّرْعِيُّ لِلتَّيْسِيرِ وَرَفْعِ الحَرَجِ (البَيْتُ 15).</li>
+  <li><strong>البَابُ الثَّانِي:</strong> ضَوَابِطُ سُقُوطِ الوَاجِبَاتِ وَإِبَاحَةِ المُحَرَّمَاتِ (الأَبْيَاتُ 16 - 17).</li>
+  <li>«لَا وَاجِبَ مَعَ العَجْزِ»، «لَا مُحَرَّمَ مَعَ الاضْطِرَارِ»، وَ«الضَّرُورَةُ تُقَدَّرُ بِقَدَرِهَا».</li>
+  <li><em>[جَدْوَلُ 3: أَسْبَابُ التَّخْفِيفِ السَّبْعَةُ وَرُخَصُ الشَّرِيعَةِ عَلَى المَذَاهِبِ الأَرْبَعَةِ]</em></li>
+  <li><strong>القِسْمُ الخَامِسُ: القَاعِدَتَانِ الكُبْرَيَانِ الرَّابِعَةُ وَالخَامِسَةُ وَأُصُولُ التَّشْرِيعِ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> قَاعِدَةُ «لَا ضَرَرَ وَلَا ضِرَارَ» وَدَرْءُ المَفَاسِدِ.</li>
+  <li><strong>البَابُ الثَّانِي:</strong> القَاعِدَةُ الكُبْرَى الخَامِسَةُ: «العَادَةُ مُحَكَّمَةٌ» (البَيْتُ 27).</li>
+  <li>حُجِّيَّةُ العُرْفِ، شُرُوطُهُ الأَرْبَعَةُ، وَقَاعِدَةُ: «المَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا».</li>
+  <li><strong>البَابُ الثَّالِثُ:</strong> أُصُولُ التَّشْرِيعِ وَالوَسَائِلُ وَعَوَارِضُ الأَهْلِيَّةِ (الأَبْيَاتُ 23 - 26).</li>
+  <li>الِابْتِدَاعُ مَرْدُودٌ، الوَسَائِلُ لَهَا أَحْكَامُ المَقَاصِدِ، سُقُوطُ الإِثْمِ عَنِ الخَطَأِ وَالنِّسْيَانِ وَالإِكْرَاهِ مَعَ ضَمَانِ الإِتْلَافِ.</li>
+  <li><em>[جَدْوَلُ 4: ضَوَابِطُ اعْتِبَارِ العُرْفِ وَالفُرُوقُ بَيْنَ العُرْفِ الصَّحِيحِ وَالفَاسِدِ]</em></li>
+  <li><strong>القِسْمُ السَّادِسُ: الشَّرْحُ التَّفْصِيلِيُّ لِلْقَوَاعِدِ التَّكْمِيلِيَّةِ الجَامِعَةِ (الأَبْيَاتُ 28 - 42)</strong></li>
+  <li>المَبْحَثُ 1: التَّعْلِيقُ وَالإِطْلَاقُ وَالعُرْفُ (البَيْتُ 28).</li>
+  <li>المَبْحَثُ 2: اجْتِمَاعُ الشُّرُوطِ وَانْتِفَاءُ المَوَانِعِ لِتَرَتُّبِ الأَحْكَامِ (البَيْتُ 29).</li>
+  <li>المَبْحَثُ 3: اسْتِحْقَاقُ الأَجْرِ عَلَى العَمَلِ (البَيْتُ 30).</li>
+  <li>المَبْحَثُ 4: «المَيْسُورُ لَا يَسْقُطُ بِالمَعْسُورِ» (البَيْتُ 31).</li>
+  <li>المَبْحَثُ 5: «كُلُّ مَا نَشَأَ عَنِ المَأْذُونِ فَلَيْسَ بِمَضْمُونٍ» (البَيْتُ 32).</li>
+  <li>المَبْحَثُ 6: «الحُكْمُ يَدُورُ مَعَ عِلَّتِهِ وُجُودًا وَعَدَمًا» (البَيْتُ 33).</li>
+  <li>المَبْحَثُ 7: شُرُوطُ العُقُودِ وَحُرِّيَّةُ الِاشْتِرَاطِ إِلَّا مَا حَلَّلَ حَرَامًا (الأَبْيَاتُ 34 - 35).</li>
+  <li>المَبْحَثُ 8: اسْتِعْمَالُ القُرْعَةِ عِنْدَ التَّزَاحُمِ أَوِ الإِبْهَامِ (البَيْتُ 36).</li>
+  <li>المَبْحَثُ 9: تَدَاخُلُ العِبَادَاتِ وَالأَعْمَالِ إِذَا تَمَاثَلَتْ (البَيْتُ 37).</li>
+  <li>المَبْحَثُ 10: «المَشْغُولُ لَا يُشْغَلُ» (البَيْتُ 38).</li>
+  <li>المَبْحَثُ 11: الِاقْتِصَارُ عَلَى الحَقِّ بِلَا تَعَدٍّ (البَيْتُ 39).</li>
+  <li>المَبْحَثُ 12: الِانْتِقَالُ إِلَى البَدَلِ عِنْدَ تَعَذُّرِ الأَصْلِ (البَيْتُ 40).</li>
+  <li>المَبْحَثُ 13: سُقُوطُ الوَاجِبَاتِ بِالعَجْزِ وَإِجْزَاءُ مَا أَمَرَ اللهُ بِهِ (الأَبْيَاتُ 41 - 42).</li>
+  <li><em>[جَدْوَلُ 5: القَوَاعِدُ الفِقْهِيَّةُ التَّكْمِيلِيَّةُ الـ 15 وَأَمْثِلَتُهَا التَّطْبِيقِيَّةُ]</em></li>
+  <li><strong>القِسْمُ السَّابِعُ: خَاتِمَةُ المَنْظُومَةِ وَشَرْحُهَا (الأَبْيَاتُ 43 - 46)</strong></li>
+  <li>شَرَفُ إِتْمَامِ النَّظْمِ، الحَمْدُ فِي البَدْءِ وَالخَتْمِ، الصَّلَاةُ عَلَى النَّبِيِّ ﷺ، وَالدُّعَاءُ لِلنَّاظِمِ وَالقَارِئِ وَالحَافِظِ.</li>
+  <li><em>[جَدْوَلُ 6: مُقَارَنَةُ القَوَاعِدِ الكُبْرَى الخَمْسِ عَلَى المَذَاهِبِ الأَرْبَعَةِ]</em></li>
+  <li><strong>القِسْمُ الثَّامِنُ: الخَاتِمَةُ وَالفَهَارِسُ التَّأْصِيلِيَّةُ الشَّامِلَةُ</strong></li>
+  <li>فِهْرِسُ القَوَاعِدِ الفِقْهِيَّةِ وَالأُصُولِيَّةِ (أَكْثَرُ مِنْ 40 قَاعِدَةً وَضَابِطًا).</li>
+  <li>ثَبَتُ المَصَادِرِ وَالمَرَاجِعِ الفِقْهِيَّةِ المُعْتَمَدَةِ.</li>
+  <li>كَلِمَةُ خِتَامٍ وَابْتِهَالٌ رَبَّانِيٌّ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🕊️ مُقَدِّمَةُ الشَّارِحِ</h1>
+<h3 class="sub-title">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</h3>
+<h4 class="sub-sub-title">بِمَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ لِلْعُلُومِ الشَّرْعِيَّةِ</h4>
+<p>بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</p>
+<p>الحَمْدُ للهِ العَلِيِّ الحَكِيمِ، الوَاسِعِ العَلِيمِ، الَّذِي شَرَعَ لِعِبَادِهِ مِنَ الدِّينِ مَا يَنْتَظِمُ بِهِ مَعَاشُهُمْ وَمَعَادُهُمْ، وَبَنَى أَحْكَامَ الشَّرِيعَةِ الغَرَّاءِ عَلَى جَلْبِ المَصَالِحِ وَتَكْمِيلِهَا، وَدَرْءِ المَفَاسِدِ وَتَقْلِيلِهَا.</p>
+<p>وَأَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، إِلَهُ الأَوَّلِينَ وَالآخِرِينَ، وَأَشْهَدُ أَنَّ سَيِّدَنَا وَنَبِيَّنَا مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ، خَيْرُ مَنْ تَفَقَّهَ وَعَلَّمَ، بُعِثَ بِجَوَامِعِ الكَلِمِ وَبَدَائِعِ الحِكَمِ، صَلَّى اللهُ عَلَيْهِ وَعَلَى آلِهِ وَصَحَابَتِهِ الفُقَهَاءِ الأَبْرَارِ، وَعَلَى التَّابِعِينَ لَهُمْ بِإِحْسَانٍ مَا تَعَاقَبَ اللَّيْلُ وَالنَّهَارُ.</p>
+<p><strong>أَمَّا بَعْدُ:</strong></p>
+<p>فَإِنَّ التَّفَقُّهَ فِي الدِّينِ مِنْ أَشْرَفِ الرَّغَائِبِ، وَإِنَّ حِفْظَ جُزْئِيَّاتِ الفِقْهِ وَفُرُوعِهِ المُنْتَشِرَةِ دُونَ رَبْطِهَا بِأُصُولِهَا الجَامِعَةِ عَسِيرٌ عَلَى الأَفْهَامِ، وَسَبَبٌ فِي الشَّتَاتِ وَالنِّسْيَانِ؛ لِذَا كَانَ عِلْمُ «القَوَاعِدِ الفِقْهِيَّةِ» هُوَ مِعْرَاجَ الفَقِيهِ، وَسِلَاحَ المُجْتَهِدِ، وَمِيزَانَ النَّاظِرِ؛ إِذْ تَنْدَرِجُ تَحْتَ القَاعِدَةِ الوَاحِدَةِ أُلُوفٌ مِنَ المَسَائِلِ الشَّوَارِدِ.</p>
+<h4 class="sub-sub-title">🎯 بَاعِثُ تَسْطِيرِ هَذَا الشَّرْحِ وَسَبَبُهُ:</h4>
+<p>وَمِنْ تَيْسِيرِ اللهِ الكَرِيمِ لَنَا فِي <strong>مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ لِلْعُلُومِ الشَّرْعِيَّةِ</strong> أَنْ أَكْرَمَنَا بِمُدَارَسَةِ هَذِهِ المَنْظُومَةِ المُبَارَكَةِ «مَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ» لِلعَلَّامَةِ الشَّيْخِ عَبْدِ الرَّحْمَنِ بْنِ نَاصِرٍ السَّعْدِيِّ رَحِمَهُ اللهُ مِرَارًا كَثِيرَةً، وَتَدْرِيسِهَا لِطَلَبَةِ العِلْمِ فِي المَجَالِسِ التَّأْصِيلِيَّةِ وَالمُعَسْكَرَاتِ الفِقْهِيَّةِ، حَيْثُ لَمَسْنَا شَغَفَ الطُّلَّابِ وَإِقْبَالَهُمْ عَلَى هَذَا الفَنِّ الَّذِي يَفْتَحُ لَهُمْ آفَاقَ الِاسْتِنْبَاطِ.</p>
+<p>وَقَدْ كَرَّرَ الإِخْوَةُ وَالأَبْنَاءُ مِنْ طُلَّابِ العِلْمِ - نَفَعَ اللهُ بِهِمْ وَرَفَعَ قَدْرَهُمْ - الإِلْحَاحَ فِي طَلَبِ تَدْوِينِ هَذِهِ التَّفْرِيعَاتِ الفِقْهِيَّةِ المُقَارَنَةِ بَيْنَ المَذَاهِبِ الأَرْبَعَةِ، وَالأَمْثِلَةِ التَّطْبِيقِيَّةِ فِي مُؤَلَّفٍ وَافٍ؛ لِيَكُونَ مَرْجِعًا لَهُمْ يَعْتَمِدُونَ عَلَيْهِ فِي <strong>المُرَاجَعَةِ وَالِاسْتِذْكَارِ</strong>، وَعَوْنًا عَلَى تَرْسِيخِ المَلَكَةِ الفِقْهِيَّةِ، وَمِيزَانًا يُخَرِّجُونَ عَلَيْهِ حَوَادِثَ الزَّمَانِ وَنَوَازِلَ العَصْرِ؛ لِأَنَّ المَجَالِسَ تَتَفَرَّقُ وَيَبْقَى الكِتَابُ أُنْسًا لِطَالِبِهِ.</p>
+<p>فَأَجَبْتُهُمْ إِلَى ذَلِكَ مُسْتَمِدًّا العَوْنَ وَالسَّدَادَ مِنَ اللهِ تَعَالَى، وَسَمَّيْتُ هَذَا الشَّرْحَ المُفَصَّلَ: <strong>«المَنْهَلُ الصَّافِي فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ»</strong>؛ حِرْصًا عَلَى جَمْعِ شَمْلِ القَوَاعِدِ، وَتَسْهِيلِ مَآخِذِهَا لِكُلِّ سَالِكٍ فِي دُرُوبِ الفِقْهِ الإِسْلَامِيِّ، رَاجِيًا عَفْوَ رَبِّي وَغُفْرَانَهُ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🛡️ تَمْهِيدٌ تَأْصِيلِيٌّ فِي مَنْهَجِ الشَّرْحِ وَمَضَامِينِهِ</h1>
+<p>يَقُومُ هَذَا الشَّرْحُ المَوْسُوعِيُّ عَلَى خَمْسَةِ أُسُسٍ عِلْمِيَّةٍ رَصِينَةٍ:</p>
+<ol class="content-list-ordered">
+  <li><strong>التَّحْلِيلُ النَّظْمِيُّ وَاللُّغَوِيُّ:</strong></li>
+</ol>
+<p>نَقِفُ مَعَ أَبْيَاتِ الشَّيْخِ السَّعْدِيِّ رَحِمَهُ اللهُ لِبَيَانِ إِعْرَابِهَا، وَمَعَانِي مُفْرَدَاتِهَا اللُّغَوِيَّةِ، وَكَيْفِيَّةِ صِيَاغَتِهِ لِلْمَبَاحِثِ الكُلِّيَّةِ فِي قَوَالِبَ شِعْرِيَّةٍ سَلِسَةٍ مِنْ بَحْرِ الرَّجَزِ.</p>
+<ol class="content-list-ordered">
+  <li><strong>التَّأْصِيلُ الشَّرْعِيُّ لِكُلِّ قَاعِدَةٍ:</strong></li>
+</ol>
+<p>إِيرَادُ الأَدِلَّةِ النَّقْلِيَّةِ مِنَ القُرْآنِ الكَرِيمِ، وَالسُّنَّةِ النَّبَوِيَّةِ الصَّحِيحَةِ، مَعَ عَزْوِ كُلِّ حَدِيثٍ إِلَى مَصَادِرِهِ، وَبَيَانِ دَلَالَةِ الإِجْمَاعِ وَالمَعْقُولِ وَالحِكْمَةِ التَّشْرِيعِيَّةِ الَّتِي بُنِيَتْ عَلَيْهَا القَاعِدَةُ.</p>
+<ol class="content-list-ordered">
+  <li><strong>الفِقْهُ المُقَارَنُ عَلَى المَذَاهِبِ الأَرْبَعَةِ:</strong></li>
+</ol>
+<p>بَيَانُ مَوَاقِعِ اتِّفَاقِ أَئِمَّةِ المَذَاهِبِ (أَبِي حَنِيفَةَ، وَمَالِكٍ، وَالشَّافِعِيِّ، وَأَحْمَدَ رَحِمَهُمُ اللهُ) عَلَى كُلِّيَّاتِ القَوَاعِدِ، مَعَ الإِشَارَةِ إِلَى الفُرُوعِ الَّتِي وَقَعَ فِيهَا الخِلَافُ بَيْنَهُمْ عِنْدَ التَّطْبِيقِ؛ لِيَتَّسِعَ أُفُقُ الطَّالِبِ وَيَتَجَرَّدَ مِنَ التَّعَصُّبِ.</p>
+<ol class="content-list-ordered">
+  <li><strong>ضَرْبُ الأَمْثِلَةِ التَّطْبِيقِيَّةِ وَالنَّوَازِلِ المُعَاصِرَةِ:</strong></li>
+</ol>
+<p>رَبْطُ القَوَاعِدِ بِالأَمْثِلَةِ الفِقْهِيَّةِ الكَلَاسِيكِيَّةِ (فِي الطَّهَارَةِ، وَالصَّلَاةِ، وَالبُيُوعِ، وَالجِنَايَاتِ)، ثُمَّ تَنْزِيلُهَا عَلَى النَّوَازِلِ المُعَاصِرَةِ (كَالمُعَامَلَاتِ المَالِيَّةِ المُسْتَحْدَثَةِ، وَالمَسَائِلِ الطِّبِّيَّةِ)، إِثْبَاتًا لِخُلُودِ الشَّرِيعَةِ وَصَلَاحِيَّتِهَا لِكُلِّ زَمَانٍ وَمَكَانٍ.</p>
+<ol class="content-list-ordered">
+  <li><strong>اسْتِيعَابُ مَضَامِينِ المَنْظُومَةِ الكَامِلَةِ (46 بَيْتًا):</strong></li>
+</ol>
+<p>شَرْحُ جَمِيعِ أَبْيَاتِ المَنْظُومَةِ بِلَا اسْتِثْنَاءٍ؛ فَلَا يُتْرَكُ بَيْتٌ وَاحِدٌ دُونَ تَوْضِيحِ قَاعِدَتِهِ وَفُرُوعِهِ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🏛️ المَدَاخِلُ الثَّلَاثَةُ التَّأْسِيسِيَّةُ قَبْلَ الشَّرْحِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الأَوَّلُ: التَّعْرِيفُ بِمُؤَلِّفِ المَتْنِ (النَّاظِمِ)</h2>
+<h3 class="sub-title">سِيرَةُ العَلَّامَةِ الشَّيْخِ عَبْدِ الرَّحْمَنِ بْنِ نَاصِرٍ السَّعْدِيِّ رَحِمَهُ اللهُ (1307 - 1376 هـ)</h3>
+<ul class="content-list">
+  <li><strong>اسْمُهُ، نَسَبُهُ، وَمَوْلِدُهُ:</strong></li>
+</ul>
+<p>هُوَ الإِمَامُ العَلَّامَةُ الفَقِيهُ، المُفَسِّرُ الأُصُولِيُّ، أَبُو عَبْدِ اللهِ عَبْدُ الرَّحْمَنِ بْنُ نَاصِرِ بْنِ عَبْدِ اللهِ بْنِ نَاصِرٍ السَّعْدِيُّ، يَنْتَهِي نَسَبُهُ إِلَى «بَنِي تَمِيمٍ».</p>
+<p>وُلِدَ فِي مَدِينَةِ «عُنَيْزَةَ» فِي القَصِيمِ بِنَجْدٍ سَنَةَ 1307 هـ (المُوَافِقِ 1889 م).</p>
+<ul class="content-list">
+  <li><strong>نَشْأَتُهُ وَهِمَّتُهُ العَالِيَةُ:</strong></li>
+</ul>
+<p>نَشَأَ يَتِيمًا؛ حَيْثُ مَاتَتْ أُمُّهُ وَلَهُ مِنَ العُمُرِ أَرْبَعُ سِنِينَ، ثُمَّ تُوُفِّيَ وَالِدُهُ وَهُوَ ابْنُ اثْنَتَيْ عَشْرَةَ سَنَةً، فَرَزَقَهُ اللهُ تَعَالَى هِمَّةً قَعْقَاعِيَّةً نَادِرَةً؛ فَأَتَمَّ حِفْظَ القُرْآنِ الكَرِيمِ عَنْ ظَهْرِ قَلْبٍ قَبْلَ بُلُوغِهِ الحُلُمَ، ثُمَّ أَقْبَلَ عَلَى العِلْمِ بِكُلِّيَّتِهِ.</p>
+<ul class="content-list">
+  <li><strong>شُيُوخُهُ وَتَلَامِيذُهُ:</strong></li>
+</ul>
+<p>تَلَقَّى العِلْمَ عَنْ أَكَابِرِ عُلَمَاءِ عَصْرِهِ كَالشَّيْخِ إِبْرَاهِيمَ بْنِ حَمَدِ بْنِ جَاسِرٍ، وَالشَّيْخِ مُحَمَّدِ بْنِ عَبْدِ الكَرِيمِ الشِّبْلِ، وَالشَّيْخِ صَالِحِ بْنِ عُثْمَانَ القَاضِي.</p>
+<p>وَقَدْ تَخَرَّجَ عَلَى يَدَيْهِ جَمْعٌ غَفِيرٌ مِنْ عُلَمَاءِ الأُمَّةِ الأَفْذَاذِ، وَفِي مُقَدَّمَتِهِمْ فَقِيهُ العَصْرِ <strong>العَلَّامَةُ الشَّيْخُ مُحَمَّدُ بْنُ صَالِحٍ العُثَيْمِينُ رَحِمَهُ اللهُ</strong> الَّذِي كَانَ يَفْتَخِرُ بِالتَّتَلْمُذِ عَلَيْهِ وَيَقُولُ: «هُوَ الَّذِي غَرَسَ فِيَّ مَحَبَّةَ التَّأْصِيلِ وَالقَوَاعِدِ».</p>
+<ul class="content-list">
+  <li><strong>مُؤَلَّفَاتُهُ وَوَفَاتُهُ:</strong></li>
+</ul>
+<p>صَنَّفَ كُتُبًا كَثِيرَةً بَارَكَ اللهُ فِيهَا، أَبْرَزُهَا تَفْسِيرُهُ العَظِيمُ: «تَيْسِيرُ الكَرِيمِ الرَّحْمَنِ فِي تَفْسِيرِ كَلَامِ المَنَّانِ»، وَ«القَوَاعِدُ وَالأُصُولُ الجَامِعَةُ»، وَ«بَهْجَةُ قُلُوبِ الأَبْرَارِ».</p>
+<p>تُوُفِّيَ رَحِمَهُ اللهُ فِي عُنَيْزَةَ فِي جُمَادَى الآخِرَةِ سَنَةَ 1376 هـ عَنْ عُمُرٍ يُنَاهِزُ 69 عَامًا حَافِلَةً بِالتَّعْلِيمِ وَالتَّأْلِيفِ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الثَّانِي: التَّعْرِيفُ بِالمَنْظُومَةِ الفِقْهِيَّةِ</h2>
+<h3 class="sub-title">اسْمُهَا، بَحْرُهَا، مَكَانَتُهَا، وَسِرُّ نَظْمِهَا فِي عُنْفُوَانِ شَبَابِهِ</h3>
+<ul class="content-list">
+  <li><strong>اسْمُ المَتْنِ:</strong> اشْتُهِرَتْ بِـ <strong>«مَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ»</strong> لِلشَّيْخِ السَّعْدِيِّ.</li>
+  <li><strong>عَدَدُ أَبْيَاتِهَا وَبَحْرُهَا:</strong> تَبْلُغُ عِدَّةُ أَبْيَاتِهَا <strong>(46) بَيْتًا</strong> نَظَمَهَا رَحِمَهُ اللهُ عَلَى <strong>بَحْرِ الرَّجَزِ</strong> (مُسْتَفْعِلُنْ مُسْتَفْعِلُنْ مُسْتَفْعِلُنْ)، فَتَمَيَّزَتْ بِعُذُوبَةِ أَلْفَاظِهَا، وَسُهُولَةِ حِفْظِهَا، وَدِقَّةِ اخْتِيَارِ كَلِمَاتِهَا.</li>
+  <li><strong>نُبُوغٌ مُبَكِّرٌ:</strong> نَظَمَ الشَّيْخُ السَّعْدِيُّ هَذِهِ المَنْظُومَةَ الرَّصِينَةَ وَهُوَ فِي مُقْتَبَلِ شَبَابِهِ (قَبْلَ بُلُوغِ الثَّالِثَةِ وَالعِشْرِينَ مِنْ عُمُرِهِ)؛ مِمَّا يَدُلُّ عَلَى عَبْقَرِيَّتِهِ وَاسْتِحْضَارِهِ لِكُلِّيَّاتِ الشَّرِيعَةِ مُنْذُ صِبَاهُ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الثَّالِثُ: التَّعْرِيفُ بِعِلْمِ القَوَاعِدِ الفِقْهِيَّةِ</h2>
+<h3 class="sub-title">حَدُّهُ، الفُرُوقُ الدَّقِيقَةُ، تَارِيخُ تَدْوِينِهِ، وَثَمَرَتُهُ</h3>
+<ul class="content-list">
+  <li><strong>حَدُّ القَاعِدَةِ الفِقْهِيَّةِ:</strong></li>
+  <li><strong>لُغَةً:</strong> الأَسَاسُ وَالأَصْلُ لِمَا فَوْقَهُ.</li>
+  <li><strong>اصْطِلَاحًا:</strong> حُكْمٌ أَكْثَرِيٌّ يَنْطَبِقُ عَلَى جُزْئِيَّاتٍ فِقْهِيَّةٍ كَثِيرَةٍ مِنْ أَبْوَابٍ شَتَّى لِتُعْرَفَ أَحْكَامُهَا مِنْهُ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 1: الفُرُوقُ الدَّقِيقَةُ بَيْنَ القَاعِدَةِ الفِقْهِيَّةِ، وَالقَاعِدَةِ الأُصُولِيَّةِ، وَالضَّابِطِ الفِقْهِيِّ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>المَفْهُومُ الشَّرْعِيُّ</th>
+      <th>التَّعْرِيفُ الاصْطِلَاحِيُّ</th>
+      <th>نِطَاقُ التَّطْبِيقِ وَالشُّمُولِ</th>
+      <th>طَبِيعَةُ المَوْضُوعِ</th>
+      <th>مِثَالٌ تَوْضِيحِيٌّ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>القَاعِدَةُ الفِقْهِيَّةُ</strong></td>
+      <td>حُكْمٌ كُلِّيٌّ يَجْمَعُ فُرُوعًا مِنْ أَبْوَابٍ شَتَّى</td>
+      <td><strong>شَامِلَةٌ لِأَبْوَابٍ كَثِيرَةٍ</strong> (طَهَارَةٌ، صَلَاةٌ، بُيُوعٌ، جِنَايَاتٌ)</td>
+      <td>أَعْمَالُ المُكَلَّفِينَ وَأَحْكَامُهَا</td>
+      <td>«اليَقِينُ لَا يَزُولُ بِالشَّكِّ»</td>
+    </tr>
+    <tr>
+      <td><strong>القَاعِدَةُ الأُصُولِيَّةُ</strong></td>
+      <td>قَاعِدَةٌ كُلِّيَّةٌ تُعَدُّ أَدَاةً لِلِاسْتِنْبَاطِ مِنَ الأَدِلَّةِ</td>
+      <td><strong>تَتَعَلَّقُ بِالأَدِلَّةِ وَالأَلْفَاظِ</strong></td>
+      <td>مَنَاهِجُ الِاسْتِدْلَالِ وَفَهْمِ النُّصُوصِ</td>
+      <td>«الأَمْرُ لِلْوُجُوبِ» / «النَّهْيُ لِلتَّحْرِيمِ»</td>
+    </tr>
+    <tr>
+      <td><strong>الضَّابِطُ الفِقْهِيُّ</strong></td>
+      <td>حُكْمٌ يَجْمَعُ فُرُوعًا مَحْصُورَةً</td>
+      <td><strong>خَاصٌّ بِبَابٍ وَاحِدٍ فَقَطْ</strong></td>
+      <td>مَسَائِلُ بَابٍ مُعَيَّنٍ</td>
+      <td>«كُلُّ مَاءٍ لَمْ يَتَغَيَّرْ طَعْمُهُ أَوْ لَوْنُهُ أَوْ رِيحُهُ فَهُوَ طَهُورٌ»</td>
+    </tr>
+    <tr>
+      <td><strong>النَّظَرِيَّةُ الفِقْهِيَّةُ</strong></td>
+      <td>مَوْضُوعٌ فِقْهِيٌّ كَبِيرٌ يَجْمَعُ أَرْكَانًا وَشُرُوطًا</td>
+      <td><strong>مَوْضُوعِيٌّ عَامٌّ فِي الشَّرِيعَةِ</strong></td>
+      <td>نِظَامٌ فِقْهِيٌّ مُتَكَامِلٌ</td>
+      <td>«نَظَرِيَّةُ العَقْدِ» / «نَظَرِيَّةُ المِلْكِيَّةِ»</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📜 النَّصُّ الكَامِلُ لِمَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ لِلسَّعْدِيِّ (46 بَيْتًا مَضْبُوطَةً بِالشَّكْلِ التَّامِّ)</h1>
+<div class="bayt-box">
+1. الحَمْدُ لِلَّهِ العَلِيِّ الأَرْفَقِ <span class="bayt-divider">...</span> وَجَامِعِ الأَشْيَاءِ وَالمُفَرِّقِ<br>
+2. ذِي النِّعَمِ الوَاسِعَةِ الغَزِيرَةْ <span class="bayt-divider">...</span> وَالحِكَمِ البَاهِرَةِ الكَثِيرَةْ<br>
+3. ثُمَّ الصَّلَاةُ مَعْ سَلَامٍ دَائِمِ <span class="bayt-divider">...</span> عَلَى الرَّسُولِ القُرَشِيِّ الخَاتِمِ<br>
+4. وَآلِهِ وَصَحْبِهِ الأَبْرَارِ <span class="bayt-divider">...</span> الحَائِزِي مَرَاتِبَ الفَخَارِ<br>
+5. اعْلَمْ هُدِيتَ أَنَّ أَفْضَلَ المِنَنْ <span class="bayt-divider">...</span> عِلْمٌ يُزِيلُ الشَّكَّ عَنْكَ وَالدَّرَنْ<br>
+6. وَيَكْشِفُ الحَقَّ لِذِي القُلُوبِ <span class="bayt-divider">...</span> وَيُوصِلُ العَبْدَ إِلَى المَطْلُوبِ<br>
+7. فَاحْرِصْ عَلَى فَهْمِكَ لِلقَوَاعِدِ <span class="bayt-divider">...</span> جَامِعَةِ المَسَائِلِ الشَّوَارِدِ<br>
+8. فَتَرْتَقِي فِي العِلْمِ خَيْرَ مُرْتَقَى <span class="bayt-divider">...</span> وَتَقْتَفِي سُبْلَ الَّذِي قَدْ وُفِّقَا<br>
+9. وَهَذِهِ قَوَاعِدٌ نَظَمْتُهَا <span class="bayt-divider">...</span> مِنْ كُتُبِ أَهْلِ العِلْمِ قَدْ حَصَّلْتُهَا<br>
+10. جَزَاهُمُ اللهُ عَظِيمَ الأَجْرِ <span class="bayt-divider">...</span> وَالعَفْوَ مَعْ غُفْرَانِهِ وَالبِرِّ<br>
+11. النِّيَّةُ شَرْطٌ لِسَائِرِ العَمَلْ <span class="bayt-divider">...</span> بِهَا الصَّلَاحُ وَالفَسَادُ لِلعَمَلْ<br>
+12. وَالدِّينُ مَبْنِيٌّ عَلَى المَصَالِحِ <span class="bayt-divider">...</span> فِي جَلْبِهَا وَدَرْءِ لِلقَبَائِحِ<br>
+13. فَإِنْ تَزَاحَمْ عَدَدُ المَصَالِحِ <span class="bayt-divider">...</span> يُقَدَّمُ الأَعْلَى مِنَ المَصَالِحِ<br>
+14. وَضِدُّهُ ارْتِكَابُ أَخَفِّ الضَّرَرَيْنِ <span class="bayt-divider">...</span> لِدَفْعِ مَا هُوَ أَعْلَى المَفْسَدَتَيْنِ<br>
+15. وَمِنْ قَوَاعِدِ الشَّرِيعَةِ التَّيْسِيرُ <span class="bayt-divider">...</span> فِي كُلِّ أَمْرٍ نَابَهُ تَعْسِيرُ<br>
+16. وَلَيْسَ وَاجِبٌ بِلَا اقْتِدَارِ <span class="bayt-divider">...</span> وَلَا مُحَرَّمٌ مَعَ اضْطِرَارِ<br>
+17. وَكُلُّ مَحْظُورٍ مَعَ الضَّرُورَةِ <span class="bayt-divider">...</span> بِقَدْرِ مَا تَحْتَاجُهُ الضَّرُورَةُ<br>
+18. وَتَرْجِعُ الأَحْكَامُ لِليَقِينِ <span class="bayt-divider">...</span> فَلَا يُزِيلُ الشَّكُّ لِليَقِينِ<br>
+19. وَالأَصْلُ فِي مِيَاهِنَا الطَّهَارَةْ <span class="bayt-divider">...</span> وَالأَرْضِ وَالثِّيَابِ وَالحِجَارَةْ<br>
+20. وَالأَصْلُ فِي الفُرُوجِ وَاللُّحُومِ <span class="bayt-divider">...</span> وَالنَّفْسِ وَالأَمْوَالِ لِلمَعْصُومِ<br>
+21. تَحْرِيمُهَا حَتَّى يَجِيءَ الحِلُّ <span class="bayt-divider">...</span> فَافْهَمْ هُدَاكَ اللهُ مَا يُمَلُّ<br>
+22. وَالأَصْلُ فِي عَادَاتِنَا الإِبَاحَةْ <span class="bayt-divider">...</span> حَتَّى يَجِيءَ صَارِفُ الإِبَاحَةْ<br>
+23. وَلَيْسَ مَشْرُوعًا مِنَ الأُمُورِ <span class="bayt-divider">...</span> غَيْرُ الَّذِي فِي شَرْعِنَا المَذْكُورِ<br>
+24. وَوَسَائِلُ الأُمُورِ كَالمَقَاصِدِ <span class="bayt-divider">...</span> وَاحْكُمْ بِهَذَا الحُكْمِ لِلزَّوَائِدِ<br>
+25. وَالخَطَأُ وَالإِكْرَاهُ وَالنِّسْيَانُ <span class="bayt-divider">...</span> أَسْقَطَهُ مَعْبُودُنَا الرَّحْمَنُ<br>
+26. لَكِنْ مَعَ الإِتْلَافِ يَثْبُتُ البَدَلْ <span class="bayt-divider">...</span> وَيَسْقُطُ الإِثْمُ فَقَطْ عَلَى الأَجَلْ<br>
+27. وَمِنْ مَسَائِلِ القَوَاعِدِ الإِثْبَاتِ <span class="bayt-divider">...</span> إِعْمَالُ مَعْرُوفٍ مِنَ العَادَاتِ<br>
+28. هُوَ الَّذِي قَدْ قِيلَ فِي التَّعْلِيقِ <span class="bayt-divider">...</span> أَوْ قِيلَ فِي الإِطْلَاقِ وَالتَّحْقِيقِ<br>
+29. لَا يَتِمُّ الحُكْمُ حَتَّى تَجْتَمِعْ <span class="bayt-divider">...</span> كُلُّ الشُّرُوطِ وَالمَوَانِعُ تَرْتَفِعْ<br>
+30. وَمَنْ أَتَى بِمَا عَلَيْهِ مِنْ عَمَلْ <span class="bayt-divider">...</span> قَدِ اسْتَحَقَّ مَالَهُ عَلَى العَمَلْ<br>
+31. وَيُفْعَلُ البَعْضُ مِنَ المَأْمُورِ <span class="bayt-divider">...</span> إِنْ شَقَّ فِعْلُ سَائِرِ المَأْمُورِ<br>
+32. وَكُلُّ مَا نَشَأَ عَنِ المَأْذُونِ <span class="bayt-divider">...</span> فَذَاكَ لَيْسَ فِيهِ مِنْ مَضْمُونِ<br>
+33. وَكُلُّ حُكْمٍ دَائِرٌ مَعْ عِلَّتِهْ <span class="bayt-divider">...</span> وَهْيَ الَّتِي قَدْ أَوْجَبَتْ لِشِرْعَتِهْ<br>
+34. وَكُلُّ شَرْطٍ لَازِمٌ لِلعَاقِدِ <span class="bayt-divider">...</span> فِي البَيْعِ وَالنِّكَاحِ وَالمَقَاصِدِ<br>
+35. إِلَّا شُرُوطًا حَلَّلَتْ مُحَرَّمَا <span class="bayt-divider">...</span> أَوْ عَكْسَهُ فَبَاطِلَاتٌ فَاعْلَمَا<br>
+36. تُسْتَعْمَلُ القُرْعَةُ عِنْدَ المَبْهَمِ <span class="bayt-divider">...</span> مِنَ الحُقُوقِ أَوْ لَدَى التَّزَاحُمِ<br>
+37. وَإِنْ تَسَاوَى العَمَلَانِ اجْتَمَعَا <span class="bayt-divider">...</span> وَفِعْلُ أَحَدِهِمَا قَدِ اسْتَمَعَا<br>
+38. وَكُلُّ مَشْغُولٍ فَلَا يُشْغَلُ <span class="bayt-divider">...</span> بِمِثْلِهِ بَلْ بِالَّذِي قَدْ يَفْضُلُ<br>
+39. وَمَنْ أَصَابَ حَقَّهُ فَلْيَقْتَصِرْ <span class="bayt-divider">...</span> عَلَى الَّذِي لَهُ بِغَيْرِ مَا بَطَرْ<br>
+40. وَإِنْ تَعَذَّرَ الَّذِي قَدْ وَجَبَا <span class="bayt-divider">...</span> فَبَدَلٌ يَجْزِيهِ حَيْثُ قَرُبَا<br>
+41. وَالوَاجِبَاتُ كُلُّهَا قَدْ تَسْقُطُ <span class="bayt-divider">...</span> بِالعَجْزِ لَكِنْ مَا تَيَسَّرَ يَثْبُتُ<br>
+42. وَكُلُّ مَا أَوْجَبَهُ الرَّحْمَنُ <span class="bayt-divider">...</span> فَإِنَّهُ يَجْزِي كَيْفَ كَانُ<br>
+43. وَالحَمْدُ لِلَّهِ عَلَى التَّمَامِ <span class="bayt-divider">...</span> فِي البَدْءِ وَالخِتَامِ وَالدَّوَامِ<br>
+44. ثُمَّ الصَّلَاةُ مَعْ سَلَامٍ شَائِعِ <span class="bayt-divider">...</span> عَلَى النَّبِيِّ المُصْطَفَى وَالتَّابِعِ<br>
+45. وَآلِهِ وَصَحْبِهِ الكِرَامِ <span class="bayt-divider">...</span> مَا لَاحَ بَدْرٌ فِي دُجَى الظَّلَامِ<br>
+46. وَاغْفِرْ لِمَنْ نَظَمَهَا وَمَنْ قَرَا <span class="bayt-divider">...</span> وَمَنْ عُنِي بِحِفْظِهَا وَفَكَّرَا<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الأَوَّلُ: شَرْحُ المُقَدِّمَةِ النَّظْمِيَّةِ (الأَبْيَاتُ 1 - 10)</h1>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+1. الحَمْدُ لِلَّهِ العَلِيِّ الأَرْفَقِ <span class="bayt-divider">...</span> وَجَامِعِ الأَشْيَاءِ وَالمُفَرِّقِ<br>
+2. ذِي النِّعَمِ الوَاسِعَةِ الغَزِيرَةْ <span class="bayt-divider">...</span> وَالحِكَمِ البَاهِرَةِ الكَثِيرَةْ<br>
+3. ثُمَّ الصَّلَاةُ مَعْ سَلَامٍ دَائِمِ <span class="bayt-divider">...</span> عَلَى الرَّسُولِ القُرَشِيِّ الخَاتِمِ<br>
+4. وَآلِهِ وَصَحْبِهِ الأَبْرَارِ <span class="bayt-divider">...</span> الحَائِزِي مَرَاتِبَ الفَخَارِ<br>
+5. اعْلَمْ هُدِيتَ أَنَّ أَفْضَلَ المِنَنْ <span class="bayt-divider">...</span> عِلْمٌ يُزِيلُ الشَّكَّ عَنْكَ وَالدَّرَنْ<br>
+6. وَيَكْشِفُ الحَقَّ لِذِي القُلُوبِ <span class="bayt-divider">...</span> وَيُوصِلُ العَبْدَ إِلَى المَطْلُوبِ<br>
+7. فَاحْرِصْ عَلَى فَهْمِكَ لِلقَوَاعِدِ <span class="bayt-divider">...</span> جَامِعَةِ المَسَائِلِ الشَّوَارِدِ<br>
+8. فَتَرْتَقِي فِي العِلْمِ خَيْرَ مُرْتَقَى <span class="bayt-divider">...</span> وَتَقْتَفِي سُبْلَ الَّذِي قَدْ وُفِّقَا<br>
+9. وَهَذِهِ قَوَاعِدٌ نَظَمْتُهَا <span class="bayt-divider">...</span> مِنْ كُتُبِ أَهْلِ العِلْمِ قَدْ حَصَّلْتُهَا<br>
+10. جَزَاهُمُ اللهُ عَظِيمَ الأَجْرِ <span class="bayt-divider">...</span> وَالعَفْوَ مَعْ غُفْرَانِهِ وَالبِرِّ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّحْلِيلِيُّ لِلْمُقَدِّمَةِ:</h3>
+<ul class="content-list">
+  <li><strong>البَرَاعَةُ الِاسْتِهْلَالِيَّةُ فِي قَوْلِهِ: «وَجَامِعِ الأَشْيَاءِ وَالمُفَرِّقِ»:</strong></li>
+</ul>
+<p>اشْتَمَلَ مَطْلَعُ المَنْظُومَةِ عَلَى «بَرَاعَةِ اسْتِهْلَالٍ» بَدِيعَةٍ؛ حَيْثُ وَصَفَ اللهَ تَعَالَى بِأَنَّهُ جَامِعُ الأَشْيَاءِ وَالمُفَرِّقُ، وَهَذَا هُوَ عَيْنُ عَمَلِ الفَقِيهِ فِي عِلْمِ القَوَاعِدِ وَالفُرُوقِ؛ إِذْ يَجْمَعُ بَيْنَ النَّظَائِرِ المُتَشَابِهَةِ فِي قَاعِدَةٍ وَاحِدَةٍ، وَيُفَرِّقُ بَيْنَ المَسَائِلِ المُتَبَايِنَةِ بِالفُرُوقِ الفِقْهِيَّةِ.</p>
+<ul class="content-list">
+  <li><strong>أَسْمَاءُ اللهِ الحُسْنَى: «العَلِيِّ الأَرْفَقِ»:</strong></li>
+  <li><strong>العَلِيُّ:</strong> ذُو العُلُوِّ المُطْلَقِ؛ عُلُوِّ الذَّاتِ، وَعُلُوِّ القَدْرِ، وَعُلُوِّ القَهْرِ.</li>
+  <li><strong>الأَرْفَقُ:</strong> الرَّفِيقُ فِي قَضَائِهِ وَتَشْرِيعِهِ؛ كَمَا فِي الحَدِيثِ: «إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ فِي الأَمْرِ كُلِّهِ» <em>(البُخَارِيُّ: 6927)</em>.</li>
+  <li><strong>فَضْلُ العِلْمِ النَّافِعِ (الأَبْيَاتُ 5 - 8):</strong></li>
+</ul>
+<p>بَيَّنَ النَّاظِمُ أَنَّ أَجَلَّ نِعْمَةٍ يَمُنُّ اللهُ بِهَا عَلَى عَبْدِهِ هِيَ <strong>العِلْمُ الشَّرْعِيُّ</strong> الَّذِي يَمْتَازُ بِأَرْبَعِ خَصَائِصَ:</p>
+<ol class="content-list-ordered">
+  <li>يُزِيلُ الشُّبُهَاتِ وَالشُّكُوكَ عَنِ القَلْبِ.</li>
+  <li>يُطَهِّرُ النَّفْسَ مِنْ دَرَنِ الشَّهَوَاتِ وَالمَعَاصِي.</li>
+  <li>يَكْشِفُ حَقَائِقَ الأُمُورِ لِأُولِي البَصَائِرِ.</li>
+  <li>يُوصِلُ العَبْدَ إِلَى مَطْلُوبِهِ الأَعْلَى وَهُوَ رِضْوَانُ اللهِ وَجَنَّتُهُ.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>الحَثُّ عَلَى ضَبْطِ القَوَاعِدِ (البَيْتَانِ 7 - 8):</strong></li>
+</ul>
+<p>القَوَاعِدُ هِيَ الَّتِي تَضُمُّ المَسَائِلَ الشَّوَارِدَ المُنْتَشِرَةَ فِي أَبْوَابِ الفِقْهِ؛ فَمَنْ حَفِظَ الفُرُوعَ مُجَرَّدَةً ضَاعَتْ عَلَيْهِ، وَمَنْ ضَبَطَ القَوَاعِدَ صَارَتِ الفُرُوعُ طَوْعَ بَنَانِهِ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الثَّانِي: القَاعِدَةُ الكُبْرَى الأُولَى: «الأُمُورُ بِمَقَاصِدِهَا» وَقَوَاعِدُ المَصَالِحِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: تَأْصِيلُ قَاعِدَةِ النِّيَّةِ (البَيْتُ 11)</h2>
+<h3 class="sub-title">📜 نَصُّ البَيْتِ:</h3>
+<div class="bayt-box">
+11. النِّيَّةُ شَرْطٌ لِسَائِرِ العَمَلْ <span class="bayt-divider">...</span> بِهَا الصَّلَاحُ وَالفَسَادُ لِلعَمَلْ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِقَاعِدَةِ «الأُمُورُ بِمَقَاصِدِهَا»:</h3>
+<ul class="content-list">
+  <li><strong>التَّأْصِيلُ مِنَ الكِتَابِ وَالسُّنَّةِ:</strong></li>
+  <li>﴿وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ﴾ [البينة: 5].</li>
+  <li>حَدِيثُ أَمِيرِ المُؤْمِنِينَ عُمَرَ بْنِ الخَطَّابِ رَضِيَ اللهُ عَنْهُ:</li>
+</ul>
+<blockquote class="quote-box"><strong>«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى»</strong> <em>(البُخَارِيُّ: 1، وَمُسْلِمٌ: 1907)</em>.</blockquote>
+<ul class="content-list">
+  <li><strong>مَوْقِعُ القَاعِدَةِ فِي الفِقْهِ:</strong></li>
+</ul>
+<p>قَالَ الإِمَامُ الشَّافِعِيُّ وَالإِمَامُ أَحْمَدُ رَحِمَهُمَا اللهُ: «هَذَا الحَدِيثُ يَدْخُلُ فِي سَبْعِينَ بَابًا مِنْ أَبْوَابِ الفِقْهِ، وَهُوَ ثُلُثُ الإِسْلَامِ».</p>
+<ul class="content-list">
+  <li><strong>أَحْكَامُ النِّيَّةِ السَّبْعَةُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>حَقِيقَتُهَا:</strong> القَصْدُ المُقْتَرِنُ بِالفِعْلِ.</li>
+  <li><strong>حُكْمُهَا:</strong> الوُجُوبُ فِي كُلِّ عِبَادَةٍ.</li>
+  <li><strong>مَحَلُّهَا:</strong> القَلْبُ بِالإِجْمَاعِ، وَالتَّلَفُّظُ بِهَا بِاللِّسَانِ غَيْرُ مَشْرُوعٍ.</li>
+  <li><strong>زَمَنُهَا:</strong> عِنْدَ أَوَّلِ العِبَادَةِ (كَالمُقَارَنَةِ لِتَكْبِيرَةِ الإِحْرَامِ).</li>
+  <li><strong>كَيْفِيَّتُهَا:</strong> أَنْ يَنْوِيَ العِبَادَةَ المُعَيَّنَةَ للهِ.</li>
+  <li><strong>شَرْطُهَا:</strong> الإِسْلَامُ، وَالتَّمْيِيزُ، وَالعِلْمُ بِالمَنْوِيِّ.</li>
+  <li><strong>غَايَتُهَا:</strong> تَمْيِيزُ العِبَادَةِ عَنِ العَادَةِ، وَتَمْيِيزُ رُتَبِ العِبَادَاتِ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: قَوَاعِدُ رِعَايَةِ المَصَالِحِ وَدَرْءِ المَفَاسِدِ (الأَبْيَاتُ 12 - 14)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+12. وَالدِّينُ مَبْنِيٌّ عَلَى المَصَالِحِ <span class="bayt-divider">...</span> فِي جَلْبِهَا وَدَرْءِ لِلقَبَائِحِ<br>
+13. فَإِنْ تَزَاحَمْ عَدَدُ المَصَالِحِ <span class="bayt-divider">...</span> يُقَدَّمُ الأَعْلَى مِنَ المَصَالِحِ<br>
+14. وَضِدُّهُ ارْتِكَابُ أَخَفِّ الضَّرَرَيْنِ <span class="bayt-divider">...</span> لِدَفْعِ مَا هُوَ أَعْلَى المَفْسَدَتَيْنِ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ المَقَاصِدِيُّ لِهَذِهِ القَوَاعِدِ الكُلِّيَّةِ:</h3>
+<h4 class="sub-sub-title">1. قَاعِدَةُ «الدِّينُ مَبْنِيٌّ عَلَى المَصَالِحِ» (البَيْتُ 12):</h4>
+<ul class="content-list">
+  <li>هَذِهِ القَاعِدَةُ هِيَ <strong>أُمُّ قَوَاعِدِ الشَّرِيعَةِ وَأَعْظَمُهَا شُمُولًا</strong>؛ قَرَّرَهَا الإِمَامُ العِزُّ بْنُ عَبْدِ السَّلَامِ فِي كِتَابِهِ «قَوَاعِدُ الأَحْكَامِ فِي مَصَالِحِ الأَنَامِ».</li>
+  <li><strong>حَقِيقَتُهَا:</strong> أَنَّ الشَّارِعَ الحَكِيمَ لَمْ يَأْمُرْ بِشَيْءٍ إِلَّا وَفِيهِ مَصْلَحَةٌ خَالِصَةٌ أَوْ رَاجِحَةٌ (كَالتَّوْحِيدِ، وَالبِرِّ، وَالصَّلَاةِ، وَالعَدْلِ)، وَلَمْ يَنْهَ عَنْ شَيْءٍ إِلَّا وَفِيهِ مَفْسَدَةٌ خَالِصَةٌ أَوْ رَاجِحَةٌ (كَالشِّرْكِ، وَالظُّلْمِ، وَالرِّبَا، وَالزِّنَا).</li>
+</ul>
+<h4 class="sub-sub-title">2. قَاعِدَةُ «تَزَاحُمِ المَصَالِحِ» (البَيْتُ 13):</h4>
+<ul class="content-list">
+  <li>إِذَا اجْتَمَعَتْ مَصْلَحَتَانِ لَا يُمْكِنُ تَحْصِيلُهُمَا مَعًا؛ <strong>قُدِّمَتِ المَصْلَحَةُ العُلْيَا</strong> وَأُلْغِيَتِ المَصْلَحَةُ الدُّنْيَا.</li>
+  <li><strong>أَمْثِلَةٌ:</strong></li>
+  <li>تَقْدِيمُ الفَرِيضَةِ عَلَى النَّافِلَةِ عِنْدَ ضِيقِ الوَقْتِ.</li>
+  <li>تَقْدِيمُ إِجَابَةِ الوَالِدَيْنِ عَلَى صَلَاةِ النَّافِلَةِ (كَمَا فِي قِصَّةِ جُرَيْجٍ الرَّاهِبِ).</li>
+  <li>تَقْدِيمُ حِفْظِ الدِّينِ وَالنَّفْسِ عَلَى حِفْظِ المَالِ.</li>
+</ul>
+<h4 class="sub-sub-title">3. قَاعِدَةُ «ارْتِكَابِ أَخَفِّ الضَّرَرَيْنِ» (البَيْتُ 14):</h4>
+<ul class="content-list">
+  <li>إِذَا تَعَارَضَتْ مَفْسَدَتَانِ لَا مَحِيدَ عَنْ إِحْدَاهُمَا؛ <strong>ارْتُكِبَتِ المَفْسَدَةُ الصُّغْرَى لِدَفْعِ المَفْسَدَةِ الكُبْرَى</strong>.</li>
+  <li><strong>أَمْثِلَةٌ:</strong></li>
+  <li>سُكُوتُ النَّبِيِّ ﷺ عَنِ الأَعْرَابِيِّ الَّذِي بَالَ فِي المَسْجِدِ حَتَّى قَضَى بَوْلَهُ دَفْعًا لِمَفْسَدَةِ تَنَفُّرِهِ وَانْتِشَارِ النَّجَاسَةِ.</li>
+  <li>تَرْكُ بِنَاءِ الكَعْبَةِ عَلَى قَوَاعِدِ إِبْرَاهِيمَ خَوْفًا مِنْ فِتْنَةِ قُرَيْشٍ لِحَدَاثَةِ عَهْدِهِمْ بِالكُفْرِ.</li>
+  <li>قَطْعُ العُضْوِ المُتَآكِلِ حِفْظًا لِبَقِيَّةِ الجَسَدِ مِنَ التَّلَفِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الثَّالِثُ: القَاعِدَةُ الكُبْرَى الثَّانِيَةُ: «اليَقِينُ لَا يَزُولُ بِالشَّكِّ»</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: التَّأْصِيلُ الشَّرْعِيُّ لِقَاعِدَةِ اليَقِينِ (البَيْتُ 18)</h2>
+<h3 class="sub-title">📜 نَصُّ البَيْتِ:</h3>
+<div class="bayt-box">
+18. وَتَرْجِعُ الأَحْكَامُ لِليَقِينِ <span class="bayt-divider">...</span> فَلَا يُزِيلُ الشَّكُّ لِليَقِينِ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِقَاعِدَةِ اليَقِينِ:</h3>
+<ul class="content-list">
+  <li><strong>مَكَانَتُهَا:</strong> قَاعِدَةٌ عَظِيمَةٌ تَدْخُلُ فِي جَمِيعِ أَبْوَابِ الفِقْهِ، وَبِهَا تَنْقَطِعُ الوَسَاوِسُ وَالأَوْهَامُ الشَّيْطَانِيَّةُ.</li>
+  <li><strong>الأَدِلَّةُ الصَّحِيحَةُ:</strong></li>
+  <li>حَدِيثُ عَبَّادِ بْنِ تَمِيمٍ عَنْ عَمِّهِ فِي الرَّجُلِ يَشُكُّ فِي الحَدَثِ فِي الصَّلَاةِ: <strong>«لَا يَنْصَرِفْ حَتَّى يَسْمَعَ صَوْتًا أَوْ يَجِدَ رِيحًا»</strong> <em>(البُخَارِيُّ: 137)</em>.</li>
+  <li>حَدِيثُ أَبِي سَعِيدٍ الخُدْرِيِّ فِي الشَّكِّ فِي الصَّلَاةِ: <strong>«فَلْيَطْرَحِ الشَّكَّ وَلْيَبْنِ عَلَى مَا اسْتَيْقَنَ»</strong> <em>(مُسْلِمٌ: 571)</em>.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: القَوَاعِدُ المُتَفَرِّعَةُ عَنِ الاسْتِصْحَابِ (الأَبْيَاتُ 19 - 22)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+19. وَالأَصْلُ فِي مِيَاهِنَا الطَّهَارَةْ <span class="bayt-divider">...</span> وَالأَرْضِ وَالثِّيَابِ وَالحِجَارَةْ<br>
+20. وَالأَصْلُ فِي الفُرُوجِ وَاللُّحُومِ <span class="bayt-divider">...</span> وَالنَّفْسِ وَالأَمْوَالِ لِلمَعْصُومِ<br>
+21. تَحْرِيمُهَا حَتَّى يَجِيءَ الحِلُّ <span class="bayt-divider">...</span> فَافْهَمْ هُدَاكَ اللهُ مَا يُمَلُّ<br>
+22. وَالأَصْلُ فِي عَادَاتِنَا الإِبَاحَةْ <span class="bayt-divider">...</span> حَتَّى يَجِيءَ صَارِفُ الإِبَاحَةْ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّفْصِيلِيُّ لِقَوَاعِدِ «الأَصْلِ فِي الأَشْيَاءِ»:</h3>
+<h4 class="sub-sub-title">1. «الأَصْلُ فِي المِيَاهِ وَالأَرْضِ وَالثِّيَابِ الطَّهَارَةُ» (البَيْتُ 19):</h4>
+<ul class="content-list">
+  <li>دَلِيلُهُ: ﴿وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا﴾ [الفرقان: 48].</li>
+  <li><strong>الفَرْعُ الفِقْهِيُّ:</strong> إِذَا شَكَّ المُتَوَضِّئُ فِي مَاءٍ هَلْ أَصَابَتْهُ نَجَاسَةٌ أَمْ لَا؛ فَالوَاجِبُ الحُكْمُ بِطَهَارَتِهِ اسْتِصْحَابًا لِلْأَصْلِ، وَكَذَلِكَ الثِّيَابُ وَالبُقْعَةُ.</li>
+</ul>
+<h4 class="sub-sub-title">2. «الأَصْلُ فِي الفُرُوجِ وَاللُّحُومِ وَالنُّفُوسِ وَالأَمْوَالِ التَّحْرِيمُ» (الأَبْيَاتُ 20 - 21):</h4>
+<ul class="content-list">
+  <li>هَذِهِ المَسَائِلُ الأَرْبَعُ احْتَاطَتْ لَهَا الشَّرِيعَةُ إِحْيَاطًا شَدِيدًا:</li>
+  <li><strong>الفُرُوجُ:</strong> الأَصْلُ فِيهَا التَّحْرِيمُ، فَلَا يَحِلُّ فَرْجٌ إِلَّا بِيَقِينِ نِكَاحٍ صَحِيحٍ؛ فَلَوْ شَكَّ هَلْ هَذِهِ المَرْأَةُ أُخْتُهُ مِنَ الرَّضَاعِ أَمْ لَا، حُرِمَ النِّكَاحُ احْتِيَاطًا.</li>
+  <li><strong>اللُّحُومُ:</strong> الأَصْلُ فِي الحَيَوَانَاتِ التَّحْرِيمُ حَتَّى تَتَحَقَّقَ التَّذْكِيَةُ الشَّرْعِيَّةُ؛ لِحَدِيثِ عَدِيِّ بْنِ حَاتِمٍ: «وَإِنْ خَالَطَهَا كِلَابٌ مِنْ غَيْرِهَا فَلَا تَأْكُلْ، فَإِنَّمَا سَمَّيْتَ عَلَى كَلْبِكَ وَلَمْ تُسَمِّ عَلَى غَيْرِهِ» <em>(البُخَارِيُّ: 175)</em>.</li>
+  <li><strong>النُّفُوسُ وَالأَمْوَالُ:</strong> دَمُ المُسْلِمِ وَمَالُهُ حَرَامٌ بِيَقِينٍ: «إِنَّ دِمَاءَكُمْ وَأَمْوَالَكُمْ وَأَعْرَاضَكُمْ عَلَيْكُمْ حَرَامٌ» <em>(مُسْلِمٌ: 1218)</em>.</li>
+</ul>
+<h4 class="sub-sub-title">3. «الأَصْلُ فِي العَادَاتِ وَالمُعَامَلَاتِ الإِبَاحَةُ» (البَيْتُ 22):</h4>
+<ul class="content-list">
+  <li>قَاعِدَةٌ نَفِيسَةٌ جِدًّا تُبَيِّنُ سَمَاحَةَ الإِسْلَامِ:</li>
+  <li><strong>الأَصْلُ فِي العِبَادَاتِ:</strong> المَنْعُ وَالتَّوْقِيفُ حَتَّى يَأْتِيَ دَلِيلٌ بِالمَشْرُوعِيَّةِ.</li>
+  <li><strong>الأَصْلُ فِي العَادَاتِ وَالمُعَامَلَاتِ الدُّنْيَوِيَّةِ:</strong> الحِلُّ وَالإِبَاحَةُ حَتَّى يَأْتِيَ دَلِيلٌ بِالتَّحْرِيمِ؛ لِقَوْلِهِ تَعَالَى: ﴿هُوَ الَّذِي خَلَقَ لَكُمْ مَا فِي الْأَرْضِ جَمِيعًا﴾ [البقرة: 29].</li>
+  <li><strong>تَطْبِيقٌ مُعَاصِرٌ:</strong> جَمِيعُ العُقُودِ المَالِيَّةِ المُسْتَحْدَثَةِ، وَالمَأْكُولَاتِ، وَالمَلْبُوسَاتِ حَلَالٌ إِلَّا مَا اشْتَمَلَ عَلَى رِبًا، أَوْ غَرَرٍ، أَوْ ظُلْمٍ، أَوْ نَجَاسَةٍ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 2: القَوَاعِدُ الكُبْرَى الأُولَى وَالثَّانِيَةُ وَفُرُوعُهُمَا الفِقْهِيَّةُ المُقَارَنَةُ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>القَاعِدَةُ الفِقْهِيَّةُ</th>
+      <th>مَنْطُوقُهَا وَمَبْنَاهَا</th>
+      <th>الأَصْلُ الشَّرْعِيُّ فِيهَا</th>
+      <th>أَبْرَزُ الفُرُوعِ وَالتَّطْبِيقَاتِ</th>
+      <th>مَوْقِعُ المَذَاهِبِ الأَرْبَعَةِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>الأُمُورُ بِمَقَاصِدِهَا</strong></td>
+      <td>اعْتِبَارُ النِّيَّاتِ فِي صِحَّةِ الأَعْمَالِ</td>
+      <td>«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ»</td>
+      <td>تَمْيِيزُ العِبَادَةِ عَنِ العَادَةِ، وَالرُّتَبِ (فَرْض/نَفْل)</td>
+      <td>مُتَّفَقٌ عَلَيْهَا عِنْدَ جَمِيعِ الأَئِمَّةِ</td>
+    </tr>
+    <tr>
+      <td><strong>العِبْرَةُ فِي العُقُودِ</strong></td>
+      <td>التَّعْوِيلُ عَلَى المَعَانِي لَا الأَلْفَاظِ</td>
+      <td>«لِكُلِّ امْرِئٍ مَا نَوَى»</td>
+      <td>هِبَةُ الثَّوَابِ بَيْعٌ، عُقُودُ التَّأْمِينِ، الإِجَارَةُ المُنْتَهِيَةُ بِالتَّمْلِيكِ</td>
+      <td>مَذْهَبُ مَالِكٍ وَأَحْمَدَ رَحِمَهُمَا اللهُ</td>
+    </tr>
+    <tr>
+      <td><strong>اليَقِينُ لَا يَزُولُ بِالشَّكِّ</strong></td>
+      <td>بَقَاءُ مَا كَانَ عَلَى مَا كَانَ</td>
+      <td>«لَا يَنْصَرِفْ حَتَّى يَسْمَعَ صَوْتًا»</td>
+      <td>مَنْ تَيَقَّنَ الطَّهَارَةَ وَشَكَّ فِي الحَدَثِ فَهُوَ طَاهِرٌ</td>
+      <td>إِجْمَاعُ الفُقَهَاءِ دُونَ خِلَافٍ</td>
+    </tr>
+    <tr>
+      <td><strong>الأَصْلُ فِي المِيَاهِ الطَّهَارَةُ</strong></td>
+      <td>اسْتِصْحَابُ طَهَارَةِ الأَعْيَانِ</td>
+      <td>﴿وَأَنْزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُورًا﴾</td>
+      <td>المَاءُ المَشْكُوكُ فِيهِ طَاهِرٌ حَتَّى يَتَبَيَّنَ تَغَيُّرُهُ</td>
+      <td>قَوْلُ جَمَاهِيرِ الفُقَهَاءِ</td>
+    </tr>
+    <tr>
+      <td><strong>الأَصْلُ فِي الفُرُوجِ التَّحْرِيمُ</strong></td>
+      <td>الِاحْتِيَاطُ لِلأَعْرَاضِ وَالنَّسَبِ</td>
+      <td>حُرْمَةُ الأَبْضَاعِ الشَّدِيدَةُ</td>
+      <td>الشَّكُّ فِي الرَّضَاعِ المُحَرِّمِ يَمْنَعُ عَقْدَ النِّكَاحِ</td>
+      <td>اتِّفَاقُ المَذَاهِبِ الأَرْبَعَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>الأَصْلُ فِي العَادَاتِ الإِبَاحَةُ</strong></td>
+      <td>التَّوْسِعَةُ فِي شُؤُونِ المَعَايِشِ</td>
+      <td>﴿خَلَقَ لَكُمْ مَا فِي الْأَرْضِ جَمِيعًا﴾</td>
+      <td>حِلُّ الأَطْعِمَةِ وَالمُعَامَلَاتِ مَا لَمْ يَرِدْ دَلِيلُ التَّحْرِيمِ</td>
+      <td>مَذْهَبُ المُحَقِّقِينَ كَابْنِ تَيْمِيَّةَ وَالسَّعْدِيِّ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الرَّابِعُ: القَاعِدَةُ الكُبْرَى الثَّالِثَةُ: «المَشَقَّةُ تَجْلِبُ التَّيْسِيرَ»</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: التَّأْصِيلُ الشَّرْعِيُّ لِلتَّيْسِيرِ (البَيْتُ 15)</h2>
+<h3 class="sub-title">📜 نَصُّ البَيْتِ:</h3>
+<div class="bayt-box">
+15. وَمِنْ قَوَاعِدِ الشَّرِيعَةِ التَّيْسِيرُ <span class="bayt-divider">...</span> فِي كُلِّ أَمْرٍ نَابَهُ تَعْسِيرُ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِقَاعِدَةِ التَّيْسِيرِ:</h3>
+<ul class="content-list">
+  <li><strong>التَّأْصِيلُ مِنَ الكِتَابِ وَالسُّنَّةِ:</strong></li>
+  <li>﴿يُرِيدُ اللَّهُ بِكُمُ الْيُسْرَ وَلَا يُرِيدُ بِكُمُ الْعُسْرَ﴾ [البقرة: 185].</li>
+  <li>﴿وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ﴾ [الحج: 78].</li>
+  <li>قَوْلُهُ ﷺ: <strong>«إِنَّ الدِّينَ يُسْرٌ، وَلَنْ يُشَادَّ الدِّينَ أَحَدٌ إِلَّا غَلَبَهُ»</strong> <em>(البُخَارِيُّ: 39)</em>.</li>
+  <li><strong>ضَابِطُ المَشَقَّةِ المُعْتَبَرَةِ شَرْعًا:</strong></li>
+  <li><strong>المَشَقَّةُ العَادِيَّةُ المَقْدُورُ عَلَيْهَا:</strong> كَمَشَقَّةِ القِيَامِ فِي الصَّلَاةِ، وَالجُوعِ فِي الصَّوْمِ، وَالسَّفَرِ لِلْحَجِّ؛ فَهَذِهِ <strong>لَا تُسْقِطُ العِبَادَةَ</strong>؛ لِأَنَّ التَّكْلِيفَ مُلَازِمٌ لَهَا.</li>
+  <li><strong>المَشَقَّةُ الخَارِجَةُ عَنِ المُعْتَادِ:</strong> الَّتِي تُفْضِي إِلَى تَلَفِ النَّفْسِ، أَوْ ذَهَابِ المَالِ، أَوْ حُصُولِ مَرَضٍ شَدِيدٍ؛ فَهَذِهِ هِيَ الَّتِي شُرِعَتِ الرُّخَصُ لِتَخْفِيفِهَا: <strong>«إِذَا ضَاقَ الأَمْرُ اتَّسَعَ»</strong>.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: ضَوَابِطُ العَجْزِ وَالاضْطِرَارِ (البَيْتَانِ 16 - 17)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+16. وَلَيْسَ وَاجِبٌ بِلَا اقْتِدَارِ <span class="bayt-divider">...</span> وَلَا مُحَرَّمٌ مَعَ اضْطِرَارِ<br>
+17. وَكُلُّ مَحْظُورٍ مَعَ الضَّرُورَةِ <span class="bayt-divider">...</span> بِقَدْرِ مَا تَحْتَاجُهُ الضَّرُورَةُ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ الفِقْهِيُّ لِضَوَابِطِ الاضْطِرَارِ:</h3>
+<h4 class="sub-sub-title">1. «لَا وَاجِبَ مَعَ العَجْزِ» (البَيْتُ 16):</h4>
+<ul class="content-list">
+  <li>دَلِيلُهُ: ﴿فَاتَّقُوا اللَّهَ مَا اسْتَطَعْتُمْ﴾ [التغابن: 16]، وَقَوْلُهُ ﷺ: «إِذَا أَمَرْتُكُمْ بِأَمْرٍ فَأْتُوا مِنْهُ مَا اسْتَطَعْتُمْ» <em>(البُخَارِيُّ: 7288)</em>.</li>
+  <li>فَمَنْ عَجَزَ عَنِ القِيَامِ فِي الفَرِيضَةِ صَلَّى قَاعِدًا، وَمَنْ عَجَزَ عَنِ اسْتِعْمَالِ المَاءِ تَيَمَّمَ، وَمَنْ عَجَزَ عَنِ الحَجِّ سَقَطَ عَنْهُ الوُجُوبُ حَتَّى يَسْتَطِيعَ.</li>
+</ul>
+<h4 class="sub-sub-title">2. «لَا مُحَرَّمَ مَعَ الاضْطِرَارِ» (البَيْتُ 16):</h4>
+<ul class="content-list">
+  <li>دَلِيلُهُ: ﴿وَقَدْ فَصَّلَ لَكُمْ مَا حَرَّمَ عَلَيْكُمْ إِلَّا مَا اضْطُرِرْتُمْ إِلَيْهِ﴾ [الأنعام: 119].</li>
+  <li>يُبَاحُ لِلْمُضْطَرِّ الَّذِي يُشْرِفُ عَلَى الهَلَاكِ أَنْ يَأْكُلَ مِنَ المَيْتَةِ أَوْ لَحْمِ الخِنْزِيرِ مَا يَدْفَعُ عَنْهُ المَوْتَ.</li>
+</ul>
+<h4 class="sub-sub-title">3. «الضَّرُورَةُ تُقَدَّرُ بِقَدَرِهَا» (البَيْتُ 17):</h4>
+<ul class="content-list">
+  <li>هَذَا هُوَ <strong>المِيزَانُ الشَّرْعِيُّ الضَّابِطُ</strong>؛ فَالِاضْطِرَارُ لَا يَعْنِي فَتْحَ البَابِ عَلَى مِصْرَاعَيْهِ فِي ارْتِكَابِ الحَرَامِ؛ بَلْ:</li>
+  <li>يَأْكُلُ مِنَ المَيْتَةِ قَدْرَ مَا يَسُدُّ رَمَقَهُ فَقَطْ وَلَا يَشْبَعُ.</li>
+  <li>وَيَنْظُرُ الطَّبِيبُ إِلَى عَوْرَةِ المَرِيضِ بِقَدْرِ مَوْضِعِ العِلَاجِ فَقَطْ دُونَ زِيَادَةٍ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 3: أَسْبَابُ التَّخْفِيفِ الشَّرْعِيَّةُ السَّبْعَةُ وَرُخَصُ الشَّرِيعَةِ عَلَى المَذَاهِبِ الأَرْبَعَةِ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>سَبَبُ التَّخْفِيفِ</th>
+      <th>حَقِيقَتُهُ فِي الفِقْهِ</th>
+      <th>نَوْعُ التَّخْفِيفِ الشَّرْعِيِّ</th>
+      <th>أَمْثِلَتُهُ التَّطْبِيقِيَّةُ</th>
+      <th>مَوْقِعُ المَذَاهِبِ الأَرْبَعَةِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. السَّفَرُ</strong></td>
+      <td>مُجَاوَزَةُ مَسَافَةِ القَصْرِ (نَحْو 80 كم)</td>
+      <td><strong>إِسْقَاطٌ وَتَنْقِيصٌ وَتَأْخِيرٌ</strong></td>
+      <td>قَصْرُ الرُّبَاعِيَّةِ، الفِطْرُ، المَسْحُ 3 أَيَّامٍ، الجَمْعُ</td>
+      <td>اتِّفَاقٌ عَلَى أَصْلِ الرُّخَصِ وَخِلَافٌ فِي الجَمْعِ</td>
+    </tr>
+    <tr>
+      <td><strong>2. المَرَضُ</strong></td>
+      <td>عِلَّةٌ بَدَنِيَّةٌ يَشُقُّ مَعَهَا العَمَلُ</td>
+      <td><strong>إِبْدَالٌ وَتَخْفِيفٌ</strong></td>
+      <td>التَّيَمُّمُ، الصَّلَاةُ قُعُودًا، الفِطْرُ وَالقَضَاءُ</td>
+      <td>إِجْمَاعُ الفُقَهَاءِ عَلَى مَشْرُوعِيَّةِ الرُّخَصِ</td>
+    </tr>
+    <tr>
+      <td><strong>3. الإِكْرَاهُ</strong></td>
+      <td>الإِلْجَاءُ بِالتَّهْدِيدِ بِالقَتْلِ أَوِ التَّعْذِيبِ</td>
+      <td><strong>إِسْقَاطُ الإِثْمِ وَالعُقُوبَةِ</strong></td>
+      <td>النُّطْقُ بِكَلِمَةِ الكُفْرِ مَعَ طُمَأْنِينَةِ القَلْبِ</td>
+      <td>عُذْرٌ مُجْمَعٌ عَلَيْهِ بِقَوْلِهِ: ﴿إِلَّا مَنْ أُكْرِهَ﴾</td>
+    </tr>
+    <tr>
+      <td><strong>4. النِّسْيَانُ</strong></td>
+      <td>غَيْبُوبَةُ الشَّيْءِ عَنِ الحِفْظِ</td>
+      <td><strong>عَفْوٌ عَنِ الإِثْمِ</strong></td>
+      <td>الأَكْلُ وَالشُّرْبُ فِي نَهَارِ رَمَضَانَ نَاسِيًا</td>
+      <td>«عُفِيَ لِأُمَّتِي عَنِ الخَطَأِ وَالنِّسْيَانِ»</td>
+    </tr>
+    <tr>
+      <td><strong>5. الجَهْلُ</strong></td>
+      <td>عَدَمُ مَعْرِفَةِ الحُكْمِ الشَّرْعِيِّ</td>
+      <td><strong>إِسْقَاطُ العُقُوبَةِ وَالإِثْمِ</strong></td>
+      <td>مَنْ أَكَلَ بَعْدَ طُلُوعِ الفَجْرِ يَظُنُّ اللَّيْلَ بَاقِيًا</td>
+      <td>يُعْذَرُ فِيمَا يَخْفَى عَلَى العَامَّةِ</td>
+    </tr>
+    <tr>
+      <td><strong>6. عُمُومُ البَلْوَى</strong></td>
+      <td>انْتِشَارُ المَشَقَّةِ بِحَيْثُ يَتَعَذَّرُ الِاحْتِرَازُ</td>
+      <td><strong>تَسَامُحٌ وَتَيْسِيرٌ</strong></td>
+      <td>طِينُ الشَّوَارِعِ، أَثَرُ دَمِ البَرَاغِيثِ اليَسِيرِ</td>
+      <td>اتِّفَاقٌ عَلَى العَفْوِ عَنِ النَّجَاسَاتِ اليَسِيرَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>7. النَّقْصُ</strong></td>
+      <td>عَدَمُ كَمَالِ الأَهْلِيَّةِ الخِلْقِيَّةِ</td>
+      <td><strong>إِسْقَاطُ التَّكْلِيفِ مُطْلَقًا</strong></td>
+      <td>عَدَمُ تَكْلِيفِ الصَّبِيِّ وَالمَجْنُونِ، إِسْقَاطُ الجُمُعَةِ عَنِ المَرْأَةِ</td>
+      <td>جَرْيُ القَلَمِ مَرْفُوعٌ بِحَدِيثِ: «رُفِعَ القَلَمُ عَنْ ثَلَاثَةٍ»</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الخَامِسُ: القَاعِدَتَانِ الكُبْرَيَانِ الرَّابِعَةُ وَالخَامِسَةُ وَأُصُولُ التَّشْرِيعِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: قَاعِدَةُ «لَا ضَرَرَ وَلَا ضِرَارَ» وَدَرْءُ المَفَاسِدِ</h2>
+<ul class="content-list">
+  <li><strong>التَّأْصِيلُ النَّبَوِيُّ:</strong></li>
+</ul>
+<p>حَدِيثُ أَبِي سَعِيدٍ الخُدْرِيِّ وَابْنِ عَبَّاسٍ: <strong>«لَا ضَرَرَ وَلَا ضِرَارَ»</strong> <em>(أَحْمَدُ، وَابْنُ مَاجَهْ: 2340)</em>.</p>
+<ul class="content-list">
+  <li><strong>القَوَاعِدُ الفِقْهِيَّةُ المُتَفَرِّعَةُ عَنْ رَفْعِ الضَّرَرِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>«الضَّرَرُ يُزَالُ»:</strong> يَجِبُ شَرْعًا رَفْعُ كُلِّ أَذًى عَنِ النَّاسِ (كَمَنْعِ الجَارِ مِنْ فَتْحِ نَافِذَةٍ تَكْشِفُ عَوْرَةَ جَارِهِ).</li>
+  <li><strong>«الضَّرَرُ لَا يُزَالُ بِمِثْلِهِ»:</strong> لَا يَجُوزُ لِمَنْ أُكْرِهَ عَلَى قَتْلِ إِنْسَانٍ أَنْ يَقْتُلَهُ لِيُنْقِذَ نَفْسَهُ؛ لِأَنَّ دَمَهُ لَيْسَ أَوْلَى مِنْ دَمِ غَيْرِهِ.</li>
+  <li><strong>«يُتَحَمَّلُ الضَّرَرُ الخَاصُّ لِدَفْعِ الضَّرَرِ العَامِّ»:</strong> مِثْلُ التَّسْعِيرِ عِنْدَ احْتِكَارِ التُّجَّارِ لِلْأَقْوَاتِ، وَهَدْمِ الجِدَارِ المَائِلِ عَلَى طَرِيقِ النَّاسِ.</li>
+  <li><strong>«دَرْءُ المَفَاسِدِ مُقَدَّمٌ عَلَى جَلْبِ المَصَالِحِ»:</strong> إِذَا تَعَارَضَ جَلْبُ مَنْفَعَةٍ مَعَ وُقُوعِ مَفْسَدَةٍ مُسَاوِيَةٍ؛ دُفِعَتِ المَفْسَدَةُ أَوَّلًا.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: القَاعِدَةُ الكُبْرَى الخَامِسَةُ: «العَادَةُ مُحَكَّمَةٌ» (البَيْتُ 27)</h2>
+<h3 class="sub-title">📜 نَصُّ البَيْتِ:</h3>
+<div class="bayt-box">
+27. وَمِنْ مَسَائِلِ القَوَاعِدِ الإِثْبَاتِ <span class="bayt-divider">...</span> إِعْمَالُ مَعْرُوفٍ مِنَ العَادَاتِ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِحُجِّيَّةِ العُرْفِ:</h3>
+<ul class="content-list">
+  <li><strong>مَعْنَى «العَادَةُ مُحَكَّمَةٌ»:</strong></li>
+</ul>
+<p>أَنَّ العُرْفَ العَامَّ المُسْتَقِرَّ بَيْنَ النَّاسِ يُرْجَعُ إِلَيْهِ فِي تَحْدِيدِ الحُقُوقِ وَالمُعَامَلَاتِ الَّتِي لَمْ يُحَدِّدْهَا الشَّرْعُ بِحَدٍّ لَفْظِيٍّ وَلَا مِقْدَارٍ مَعْلُومٍ.</p>
+<ul class="content-list">
+  <li><strong>الأَدِلَّةُ الشَّرْعِيَّةُ:</strong></li>
+  <li>﴿خُذِ الْعَفْوَ وَأْمُرْ بِالْعُرْفِ وَأَعْرِضْ عَنِ الْجَاهِلِينَ﴾ [الأعراف: 199].</li>
+  <li>قَوْلُهُ ﷺ لِهِنْدٍ: <strong>«خُذِي مَا يَكْفِيكِ وَوَلَدَكِ بِالمَعْرُوفِ»</strong> <em>(البُخَارِيُّ: 5364)</em>؛ فَرَدَّ مِقْدَارَ النَّفَقَةِ إِلَى عُرْفِ الزَّمَانِ وَالمَكَانِ.</li>
+  <li><strong>شُرُوطُ اعْتِبَارِ العُرْفِ الأَرْبَعَةُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li>أَنْ يَكُونَ مُطَّرِدًا أَوْ غَالِبًا.</li>
+  <li><strong>أَلَّا يُصَادِمَ نَصًّا شَرْعِيًّا:</strong> فَإِذَا تَعَارَفَ أَهْلُ بَلَدٍ عَلَى شُرْبِ الخَمْرِ فِي الأَفْرَاحِ، أَوْ أَكْلِ الرِّبَا فِي البُنُوكِ، أَوْ تَبَرُّجِ النِّسَاءِ؛ فَهُوَ <strong>عُرْفٌ فَاسِدٌ بَاطِلٌ لَا عِبْرَةَ بِهِ إِجْمَاعًا</strong>.</li>
+  <li>أَنْ يَكُونَ مَوْجُودًا عِنْدَ إِنْشَاءِ العَقْدِ.</li>
+  <li>أَلَّا يُصَرِّحَ المُتَعَاقِدَانِ بِخِلَافِهِ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 4: ضَوَابِطُ اعْتِبَارِ العُرْفِ وَالفُرُوقُ بَيْنَ العُرْفِ الصَّحِيحِ وَالفَاسِدِ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>نَوْعُ العُرْفِ</th>
+      <th>ضَابِطُهُ فِي الشَّرِيعَةِ</th>
+      <th>الحُكْمُ الشَّرْعِيُّ فِيهِ</th>
+      <th>أَمْثِلَتُهُ الفِقْهِيَّةُ</th>
+      <th>الأَثَرُ القَضَائِيُّ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>العُرْفُ الصَّحِيحُ</strong></td>
+      <td>مَا تَعَارَفَهُ النَّاسُ مِمَّا لَا يُخَالِفُ القُرْآنَ أَوِ السُّنَّةَ</td>
+      <td><strong>مُعْتَبَرٌ شَرْعًا وَحُجَّةٌ قَضَائِيَّةٌ</strong></td>
+      <td>تَحْدِيدُ مَهْرِ المِثْلِ، نَفَقَةِ الزَّوْجَةِ، أُجْرَةِ المَسَاكِنِ</td>
+      <td>«المَعْرُوفُ عُرْفًا كَالْمَشْرُوطِ شَرْطًا»</td>
+    </tr>
+    <tr>
+      <td><strong>العُرْفُ الفَاسِدُ</strong></td>
+      <td>مَا تَعَارَفَهُ النَّاسُ مِمَّا يُحِلُّ حَرَامًا أَوْ يُحَرِّمُ حَلَالًا</td>
+      <td><strong>بَاطِلٌ سَاقِطُ الاعْتِبَارِ إِجْمَاعًا</strong></td>
+      <td>التَّعَامُلُ بِفَوَائِدِ الرِّبَا، حِرْمَانُ الإِنَاثِ مِنَ المِيرَاثِ</td>
+      <td>لَا يُقْضَى بِهِ وَلَا يُعْتَدُّ بِهِ فِي المَحَاكِمِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّالِثُ: أُصُولُ التَّشْرِيعِ، الوَسَائِلُ، وَعَوَارِضُ التَّكْلِيفِ (الأَبْيَاتُ 23 - 26)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+23. وَلَيْسَ مَشْرُوعًا مِنَ الأُمُورِ <span class="bayt-divider">...</span> غَيْرُ الَّذِي فِي شَرْعِنَا المَذْكُورِ<br>
+24. وَوَسَائِلُ الأُمُورِ كَالمَقَاصِدِ <span class="bayt-divider">...</span> وَاحْكُمْ بِهَذَا الحُكْمِ لِلزَّوَائِدِ<br>
+25. وَالخَطَأُ وَالإِكْرَاهُ وَالنِّسْيَانُ <span class="bayt-divider">...</span> أَسْقَطَهُ مَعْبُودُنَا الرَّحْمَنُ<br>
+26. لَكِنْ مَعَ الإِتْلَافِ يَثْبُتُ البَدَلْ <span class="bayt-divider">...</span> وَيَسْقُطُ الإِثْمُ فَقَطْ عَلَى الأَجَلْ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِهَذِهِ القَوَاعِدِ:</h3>
+<h4 class="sub-sub-title">1. «بُطْلَانُ الِابْتِدَاعِ فِي الدِّينِ» (البَيْتُ 23):</h4>
+<ul class="content-list">
+  <li>قَاعِدَةٌ عَظِيمَةٌ تَرُدُّ كُلَّ بِدْعَةٍ أُحْدِثَتْ فِي الدِّينِ؛ لِحَدِيثِ عَائِشَةَ رَضِيَ اللهُ عَنْهَا: <strong>«مَنْ أَحْدَثَ فِي أَمْرِنَا هَذَا مَا لَيْسَ مِنْهُ فَهُوَ رَدٌّ»</strong> <em>(البُخَارِيُّ: 2697)</em>؛ فَالْعِبَادَاتُ مَبْنَاهَا عَلَى الِاتِّبَاعِ وَالتَّوْقِيفِ.</li>
+</ul>
+<h4 class="sub-sub-title">2. «الوَسَائِلُ لَهَا أَحْكَامُ المَقَاصِدِ» (البَيْتُ 24):</h4>
+<ul class="content-list">
+  <li><strong>وَسِيلَةُ الوَاجِبِ وَاجِبَةٌ:</strong> مِثْلُ المَشْيِ إِلَى المَسْجِدِ لِصَلَاةِ الجُمُعَةِ، وَشِرَاءِ المَاءِ لِلْوُضُوءِ.</li>
+  <li><strong>وَسِيلَةُ الحَرَامِ مُحَرَّمَةٌ (سَدُّ الذَّرَائِعِ):</strong> مِثْلُ بَيْعِ العِنَبِ لِمَنْ يُعْلَمُ أَنَّهُ يَعْصِرُهُ خَمْرًا، أَوْ بَيْعِ السِّلَاحِ فِي الفِتْنَةِ.</li>
+</ul>
+<h4 class="sub-sub-title">3. عَوَارِضُ الأَهْلِيَّةِ وَضَمَانُ المُتْلَفَاتِ (البَيْتَانِ 25 - 26):</h4>
+<ul class="content-list">
+  <li>حَدِيثُ ابْنِ عَبَّاسٍ: <strong>«إِنَّ اللَّهَ تَجَاوَزَ عَنْ أُمَّتِي الخَطَأَ وَالنِّسْيَانَ وَمَا اسْتُكْرِهُوا عَلَيْهِ»</strong> <em>(ابْنُ مَاجَهْ: 2045)</em>.</li>
+  <li><strong>تَحْرِيرُ الفَرْقِ الدَّقِيقِ:</strong></li>
+  <li><strong>حَقُّ اللهِ تَعَالَى:</strong> يَسْقُطُ الإِثْمُ فِيهِ مُطْلَقًا عَنِ النَّاسِي وَالمُخْطِئِ وَالمُكْرَهِ.</li>
+  <li><strong>حُقُوقُ الآدَمِيِّينَ وَالأَمْوَالُ:</strong> لَا تَسْقُطُ بِالنِّسْيَانِ وَالخَطَأِ؛ فَلَوْ أَتْلَفَ شَخْصٌ مَالَ غَيْرِهِ خَطَأً، سَقَطَ عَنْهُ الإِثْمُ أُخْرَوِيًّا، <strong>وَلَكِنْ يَجِبُ عَلَيْهِ ضَمَانُ البَدَلِ مَالِيًّا فِي الدُّنْيَا</strong>؛ لِأَنَّ حُقُوقَ العِبَادِ مَبْنِيَّةٌ عَلَى المُشَاحَّةِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ السَّادِسُ: الشَّرْحُ التَّفْصِيلِيُّ لِلْقَوَاعِدِ التَّكْمِيلِيَّةِ الجَامِعَةِ (الأَبْيَاتُ 28 - 42)</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: قَوَاعِدُ الشُّرُوطِ وَالمَوَانِعِ وَاسْتِحْقَاقِ الحُقُوقِ (الأَبْيَاتُ 28 - 32)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+28. هُوَ الَّذِي قَدْ قِيلَ فِي التَّعْلِيقِ <span class="bayt-divider">...</span> أَوْ قِيلَ فِي الإِطْلَاقِ وَالتَّحْقِيقِ<br>
+29. لَا يَتِمُّ الحُكْمُ حَتَّى تَجْتَمِعْ <span class="bayt-divider">...</span> كُلُّ الشُّرُوطِ وَالمَوَانِعُ تَرْتَفِعْ<br>
+30. وَمَنْ أَتَى بِمَا عَلَيْهِ مِنْ عَمَلْ <span class="bayt-divider">...</span> قَدِ اسْتَحَقَّ مَالَهُ عَلَى العَمَلْ<br>
+31. وَيُفْعَلُ البَعْضُ مِنَ المَأْمُورِ <span class="bayt-divider">...</span> إِنْ شَقَّ فِعْلُ سَائِرِ المَأْمُورِ<br>
+32. وَكُلُّ مَا نَشَأَ عَنِ المَأْذُونِ <span class="bayt-divider">...</span> فَذَاكَ لَيْسَ فِيهِ مِنْ مَضْمُونِ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِهَذِهِ القَوَاعِدِ:</h3>
+<h4 class="sub-sub-title">1. قَاعِدَةُ «اجْتِمَاعِ الشُّرُوطِ وَانْتِفَاءِ المَوَانِعِ» (البَيْتُ 29):</h4>
+<ul class="content-list">
+  <li>هَذِهِ مِنْ <strong>أَهَمِّ القَوَاعِدِ فِي بَابِ القَضَاءِ وَالفُتْيَا وَالتَّكْفِيرِ وَالجِنَايَاتِ</strong>؛ فَلَا يَتَرَتَّبُ الحُكْمُ الشَّرْعِيُّ إِلَّا بِأَمْرَيْنِ:</li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>وُجُودُ جَمِيعِ الشُّرُوطِ المَطْلُوبَةِ:</strong> كَشُرُوطِ الصَّلَاةِ (الطَّهَارَةِ، السَّتْرِ، اسْتِقْبَالِ القِبْلَةِ، دُخُولِ الوَقْتِ).</li>
+  <li><strong>انْتِفَاءُ جَمِيعِ المَوَانِعِ:</strong> كَمَانِعِ الحَيْضِ لِلصَّلَاةِ، أَوْ مَانِعِ الرِّقِّ وَالقَتْلِ فِي المِيرَاثِ.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>تَطْبِيقٌ عَقَدِيٌّ خَطِيرٌ (قَوَاعِدُ التَّكْفِيرِ):</strong> لَا يُحْكَمُ عَلَى مُعَيَّنٍ بِالكُفْرِ حَتَّى تَجْتَمِعَ فِيهِ شُرُوطُ التَّكْفِيرِ (البُلُوغُ، العَقْلُ، القَصْدُ، العِلْمُ) وَتَرْتَفِعَ المَوَانِعُ (كَالجَهْلِ، الإِكْرَاهِ، التَّأْوِيلِ، وَالشُّبْهَةِ).</li>
+</ul>
+<h4 class="sub-sub-title">2. قَاعِدَةُ «اسْتِحْقَاقِ الأَجْرِ عَلَى العَمَلِ» (البَيْتُ 30):</h4>
+<ul class="content-list">
+  <li>إِذَا أَدَّى العَامِلُ أَوْ الأَجِيرُ مَا طُلِبَ مِنْهُ فِي العَقْدِ، وَجَبَ عَلَى المُسْتَأْجِرِ دَفْعُ أُجْرَتِهِ كَامِلَةً دُونَ مَطْلٍ؛ لِقَوْلِهِ ﷺ: <strong>«أَعْطُوا الأَجِيرَ أَجْرَهُ قَبْلَ أَنْ يَجِفَّ عَرَقُهُ»</strong> <em>(ابْنُ مَاجَهْ: 2443)</em>، وَتَحْذِيرِهِ الشَّدِيدِ فِي الحَدِيثِ القُدْسِيِّ: «ثَلَاثَةٌ أَنَا خَصْمُهُمْ يَوْمَ القِيَامَةِ... وَرَجُلٌ اسْتَأْجَرَ أَجِيرًا فَاسْتَوْفَى مِنْهُ وَلَمْ يُعْطِهِ أَجْرَهُ» <em>(البُخَارِيُّ: 2227)</em>.</li>
+</ul>
+<h4 class="sub-sub-title">3. قَاعِدَةُ «المَيْسُورِ لَا يَسْقُطُ بِالمَعْسُورِ» (البَيْتُ 31):</h4>
+<ul class="content-list">
+  <li>إِذَا أُمِرَ المُكَلَّفُ بِعِبَادَةٍ ذَاتِ أَجْزَاءٍ، فَعَجَزَ عَنْ بَعْضِهَا، لَمْ يَسْقُطْ عَنْهُ المَقْدُورُ عَلَيْهِ؛ فَمَنْ عَجَزَ عَنِ الرُّكُوعِ رَكَعَ بِمَا أَمْكَنَهُ، وَمَنْ وَجَدَ مَاءً لَا يَكْفِي إِلَّا لِبَعْضِ أَعْضَائِهِ غَسَلَ بِهِ ثُمَّ تَيَمَّمَ لِلْبَاقِي عِنْدَ الحَنَابِلَةِ.</li>
+</ul>
+<h4 class="sub-sub-title">4. قَاعِدَةُ «الجَوَازُ الشَّرْعِيُّ يُنَافِي الضَّمَانَ» (البَيْتُ 32):</h4>
+<ul class="content-list">
+  <li>«كُلُّ مَا نَشَأَ عَنِ المَأْذُونِ فَلَيْسَ بِمَضْمُونٍ»؛ فَلَوْ أَنَّ طَبِيبًا جَرَّاحًا حَاذِقًا أَذِنَ لَهُ المَرِيضُ فِي إِجْرَاءِ عَمَلِيَّةٍ جِرَاحِيَّةٍ، فَتَلِفَ العُضْوُ بِلَا تَعَدٍّ وَلَا تَفْرِيطٍ، فَلَا ضَمَانَ عَلَيْهِ؛ لِأَنَّ فِعْلَهُ كَانَ مَأْذُونًا فِيهِ شَرْعًا. وَكَذَلِكَ إِقَامَةُ الحُدُودِ الشَّرْعِيَّةِ لَا ضَمَانَ فِيهَا.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: العِلَلُ الشَّرْعِيَّةُ، الشُّرُوطُ فِي العُقُودِ، وَالقُرْعَةُ (الأَبْيَاتُ 33 - 37)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+33. وَكُلُّ حُكْمٍ دَائِرٌ مَعْ عِلَّتِهْ <span class="bayt-divider">...</span> وَهْيَ الَّتِي قَدْ أَوْجَبَتْ لِشِرْعَتِهْ<br>
+34. وَكُلُّ شَرْطٍ لَازِمٌ لِلعَاقِدِ <span class="bayt-divider">...</span> فِي البَيْعِ وَالنِّكَاحِ وَالمَقَاصِدِ<br>
+35. إِلَّا شُرُوطًا حَلَّلَتْ مُحَرَّمَا <span class="bayt-divider">...</span> أَوْ عَكْسَهُ فَبَاطِلَاتٌ فَاعْلَمَا<br>
+36. تُسْتَعْمَلُ القُرْعَةُ عِنْدَ المَبْهَمِ <span class="bayt-divider">...</span> مِنَ الحُقُوقِ أَوْ لَدَى التَّزَاحُمِ<br>
+37. وَإِنْ تَسَاوَى العَمَلَانِ اجْتَمَعَا <span class="bayt-divider">...</span> وَفِعْلُ أَحَدِهِمَا قَدِ اسْتَمَعَا<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ:</h3>
+<h4 class="sub-sub-title">1. «الحُكْمُ يَدُورُ مَعَ عِلَّتِهِ وُجُودًا وَعَدَمًا» (البَيْتُ 33):</h4>
+<ul class="content-list">
+  <li>العِلَّةُ هِيَ الوَصْفُ المُنَاسِبُ لِلْحُكْمِ الَّذِي رُبِطَ بِهِ تَشْرِيعُهُ؛ فَإِذَا وُجِدَتِ العِلَّةُ وُجِدَ الحُكْمُ، وَإِذَا انْتَفَتْ زَالَ الحُكْمُ:</li>
+  <li><strong>مِثَالُ الإِسْكَارِ:</strong> كُلُّ شَرَابٍ أَوْ مَادَّةٍ أَوْ حَبَّةٍ تُسْكِرُ وَتُذْهِبُ العَقْلَ فَهِيَ خَمْرٌ مُحَرَّمَةٌ مَهْمَا سُمِّيَتْ: «كُلُّ مُسْكِرٍ خَمْرٌ، وَكُلُّ مُسْكِرٍ حَرَامٌ» <em>(مُسْلِمٌ: 2003)</em>. فَإِذَا تَخَلَّلَتِ الخَمْرُ بِنَفْسِهَا وَزَالَ الإِسْكَارُ طَهُرَتْ وَحَلَّتْ.</li>
+</ul>
+<h4 class="sub-sub-title">2. قَاعِدَةُ «حُرِّيَّةِ الشُّرُوطِ فِي العُقُودِ» (البَيْتَانِ 34 - 35):</h4>
+<ul class="content-list">
+  <li>الأَصْلُ فِي الشُّرُوطِ الَّتِي يَشْتَرِطُهَا المُتَعَاقِدَانِ فِي البَيْعِ، وَالإِجَارَةِ، وَالنِّكَاحِ الصِّحَّةُ وَاللُّزُومُ؛ لِحَدِيثِ: <strong>«المُسْلِمُونَ عَلَى شُرُوطِهِمْ، إِلَّا شَرْطًا حَرَّمَ حَلَالًا أَوْ أَحَلَّ حَرَامًا»</strong> <em>(التِّرْمِذِيُّ: 1352)</em>.</li>
+  <li>فَيَصِحُّ لِلْمَرْأَةِ أَنْ تَشْتَرِطَ عَلَى زَوْجِهَا أَلَّا يُخْرِجَهَا مِنْ بَلَدِهَا أَوْ دَارِهَا: «إِنَّ أَحَقَّ الشُّرُوطِ أَنْ تُوفُوا بِهِ مَا اسْتَحْلَلْتُمْ بِهِ الفُرُوجَ» <em>(البُخَارِيُّ: 2721)</em>.</li>
+  <li>أَمَّا الشَّرْطُ البَاطِلُ: كَأَنْ يَشْتَرِطَ فِي البَيْعِ رِبًا، أَوْ تَشْتَرِطَ المَرْأَةُ طَلَاقَ أُخْتِهَا؛ فَهَذَا بَاطِلٌ سَاقِطٌ.</li>
+</ul>
+<h4 class="sub-sub-title">3. قَاعِدَةُ «اسْتِعْمَالِ القُرْعَةِ» (البَيْتُ 36):</h4>
+<ul class="content-list">
+  <li>مَشْرُوعِيَّةُ القُرْعَةِ ثَابِتَةٌ فِي القُرْآنِ: ﴿فَسَاهَمَ فَكَانَ مِنَ الْمُدْحَضِينَ﴾ [الصافات: 141]، وَفِي السُّنَّةِ؛ حَيْثُ كَانَ النَّبِيُّ ﷺ إِذَا أَرَادَ سَفَرًا أَقْرَعَ بَيْنَ نِسَائِهِ، فَأَيَّتُهُنَّ خَرَجَ سَهْمُهَا خَرَجَ بِهَا مَعَهُ <em>(البُخَارِيُّ: 2593)</em>.</li>
+  <li><strong>مَوَاضِعُ اسْتِعْمَالِهَا:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li>عِنْدَ تَبْهِيمِ الحَقِّ وَتَعَذُّرِ تَعْيِينِهِ شَرْعًا.</li>
+  <li>عِنْدَ تَزَاحُمِ المُتَسَاوِينَ فِي حَقٍّ وَاحِدٍ لَا يَسَعُهُمْ جَمِيعًا (كَالتَّزَاحُمِ عَلَى الأَذَانِ أَوِ الإِمَامَةِ، أَوْ قِسْمَةِ الأَرَاضِي وَالتَّرِكَاتِ).</li>
+</ol>
+<h4 class="sub-sub-title">4. قَاعِدَةُ «تَدَاخُلِ العِبَادَاتِ» (البَيْتُ 37):</h4>
+<ul class="content-list">
+  <li>إِذَا اجْتَمَعَتْ عِبَادَتَانِ مِنْ جِنْسٍ وَاحِدٍ تَتَمَاثَلُ أَفْعَالُهُمَا، أَجْزَأَ فِعْلُ إِحْدَاهُمَا عَنِ الأُخْرَى:</li>
+  <li>كَمَنِ اجْتَمَعَ عَلَيْهِ غُسْلُ جَنَابَةٍ وَغُسْلُ جُمُعَةٍ؛ فَنَوَاهُمَا جَمِيعًا أَجْزَأَهُ غُسْلٌ وَاحِدٌ.</li>
+  <li>كَمَنْ دَخَلَ المَسْجِدَ وَصَلَّى الرَّاتِبَةَ قَبْلَ الظُّهْرِ؛ أَجْزَأَتْهُ عَنْ تَحِيَّةِ المَسْجِدِ تَبَعًا.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّالِثُ: القَوَاعِدُ التَّتْمِيمِيَّةُ الأَخِيرَةُ (الأَبْيَاتُ 38 - 42)</h2>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+38. وَكُلُّ مَشْغُولٍ فَلَا يُشْغَلُ <span class="bayt-divider">...</span> بِمِثْلِهِ بَلْ بِالَّذِي قَدْ يَفْضُلُ<br>
+39. وَمَنْ أَصَابَ حَقَّهُ فَلْيَقْتَصِرْ <span class="bayt-divider">...</span> عَلَى الَّذِي لَهُ بِغَيْرِ مَا بَطَرْ<br>
+40. وَإِنْ تَعَذَّرَ الَّذِي قَدْ وَجَبَا <span class="bayt-divider">...</span> فَبَدَلٌ يَجْزِيهِ حَيْثُ قَرُبَا<br>
+41. وَالوَاجِبَاتُ كُلُّهَا قَدْ تَسْقُطُ <span class="bayt-divider">...</span> بِالعَجْزِ لَكِنْ مَا تَيَسَّرَ يَثْبُتُ<br>
+42. وَكُلُّ مَا أَوْجَبَهُ الرَّحْمَنُ <span class="bayt-divider">...</span> فَإِنَّهُ يَجْزِي كَيْفَ كَانُ<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِهَذِهِ القَوَاعِدِ:</h3>
+<h4 class="sub-sub-title">1. «المَشْغُولُ لَا يُشْغَلُ» (البَيْتُ 38):</h4>
+<ul class="content-list">
+  <li>العَيْنُ المَشْغُولَةُ بِحَقٍّ لَا يَجُوزُ شَغْلُهَا بِحَقٍّ آخَرَ يُنَافِيهِ؛ فَالْعَيْنُ المَرْهُونَةُ لَا يَجُوزُ رَهْنُهَا لِشَخْصٍ آخَرَ، وَالمَرْأَةُ المُعْتَدَّةُ لَا يَجُوزُ عَقْدُ النِّكَاحِ عَلَيْهَا حَتَّى تَنْقَضِيَ عِدَّتُهَا.</li>
+</ul>
+<h4 class="sub-sub-title">2. «الِانْتِقَالُ إِلَى البَدَلِ عِنْدَ تَعَذُّرِ الأَصْلِ» (البَيْتُ 40):</h4>
+<ul class="content-list">
+  <li>إِذَا تَعَذَّرَ فِعْلُ الأَصْلِ لِعَجْزٍ أَوْ فَقْدٍ، انْتَقَلَ المُكَلَّفُ إِلَى بَدَلِهِ الشَّرْعِيِّ:</li>
+  <li>تَعَذُّرُ المَاءِ يُوجِبُ الِانْتِقَالَ إِلَى <strong>التَّيَمُّمِ بِالتُّرَابِ</strong>.</li>
+  <li>تَعَذُّرُ القِصَاصِ لِعَفْوِ بَعْضِ الأَوْلِيَاءِ يُوجِبُ الِانْتِقَالَ إِلَى <strong>الدِّيَةِ</strong>.</li>
+  <li>تَعَذُّرُ صِيَامِ الكَفَّارَةِ لِعَجْزٍ كَبِيرٍ يُوجِبُ الِانْتِقَالَ إِلَى <strong>إِطْعَامِ المَسَاكِينِ</strong>.</li>
+</ul>
+<h4 class="sub-sub-title">3. «إِجْزَاءُ مَا أَمَرَ اللهُ بِهِ عِنْدَ أَدَائِهِ شَرْعًا» (البَيْتُ 42):</h4>
+<ul class="content-list">
+  <li>كُلُّ مَا أَمَرَ اللهُ بِهِ العَبْدَ فَأَدَّاهُ العَبْدُ عَلَى الوَجْهِ المَأْمُورِ بِهِ شَرْعًا فَقَدْ بَرِئَتْ ذِمَّتُهُ وَأَجْزَأَهُ؛ فَمَنْ صَلَّى بِالتَّيَمُّمِ لِعَدَمِ المَاءِ لَمْ يَلْزَمْهُ إِعَادَةُ الصَّلَاةِ إِذَا وَجَدَ المَاءَ بَعْدَ خُرُوجِ الوَقْتِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 5: القَوَاعِدُ الكُلِّيَّةُ التَّكْمِيلِيَّةُ الـ 15 وَأَمْثِلَتُهَا التَّطْبِيقِيَّةُ المُعَاصِرَةُ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>رَقْمُ البَيْتِ</th>
+      <th>القَاعِدَةُ الفِقْهِيَّةُ</th>
+      <th>حَقِيقَتُهَا وَمَعْنَاهَا التَّأْصِيلِيُّ</th>
+      <th>المِثَالُ الفِقْهِيُّ التَّقْلِيدِيُّ</th>
+      <th>التَّطْبِيقُ المُعَاصِرُ وَالنَّوَازِلُ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>29</strong></td>
+      <td><strong>اجْتِمَاعُ الشُّرُوطِ وَانْتِفَاءُ المَوَانِعِ</strong></td>
+      <td>لَا يَثْبُتُ الحُكْمُ إِلَّا بِتَحَقُّقِ كُلِّ شَرْطٍ وَزَوَالِ المَانِعِ</td>
+      <td>صِحَّةُ الصَّلَاةِ، ثُبُوتُ الإِرْثِ</td>
+      <td>صِحَّةُ التَّعَامُلَاتِ الإِلِكْتُرُونِيَّةِ، مَسَائِلُ التَّكْفِيرِ</td>
+    </tr>
+    <tr>
+      <td><strong>30</strong></td>
+      <td><strong>اسْتِحْقَاقُ الأَجْرِ بِإِتْمَامِ العَمَلِ</strong></td>
+      <td>وُجُوبُ دَفْعِ العِوَضِ عِنْدَ تَسْلِيمِ العَمَلِ</td>
+      <td>أُجْرَةُ الخَيَّاطِ وَالبَنَّاءِ</td>
+      <td>رَوَاتِبُ المُوَظَّفِينَ، أُجُورُ التَّوْصِيلِ وَالبَرْمَجَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>31</strong></td>
+      <td><strong>المَيْسُورُ لَا يَسْقُطُ بِالمَعْسُورِ</strong></td>
+      <td>فِعْلُ المَقْدُورِ عَلَيْهِ عِنْدَ العَجْزِ عَنِ الكُلِّ</td>
+      <td>غَسْلُ بَعْضِ الوُجْهِ عِنْدَ الجُرْحِ</td>
+      <td>الصَّلَاةُ فِي الطَّائِرَةِ إِيمَاءً عِنْدَ العَجْزِ عَنِ الرُّكُوعِ</td>
+    </tr>
+    <tr>
+      <td><strong>32</strong></td>
+      <td><strong>الجَوَازُ الشَّرْعِيُّ يُنَافِي الضَّمَانَ</strong></td>
+      <td>مَا تَرَتَّبَ عَلَى فِعْلٍ مَأْذُونٍ لَا ضَمَانَ فِيهِ</td>
+      <td>سِرَايَةُ جُرْحِ القِصَاصِ</td>
+      <td>خَطَأُ الجَرَّاحِ الحَاذِقِ غَيْرُ المُفَرِّطِ فِي الجِرَاحَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>33</strong></td>
+      <td><strong>الحُكْمُ يَدُورُ مَعَ عِلَّتِهِ</strong></td>
+      <td>ثُبُوتُ الحُكْمِ بِثُبُوتِ وَصْفِهِ وَزَوَالُهُ بِزَوَالِهِ</td>
+      <td>تَحْرِيمُ الخَمْرِ لِلْإِسْكَارِ</td>
+      <td>تَحْرِيمُ المُخَدِّرَاتِ وَالمُفَتِّرَاتِ المُسْتَحْدَثَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>34 - 35</strong></td>
+      <td><strong>المُسْلِمُونَ عَلَى شُرُوطِهِمْ</strong></td>
+      <td>لُزُومُ الشُّرُوطِ المَشْرُوعَةِ بَيْنَ المُتَعَاقِدَيْنِ</td>
+      <td>شَرْطُ المَرْأَةِ فِي دَارِهَا</td>
+      <td>شُرُوطُ الضَّمَانِ التِّجَارِيِّ، بُنُودُ عُقُودِ الِاسْتِصْنَاعِ</td>
+    </tr>
+    <tr>
+      <td><strong>36</strong></td>
+      <td><strong>اسْتِعْمَالُ القُرْعَةِ</strong></td>
+      <td>الفَصْلُ بَيْنَ الحُقُوقِ المُتَزَاحِمَةِ عِنْدَ الاسْتِوَاءِ</td>
+      <td>القُرْعَةُ بَيْنَ الزَّوْجَاتِ فِي السَّفَرِ</td>
+      <td>تَوْزِيعُ قِطَعِ الأَرَاضِي الحُكُومِيَّةِ، قَبُولُ الطُّلَّابِ</td>
+    </tr>
+    <tr>
+      <td><strong>37</strong></td>
+      <td><strong>تَدَاخُلُ العِبَادَاتِ المُتَمَاثِلَةِ</strong></td>
+      <td>إِجْزَاءُ فِعْلٍ وَاحِدٍ عَنْ طَلَبَيْنِ مِثْلِيَّيْنِ</td>
+      <td>جَمْعُ غُسْلِ الجُمُعَةِ وَالجَنَابَةِ</td>
+      <td>تَحِيَّةُ المَسْجِدِ مَعَ سُنَّةِ الوُضُوءِ وَالفَرِيضَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>38</strong></td>
+      <td><strong>المَشْغُولُ لَا يُشْغَلُ</strong></td>
+      <td>امْتِنَاعُ إِيرَادِ حَقٍّ عَلَى عَيْنٍ مَشْغُولَةٍ</td>
+      <td>عَدَمُ جَوَازِ رَهْنِ المَرْهُونِ</td>
+      <td>عَدَمُ جَوَازِ بَيْعِ العَقَارِ المُؤَجَّرِ إِضْرَارًا بِالمُسْتَأْجِرِ</td>
+    </tr>
+    <tr>
+      <td><strong>39</strong></td>
+      <td><strong>الِاقْتِصَارُ عَلَى الحَقِّ المَشْرُوعِ</strong></td>
+      <td>تَحْرِيمُ البَطَرِ وَالعُدْوَانِ فِي اسْتِيفَاءِ الحَقِّ</td>
+      <td>قَبْضُ الدَّيْنِ دُونَ زِيَادَةٍ</td>
+      <td>الِالْتِزَامُ بِالحَدِّ المُقَرَّرِ فِي التَّعْوِيضِ عَنِ الضَّرَرِ</td>
+    </tr>
+    <tr>
+      <td><strong>40</strong></td>
+      <td><strong>الانْتِقَالُ إِلَى البَدَلِ</strong></td>
+      <td>المَصِيرُ إِلَى الخَلَفِ عِنْدَ تَعَذُّرِ الأَصْلِ</td>
+      <td>التَّيَمُّمُ عِنْدَ فَقْدِ المَاءِ</td>
+      <td>دَفْعُ القِيمَةِ النَّقْدِيَّةِ عِنْدَ هَلَاكِ المِثْلِيِّ المَغْصُوبِ</td>
+    </tr>
+    <tr>
+      <td><strong>41 - 42</strong></td>
+      <td><strong>إِجْزَاءُ المَأْمُورِ بِهِ شَرْعًا</strong></td>
+      <td>بُرُوءُ الذِّمَّةِ عِنْدَ أَدَاءِ الوَاجِبِ بِحَسَبِ القُدْرَةِ</td>
+      <td>صَلَاةُ مَنْ فَقَدَ الطَّهُورَيْنِ</td>
+      <td>صِحَّةُ صَوْمِ المُسَافِرِ وَالمَرِيضِ بِالقَضَاءِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ السَّابِعُ: خَاتِمَةُ المَنْظُومَةِ وَشَرْحُهَا (الأَبْيَاتُ 43 - 46)</h1>
+<h3 class="sub-title">📜 نَصُّ الأَبْيَاتِ:</h3>
+<div class="bayt-box">
+43. وَالحَمْدُ لِلَّهِ عَلَى التَّمَامِ <span class="bayt-divider">...</span> فِي البَدْءِ وَالخِتَامِ وَالدَّوَامِ<br>
+44. ثُمَّ الصَّلَاةُ مَعْ سَلَامٍ شَائِعِ <span class="bayt-divider">...</span> عَلَى النَّبِيِّ المُصْطَفَى وَالتَّابِعِ<br>
+45. وَآلِهِ وَصَحْبِهِ الكِرَامِ <span class="bayt-divider">...</span> مَا لَاحَ بَدْرٌ فِي دُجَى الظَّلَامِ<br>
+46. وَاغْفِرْ لِمَنْ نَظَمَهَا وَمَنْ قَرَا <span class="bayt-divider">...</span> وَمَنْ عُنِي بِحِفْظِهَا وَفَكَّرَا<br>
+</div>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّحْلِيلِيُّ لِلْخَاتِمَةِ النَّظْمِيَّةِ:</h3>
+<ul class="content-list">
+  <li><strong>حَمْدُ اللهِ عَلَى التَّمَامِ:</strong></li>
+</ul>
+<p>خَتَمَ الشَّيْخُ السَّعْدِيُّ رَحِمَهُ اللهُ مَنْظُومَتَهُ كَمَا بَدَأَهَا بِحَمْدِ اللهِ تَعَالَى وَالثَّنَاءِ عَلَيْهِ؛ فَإِنَّ كُلَّ نِعْمَةٍ ابْتَدَأَتْ بِحَمْدِ اللهِ فَهِيَ مَبْرُوكَةٌ، وَكُلَّ عَمَلٍ انْتَهَى بِحَمْدِ اللهِ فَقَدْ أُدِّيَ شُكْرُهُ.</p>
+<ul class="content-list">
+  <li><strong>الصَّلَاةُ وَالسَّلَامُ عَلَى المَبْعُوثِ رَحْمَةً لِلْعَالَمِينَ:</strong></li>
+</ul>
+<p>ثَنَّى بِالصَّلَاةِ وَالسَّلَامِ عَلَى نَبِيِّنَا مُحَمَّدٍ ﷺ، الَّذِي أُوتِيَ جَوَامِعَ الكَلِمِ وَاخْتُصِرَتْ لَهُ الحِكْمَةُ اخْتِصَارًا، وَعَلَى آلِهِ وَصَحَابَتِهِ الأَبْرَارِ مَا تَعَاقَبَ اللَّيْلُ وَالنَّهَارُ وَمَا أَشْرَقَ بَدْرُ التَّمَامِ.</p>
+<ul class="content-list">
+  <li><strong>الدُّعَاءُ الجَامِعُ (البَيْتُ 46):</strong></li>
+</ul>
+<p>خَتَمَ النَّاظِمُ بِدُعَاءٍ مُبَارَكٍ يَعُمُّ كُلَّ مَنْ لَهُ صِلَةٌ بِهَذِهِ المَنْظُومَةِ؛ فَدَعَا بِالمَغْفِرَةِ لِأَرْبَعَةِ أَصْنَافٍ:</p>
+<ol class="content-list-ordered">
+  <li><strong>لِمَنْ نَظَمَهَا:</strong> وَهُوَ الشَّيْخُ السَّعْدِيُّ رَحِمَهُ اللهُ.</li>
+  <li><strong>وَلِمَنْ قَرَأَهَا:</strong> أَوْ شَرَحَهَا أَوْ عَلَّمَهَا أَوْ طَالَعَهَا.</li>
+  <li><strong>وَلِمَنْ عُنِيَ بِحِفْظِهَا:</strong> وَأَوْدَعَهَا صَدْرَهُ حِرْصًا عَلَى إِتْقَانِ العِلْمِ.</li>
+  <li><strong>وَلِمَنْ فَكَّرَ فِيهَا:</strong> وَتَأَمَّلَ مَعَانِيَهَا وَاسْتَنْبَطَ مِنْهَا الفُرُوعَ الفِقْهِيَّةَ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 6: مُقَارَنَةُ القَوَاعِدِ الكُبْرَى الخَمْسِ عَلَى المَذَاهِبِ الأَرْبَعَةِ وَأُصُولِ كُلِّ مَذْهَبٍ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>القَاعِدَةُ الكُبْرَى</th>
+      <th>مَوْقِعُهَا عِنْدَ الحَنَفِيَّةِ</th>
+      <th>مَوْقِعُهَا عِنْدَ المَالِكِيَّةِ</th>
+      <th>مَوْقِعُهَا عِنْدَ الشَّافِعِيَّةِ</th>
+      <th>مَوْقِعُهَا عِنْدَ الحَنَابِلَةِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. الأُمُورُ بِمَقَاصِدِهَا</strong></td>
+      <td>أَصْلُ المَذْهَبِ فِي تَمْيِيزِ العِبَادَاتِ</td>
+      <td>اعْتِبَارُ المَقَاصِدِ وَسَدُّ الذَّرَائِعِ عُمْدَةٌ</td>
+      <td>ثُلُثُ العِلْمِ وَتَدْخُلُ فِي 70 بَابًا</td>
+      <td>اعْتِبَارُ النِّيَّةِ فِي العُقُودِ وَإِبْطَالُ الحِيَلِ</td>
+    </tr>
+    <tr>
+      <td><strong>2. اليَقِينُ لَا يَزُولُ بِالشَّكِّ</strong></td>
+      <td>مَبْنَى الاسْتِحْسَانِ وَبَقَاءِ الأَصْلِ</td>
+      <td>اعْتِبَارُ الشَّكِّ فِي الحَدَثِ مُوجِبًا لِلْوُضُوءِ</td>
+      <td>طَرْحُ الشَّكِّ وَالبِنَاءُ عَلَى أَقَلِّ اليَقِينِ</td>
+      <td>اسْتِصْحَابُ البَرَاءَةِ الأَصْلِيَّةِ وَالطَّهَارَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>3. المَشَقَّةُ تَجْلِبُ التَّيْسِيرَ</strong></td>
+      <td>مَصْدَرُ الرُّخَصِ وَالاسْتِحْسَانِ لِلضَّرُورَةِ</td>
+      <td>التَّوْسِعَةُ بِمُرَاعَاةِ المَصَالِحِ المُرْسَلَةِ</td>
+      <td>ضَبْطُ الرُّخَصِ بِأَسْبَابِ التَّخْفِيفِ السَّبْعَةِ</td>
+      <td>التَّوَسُّعُ فِي الرُّخَصِ وَالجَمْعِ بَيْنَ الصَّلَاتَيْنِ</td>
+    </tr>
+    <tr>
+      <td><strong>4. لَا ضَرَرَ وَلَا ضِرَارَ</strong></td>
+      <td>تَضْمِينُ الصُّنَّاعِ وَمَنْعُ التَّعَسُّفِ</td>
+      <td>سَدُّ الذَّرَائِعِ وَالمَصَالِحُ المُرْسَلَةُ</td>
+      <td>الضَّرَرُ يُزَالُ بِغَيْرِ ضَرَرٍ مِثْلِهِ</td>
+      <td>تَحْرِيمُ الحِيَلِ كُلِّهَا لِأَنَّهَا ضَرَرٌ بِالشَّرْعِ</td>
+    </tr>
+    <tr>
+      <td><strong>5. العَادَةُ مُحَكَّمَةٌ</strong></td>
+      <td>العُرْفُ الصَّحِيحُ يُخَصِّصُ العُمُومَ</td>
+      <td>عَمَلُ أَهْلِ المَدِينَةِ وَالعُرْفُ المُعْتَبَرُ</td>
+      <td>الرُّجُوعُ لِلْعُرْفِ فِيمَا لَمْ يُحَدَّ شَرْعًا</td>
+      <td>تَقْدِيمُ الشُّرُوطِ العُرْفِيَّةِ وَإِلْزَامُ العَاقِدَيْنِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🎯 القِسْمُ الثَّامِنُ: الخَاتِمَةُ وَالفَهَارِسُ التَّأْصِيلِيَّةُ الشَّامِلَةُ</h1>
+<h3 class="sub-title">📚 ثَبَتُ المَصَادِرِ وَالمَرَاجِعِ الفِقْهِيَّةِ المُعْتَمَدَةِ فِي الشَّرْحِ:</h3>
+<ol class="content-list-ordered">
+  <li><strong>القُرْآنُ الكَرِيمُ:</strong> كَلَامُ رَبِّ العَالَمِينَ.</li>
+  <li><strong>صَحِيحُ الإِمَامِ البُخَارِيِّ:</strong> أَبُو عَبْدِ اللهِ مُحَمَّدُ بْنُ إِسْمَاعِيلَ البُخَارِيُّ (ت 256 هـ).</li>
+  <li><strong>صَحِيحُ الإِمَامِ مُسْلِمٍ:</strong> مُسْلِمُ بْنُ الحَجَّاجِ النَّيْسَابُورِيُّ (ت 261 هـ).</li>
+  <li><strong>سُنَنُ أَبِي دَاوُدَ:</strong> سُلَيْمَانُ بْنُ الأَشْعَثِ السِّجِسْتَانِيُّ (ت 275 هـ).</li>
+  <li><strong>جَامِعُ التِّرْمِذِيِّ:</strong> أَبُو عِيسَى مُحَمَّدُ بْنُ عِيسَى التِّرْمِذِيُّ (ت 279 هـ).</li>
+  <li><strong>سُنَنُ ابْنِ مَاجَهْ:</strong> أَبُو عَبْدِ اللهِ مُحَمَّدُ بْنُ يَزِيدَ القَزْوِينِيُّ (ت 273 هـ).</li>
+  <li><strong>المُوَطَّأُ:</strong> إِمَامُ دَارِ الهِجْرَةِ مَالِكُ بْنُ أَنَسٍ الأَصْبَحِيُّ (ت 179 هـ).</li>
+  <li><strong>مُسْنَدُ الإِمَامِ أَحْمَدَ بْنِ حَنْبَلٍ:</strong> الشَّيْبَانِيُّ (ت 241 هـ).</li>
+  <li><strong>الأَشْبَاهُ وَالنَّظَائِرُ:</strong> جَلَالُ الدِّينِ عَبْدُ الرَّحْمَنِ بْنُ أَبِي بَكْرٍ السُّيُوطِيُّ الشَّافِعِيُّ (ت 911 هـ).</li>
+  <li><strong>الأَشْبَاهُ وَالنَّظَائِرُ عَلَى مَذْهَبِ أَبِي حَنِيفَةَ:</strong> زَيْنُ الدِّينِ ابْنُ نُجَيْمٍ الحَنَفِيُّ (ت 970 هـ).</li>
+  <li><strong>الفُرُوقُ (أَنْوَارُ البُرُوقِ فِي أَنْوَاءِ الفُرُوقِ):</strong> شِهَابُ الدِّينِ أَبُو العَبَّاسِ أَحْمَدُ بْنُ إِدْرِيسَ القَرَافِيُّ المَالِكِيُّ (ت 684 هـ).</li>
+  <li><strong>تَقْرِيرُ القَوَاعِدِ وَتَحْرِيرُ الفَوَائِدِ:</strong> الحَافِظُ زَيْنُ الدِّينِ ابْنُ رَجَبٍ الحَنْبَلِيُّ (ت 795 هـ).</li>
+  <li><strong>قَوَاعِدُ الأَحْكَامِ فِي مَصَالِحِ الأَنَامِ:</strong> سُلْطَانُ العُلَمَاءِ عِزُّ الدِّينِ عَبْدُ العَزِيزِ بْنُ عَبْدِ السَّلَامِ (ت 660 هـ).</li>
+  <li><strong>المُوَافَقَاتُ فِي أُصُولِ الشَّرِيعَةِ:</strong> الإِمَامُ أَبُو إِسْحَاقَ إِبْرَاهِيمُ بْنُ مُوسَى الشَّاطِبِيُّ المَالِكِيُّ (ت 790 هـ).</li>
+  <li><strong>القَوَاعِدُ النُّورَانِيَّةُ الفِقْهِيَّةُ:</strong> شَيْخُ الإِسْلَامِ أَحْمَدُ بْنُ عَبْدِ الحَلِيمِ ابْنُ تَيْمِيَّةَ الحَرَّانِيُّ (ت 728 هـ).</li>
+  <li><strong>إِعْلَامُ المُوَقِّعِينَ عَنْ رَبِّ العَالَمِينَ:</strong> شَمْسُ الدِّينِ ابْنُ قَيِّمِ الجَوْزِيَّةِ (ت 751 هـ).</li>
+  <li><strong>المَنْظُومَةُ الفِقْهِيَّةُ وَشَرْحُهَا «القَوَاعِدُ وَالأُصُولُ الجَامِعَةُ»:</strong> الشَّيْخُ عَبْدُ الرَّحْمَنِ بْنُ نَاصِرٍ السَّعْدِيُّ (ت 1376 هـ).</li>
+  <li><strong>شَرْحُ مَنْظُومَةِ القَوَاعِدِ الفِقْهِيَّةِ لِلسَّعْدِيِّ:</strong> العَلَّامَةُ الشَّيْخُ مُحَمَّدُ بْنُ صَالِحٍ العُثَيْمِينُ رَحِمَهُ اللهُ (ت 1421 هـ).</li>
+  <li><strong>إِرْوَاءُ الغَلِيلِ فِي تَخْرِيجِ أَحَادِيثِ مَنَارِ السَّبِيلِ:</strong> الشَّيْخُ مُحَمَّدٌ نَاصِرُ الدِّينِ الأَلْبَانِيُّ رَحِمَهُ اللهُ (ت 1420 هـ).</li>
+  <li><strong>فَتَاوَى وَرَسَائِلُ سَمَاحَةِ الشَّيْخِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ:</strong> مُفْتِي المَمْلَكَةِ العَرَبِيَّةِ السَّعُودِيَّةِ الأَسْبَقِ (ت 1389 هـ).</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🤲 كَلِمَةُ خِتَامٍ وَابْتِهَالٌ رَبَّانِيٌّ:</h3>
+<p><strong>تَمَّ بِحَمْدِ اللهِ تَعَالَى وَعَوْنِهِ وَتَوْفِيقِهِ وَمَنِّهِ الشَّرْحُ وَالتَّحْقِيقُ لِهَذَا المُصَنَّفِ الفِقْهِيِّ المَوْسُوعِيِّ «المَنْهَلُ الصَّافِي فِي شَرْحِ وَتَحْقِيقِ قَوَاعِدِ السَّعْدِيِّ الفِقْهِيَّةِ».</strong></p>
+<p>وَإِنَّنِي أَبْرَأُ إِلَى اللهِ تَعَالَى مِنْ حَوْلِي وَقُوَّتِي؛ فَمَا كَانَ فِيهِ مِنْ صَوَابٍ وَسَدَادٍ فَمِنَ اللهِ المَنَّانِ وَحْدَهُ، وَمَا كَانَ فِيهِ مِنْ زَلَلٍ أَوْ قُصُورٍ أَوْ خَطَأٍ فَمِنِّي وَمِنَ الشَّيْطَانِ، وَاللهُ وَرَسُولُهُ مِنْهُ بَرِيئَانِ، وَأَسْتَغْفِرُ اللهَ العَظِيمَ وَأَتُوبُ إِلَيْهِ.</p>
+<p>نَسْأَلُ اللهَ الكَرِيمَ أَنْ يَنْفَعَ بِهَذَا الشَّرْحِ كُلَّ مُتَفَقِّهٍ وَدَارِسٍ، وَأَنْ يَجْعَلَهُ زَادًا يَوْمَ المَعَادِ، وَأَنْ يَجْزِيَ نَاظِمَ المَتْنِ الشَّيْخَ عَبْدَ الرَّحْمَنِ السَّعْدِيَّ خَيْرَ الجَزَاءِ.</p>
+<p><em>وَصَلَّى اللهُ وَسَلَّمَ وَبَارَكَ عَلَى نَبِيِّنَا مُحَمَّدٍ إِمَامِ الفُقَهَاءِ وَالمُرْسَلِينَ، وَعَلَى آلِهِ وَصَحَابَتِهِ أَجْمَعِينَ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.</em></p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<p><em>عُنِيَ بِهِ وَحَرَّرَهُ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</em></p>
+<p><em>صَادِرٌ عَنْ: مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ - كَادُونَا، نَيْجِيرْيَا.</em></p>
+<p><em>قِسْمُ العِنَايَةِ بِالفِقْهِ وَأُصُولِهِ وَالنَّشْرِ العِلْمِيِّ — سِلْسِلَةُ الكُتُبِ التَّأْصِيلِيَّةِ (4)</em></p>
+  </div>
+</body>
+</html>

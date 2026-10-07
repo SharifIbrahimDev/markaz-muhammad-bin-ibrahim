@@ -81,6 +81,26 @@ class BookCardWidget extends StatelessWidget {
                     ),
                   ),
                 ),
+                if (book.isUpcoming)
+                  Positioned(
+                    top: 8,
+                    left: 8,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFC5A059),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Text(
+                        '⏳ Masu Fitowa',
+                        style: TextStyle(
+                          color: Color(0xFF182B24),
+                          fontSize: 10,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
               ],
             ),
             // Info Content

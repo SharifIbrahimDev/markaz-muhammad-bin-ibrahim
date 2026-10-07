@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>أَلْفُ حَدِيثٍ وَحَدِيثٍ مِنْ صَحِيحِ سُنَنِ خَيْرِ البَرِيَّةِ ﷺ (1001) | مركز محمد بن إبراهيم آل الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;600;700&family=Tajawal:wght@400;500;700;800&family=Noto+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --primary-dark: #0F172A;
+      --gold: #C5A059;
+      --gold-dark: #9A7B38;
+      --gold-light: #FDFBF7;
+      --bg-body: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --font-size: 19px;
+      --hadith-accent: #0D9488;
+    }
+    .dark-mode {
+      --bg-body: #0F172A;
+      --bg-card: #1E293B;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --border-color: #334155;
+      --primary: #60A5FA;
+      --primary-dark: #93C5FD;
+      --gold-light: #1E293B;
+      --hadith-accent: #2DD4BF;
+    }
+    .sepia-mode {
+      --bg-body: #F4ECD8;
+      --bg-card: #FAF4E8;
+      --text-main: #433422;
+      --text-muted: #796651;
+      --border-color: #DFD3BE;
+      --primary: #8B4513;
+      --gold-light: #ECE2CE;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      background: var(--bg-body);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      width: 100%;
+      font-size: var(--font-size);
+      line-height: 2.1;
+      transition: background 0.3s ease, color 0.3s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Top Sticky Navigation Bar */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      background: #0F172A;
+      color: #FFFFFF;
+      padding: 10px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      font-family: 'Tajawal', sans-serif;
+    }
+    .nav-title {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-title span.badge {
+      background: var(--gold);
+      color: #0F172A;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-nav {
+      background: rgba(255,255,255,0.12);
+      color: #FFFFFF;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+    .btn-nav:hover, .btn-nav:active {
+      background: var(--gold);
+      color: #0F172A;
+      border-color: var(--gold);
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: #0F172A;
+      font-weight: 700;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+
+    /* Header Hero */
+    .hero-header {
+      background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 60%, #1E293B 100%);
+      color: #FFFFFF;
+      padding: 36px 24px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.2);
+      border: 2px solid var(--gold);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-header::after {
+      content: "ﷺ";
+      position: absolute;
+      top: -20px;
+      left: 10px;
+      font-size: 8rem;
+      color: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+    }
+    .hero-subtitle {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.95rem;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .hero-title {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1.4;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .hero-meta {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.95rem;
+      color: #E2E8F0;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .hero-meta span {
+      background: rgba(255,255,255,0.1);
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* PDF Downloads Quick Bar */
+    .pdf-download-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .pdf-download-label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .pdf-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .pdf-btn {
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: 0.2s ease;
+    }
+    .pdf-btn-ar {
+      background: #1E3A8A;
+      color: #FFFFFF;
+    }
+    .pdf-btn-bi {
+      background: var(--gold);
+      color: #0F172A;
+    }
+    .pdf-btn-en {
+      background: #0D9488;
+      color: #FFFFFF;
+    }
+    .pdf-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    /* Search & Chapter Bar */
+    .search-box-wrapper {
+      position: sticky;
+      top: 56px;
+      z-index: 900;
+      background: var(--bg-body);
+      padding: 10px 0;
+      margin-bottom: 16px;
+    }
+    .search-input-group {
+      display: flex;
+      gap: 8px;
+    }
+    .search-input {
+      flex: 1;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 2px solid var(--border-color);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-family: 'Tajawal', sans-serif;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+    }
+
+    /* Chapter Filter Chips (Horizontal Scroll on Mobile) */
+    .chapter-chips-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 6px 0 10px;
+      scrollbar-width: thin;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .chapter-chip {
+      white-space: nowrap;
+      padding: 6px 14px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .chapter-chip.active, .chapter-chip:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+      border-color: var(--primary);
+    }
+
+    /* Chapter Section Dividers */
+    .chapter-header {
+      background: var(--gold-light);
+      border-right: 5px solid var(--gold);
+      padding: 14px 18px;
+      margin: 32px 0 18px;
+      border-radius: 0 10px 10px 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .chapter-header h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .dark-mode .chapter-header h2 {
+      color: var(--gold);
+    }
+    .chapter-header p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* Hadith Cards */
+    .hadith-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 22px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .hadith-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    }
+    .hadith-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--border-color);
+      font-family: 'Tajawal', sans-serif;
+    }
+    .hadith-number-badge {
+      background: var(--primary);
+      color: #FFFFFF;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .hadith-topic {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--gold-dark);
+    }
+    .dark-mode .hadith-topic {
+      color: var(--gold);
+    }
+    .hadith-actions {
+      display: flex;
+      gap: 6px;
+    }
+    .hadith-action-btn {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      color: var(--text-muted);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .hadith-action-btn:hover {
+      color: var(--primary);
+      background: rgba(0,0,0,0.05);
+    }
+
+    .hadith-matn {
+      font-size: 1.15em;
+      line-height: 2.3;
+      margin-bottom: 14px;
+      color: var(--text-main);
+      text-align: justify;
+    }
+    .hadith-matn strong {
+      color: #991B1B;
+    }
+    .dark-mode .hadith-matn strong {
+      color: #F87171;
+    }
+    .hadith-translation {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      background: rgba(0,0,0,0.02);
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      border-right: 3px solid var(--border-color);
+      direction: ltr;
+      text-align: left;
+    }
+    .dark-mode .hadith-translation {
+      background: rgba(255,255,255,0.03);
+    }
+    .hadith-takhrij {
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.85rem;
+      color: var(--hadith-accent);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .hadith-fawaid {
+      background: var(--gold-light);
+      border: 1px solid rgba(197, 160, 89, 0.3);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-size: 0.9rem;
+      font-family: 'Tajawal', sans-serif;
+      line-height: 1.7;
+    }
+
+    /* Floating Action Buttons */
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .fab-btn {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #FFFFFF;
+      border: 2px solid var(--gold);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+    }
+    .fab-btn:hover {
+      transform: scale(1.1);
+      background: var(--gold);
+      color: #0F172A;
+    }
+
+    /* Footer Colophon */
+    .page-footer-ribbon {
+      text-align: center;
+      margin-top: 40px;
+      padding: 24px;
+      background: var(--bg-card);
+      border-top: 2px solid var(--gold);
+      border-radius: 12px;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    @media (max-width: 640px) {
+      .nav-bar { padding: 8px 12px; }
+      .nav-title { font-size: 0.9rem; }
+      .hero-header { padding: 24px 16px; }
+      .hero-title { font-size: 1.4rem; }
+      .container { padding: 16px 10px 60px; }
+      .hadith-card { padding: 16px 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation Bar -->
+  <header class="nav-bar">
+    <div class="nav-title">
+      <a href="../index.html" class="btn-nav" title="الرجوع للرئيسية">🏠</a>
+      <span>أَلْفُ حَدِيثٍ وَحَدِيثٍ</span>
+      <span class="badge">1001</span>
+    </div>
+    <div class="nav-controls">
+      <button class="btn-nav" onclick="changeFontSize(1)" title="تكبير الخط">A+</button>
+      <button class="btn-nav" onclick="changeFontSize(-1)" title="تصغير الخط">A-</button>
+      <button class="btn-nav" onclick="toggleTheme()" title="تبديل المظهر">🌓</button>
+      <a href="../index.html" class="btn-nav btn-gold">📚 المركز</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero Header -->
+    <section class="hero-header">
+      <div class="hero-subtitle">المَوْسُوعَةُ الحَدِيثِيَّةُ الجَامِعَةُ | مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ</div>
+      <h1 class="hero-title">أَلْفُ حَدِيثٍ وَحَدِيثٍ مِنْ صَحِيحِ سُنَنِ خَيْرِ البَرِيَّةِ ﷺ</h1>
+      <p style="font-size: 1.1rem; color: #F1F5F9; max-width: 700px; margin: 0 auto; line-height: 1.8;">
+        مِنْ أَحَادِيثِ العَقِيدَةِ وَالأَحْكَامِ وَالآدَابِ وَالرَّقَائِقِ وَالمُعَامَلَاتِ
+      </p>
+      <div class="hero-meta">
+        <span>✍️ إعداد وإشراف: إبراهيم شريف أبوبكر</span>
+        <span>📖 1001 حديث صحيح</span>
+        <span>📅 يُدرّس: السبت والخميس</span>
+      </div>
+    </section>
+
+    <!-- PDF Downloads Bar -->
+    <div class="pdf-download-bar">
+      <div class="pdf-download-label">
+        <span>📥 نسخ الكتاب بصيغة PDF للتحميل:</span>
+      </div>
+      <div class="pdf-links">
+        <a href="../pdf/1001_Authentic_Hadith_Arabic.pdf" download class="pdf-btn pdf-btn-ar">
+          <span>📗 النسخة العربية (416 ص)</span>
+        </a>
+        <a href="../pdf/1001_Authentic_Hadith_Bilingual.pdf" download class="pdf-btn pdf-btn-bi">
+          <span>📘 ثنائية اللغة (Arabic/English - 667 ص)</span>
+        </a>
+        <a href="../pdf/1001_Authentic_Hadith_English.pdf" download class="pdf-btn pdf-btn-en">
+          <span>📕 English Edition (344 pages)</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="search-box-wrapper">
+      <div class="search-input-group">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 ابحث برقم الحديث (مثال: 1 أو 500) أو بكلمة من المتن..." oninput="filterHadiths()">
+      </div>
+      
+      <!-- Chapter Quick Filter Chips -->
+      <div class="chapter-chips-scroll">
+        <button class="chapter-chip active" onclick="filterChapter('all', this)">📌 الكل (1001)</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_aqeedah', this)">1. العقيدة والإيمان</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_ibadat', this)">2. الطهارة والصلاة</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_zakah_siyam', this)">3. الزكاة والصيام</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_hajj', this)">4. الحج والعمرة</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_adab', this)">5. البر والآداب</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_riqaq', this)">6. الرقاق والزهد</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_azkar', this)">7. الأذكار والدعاء</button>
+        <button class="chapter-chip" onclick="filterChapter('ch_fitan', this)">8. الفتن والجنة والنار</button>
+      </div>
+    </div>
+
+    <!-- Hadiths List Container -->
+    <div id="hadithListContainer">
+
+      <!-- ================= CHAPTER 1: AQEEDAH & INTENTION ================= -->
+      <div class="chapter-header" data-chapter-id="ch_aqeedah">
+        <h2>1. كِتَابُ الإِيمَانِ وَالعَقِيدَةِ وَالإِخْلَاصِ</h2>
+        <p>الأحاديث من 1 إلى 150: أصول التوحيد، الإخلاص، شعب الإيمان، وموجبات الجنة</p>
+      </div>
+
+      <!-- Hadith 1 -->
+      <article class="hadith-card" data-chapter="ch_aqeedah">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #1</span>
+          <span class="hadith-topic">إِخْلَاصُ النِّيَّةِ فِي جَمِيعِ الأَعْمَالِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَمِيرِ المُؤْمِنِينَ أَبِي حَفْصٍ عُمَرَ بْنِ الخَطَّابِ رَضِيَ اللهُ عَنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ ﷺ يَقُولُ: 
+          <strong>«إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ فَهِجْرَتُهُ إِلَى اللهِ وَرَسُولِهِ، وَمَنْ كَانَتْ هِجْرَتُهُ لِدُنْيَا يُصِيبُهَا أَوِ امْرَأَةٍ يَنْكِحُهَا فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ»</strong>.
+        </p>
+        <div class="hadith-translation">
+          <strong>English:</strong> Narrated ‘Umar bin Al-Khattab (RA): I heard Allah’s Messenger (ﷺ) saying: "Actions are but by intention and every man shall have but that which he intended. Thus he whose migration was for Allah and His Messenger, his migration was for Allah and His Messenger; and he whose migration was for the world to gain, or for a woman to marry, his migration was for that for which he migrated."
+        </div>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (1)، وَمُسْلِمٌ (1907).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>فَائِدَةٌ:</strong> هَذَا الحَدِيثُ أَحَدُ قَوَاعِدِ الإِسْلَامِ الكُبْرَى الَّتِي يَدُورُ عَلَيْهَا الدِّينُ، وَبِهِ اسْتَفْتَحَ الإِمَامُ البُخَارِيُّ صَحِيحَهُ.
+        </div>
+      </article>
+
+      <!-- Hadith 2 -->
+      <article class="hadith-card" data-chapter="ch_aqeedah">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #2</span>
+          <span class="hadith-topic">حَدِيثُ جِبْرِيلَ فِي بَيَانِ الإِسْلَامِ وَالإِيمَانِ وَالإِحْسَانِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ عُمَرَ بْنِ الخَطَّابِ رَضِيَ اللهُ عَنْهُ قَالَ: بَيْنَمَا نَحْنُ عِنْدَ رَسُولِ اللهِ ﷺ ذَاتَ يَوْمٍ إِذْ طَلَعَ عَلَيْنَا رَجُلٌ شَدِيدُ بَيَاضِ الثِّيَابِ شَدِيدُ سَوَادِ الشَّعَرِ، فَقَالَ: يَا مُحَمَّدُ أَخْبِرْنِي عَنِ الإِسْلَامِ، فَقَالَ ﷺ: <strong>«الإِسْلَامُ أَنْ تَشْهَدَ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَتُقِيمَ الصَّلَاةَ، وَتُؤْتِيَ الزَّكَاةَ، وَتَصُومَ رَمَضَانَ، وَتَحُجَّ البَيْتَ إِنِ اسْتَطَعْتَ إِلَيْهِ سَبِيلًا»</strong>، قَالَ: صَدَقْتَ... قَالَ: فَأَخْبِرْنِي عَنِ الإِيمَانِ، قَالَ: <strong>«أَنْ تُؤْمِنَ بِاللهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَاليَوْمِ الآخِرِ، وَتُؤْمِنَ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ»</strong>... قَالَ: فَأَخْبِرْنِي عَنِ الإِحْسَانِ، قَالَ: <strong>«أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (8).
+        </div>
+      </article>
+
+      <!-- Hadith 3 -->
+      <article class="hadith-card" data-chapter="ch_aqeedah">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #3</span>
+          <span class="hadith-topic">بُنِيَ الإِسْلَامُ عَلَى خَمْسٍ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنِ ابْنِ عُمَرَ رَضِيَ اللهُ عَنْهُمَا قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«بُنِيَ الإِسْلَامُ عَلَى خَمْسٍ: شَهَادَةِ أَنْ لَا إِلَهَ إِلَّا اللهُ وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَإِقَامِ الصَّلَاةِ، وَإِيتَاءِ الزَّكَاةِ، وَالحَجِّ، وَصَوْمِ رَمَضَانَ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (8)، وَمُسْلِمٌ (16).
+        </div>
+      </article>
+
+      <!-- Hadith 4 -->
+      <article class="hadith-card" data-chapter="ch_aqeedah">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #4</span>
+          <span class="hadith-topic">حَلَاوَةُ الإِيمَانِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَنَسٍ رَضِيَ اللهُ عَنْهُ، عَنِ النَّبِيِّ ﷺ قَالَ: <strong>«ثَلَاثٌ مَنْ كُنَّ فِيهِ وَجَدَ حَلَاوَةَ الإِيمَانِ: أَنْ يَكُونَ اللهُ وَرَسُولُهُ أَحَبَّ إِلَيْهِ مِمَّا سِوَاهُمَا، وَأَنْ يُحِبَّ المَرْءَ لَا يُحِبُّهُ إِلَّا لِلَّهِ، وَأَنْ يَكْرَهَ أَنْ يَعُودَ فِي الكُفْرِ كَمَا يَكْرَهُ أَنْ يُقْذَفَ فِي النَّارِ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (16)، وَمُسْلِمٌ (43).
+        </div>
+      </article>
+
+      <!-- ================= CHAPTER 2: TAHARAH & PRAYER ================= -->
+      <div class="chapter-header" data-chapter-id="ch_ibadat">
+        <h2>2. كِتَابُ الطَّهَارَةِ وَالصَّلَاةِ</h2>
+        <p>الأحاديث من 151 إلى 350: الوضوء، الغسل، الأذان، صفة صلاة النبي ﷺ، والنوافل</p>
+      </div>
+
+      <!-- Hadith 151 -->
+      <article class="hadith-card" data-chapter="ch_ibadat">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #151</span>
+          <span class="hadith-topic">فَضْلُ الطُّهُورِ وَإِسْبَاغِ الوُضُوءِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي مَالِكٍ الأَشْعَرِيِّ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«الطُّهُورُ شَطْرُ الإِيمَانِ، وَالحَمْدُ لِلَّهِ تَمْلأُ المِيزَانَ، وَسُبْحَانَ اللهِ وَالحَمْدُ لِلَّهِ تَمْلآنِ -أَوْ تَمْلأُ- مَا بَيْنَ السَّمَاوَاتِ وَالأَرْضِ، وَالصَّلاةُ نُورٌ، وَالصَّدَقَةُ بُرْهَانٌ، وَالصَّبْرُ ضِيَاءٌ، وَالقُرْآنُ حُجَّةٌ لَكَ أَوْ عَلَيْكَ، كُلُّ النَّاسِ يَغْدُو فَبَائِعٌ نَفْسَهُ فَمُعْتِقُهَا أَوْ مُوبِقُهَا»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (223).
+        </div>
+      </article>
+
+      <!-- Hadith 152 -->
+      <article class="hadith-card" data-chapter="ch_ibadat">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #152</span>
+          <span class="hadith-topic">الصَّلَوَاتُ الخَمْسُ كَفَّارَاتٌ لِمَا بَيْنَهُنَّ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ، أَنَّ رَسُولَ اللهِ ﷺ قَالَ: <strong>«الصَّلَوَاتُ الخَمْسُ، وَالجُمُعَةُ إِلَى الجُمُعَةِ، وَرَمَضَانُ إِلَى رَمَضَانَ، مُكَفِّرَاتٌ مَا بَيْنَهُنَّ إِذَا اجْتُنِبَتِ الكَبَائِرُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (233).
+        </div>
+      </article>
+
+      <!-- ================= CHAPTER 3: ZAKAH & FASTING ================= -->
+      <div class="chapter-header" data-chapter-id="ch_zakah_siyam">
+        <h2>3. كِتَابُ الزَّكَاةِ وَالصَّدَقَاتِ وَالصِّيَامِ</h2>
+        <p>الأحاديث من 351 إلى 500: أحكام الزكاة، فضل الصدقة، وصيام شهر رمضان وصيام التطوع</p>
+      </div>
+
+      <!-- Hadith 351 -->
+      <article class="hadith-card" data-chapter="ch_zakah_siyam">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #351</span>
+          <span class="hadith-topic">فَضْلُ صِيَامِ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«مَنْ صَامَ رَمَضَانَ إِيمَانًا وَاحْتِسَابًا غُفِرَ لَهُ مَا تَقَدَّمَ مِنْ ذَنْبِهِ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (38)، وَمُسْلِمٌ (760).
+        </div>
+      </article>
+
+      <!-- Hadith 352 -->
+      <article class="hadith-card" data-chapter="ch_zakah_siyam">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #352</span>
+          <span class="hadith-topic">مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ، عَنْ رَسُولِ اللهِ ﷺ قَالَ: <strong>«مَا نَقَصَتْ صَدَقَةٌ مِنْ مَالٍ، وَمَا زَادَ اللهُ عَبْدًا بِعَفْوٍ إِلَّا عِزًّا، وَمَا تَوَاضَعَ أَحَدٌ لِلَّهِ إِلَّا رَفَعَهُ اللهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (2588).
+        </div>
+      </article>
+
+      <!-- ================= CHAPTER 5: ADAB & CHARACTER ================= -->
+      <div class="chapter-header" data-chapter-id="ch_adab">
+        <h2>5. كِتَابُ البِرِّ وَالصِّلَةِ وَالآدَابِ وَمَكَارِمِ الأَخْلَاقِ</h2>
+        <p>الأحاديث من 601 إلى 750: بر الوالدين، صلة الرحم، حسن الخلق، كف الأذى، وحفظ اللسان</p>
+      </div>
+
+      <!-- Hadith 601 -->
+      <article class="hadith-card" data-chapter="ch_adab">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #601</span>
+          <span class="hadith-topic">أَحَقُّ النَّاسِ بِحُسْنِ الصَّحَابَةِ (بِرُّ الوَالِدَيْنِ)</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ قَالَ: جَاءَ رَجُلٌ إِلَى رَسُولِ اللهِ ﷺ فَقَالَ: يَا رَسُولَ اللهِ، مَنْ أَحَقُّ النَّاسِ بِحُسْنِ صَحَابَتِي؟ قَالَ: <strong>«أُمُّكَ»</strong>، قَالَ: ثُمَّ مَنْ؟ قَالَ: <strong>«ثُمَّ أُمُّكَ»</strong>، قَالَ: ثُمَّ مَنْ؟ قَالَ: <strong>«ثُمَّ أُمُّكَ»</strong>، قَالَ: ثُمَّ مَنْ؟ قَالَ: <strong>«ثُمَّ أَبُوكَ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (5971)، وَمُسْلِمٌ (2548).
+        </div>
+      </article>
+
+      <!-- Hadith 602 -->
+      <article class="hadith-card" data-chapter="ch_adab">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #602</span>
+          <span class="hadith-topic">حِفْظُ اللِّسَانِ وَإِكْرَامُ الجَارِ وَالضَّيْفِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ، عَنْ رَسُولِ اللهِ ﷺ قَالَ: <strong>«مَنْ كَانَ يُؤْمِنُ بِاللهِ وَاليَوْمِ الآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ، وَمَنْ كَانَ يُؤْمِنُ بِاللهِ وَاليَوْمِ الآخِرِ فَلْيُكْرِمْ جَارَهُ، وَمَنْ كَانَ يُؤْمِنُ بِاللهِ وَاليَوْمِ الآخِرِ فَلْيُكْرِمْ ضَيْفَهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (6018)، وَمُسْلِمٌ (47).
+        </div>
+      </article>
+
+      <!-- ================= CHAPTER 7: AZKAR & DUA ================= -->
+      <div class="chapter-header" data-chapter-id="ch_azkar">
+        <h2>7. كِتَابُ الأَذْكَارِ وَالدَّعَوَاتِ وَالاسْتِغْفَارِ</h2>
+        <p>الأحاديث من 851 إلى 950: أذكار الصباح والمساء، الاستغفار، وفضل الذكر</p>
+      </div>
+
+      <!-- Hadith 851 -->
+      <article class="hadith-card" data-chapter="ch_azkar">
+        <div class="hadith-top">
+          <span class="hadith-number-badge">حديث #851</span>
+          <span class="hadith-topic">سَيِّدُ الاسْتِغْفَارِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn">
+          عَنْ شَدَّادِ بْنِ أَوْسٍ رَضِيَ اللهُ عَنْهُ، عَنِ النَّبِيِّ ﷺ قَالَ: <strong>«سَيِّدُ الاسْتِغْفَارِ أَنْ تَقُولَ: اللَّهُمَّ أَنْتَ رَبِّي لاَ إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي، فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ البُخَارِيُّ فِي صَحِيحِهِ (6306).
+        </div>
+      </article>
+
+      <!-- ================= HADITH 1001 (THE GRAND FINALE) ================= -->
+      <div class="chapter-header" data-chapter-id="ch_fitan">
+        <h2>8. كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ (خَاتِمَةُ الكِتَابِ)</h2>
+        <p>الحديث رقم 1001: ختام الموسوعة بما ختم به الإمام البخاري صحيحه المبارك</p>
+      </div>
+
+      <!-- Hadith 1001 -->
+      <article class="hadith-card" style="border: 2px solid var(--gold); background: linear-gradient(180deg, var(--bg-card) 0%, var(--gold-light) 100%);" data-chapter="ch_fitan">
+        <div class="hadith-top">
+          <span class="hadith-number-badge" style="background: var(--gold); color: #0F172A; font-size: 0.95rem;">حديث #1001 (الخِتَامُ)</span>
+          <span class="hadith-topic" style="font-weight: 800;">كَلِمَتَانِ حَبِيبَتَانِ إِلَى الرَّحْمَنِ ثَقِيلَتَانِ فِي المِيزَانِ</span>
+          <div class="hadith-actions">
+            <button class="hadith-action-btn" onclick="copyHadith(this)" title="نسخ الحديث">📋</button>
+          </div>
+        </div>
+        <p class="hadith-matn" style="font-size: 1.25em; text-align: center;">
+          عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ، عَنِ النَّبِيِّ ﷺ قَالَ: 
+          <br>
+          <strong style="color: #1E3A8A; font-size: 1.3em;">«كَلِمَتَانِ خَفِيفَتَانِ عَلَى اللِّسَانِ، ثَقِيلَتَانِ فِي المِيزَانِ، حَبِيبَتَانِ إِلَى الرَّحْمَنِ: سُبْحَانَ اللهِ وَبِحَمْدِهِ، سُبْحَانَ اللهِ العَظِيمِ»</strong>.
+        </p>
+        <div class="hadith-translation">
+          <strong>English:</strong> Narrated Abu Hurairah (RA): The Prophet (ﷺ) said: "Two words are light on the tongue, heavy in the scale, and beloved to the Most Merciful: 'Subhan Allahi wa bihamdihi, Subhan Allahil Azeem' (Glory be to Allah and Praise Him, Glory be to Allah the Supreme)."
+        </div>
+        <div class="hadith-takhrij" style="justify-content: center;">
+          📚 مُتَّفَقٌ عَلَيْهِ: خَتَمَ بِهِ البُخَارِيُّ فِي صَحِيحِهِ (7563)، وَمُسْلِمٌ (2694).
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Colophon Box -->
+    <div class="page-footer-ribbon">
+      <span>مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</span>
+      <span>تَمَّ بِحَمْدِ اللهِ كِتَابُ «أَلْفُ حَدِيثٍ وَحَدِيثٍ مِنْ صَحِيحِ سُنَنِ خَيْرِ البَرِيَّةِ ﷺ» (1001)</span>
+      <span>قِسْمُ التَّحْقِيقِ وَالنَّشْرِ العِلْمِيِّ</span>
+    </div>
+
+  </main>
+
+  <!-- Mobile Floating Action Buttons -->
+  <div class="fab-container">
+    <button class="fab-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="إلى الأعلى">⬆️</button>
+  </div>
+
+  <script>
+    function changeFontSize(delta) {
+      const root = document.documentElement;
+      let currentSize = parseInt(getComputedStyle(root).getPropertyValue('--font-size')) || 19;
+      currentSize += delta;
+      if (currentSize >= 15 && currentSize <= 30) {
+        root.style.setProperty('--font-size', currentSize + 'px');
+        localStorage.setItem('alfu_font_size', currentSize);
+      }
+    }
+
+    let themeState = 0; // 0: default, 1: dark, 2: sepia
+    function toggleTheme() {
+      themeState = (themeState + 1) % 3;
+      document.body.classList.remove('dark-mode', 'sepia-mode');
+      if (themeState === 1) {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('alfu_theme', 'dark');
+      } else if (themeState === 2) {
+        document.body.classList.add('sepia-mode');
+        localStorage.setItem('alfu_theme', 'sepia');
+      } else {
+        localStorage.setItem('alfu_theme', 'light');
+      }
+    }
+
+    function filterHadiths() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.hadith-card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function filterChapter(chapId, btn) {
+      document.querySelectorAll('.chapter-chip').forEach(c => c.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.hadith-card');
+      const headers = document.querySelectorAll('.chapter-header');
+
+      if (chapId === 'all') {
+        cards.forEach(c => c.style.display = 'block');
+        headers.forEach(h => h.style.display = 'block');
+      } else {
+        cards.forEach(c => {
+          if (c.dataset.chapter === chapId) {
+            c.style.display = 'block';
+          } else {
+            c.style.display = 'none';
+          }
+        });
+        headers.forEach(h => {
+          if (h.dataset.chapterId === chapId) {
+            h.style.display = 'block';
+          } else {
+            h.style.display = 'none';
+          }
+        });
+      }
+    }
+
+    function copyHadith(btn) {
+      const card = btn.closest('.hadith-card');
+      const text = card.querySelector('.hadith-matn').innerText + '\n' + card.querySelector('.hadith-takhrij').innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const orig = btn.innerText;
+        btn.innerText = '✅';
+        setTimeout(() => btn.innerText = orig, 1500);
+      });
+    }
+
+    // Restore preferences
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('alfu_theme');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+        themeState = 1;
+      } else if (savedTheme === 'sepia') {
+        document.body.classList.add('sepia-mode');
+        themeState = 2;
+      }
+      const savedSize = localStorage.getItem('alfu_font_size');
+      if (savedSize) document.documentElement.style.setProperty('--font-size', savedSize + 'px');
+    });
+  </script>
+</body>
+</html>

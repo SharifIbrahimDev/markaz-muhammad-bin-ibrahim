@@ -91,16 +91,56 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
 
-          // Featured Books Section
+          // Upcoming Books Section (Sheikh Ibrahim Sharif Abubakar)
+          if (books.any((b) => b.isUpcoming)) ...[
+            SliverToBoxAdapter(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      '✨ Wallafe-Wallafen Shugaban Cibiyar',
+                      style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      '${books.where((b) => b.isUpcoming).length} Masu Zuwa',
+                      style: const TextStyle(fontSize: 12, color: Color(0xFFC5A059), fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            SliverToBoxAdapter(
+              child: SizedBox(
+                height: 250,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  itemCount: books.where((b) => b.isUpcoming).length,
+                  itemBuilder: (context, index) {
+                    final upcomingList = books.where((b) => b.isUpcoming).toList();
+                    return Container(
+                      width: 155,
+                      margin: const EdgeInsets.only(right: 14),
+                      child: BookCardWidget(book: upcomingList[index]),
+                    );
+                  },
+                ),
+              ),
+            ),
+          ],
+
+          // Featured Classical Books Section
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 6.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    '📚 Fitattun Littattafai (Featured)',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                    '📚 Fitattun Littattafan Maktaba',
+                    style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     '${featuredBooks.length} littattafai',
@@ -116,7 +156,7 @@ class HomeScreen extends StatelessWidget {
               height: 250,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 itemCount: featuredBooks.length,
                 itemBuilder: (context, index) {
                   return Container(

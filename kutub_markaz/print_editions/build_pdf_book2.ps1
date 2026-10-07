@@ -1,0 +1,61 @@
+$ErrorActionPreference = 'Stop'
+
+$scriptDir = $PSScriptRoot
+$kutubDir = Split-Path -Parent $scriptDir
+$workspace = Split-Path -Parent $kutubDir
+
+$htmlPath = Join-Path $scriptDir "2_nayl_al_amani.html"
+$pdfDir = Join-Path $kutubDir "pdf_editions"
+$pdfPath = Join-Path $pdfDir "2_nayl_al_amani.pdf"
+$webPdfDir = Join-Path $workspace "web\pdf"
+$webPdfPath = Join-Path $webPdfDir "2_nayl_al_amani.pdf"
+
+if (-not (Test-Path $pdfDir)) {
+    New-Item -ItemType Directory -Path $pdfDir -Force | Out-Null
+}
+if (-not (Test-Path $webPdfDir)) {
+    New-Item -ItemType Directory -Path $webPdfDir -Force | Out-Null
+}
+
+if (Test-Path $pdfPath) {
+    Remove-Item $pdfPath -Force
+}
+if (Test-Path $webPdfPath) {
+    Remove-Item $webPdfPath -Force
+}
+
+$edgePath = "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+if (-not (Test-Path $edgePath)) {
+    $edgePath = "C:\Program Files\Microsoft\Edge\Application\msedge.exe"
+}
+if (-not (Test-Path $edgePath)) {
+    throw "Edge browser executable not found."
+}
+
+Write-Host "Compiling fresh PDF for Book 2: Nayl al-Amani..."
+Write-Host "HTML: $htmlPath"
+Write-Host "PDF: $pdfPath"
+
+$argString = "--headless --no-sandbox --disable-gpu --disable-software-rasterizer --no-pdf-header-footer `"--print-to-pdf=$pdfPath`" `"$htmlPath`""
+$proc = Start-Process -FilePath $edgePath -ArgumentList $argString -Wait -PassThru -NoNewWindow
+Write-Host "Process Exit Code: $($proc.ExitCode)"
+
+if (Test-Path $pdfPath) {
+    $pdfItem = Get-Item $pdfPath
+    Write-Host "SUCCESS: Fresh PDF compiled!"
+    Write-Host "Path: $($pdfItem.FullName)"
+    Write-Host "Size: $($pdfItem.Length) bytes ($([Math]::Round($pdfItem.Length / 1MB, 2)) MB)"
+    Write-Host "LastWriteTime: $($pdfItem.LastWriteTime)"
+    
+    # Copy to web
+    Copy-Item -Path $pdfPath -Destination $webPdfPath -Force
+    Write-Host "Web PDF synced to $webPdfPath"
+
+    # Count pages
+    $bytes = [System.IO.File]::ReadAllBytes($pdfPath)
+    $text = [System.Text.Encoding]::ASCII.GetString($bytes)
+    $matches = [regex]::Matches($text, "/Type\s*/Page[^s]")
+    Write-Host "Total Pages: $($matches.Count)"
+} else {
+    Write-Host "ERROR: PDF file was not created."
+}

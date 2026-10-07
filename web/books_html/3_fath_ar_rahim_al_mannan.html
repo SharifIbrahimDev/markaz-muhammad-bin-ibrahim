@@ -1,0 +1,1961 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فَتْحُ الرَّحِيمِ المَنَّانِ بِشَرْحِ الأُصُولِ الثَّلَاثَةِ مَعَ الدَّلِيلِ وَالبَيَانِ | مركز محمد بن إبراهيم آل الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --primary-dark: #172554;
+      --gold: #C5A059;
+      --gold-dark: #9A7B38;
+      --text-main: #1F2937;
+      --text-muted: #4B5563;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-card: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      background: var(--bg-page);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      width: 100%;
+    }
+    body {
+      font-size: 19.5px;
+      line-height: 2.25;
+    }
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      background: var(--primary-dark);
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-family: 'Scheherazade New', serif;
+    }
+    .no-print-bar .title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.15rem;
+    }
+    .btn-action {
+      background: var(--gold);
+      color: #172554;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-family: 'Amiri', serif;
+      transition: all 0.2s;
+    }
+    .btn-action:hover {
+      background: #D8B26E;
+      transform: translateY(-1px);
+    }
+    .cover-container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: #FFFFFF;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-radius: 8px;
+    }
+    .cover-frame-outer {
+      border: 4px double var(--gold);
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .cover-frame-inner {
+      border: 2px solid var(--primary-dark);
+      padding: 40px 25px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 980px;
+      background: radial-gradient(circle at center, #FFFFFF 60%, #F8FAFC 100%);
+    }
+    .cover-header-top {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.25rem;
+      color: var(--primary-dark);
+      font-weight: bold;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .cover-basmalah {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.85rem;
+      color: var(--gold-dark);
+      margin: 15px 0 12px 0;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cover-badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: var(--primary-dark);
+      border: 1px solid rgba(30, 58, 138, 0.3);
+      padding: 5px 24px;
+      border-radius: 20px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      margin: 10px auto;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-title-main {
+      font-family: 'Scheherazade New', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.35;
+      margin: 14px 0 8px 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    }
+    .cover-title-sub {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .cover-title-desc {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 18px auto;
+      line-height: 1.7;
+    }
+    .cover-ornament {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin: 10px 0;
+      letter-spacing: 6px;
+    }
+    .cover-box-author {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      padding: 14px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-sharh {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-top: 3px solid var(--primary);
+      border-bottom: 3px solid var(--primary);
+      padding: 16px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-label {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .cover-box-name {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.65rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+      line-height: 1.4;
+    }
+    .cover-box-sheikh {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+      line-height: 1.4;
+    }
+    .cover-box-dua {
+      font-size: 1rem;
+      color: #6B7280;
+      margin-top: 4px;
+    }
+    .cover-footer-block {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1.5px solid #E2E8F0;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-footer-center {
+      font-size: 1.45rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+    }
+    .cover-footer-dept {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .cover-footer-loc {
+      font-size: 1rem;
+      color: var(--gold-dark);
+      font-weight: bold;
+      margin-top: 4px;
+    }
+    .book-wrapper {
+      max-width: 900px;
+      margin: 30px auto;
+      background: var(--bg-card);
+      padding: 55px 70px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-card);
+    }
+    h1.main-heading {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 2.3rem;
+      border-bottom: 2.5px solid var(--gold);
+      padding-bottom: 12px;
+      margin-top: 50px;
+      margin-bottom: 24px;
+      text-align: center;
+      page-break-before: always;
+    }
+    h2.section-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary);
+      font-size: 1.85rem;
+      border-right: 5px solid var(--gold);
+      padding-right: 14px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3.sub-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    h4.sub-sub-title {
+      font-size: 1.25rem;
+      color: var(--gold-dark);
+      margin-top: 22px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    strong {
+      color: var(--primary-dark);
+      font-weight: bold;
+    }
+    .bayt-box {
+      background: #F8FAFC;
+      border: 1.5px solid #CBD5E1;
+      border-right: 6px solid var(--gold);
+      border-left: 6px solid var(--gold);
+      border-radius: 6px;
+      padding: 18px 24px;
+      margin: 24px 0;
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-align: center;
+      line-height: 2.2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .bayt-divider {
+      color: var(--gold-dark);
+      font-weight: normal;
+      padding: 0 14px;
+    }
+    .quote-box {
+      background: #EFF6FF;
+      border-right: 4px solid var(--primary);
+      padding: 16px 22px;
+      margin: 20px 0;
+      border-radius: 0 6px 6px 0;
+      font-style: normal;
+      color: var(--primary-dark);
+      line-height: 2.1;
+      font-size: 1.15rem;
+    }
+    .diagram-box {
+      background: #FDFBF7;
+      color: var(--primary-dark);
+      border: 1.5px solid #E2D9C8;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 22px 0;
+      overflow-x: auto;
+      direction: rtl;
+      text-align: center;
+    }
+    .diagram-box pre {
+      font-family: 'Scheherazade New', 'Amiri', serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    ul.content-list, ol.content-list-ordered {
+      margin: 16px 0 22px 28px;
+      padding-right: 20px;
+    }
+    ul.content-list li, ol.content-list-ordered li {
+      margin-bottom: 12px;
+      line-height: 2.1;
+    }
+    .section-divider {
+      text-align: center;
+      color: var(--gold-dark);
+      margin: 30px 0;
+      font-size: 1.4rem;
+      letter-spacing: 10px;
+      font-family: 'Amiri', 'Scheherazade New', serif;
+    }
+
+    /* ACADEMIC TABLE STYLING */
+    table.academic-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 1rem;
+      direction: rtl;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #CBD5E1;
+      font-family: 'Amiri', serif;
+    }
+    table.academic-table thead {
+      display: table-header-group;
+    }
+    table.academic-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    table.academic-table th, table.academic-table td {
+      border: 1px solid #CBD5E1;
+      padding: 12px 16px;
+      text-align: right;
+      line-height: 1.85;
+      vertical-align: middle;
+    }
+    table.academic-table th {
+      background: #F1F5F9;
+      color: var(--primary-dark);
+      font-family: 'Scheherazade New', 'Amiri', serif;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border-bottom: 2.5px solid var(--gold);
+      border-top: 1px solid #CBD5E1;
+    }
+    table.academic-table tr:nth-child(even) td {
+      background: #F8FAFC;
+    }
+    table.academic-table tr:hover td {
+      background: #F1F5F9;
+    }
+    table.academic-table td strong {
+      color: var(--primary-dark);
+      font-weight: 700;
+    }
+
+    @page {
+      size: A4;
+      margin-top: 22mm;
+      margin-bottom: 22mm;
+      margin-left: 16mm;
+      margin-right: 16mm;
+      @top-right {
+        content: "«فَتْحُ الرَّحِيمِ المَنَّانِ بِشَرْحِ الأُصُولِ الثَّلَاثَةِ»";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @top-left {
+        content: "شَرْحُ وَتَعْلِيقُ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ)";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Amiri', serif;
+        font-size: 9.5pt;
+        font-weight: bold;
+        color: #854D0E;
+      }
+      @bottom-right {
+        content: "مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+      }
+      @bottom-left {
+        content: "قِسْمُ النَّشْرِ العِلْمِيِّ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+      }
+    }
+    @page :first {
+      margin: 0 !important;
+      @top-right { content: none !important; }
+      @top-left { content: none !important; }
+      @bottom-center { content: none !important; }
+      @bottom-right { content: none !important; }
+      @bottom-left { content: none !important; }
+    }
+      body {
+        background: #FFFFFF !important;
+        font-size: 16px !important;
+        line-height: 1.95 !important;
+      }
+      .no-print-bar { display: none !important; }
+      .cover-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        box-sizing: border-box !important;
+      }
+      .cover-frame-outer {
+        border: 3.5px double var(--gold) !important;
+        padding: 5px !important;
+        box-sizing: border-box !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-frame-inner {
+        border: 1.5px solid var(--primary-dark) !important;
+        min-height: unset !important;
+        height: auto !important;
+        padding: 16px 20px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-header-top {
+        font-size: 1.1rem !important;
+        margin-bottom: 2px !important;
+        line-height: 1.35 !important;
+      }
+      .cover-basmalah {
+        font-size: 1.5rem !important;
+        margin: 6px 0 4px 0 !important;
+      }
+      .cover-badge {
+        font-size: 0.95rem !important;
+        padding: 2px 18px !important;
+        margin: 4px auto !important;
+      }
+      .cover-title-main {
+        font-size: 2.6rem !important;
+        margin: 6px 0 2px 0 !important;
+        line-height: 1.2 !important;
+      }
+      .cover-title-sub {
+        font-size: 1.65rem !important;
+        margin-bottom: 6px !important;
+        line-height: 1.25 !important;
+      }
+      .cover-title-desc {
+        font-size: 1rem !important;
+        margin: 0 auto 6px auto !important;
+        line-height: 1.45 !important;
+        max-width: 650px !important;
+      }
+      .cover-ornament {
+        font-size: 1.1rem !important;
+        margin: 2px 0 !important;
+        letter-spacing: 4px !important;
+      }
+      .cover-box-author {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-sharh {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-label {
+        font-size: 0.85rem !important;
+        margin-bottom: 2px !important;
+      }
+      .cover-box-name {
+        font-size: 1.35rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-sheikh {
+        font-size: 1.6rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-dua {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .cover-footer-block {
+        margin-top: 10px !important;
+        padding-top: 6px !important;
+      }
+      .cover-footer-center {
+        font-size: 1.25rem !important;
+      }
+      .cover-footer-dept {
+        font-size: 1rem !important;
+        margin-top: 1px !important;
+      }
+      .cover-footer-loc {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .book-wrapper {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+      h1.main-heading {
+        page-break-before: always;
+      }
+      .bayt-box, .diagram-box, .quote-box {
+        page-break-inside: avoid;
+      }
+      table.academic-table {
+        page-break-inside: auto;
+        break-inside: auto;
+        font-size: 10.5pt !important;
+        width: 100% !important;
+        margin: 18pt 0 !important;
+      }
+      table.academic-table thead {
+        display: table-header-group;
+      }
+      table.academic-table tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      table.academic-table th, table.academic-table td {
+        border: 0.75pt solid #CBD5E1 !important;
+        padding: 7pt 10pt !important;
+      }
+      table.academic-table th {
+        background: #F1F5F9 !important;
+        color: #1E3A8A !important;
+        border-bottom: 2pt solid #C5A059 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      table.academic-table tr:nth-child(even) td {
+        background: #F8FAFC !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Bar -->
+  <div class="no-print-bar">
+    <div class="title-group">
+      <span>مركز محمد بن إبراهيم آل الشيخ رحمه الله</span>
+      <span>|</span>
+      <span>«فَتْحُ الرَّحِيمِ المَنَّانِ بِشَرْحِ الأُصُولِ الثَّلَاثَةِ»</span>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <a href="../pdf_editions/3_fath_ar_rahim_al_mannan.pdf" class="btn-action" target="_blank">📥 تحميل النسخة (PDF)</a>
+      <button class="btn-action" onclick="window.print()">🖨️ طباعة الكتاب</button>
+    </div>
+  </div>
+
+  <!-- HUMBLE & ELEGANT COVER PAGE -->
+  <div class="cover-container">
+    <div class="cover-frame-outer">
+      <div class="cover-frame-inner">
+        <div>
+          <div class="cover-header-top">
+            مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ<br>
+            قِسْمُ النَّشْرِ العِلْمِيِّ
+          </div>
+          <div class="cover-basmalah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+          <div class="cover-badge">سِلْسِلَةُ الكُتُبِ التَّأْصِيلِيَّةِ فِي العَقِيدَةِ (3)</div>
+        </div>
+
+        <div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+          <div class="cover-title-main">فَتْحُ الرَّحِيمِ المَنَّانِ</div>
+          <div class="cover-title-sub">بِشَرْحِ الأُصُولِ الثَّلَاثَةِ مَعَ الدَّلِيلِ وَالبَيَانِ</div>
+          <div class="cover-title-desc">
+            شَرْحٌ تَأْصِيلِيٌّ جَامِعٌ عَلَى عَقِيدَةِ أَهْلِ السُّنَّةِ وَالجَمَاعَةِ، يُبَيِّنُ مَعَانِيَ رِسَالَةِ الإِمَامِ المُجَدِّدِ بِالأَدِلَّةِ وَالبَرَاهِينِ الشَّرْعِيَّةِ، رَاجِيًا عَفْوَ رَبِّهِ وَغُفْرَانَهُ.
+          </div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+
+          <div class="cover-box-author">
+            <div class="cover-box-label">مَتْنُ الرِّسَالَةِ لِشَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ:</div>
+            <div class="cover-box-name">مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ التَّمِيمِيِّ</div>
+            <div class="cover-box-dua">رَحِمَهُ اللهُ تَعَالَى (1115 - 1206 هـ)</div>
+          </div>
+
+          <div class="cover-box-sharh">
+            <div class="cover-box-label">شَرْحُ وَتَعْلِيقُ:</div>
+            <div class="cover-box-sheikh">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ</div>
+            <div class="cover-box-dua">عَفَا اللَّهُ عَنْهُ وَغَفَرَ لَهُ وَلِوَالِدَيْهِ وَلِمَشَايِخِهِ وَلِجَمِيعِ المُسْلِمِينَ</div>
+          </div>
+        </div>
+
+        <div class="cover-footer-block">
+          <div class="cover-footer-center">إِصْدَارَاتُ مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</div>
+          <div class="cover-footer-dept">قِسْمُ النَّشْرِ العِلْمِيِّ وَالتَّوْزِيعِ الخَيْرِيِّ</div>
+          <div class="cover-footer-loc">كَادُونَا — جُمْهُورِيَّةُ نَيْجِيرْيَا الِاتِّحَادِيَّةُ</div>
+          <div class="cover-footer-loc" style="font-size:0.95rem;color:#6B7280;margin-top:4px;">الطَّبْعَةُ الأُولَى — 1448 هـ / 2026 م</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-wrapper">
+
+<h1 class="main-heading">فَتْحُ الرَّحِيمِ المَنَّانِ بِشَرْحِ الأُصُولِ الثَّلَاثَةِ مَعَ الدَّلِيلِ وَالبَيَانِ</h1>
+<h3 class="sub-title">الشَّرْحُ الكَبِيرُ المَوْسُوعِيُّ المُؤَصَّلُ عَلَى عَقِيدَةِ أَهْلِ السُّنَّةِ وَالجَمَاعَةِ</h3>
+<h4 class="sub-sub-title">لِرِسَالَةِ «ثَلَاثَةِ الأُصُولِ وَأَدِلَّتِهَا» لِشَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ التَّمِيمِيِّ رَحِمَهُ اللهُ (1115 - 1206 هـ)</h4>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<p><strong>شَرْحُ وَتَحْقِيقُ وَتَعْلِيقُ:</strong></p>
+<p>إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</p>
+<p>بِمَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ لِلْعُلُومِ الشَّرْعِيَّةِ</p>
+<p><strong>سِلْسِلَةُ المَوَاسِيعِ التَّأْصِيلِيَّةِ فِي العَقِيدَةِ وَأُصُولِ الدِّينِ - المُجَلَّدُ الكَبِيرُ الثَّالِثُ</strong></p>
+<p><em>يَشْتَمِلُ عَلَى: التَّحْلِيلِ اللُّغَوِيِّ وَالإِعْرَابِيِّ، تَفْصِيلِ المَسَائِلِ الأَرْبَعِ وَالمَسَائِلِ الثَّلَاثِ وَالحَنِيفِيَّةِ مِلَّةِ إِبْرَاهِيمَ، اسْتِيعَابِ أَنْوَاعِ العِبَادَةِ الـ 14 بِأَدِلَّتِهَا القُرْآنِيَّةِ وَالنَّبَوِيَّةِ، تَحْقِيقِ حَدِيثِ سُؤَالِ القَبْرِ، شَرْحِ حَدِيثِ جِبْرِيلَ فِي مَرَاتِبِ الدِّينِ الثَّلَاثِ، مَحَطَّاتِ السِّيرَةِ النَّبَوِيَّةِ وَالهِجْرَةِ، مَسَائِلِ البَعْثِ وَالجَزَاءِ، وَتَحْرِيرِ مَسَائِلِ الحُكْمِ بِمَا أَنْزَلَ اللهُ وَرُؤُوسِ الطَّوَاغِيتِ الخَمْسَةِ.</em></p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📑 فِهْرِسُ أَبْوَابِ الكِتَابِ المَوْسُوعِيِّ الكَبِيرِ</h2>
+<ul class="content-list">
+  <li><strong>مُقَدِّمَةُ الشَّارِحِ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</strong></li>
+  <li>خُطْبَةُ الحَاجَةِ النَّبَوِيَّةِ الشَّرِيفَةِ.</li>
+  <li>شَرَفُ عِلْمِ التَّوْحِيدِ وَعَظِيمُ خَطَرِ الجَهْلِ بِهِ.</li>
+  <li>بَاعِثُ تَسْطِيرِ الشَّرْحِ وَسَبَبُهُ (مُدَارَسَةُ الرِّسَالَةِ مَعَ طُلَّابِ العِلْمِ فِي الحِلَقِ التَّأْسِيسِيَّةِ).</li>
+  <li><strong>تَمْهِيدٌ تَأْصِيلِيٌّ: مَنْهَجُ الشَّرْحِ وَمَعَالِمُهُ العِلْمِيَّةُ وَمَضَامِينُهُ</strong></li>
+  <li>الرَّكائِزُ الخَمْسُ الَّتِي بُنِيَ عَلَيْهَا الشَّرْحُ: الاسْتِدْلَالُ، الاسْتِيعَابُ، رَبْطُ المَسَائِلِ بِسُؤَالِ القَبْرِ، التَّخْرِيجُ الحَدِيثِيُّ، وَالتَّحْقِيقُ العَقَدِيُّ.</li>
+  <li><strong>المَدَاخِلُ الثَّلَاثَةُ التَّأْسِيسِيَّةُ قَبْلَ الشَّرْحِ</strong></li>
+  <li><strong>المَدْخَلُ الأَوَّلُ: التَّعْرِيفُ بِمُؤَلِّفِ المَتْنِ:</strong> سِيرَةُ شَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ التَّمِيمِيِّ رَحِمَهُ اللهُ (1115 - 1206 هـ).</li>
+  <li><strong>المَدْخَلُ الثَّانِي: التَّعْرِيفُ بِالكِتَابِ/المَتْنِ:</strong> رِسَالَةُ «ثَلَاثَةِ الأُصُولِ وَأَدِلَّتِهَا» (اسْمُهَا، نِسْبَتُهَا، مَقْصِدُهَا، وَسِرُّ ارْتِبَاطِهَا بِفِتْنَةِ القَبْرِ وَسُؤَالِ المَلَكَيْنِ).</li>
+  <li><strong>المَدْخَلُ الثَّالِثُ: التَّعْرِيفُ بِالفَنِّ وَالعِلْمِ:</strong> عِلْمُ التَّوْحِيدِ وَأُصُولِ الدِّينِ (حَدُّهُ، مَنْزِلَتُهُ، حُكْمُ تَعَلُّمِهِ، وَثَمَرَتُهُ فِي الدَّارَيْنِ).</li>
+  <li><strong>القِسْمُ الأَوَّلُ: شَرْحُ المُقَدِّمَاتِ الثَّلَاثِ التَّأْسِيسِيَّةِ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> المُقَدِّمَةُ الأُولَى: المَسَائِلُ الأَرْبَعُ (مِنْ سُورَةِ العَصْرِ).</li>
+  <li>المَبْحَثُ 1: العِلْمُ الشَّرْعِيُّ بِالأُصُولِ الثَّلَاثَةِ بِالأَدِلَّةِ.</li>
+  <li>المَبْحَثُ 2: العَمَلُ بِالعِلْمِ وَخُطُورَةُ التَّجَرُّدِ مِنْهُ.</li>
+  <li>المَبْحَثُ 3: الدَّعْوَةُ إِلَى اللهِ عَلَى بَصِيرَةٍ.</li>
+  <li>المَبْحَثُ 4: الصَّبْرُ عَلَى الأَذَى فِيهِ وَأَقْسَامُ الصَّبْرِ الثَّلَاثَةُ.</li>
+  <li>المَبْحَثُ 5: فِقْهُ اسْتِدْلَالِ الشَّافِعِيِّ بِسُورَةِ العَصْرِ وَتَبْوِيبِ البُخَارِيِّ: «العِلْمُ قَبْلَ القَوْلِ وَالعَمَلِ».</li>
+  <li><em>[جَدْوَلُ 1: المَسَائِلُ الأَرْبَعُ وَأَدِلَّتُهَا الشَّرْعِيَّةُ وَثِمَارُهَا]</em></li>
+  <li><strong>البَابُ الثَّانِي:</strong> المُقَدِّمَةُ الثَّانِيَةُ: المَسَائِلُ الثَّلَاثُ التَّوْحِيدِيَّةُ الوَاجِبَةُ.</li>
+  <li>المَسْأَلَةُ 1: إِرْسَالُ الرَّسُولِ مَانِعٌ مِنَ الإِهْمَالِ وَعِظَةُ فِرْعَوْنَ.</li>
+  <li>المَسْأَلَةُ 2: بُغْضُ اللهِ لِلشِّرْكِ وَعَدَمُ رِضَاهُ بِأَحَدٍ مَعَهُ.</li>
+  <li>المَسْأَلَةُ 3: عَقِيدَةُ الوَلَاءِ وَالبَرَاءِ وَتَفْسِيرُ آيَةِ سُورَةِ المُجَادَلَةِ.</li>
+  <li><em>[جَدْوَلُ 2: المَسَائِلُ الثَّلَاثُ فِي التَّوْحِيدِ وَالوَلَاءِ وَالبَرَاءِ]</em></li>
+  <li><strong>البَابُ الثَّالِثُ:</strong> المُقَدِّمَةُ الثَّالِثَةُ: الحَنِيفِيَّةُ مِلَّةُ إِبْرَاهِيمَ وَحَقِيقَةُ العِبَادَةِ.</li>
+  <li>المَبْحَثُ 1: بَيَانُ الحَنِيفِيَّةِ وَمِلَّةِ الخَلِيلِ إِبْرَاهِيمَ عَلَيْهِ السَّلَامُ.</li>
+  <li>المَبْحَثُ 2: الغَايَةُ العُظْمَى مِنْ خَلْقِ الثَّقَلَيْنِ (تَفْسِيرُ آيَةِ الذَّارِيَاتِ).</li>
+  <li>المَبْحَثُ 3: أَعْظَمُ مَا أَمَرَ اللهُ بِهِ: التَّوْحِيدُ (حَدُّهُ وَأَقْسَامُهُ).</li>
+  <li>المَبْحَثُ 4: أَعْظَمُ مَا نَهَى اللهُ عَنْهُ: الشِّرْكُ (حَقِيقَتُهُ وَأَقْسَامُهُ وَخَطَرُهُ).</li>
+  <li><em>[جَدْوَلُ 3: أَعْظَمُ الأَوَامِرِ (التَّوْحِيدُ) مُقَابِلَ أَعْظَمِ المَنَاهِي (الشِّرْكُ)]</em></li>
+  <li><strong>القِسْمُ الثَّانِي: الأَصْلُ الأَوَّلُ: مَعْرِفَةُ العَبْدِ رَبَّهُ عَزَّ وَجَلَّ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> حَقِيقَةُ الرُّبُوبِيَّةِ وَدَلَائِلُ الآفَاقِ وَالأَنْفُسِ.</li>
+  <li>المَبْحَثُ 1: إِذَا قِيلَ لَكَ: مَنْ رَبُّكَ؟ وَتَحْرِيرُ مَعْنَى التَّرْبِيَةِ الإِلَهِيَّةِ.</li>
+  <li>المَبْحَثُ 2: إِذَا قِيلَ لَكَ: بِمَ عَرَفْتَ رَبَّكَ؟ وَالفَرْقُ بَيْنَ الآيَاتِ وَالمَخْلُوقَاتِ.</li>
+  <li>المَبْحَثُ 3: تَفْسِيرُ آيَةِ الأَعْرَافِ وَآيَتَيِ البَقَرَةِ (21 - 22).</li>
+  <li>المَبْحَثُ 4: قَاعِدَةُ الحَافِظِ ابْنِ كَثِيرٍ التَّأْصِيلِيَّةُ: «الخَالِقُ لِهَذِهِ الأَشْيَاءِ هُوَ المُسْتَحِقُّ لِلْعِبَادَةِ».</li>
+  <li><strong>البَابُ الثَّانِي:</strong> الاسْتِيعَابُ الشَّامِلُ لِأَنْوَاعِ العِبَادَةِ الأَرْبَعَةَ عَشَرَ بِأَدِلَّتِهَا القُرْآنِيَّةِ وَالنَّبَوِيَّةِ.</li>
+  <li>شَرْحُ: الدُّعَاءِ، الخَوْفِ، الرَّجَاءِ، التَّوَكُّلِ، الرَّغْبَةِ، الرَّهْبَةِ، الخُشُوعِ، الخَشْيَةِ، الإِنَابَةِ، الاسْتِعَانَةِ، الاسْتِعَاذَةِ، الاسْتِغَاثَةِ، الذَّبْحِ، وَالنَّذْرِ.</li>
+  <li>بَيَانُ صُوَرِ التَّوْحِيدِ فِيهَا وَصُوَرِ الشِّرْكِ وَالتَّنْدِيدِ.</li>
+  <li><em>[جَدْوَلُ 4: المَوْسُوعَةُ الشَّامِلَةُ لِأَنْوَاعِ العِبَادَةِ الـ 14 وَأَدِلَّتِهَا وَصُوَرِ صَرْفِهَا]</em></li>
+  <li><strong>القِسْمُ الثَّالِثُ: الأَصْلُ الثَّانِي: مَعْرِفَةُ دِينِ الإِسْلَامِ بِالأَدِلَّةِ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> حَدُّ الإِسْلَامِ العَامِّ وَالخَاصِّ وَمَرَاتِبُ الدِّينِ الثَّلَاثُ.</li>
+  <li><strong>البَابُ الثَّانِي:</strong> المَرْتَبَةُ الأُولَى: الإِسْلَامُ (شَرْحُ أَرْكَانِهِ الخَمْسَةِ بِالتَّفْصِيلِ).</li>
+  <li>شَرْحُ كَلِمَةِ التَّوْحِيدِ (أَرْكَانُهَا، شُرُوطُهَا، وَمُقْتَضَيَاتُهَا).</li>
+  <li>شَرْحُ شَهَادَةِ أَنَّ مُحَمَّدًا رَسُولُ اللهِ (مَعْنَاهَا، حُقُوقُهَا، وَلَوَازِمُهَا).</li>
+  <li>أَدِلَّةُ الصَّلَاةِ، الزَّكَاةِ، الصِّيَامِ، وَحَجِّ بَيْتِ اللهِ الحَرَامِ.</li>
+  <li><strong>البَابُ الثَّالِثُ:</strong> المَرْتَبَةُ الثَّانِيَةُ: الإِيمَانُ (شَرْحُ أَرْكَانِهِ السِّتَّةِ وَشُعَبِهِ).</li>
+  <li>حَقِيقَةُ الإِيمَانِ عِنْدَ أَهْلِ السُّنَّةِ (قَوْلٌ وَعَمَلٌ وَاعْتِقَادٌ).</li>
+  <li>الإِيمَانُ بِاللهِ، المَلَائِكَةِ، الكُتُبِ، الرُّسُلِ، وَاليَوْمِ الآخِرِ.</li>
+  <li>الإِيمَانُ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ (مَرَاتِبُ القَدَرِ الأَرْبَعُ وَالرَّدُّ عَلَى أَهْلِ البِدَعِ).</li>
+  <li><strong>البَابُ الرَّابِعُ:</strong> المَرْتَبَةُ الثَّالِثَةُ: الإِحْسَانُ (مَقَامُ المُشَاهَدَةِ وَمَقَامُ المُرَاقَبَةِ).</li>
+  <li><strong>البَابُ الخَامِسُ:</strong> الشَّرْحُ المَوْسُوعِيُّ لِحَدِيثِ جِبْرِيلَ عَلَيْهِ السَّلَامُ فِي صَحِيحِ مُسْلِمٍ.</li>
+  <li>اسْتِنْبَاطُ 25 فَائِدَةً عَقَدِيَّةً وَفِقْهِيَّةً وَتَرْبَوِيَّةً.</li>
+  <li><em>[جَدْوَلُ 5: مَرَاتِبُ الدِّينِ الثَّلَاثُ (أَرْكَانُهَا، خَصَائِصُهَا، وَالفُرُوقُ بَيْنَهَا)]</em></li>
+  <li><strong>القِسْمُ الرَّابِعُ: الأَصْلُ الثَّالِثُ: مَعْرِفَةُ نَبِيِّكُمْ مُحَمَّدٍ ﷺ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> النَّسَبُ الشَّرِيفُ، المَوْلِدُ، النُّبُوَّةُ بِـ «اقْرَأْ»، وَالرِّسَالَةُ بِـ «المُدَّثِّرِ».</li>
+  <li>التَّفْسِيرُ التَّأْصِيلِيُّ لِآيَاتِ صَدْرِ سُورَةِ المُدَّثِّرِ.</li>
+  <li><strong>البَابُ الثَّانِي:</strong> مَحَطَّاتُ الدَّعْوَةِ فِي مَكَّةَ، الإِسْرَاءُ وَالمِعْرَاجُ، وَالهِجْرَةُ إِلَى المَدِينَةِ.</li>
+  <li>حَقِيقَةُ الهِجْرَةِ وَحُكْمُهَا وَبَقَاؤُهَا إِلَى يَوْمِ القِيَامَةِ.</li>
+  <li>تَفْسِيرُ آيَةِ النِّسَاءِ (97) وَآيَةِ العَنْكَبُوتِ (56) مَعَ نَقْلِ كَلَامِ الإِمَامِ البَغَوِيِّ.</li>
+  <li><strong>البَابُ الثَّالِثُ:</strong> المَرْحَلَةُ المَدَنِيَّةُ، شَرَائِعُ الإِسْلَامِ، كَمَالُ الدِّينِ، وَوَفَاةُ النَّبِيِّ ﷺ.</li>
+  <li>تَفْسِيرُ آيَةِ المَائِدَةِ (3) وَآيَةِ الزُّمَرِ (30).</li>
+  <li><strong>البَابُ الرَّابِعُ:</strong> الإِيمَانُ بِالبَعْثِ وَالحِسَابِ وَالمِيزَانِ وَالصِّرَاطِ وَالجَزَاءِ.</li>
+  <li>الرَّدُّ العِلْمِيُّ وَالقُرْآنِيُّ عَلَى مُنْكِرِي البَعْثِ.</li>
+  <li><strong>البَابُ الخَامِسُ:</strong> وَظِيفَةُ الرُّسُلِ، عُمُومُ رِسَالَتِهِمْ، وَخَتْمُ النُّبُوَّةِ بِمُحَمَّدٍ ﷺ.</li>
+  <li><em>[جَدْوَلُ 6: مَحَطَّاتُ السِّيرَةِ النَّبَوِيَّةِ وَمَرَاحِلُ الدَّعْوَةِ وَالهِجْرَةِ]</em></li>
+  <li><strong>القِسْمُ الخَامِسُ: خَاتِمَةُ الرِّسَالَةِ: الكُفْرُ بِالطَّاغُوتِ وَرُؤُوسُهُ الخَمْسَةُ</strong></li>
+  <li><strong>البَابُ الأَوَّلُ:</strong> افْتِرَاضُ الكُفْرِ بِالطَّاغُوتِ قَبْلَ الإِيمَانِ بِاللهِ (مَعْنَى العُرْوَةِ الوُثْقَى).</li>
+  <li><strong>البَابُ الثَّانِي:</strong> تَحْرِيرُ حَدِّ الطَّاغُوتِ عِنْدَ الإِمَامِ ابْنِ القَيِّمِ.</li>
+  <li><strong>البَابُ الثَّالِثُ:</strong> تَفْصِيلُ رُؤُوسِ الطَّوَاغِيتِ الخَمْسَةِ.</li>
+  <li><strong>البَابُ الرَّابِعُ:</strong> تَحْقِيقُ مَسْأَلَةِ الحُكْمِ بِمَا أَنْزَلَ اللهُ عِنْدَ عُلَمَاءِ السَّلَفِ وَأَئِمَّةِ الدَّعْوَةِ النَّجْدِيَّةِ.</li>
+  <li>الفَرْقُ الدَّقِيقُ بَيْنَ اسْتِحْلَالِ القَوَانِينِ الوَضْعِيَّةِ (كُفْرٌ أَكْبَرُ) وَبَيْنَ الحُكْمِ بِالهَوَى فِي قَضِيَّةٍ عَيْنِيَّةٍ مَعَ اعْتِقَادِ حُرْمَتِهَا (كُفْرٌ أَصْغَرُ).</li>
+  <li><strong>البَابُ الخَامِسُ:</strong> شَرْحُ الحَدِيثِ الخِتَامِيِّ: «رَأْسُ الأَمْرِ الإِسْلَامُ، وَعَمُودُهُ الصَّلَاةُ، وَذِرْوَةُ سَنَامِهِ الجِهَادُ».</li>
+  <li><em>[جَدْوَلُ 7: رُؤُوسُ الطَّوَاغِيتِ الخَمْسَةِ وَأَحْكَامُهُمُ الشَّرْعِيَّةُ]</em></li>
+  <li><strong>القِسْمُ السَّادِسُ: الخَاتِمَةُ وَالفَهَارِسُ التَّأْصِيلِيَّةُ الشَّامِلَةُ</strong></li>
+  <li>خُلَاصَةُ القَوَاعِدِ العَقَدِيَّةِ المُسْتَنْبَطَةِ مِنَ الأُصُولِ الثَّلَاثَةِ.</li>
+  <li>ثَبَتُ المَصَادِرِ وَالمَرَاجِعِ المُعْتَمَدَةِ (30 مَرْجِعًا أَصِيلًا).</li>
+  <li>كَلِمَةُ خِتَامٍ وَابْتِهَالٌ خَالِصٌ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🕊️ مُقَدِّمَةُ الشَّارِحِ</h1>
+<h3 class="sub-title">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</h3>
+<h4 class="sub-sub-title">بِمَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ رَحِمَهُ اللهُ لِلْعُلُومِ الشَّرْعِيَّةِ</h4>
+<p>بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</p>
+<p>إِنَّ الحَمْدَ للهِ، نَحْمَدُهُ وَنَسْتَعِينُهُ وَنَسْتَغْفِرُهُ، وَنَعُوذُ بِاللهِ مِنْ شُرُورِ أَنْفُسِنَا وَمِنْ سَيِّئَاتِ أَعْمَالِنَا، مَنْ يَهْدِهِ اللهُ فَلَا مُضِلَّ لَهُ، وَمَنْ يُضْلِلْ فَلَا هَادِيَ لَهُ، وَأَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، إِلَهُ الأَوَّلِينَ وَالآخِرِينَ، وَقَيُّومُ السَّمَاوَاتِ وَالأَرَضِينَ، خَلَقَ الخَلْقَ لِعِبَادَتِهِ، وَأَمَرَهُمْ بِتَوْحِيدِهِ وَطَاعَتِهِ، وَأَشْهَدُ أَنَّ سَيِّدَنَا وَنَبِيَّنَا مُحَمَّدًا عَبْدُ اللهِ وَرَسُولُهُ، وَصَفِيُّهُ مِنْ خَلْقِهِ وَخَلِيلُهُ، بَعَثَهُ اللهُ هَادِيًا وَمُبَشِّرًا وَنَذِيرًا، وَدَاعِيًا إِلَى اللهِ بِإِذْنِهِ وَسِرَاجًا مُنِيرًا، فَبَلَّغَ الرِّسَالَةَ، وَأَدَّى الأَمَانَةَ، وَنَصَحَ لِلأُمَّةِ، وَجَاهَدَ فِي اللهِ حَقَّ جِهَادِهِ حَتَّى أَتَاهُ اليَقِينُ مِنْ رَبِّهِ، فَصَلَوَاتُ اللهِ وَسَلَامُهُ وَبَرَكَاتُهُ عَلَيْهِ، وَعَلَى آلِهِ الطَّيِّبِينَ الطَّاهِرِينَ، وَعَلَى أَصْحَابِهِ الغُرِّ المَيَامِينِ، وَمَنْ تَبِعَهُمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّينِ.</p>
+<p><strong>أَمَّا بَعْدُ:</strong></p>
+<p>فَإِنَّ أَعْظَمَ مَا يَتَقَرَّبُ بِهِ العَبْدُ إِلَى رَبِّهِ، وَأَجَلَّ مَا تَفْنَى فِيهِ الأَعْمَارُ وَتُبْذَلُ فِيهِ الأَوْقَاتُ، هُوَ <strong>العِلْمُ بِاللهِ تَبَارَكَ وَتَعَالَى، وَالعِلْمُ بِدِينِهِ وَشَرِيعَتِهِ، وَالعِلْمُ بِنَبِيِّهِ وَرَسُولِهِ مُحَمَّدٍ ﷺ</strong>؛ إِذْ لَا نَجَاةَ لِعَبْدٍ فِي دُنْيَاهُ، وَلَا فِي بَرْزَخِهِ إِذَا أُفْرِدَ فِي لَحْدِهِ وَوَارَاهُ التُّرَابُ، وَلَا فِي يَوْمِ حَشْرِهِ وَمَعَادِهِ، إِلَّا بِأَنْ يَكُونَ قَدْ حَقَّقَ هَذِهِ الأُصُولَ الثَّلَاثَةَ تَعَلُّمًا وَاعْتِقَادًا، وَعَمَلًا وَامْتِثَالًا، وَدَعْوَةً وَصَبْرًا.</p>
+<p>وَإِنَّ رِسَالَةَ <strong>«ثَلَاثَةِ الأُصُولِ وَأَدِلَّتِهَا»</strong> لِشَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ أَبِي عَلِيٍّ مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ بْنِ سُلَيْمَانَ التَّمِيمِيِّ رَحِمَهُ اللهُ تَعَالَى رَحْمَةً وَاسِعَةً؛ هِيَ مِنْ أَنْفَعِ مَا كُتِبَ فِي بَابِهَا، وَأَبْرَكِ مَا جَرَى بِهِ قَلَمٌ فِي تَلْخِيصِ أُصُولِ العَقِيدَةِ وَقَوَاعِدِ الدِّينِ؛ فَقَدْ جَمَعَتْ صَفْوَةَ مَسَائِلِ الإِيمَانِ، مَقْرُونَةً بِأَدِلَّتِهَا مِنَ الكِتَابِ المُنَزَّلِ وَالسُّنَّةِ النَّبَوِيَّةِ الصَّحِيحَةِ، عَلَى طَرِيقَةِ السَّلَفِ الصَّالِحِ الَّتِي لَا تَشُوبُهَا شَائِبَةُ عِلْمِ الكَلَامِ، وَلَا تَكَلُّفَاتُ الفَلَاسِفَةِ وَالمُتَكَلِّمِينَ.</p>
+<h4 class="sub-sub-title">🎯 بَاعِثُ تَسْطِيرِ هَذَا الشَّرْحِ المَوْسُوعِيِّ:</h4>
+<p>لَقَدْ مَنَّ اللهُ عَلَيْنَا فِي <strong>مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</strong> أَنْ يَسَّرَ لَنَا إِقْرَاءَ هَذِهِ الرِّسَالَةِ الجَلِيلَةِ، وَشَرْحَ أَلْفَاظِهَا وَتَحْرِيرَ مَسَائِلِهَا مِرَارًا كَثِيرَةً ضِمْنَ البَرَامِجِ التَّأْصِيلِيَّةِ وَالدَّوْرَاتِ العِلْمِيَّةِ المُنْعَقِدَةِ لِطُلَّابِ العِلْمِ وَحَفَظَةِ كِتَابِ اللهِ.</p>
+<p>وَقَدْ كَانَ الإِخْوَةُ الطُّلَّابُ يُلِحُّونَ فِي طَلَبِ تَدْوِينِ هَذِهِ الإِيضَاحَاتِ، وَتَفْصِيلِ أَنْوَاعِ العِبَادَاتِ، وَتَخْرِيجِ الأَحَادِيثِ، وَتَبْيِينِ دَقَائِقِ المَسَائِلِ فِي مُصَنَّفٍ شَامِلٍ؛ لِيَكُونَ مَرْجِعًا لَهُمْ فِي الِاسْتِذْكَارِ وَالمُدَارَسَةِ، وَسِلَاحًا عِلْمِيًّا يَرُدُّونَ بِهِ شُبُهَاتِ الشِّرْكِ وَالبِدَعِ فِي مُجْتَمَعَاتِهِمْ.</p>
+<p>فَاسْتَخَرْتُ اللهَ عَزَّ وَجَلَّ، وَشَرَعْتُ فِي إِمْلَاءِ هَذَا الشَّرْحِ المُوَسَّعِ، مُسَمِّيًا لَهُ: <strong>«فَتْحُ الرَّحِيمِ المَنَّانِ بِشَرْحِ الأُصُولِ الثَّلَاثَةِ مَعَ الدَّلِيلِ وَالبَيَانِ»</strong>؛ مُقْتَصِرًا فِيهِ عَلَى مَا صَحَّ عَنِ اللهِ وَعَنْ رَسُولِهِ ﷺ، وَمَا قَرَّرَهُ أَئِمَّةُ الهُدَى مِنْ سَلَفِ الأُمَّةِ، رَاجِيًا مِنْ مَوْلَايَ الكَرِيمِ أَنْ يَجْعَلَهُ خَالِصًا لِوَجْهِهِ، نَافِعًا لِعِبَادِهِ، سَبَبًا لِلنَّجَاةِ فِي يَوْمِ الفَقْرِ وَالفَاقَةِ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🛡️ تَمْهِيدٌ تَأْصِيلِيٌّ فِي مَنْهَجِ الشَّرْحِ وَمَضَامِينِهِ</h1>
+<p>يَقُومُ هَذَا الشَّرْحُ المَوْسُوعِيُّ عَلَى خَمْسَةِ أَرْكَانٍ مَنْهَجِيَّةٍ مَتِينَةٍ:</p>
+<ol class="content-list-ordered">
+  <li><strong>إِيرَادُ المَتْنِ كَامِلًا تَامًّا غَيْرَ مَنْقُوصٍ:</strong></li>
+</ol>
+<p>نَضَعُ أَلْفَاظَ رِسَالَةِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ كَامِلَةً بِلَا خَرْمٍ، مَضْبُوطَةً بِالشَّكْلِ التَّامِّ، مُبْرَزَةً فِي إِطَارٍ مُسْتَقِلٍّ؛ لِيَسْهُلَ عَلَى الطَّالِبِ حِفْظُ نَصِّهَا الحَرْفِيِّ.</p>
+<ol class="content-list-ordered">
+  <li><strong>التَّحْلِيلُ البَيَانِيُّ وَاللُّغَوِيُّ وَالإِعْرَابِيُّ:</strong></li>
+</ol>
+<p>بَيَانُ مَعَانِي المُفْرَدَاتِ لُغَةً وَاصْطِلَاحًا، وَإِعْرَابُ الجُمَلِ المُشْكِلَةِ؛ لِأَنَّ فَهْمَ كَلَامِ أَهْلِ العِلْمِ يَنْبَنِي عَلَى فَهْمِ لِسَانِ العَرَبِ الَّذِي نَزَلَ بِهِ القُرْآنُ.</p>
+<ol class="content-list-ordered">
+  <li><strong>الاسْتِدْلَالُ الصَّارِمُ (العِلْمُ بِالدَّلِيلِ):</strong></li>
+</ol>
+<p>حَيْثُ لَا نَكْتَفِي بِذِكْرِ الحُكْمِ العَقَدِيِّ مُجَرَّدًا، بَلْ نُبَيِّنُ دَلِيلَهُ مِنَ القُرْآنِ وَالسُّنَّةِ، وَنُوَضِّحُ وَجْهَ الدَّلَالَةِ مِنْهُ، وَنَنْقُلُ تَفَاسِيرَ السَّلَفِ مِنَ الطَّبَرِيِّ وَابْنِ كَثِيرٍ وَالبَغَوِيِّ.</p>
+<ol class="content-list-ordered">
+  <li><strong>تَفْرِيعُ أَنْوَاعِ العِبَادَةِ وَكَشْفُ صُوَرِ الشِّرْكِ المُعَاصِرِ:</strong></li>
+</ol>
+<p>نَقِفُ مَعَ كُلِّ عِبَادَةٍ مِنْ أَنْوَاعِ العِبَادَاتِ الأَرْبَعَ عَشْرَةَ؛ لِنُحَدِّدَ مَعْنَاهَا، وَكَيْفَ تَكُونُ حَقًّا خَالِصًا للهِ، وَكَيْفَ يَكُونُ صَرْفُهَا لِغَيْرِ اللهِ شِرْكًا مُوجِبًا لِلْخُلُودِ فِي النَّارِ.</p>
+<ol class="content-list-ordered">
+  <li><strong>رَبْطُ المَسَائِلِ بِسُؤَالِ القَبْرِ وَأَحْوَالِ الآخِرَةِ:</strong></li>
+</ol>
+<p>تَذْكِيرُ الدَّارِسِ دَائِمًا بِأَنَّ هَذِهِ المَعَارِفَ هِيَ مَادَّةُ سُؤَالِ المَلَكَيْنِ فِي القَبْرِ: «مَنْ رَبُّكَ؟ مَا دِينُكَ؟ مَنْ نَبِيُّكَ؟»؛ فَمَنْ عَاشَ عَلَيْهَا يَقِينًا، ثُبِّتَ عِنْدَ السُّؤَالِ نُطْقًا.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🏛️ المَدَاخِلُ الثَّلَاثَةُ التَّأْسِيسِيَّةُ قَبْلَ الشَّرْحِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الأَوَّلُ: التَّعْرِيفُ بِمُؤَلِّفِ المَتْنِ</h2>
+<h3 class="sub-title">سِيرَةُ شَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ رَحِمَهُ اللهُ (1115 - 1206 هـ)</h3>
+<ul class="content-list">
+  <li><strong>اسْمُهُ، نَسَبُهُ، وَمَوْلِدُهُ:</strong></li>
+</ul>
+<p>هُوَ الإِمَامُ المُجَدِّدُ، شَيْخُ الإِسْلَامِ، أَبُو عَلِيٍّ مُحَمَّدُ بْنُ عَبْدِ الوَهَّابِ بْنِ سُلَيْمَانَ بْنِ عَلِيِّ بْنِ مُحَمَّدِ بْنِ أَحْمَدَ بْنِ رَاشِدٍ التَّمِيمِيُّ النَّجْدِيُّ الحَنْبَلِيُّ. وُلِدَ فِي بَلْدَةِ العُيَيْنَةِ بِنَجْدٍ سَنَةَ 1115 هـ فِي بَيْتِ عِلْمٍ وَفَضْلٍ وَرِئَاسَةٍ قَضَائِيَّةٍ؛ فَجَدُّهُ الشَّيْخُ سُلَيْمَانُ بْنُ عَلِيٍّ كَانَ رَئِيسَ عُلَمَاءِ نَجْدٍ فِي وَقْتِهِ وَمُؤَلِّفَ المَنَاسِكِ، وَأَبُوهُ عَبْدُ الوَهَّابِ كَانَ قَاضِيَ العُيَيْنَةِ وَعَالِمَهَا.</p>
+<ul class="content-list">
+  <li><strong>نَشْأَتُهُ وَطَلَبُهُ لِلْعِلْمِ:</strong></li>
+</ul>
+<p>حَفِظَ القُرْآنَ الكَرِيمَ وَهُوَ دُونَ عَشْرِ سِنِينَ، وَقَرَأَ عَلَى أَبِيهِ فِي الفِقْهِ الحَنْبَلِيِّ وَالتَّفْسِيرِ وَالحَدِيثِ. ثُمَّ شَدَّ الرِّحَالَ فِي طَلَبِ العِلْمِ، فَسَافَرَ إِلَى مَكَّةَ المُكَرَّمَةِ وَحَجَّ بَيْتَ اللهِ، ثُمَّ قَصَدَ المَدِينَةَ المُنَوَّرَةَ فَلَازَمَ كِبَارَ عُلَمَائِهَا؛ وَمِنْهُمُ العَلَّامَةُ عَبْدُ اللهِ بْنُ إِبْرَاهِيمَ بْنِ سَيْفٍ النَّجْدِيُّ، وَالمُحَدِّثُ الكَبِيرُ مُحَمَّدٌ حَيَاةَ السِّنْدِيُّ رَحِمَهُمَا اللهُ. ثُمَّ ارْتَحَلَ إِلَى البَصْرَةِ فِي العِرَاقِ وَدَرَسَ الحَدِيثَ وَاللُّغَةَ، وَأَنْكَرَ عَلَى أَهْلِهَا مَا رَآهُ مِنْ تَعْظِيمِ القُبُورِ وَالغُلُوِّ فِيهَا، ثُمَّ زَارَ الأَحْسَاءَ وَالزُّبَيْرَ.</p>
+<ul class="content-list">
+  <li><strong>وَاقِعُ نَجْدٍ وَجَزِيرَةِ العَرَبِ قَبْلَ دَعْوَتِهِ:</strong></li>
+</ul>
+<p>كَانَتْ نَجْدٌ وَكَثِيرٌ مِنْ أَقْطَارِ العَالَمِ الإِسْلَامِيِّ فِي تِلْكَ القُرُونِ المُتَأَخِّرَةِ تَمُوجُ فِي جَهَالَةٍ جَهْلَاءَ؛ انْتَشَرَتْ فِيهَا عِبَادَةُ الأَشْجَارِ، وَالأَحْجَارِ، وَالقُبُورِ، وَالغِيرَانِ، وَطَلَبُ المَدَدِ مِنَ الأَمْوَاتِ وَالأَوْلِيَاءِ كَزَيْدِ بْنِ الخَطَّابِ وَغَيْرِهِ، وَشَاعَ السِّحْرُ وَالكَهَانَةُ، مَعَ انْعِدَامِ الأَمْنِ وَتَنَاحُرِ القَبَائِلِ.</p>
+<ul class="content-list">
+  <li><strong>جِهَادُهُ وَقِيَامُ دَعْوَةِ التَّوْحِيدِ:</strong></li>
+</ul>
+<p>صَدَعَ الشَّيْخُ رَحِمَهُ اللهُ بِالدَّعْوَةِ إِلَى إِفْرَادِ اللهِ بِالعِبَادَةِ، وَهَدْمِ القِبَابِ المَبْنِيَّةِ عَلَى القُبُورِ، وَتَحْطِيمِ الأَشْجَارِ المُعَظَّمَةِ. وَفِي سَنَةِ 1157 هـ قَدِمَ الشَّيْخُ إِلَى «الدِّرْعِيَّةِ»، فَاسْتَقْبَلَهُ أَمِيرُهَا الإِمَامُ مُحَمَّدُ بْنُ سُعُودٍ رَحِمَهُ اللهُ، وَتَعَاهَدَا عَلَى نُصْرَةِ التَّوْحِيدِ وَإِقَامَةِ شَرِيعَةِ اللهِ، وَهُوَ الحِلْفُ التَّارِيخِيُّ المُبَارَكُ الَّذِي نَشَأَتْ عَنْهُ الدَّوْلَةُ السُّعُودِيَّةُ الأُولَى.</p>
+<ul class="content-list">
+  <li><strong>مُصَنَّفَاتُهُ وَآثَارُهُ:</strong></li>
+</ul>
+<p>أَلَّفَ الشَّيْخُ كُتُبًا كَثِيرَةً كُلُّهَا تَحْقِيقٌ وَتَأْصِيلٌ؛ مِنْ أَعْظَمِهَا: «كِتَابُ التَّوْحِيدِ الَّذِي هُوَ حَقُّ اللهِ عَلَى العَبِيدِ»، «كَشْفُ الشُّبُهَاتِ»، «القَوَاعِدُ الأَرْبَعُ»، «أُصُولُ الإِيمَانِ»، «فَضْلُ الإِسْلَامِ»، «مُخْتَصَرُ زَادِ المَعَادِ»، «مُخْتَصَرُ السِّيرَةِ النَّبَوِيَّةِ»، وَهَذِهِ الرِّسَالَةُ النَّافِعَةُ: «ثَلَاثَةُ الأُصُولِ وَأَدِلَّتُهَا».</p>
+<ul class="content-list">
+  <li><strong>وَفَاتُهُ:</strong></li>
+</ul>
+<p>تُوُفِّيَ الشَّيْخُ رَحِمَهُ اللهُ فِي شَهْرِ ذِي القَعْدَةِ مِنْ سَنَةِ 1206 هـ، عَنْ عُمُرٍ نَاهَزَ إِحْدَى وَتِسْعِينَ سَنَةً حَافِلَةً بِالتَّعْلِيمِ وَالتَّأْلِيفِ وَالجِهَادِ، وَدُفِنَ بِالدِّرْعِيَّةِ، وَانْتَشَرَتْ دَعْوَتُهُ التَّجْدِيدِيَّةُ السَّلَفِيَّةُ فِي مَشَارِقِ الأَرْضِ وَمَغَارِبِهَا.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الثَّانِي: التَّعْرِيفُ بِرِسَالَةِ «ثَلَاثَةِ الأُصُولِ وَأَدِلَّتِهَا»</h2>
+<h3 class="sub-title">اسْمُهَا، مَضْمُونُهَا، وَارْتِبَاطُهَا بِفِتْنَةِ القَبْرِ</h3>
+<ul class="content-list">
+  <li><strong>اسْمُ الرِّسَالَةِ وَتَحْرِيرُهُ:</strong></li>
+</ul>
+<p>تُعْرَفُ هَذِهِ الرِّسَالَةُ فِي كُتُبِ العِلْمِ بِاسْمَيْنِ مَشْهُورَيْنِ:</p>
+<ol class="content-list-ordered">
+  <li><strong>«ثَلَاثَةُ الأُصُولِ وَأَدِلَّتُهَا»:</strong> وَهُوَ الِاسْمُ الأَدَقُّ لِهَذِهِ النُّسْخَةِ الشَّامِلَةِ الَّتِي تَحْتَوِي عَلَى المُقَدِّمَاتِ الثَّلَاثِ وَالأُصُولِ الثَّلَاثَةِ بِأَدِلَّتِهَا القُرْآنِيَّةِ وَالنَّبَوِيَّةِ.</li>
+  <li><strong>«الأُصُولُ الثَّلَاثَةُ»:</strong> وَقَدْ يُطْلَقُ عَلَى نَفْسِ هَذِهِ الرِّسَالَةِ، وَلَكِنَّ المُحَقِّقِينَ بَيَّنُوا أَنَّ الشَّيْخَ لَهُ رِسَالَةٌ أُخْرَى صَغِيرَةٌ مُوجَزَةٌ جِدًّا كَتَبَهَا لِلْعَوَامِّ تُسَمَّى «الأُصُولَ الثَّلَاثَةَ»، فَيَنْبَغِي التَّفْرِيقُ بَيْنَهُمَا.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>ارْتِبَاطُهَا الوَثِيقُ بِفِتْنَةِ القَبْرِ (سُؤَالِ المَلَكَيْنِ):</strong></li>
+</ul>
+<p>إِنَّ الشَّيْخَ رَحِمَهُ اللهُ لَمْ يَخْتَرْ هَذِهِ الأُصُولَ الثَّلَاثَةَ (مَعْرِفَةَ الرَّبِّ، وَالدِّينِ، وَالنَّبِيِّ) اعْتِبَاطًا، بَلْ بَنَاهَا عَلَى مَضْمُونِ الحَدِيثِ المُتَوَاتِرِ فِي فِتْنَةِ القَبْرِ:</p>
+<ul class="content-list">
+  <li><strong>تَخْرِيجُ حَدِيثِ البَرَاءِ بْنِ عَازِبٍ رَضِيَ اللهُ عَنْهُ:</strong></li>
+</ul>
+<p>رَوَاهُ الإِمَامُ أَحْمَدُ فِي «المُسْنَدِ» (18534)، وَأَبُو دَاوُدَ فِي «السُّنَنِ» (4753)، وَالنَّسَائِيُّ، وَابْنُ مَاجَهْ، وَصَحَّحَهُ الحَاكِمُ، وَابْنُ القَيِّمِ فِي «إِعْلَامِ المُوَقِّعِينَ»، وَالشَّيْخُ الأَلْبَانِيُّ فِي «صَحِيحِ الجَامِعِ» (1676) بِسَنَدٍ صَحِيحٍ كَالشَّمْسِ، وَفِيهِ أَنَّ النَّبِيَّ ﷺ قَالَ فِي شَأْنِ عَبْدِ اللهِ المُؤْمِنِ إِذَا أُقْعِدَ فِي قَبْرِهِ:</p>
+<blockquote class="quote-box">«فَيَأْتِيهِ مَلَكَانِ فَيُجْلِسَانِهِ، فَيَقُولَانِ لَهُ: <strong>مَنْ رَبُّكَ؟</strong> فَيَقُولُ: <strong>رَبِّيَ اللَّهُ</strong>، فَيَقُولَانِ لَهُ: <strong>مَا دِينُكَ؟</strong> فَيَقُولُ: <strong>دِينِيَ الإِسْلَامُ</strong>، فَيَقُولَانِ لَهُ: <strong>مَا هَذَا الرَّجُلُ الَّذِي بُعِثَ فِيكُمْ؟</strong> فَيَقُولُ: <strong>هُوَ رَسُولُ اللَّهِ ﷺ</strong>... فَيُنَادِي مُنَادٍ مِنَ السَّمَاءِ: أَنْ صَدَقَ عَبْدِي، فَأَفْرِشُوهُ مِنَ الجَنَّةِ، وَأَلْبِسُوهُ مِنَ الجَنَّةِ، وَافْتَحُوا لَهُ بَابًا إِلَى الجَنَّةِ...</blockquote>
+<blockquote class="quote-box">وَإِنَّ العَبْدَ الكَافِرَ أَوْ المُنَافِقَ إِذَا قُعِدَ فِي قَبْرِهِ أَتَاهُ المَلَكَانِ فَيَقُولَانِ لَهُ: <strong>مَنْ رَبُّكَ؟</strong> فَيَقُولُ: <strong>هَاهْ هَاهْ! لَا أَدْرِي!</strong> فَيَقُولَانِ لَهُ: <strong>مَا دِينُكَ؟</strong> فَيَقُولُ: <strong>هَاهْ هَاهْ! لَا أَدْرِي!</strong> فَيَقُولَانِ لَهُ: <strong>مَا هَذَا الرَّجُلُ الَّذِي بُعِثَ فِيكُمْ؟</strong> فَيَقُولُ: <strong>هَاهْ هَاهْ! لَا أَدْرِي! سَمِعْتُ النَّاسَ يَقُولُونَ شَيْئًا فَقُلْتُهُ!</strong> فَيُضْرَبُ بِمِطْرَقَةٍ مِنْ حَدِيدٍ ضَرْبَةً يَصِيحُ مِنْهَا صَيْحَةً يَسْمَعُهَا كُلُّ شَيْءٍ إِلَّا الثَّقَلَيْنِ!».</blockquote>
+<ul class="content-list">
+  <li><strong>الفِقْهُ العَقَدِيُّ:</strong> فَدَلَّ ذَلِكَ عَلَى أَنَّ مَنْ تَعَلَّمَ هَذِهِ الأُصُولَ فِي دُنْيَاهُ وَعَمِلَ بِمُقْتَضَاهَا، ثَبَّتَهُ اللهُ عِنْدَ السُّؤَالِ: ﴿يُثَبِّتُ اللَّهُ الَّذِينَ آمَنُوا بِالْقَوْلِ الثَّابِتِ فِي الْحَيَاةِ الدُّنْيَا وَفِي الْآخِرَةِ﴾ [إبراهيم: 27].</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📌 المَدْخَلُ الثَّالِثُ: التَّعْرِيفُ بِعِلْمِ التَّوْحِيدِ وَأُصُولِ الدِّينِ</h2>
+<h3 class="sub-title">حَدُّهُ، مَنْزِلَتُهُ، حُكْمُ تَعَلُّمِهِ، وَثَمَرَتُهُ</h3>
+<ul class="content-list">
+  <li><strong>حَدُّ التَّوْحِيدِ لُغَةً وَشَرْعًا:</strong></li>
+  <li><strong>لُغَةً:</strong> مَصْدَرُ «وَحَّدَ يُوَحِّدُ تَوْحِيدًا»، أَيْ: جَعَلَ الشَّيْءَ وَاحِدًا، وَلَا يَتَحَقَّقُ التَّوْحِيدُ إِلَّا بِنَفْيٍ وَإِثْبَاتٍ.</li>
+  <li><strong>شَرْعًا:</strong> إِفْرَادُ اللهِ سُبْحَانَهُ وَتَعَالَى بِمَا يَخْتَصُّ بِهِ مِنْ <strong>الرُّبُوبِيَّةِ، وَالأُلُوهِيَّةِ، وَالأَسْمَاءِ وَالصِّفَاتِ</strong>.</li>
+</ul>
+<ul class="content-list">
+  <li><strong>أَقْسَامُ التَّوْحِيدِ الثَّلَاثَةُ الَّتِي دَلَّ عَلَيْهَا اسْتِقْرَاءُ نُصُوصِ الكِتَابِ وَالسُّنَّةِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>تَوْحِيدُ الرُّبُوبِيَّةِ:</strong> إِفْرَادُ اللهِ تَعَالَى بِأَفْعَالِهِ كَالخَلْقِ، وَالمُلْكِ، وَالرِّزْقِ، وَالتَّدْبِيرِ، وَالإِحْيَاءِ، وَالإِمَاتَةِ.</li>
+  <li><strong>تَوْحِيدُ الأُلُوهِيَّةِ (تَوْحِيدُ العِبَادَةِ):</strong> إِفْرَادُ اللهِ تَعَالَى بِأَفْعَالِ العِبَادِ كَالدُّعَاءِ، وَالخَوْفِ، وَالرَّجَاءِ، وَالصَّلَاةِ، وَالذَّبْحِ، وَالنَّذْرِ. وَهُوَ الَّذِي وَقَعَتْ فِيهِ الخُصُومَةُ بَيْنَ الأَنْبِيَاءِ وَأُمَمِهِمْ.</li>
+  <li><strong>تَوْحِيدُ الأَسْمَاءِ وَالصِّفَاتِ:</strong> إِثْبَاتُ مَا أَثْبَتَهُ اللهُ لِنَفْسِهِ، أَوْ أَثْبَتَهُ لَهُ رَسُولُهُ ﷺ مِنْ غَيْرِ تَحْرِيفٍ، وَلَا تَعْطِيلٍ، وَمِنْ غَيْرِ تَكْيِيفٍ، وَلَا تَمْثِيلٍ: ﴿لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ﴾ [الشورى: 11].</li>
+</ol>
+<ul class="content-list">
+  <li><strong>حُكْمُ تَعَلُّمِ هَذِهِ الأُصُولِ:</strong></li>
+</ul>
+<p>تَعَلُّمُ هَذِهِ الأُصُولِ الثَّلَاثَةِ بِأَدِلَّتِهَا الإِجْمَالِيَّةِ <strong>فَرْضُ عَيْنٍ عَلَى كُلِّ مُكَلَّفٍ وَمُكَلَّفَةٍ</strong>؛ لِأَنَّهُ لَا يَصِحُّ إِسْلَامُ عَبْدٍ إِلَّا بِهَا، وَلَا يُعْذَرُ أَحَدٌ بِالجَهْلِ بِهَا، أَمَّا تَعَلُّمُ دَقَائِقِ مَسَائِلِهَا وَأَدِلَّتِهَا التَّفْصِيلِيَّةِ وَالرَّدِّ عَلَى شُبُهَاتِ المُبْطِلِينَ فَهَذَا <strong>فَرْضُ كِفَايَةٍ</strong> إِذَا قَامَ بِهِ مَنْ يَكْفِي مِنْ أَهْلِ العِلْمِ سَقَطَ الإِثْمُ عَنِ البَاقِينَ.</p>
+<ul class="content-list">
+  <li><strong>ثَمَرَةُ التَّوْحِيدِ فِي الدَّارَيْنِ:</strong></li>
+  <li><strong>فِي الدُّنْيَا:</strong> حُصُولُ الأَمْنِ التَّامِّ وَالهِدَايَةِ المُسْتَقِيمَةِ: ﴿الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُمْ بِظُلْمٍ أُولَئِكَ لَهُمُ الْأَمْنُ وَهُمْ مُهْتَدُونَ﴾ [الأنعام: 82]، وَطِيبُ الحَيَاةِ وَانْشِرَاحُ الصَّدْرِ.</li>
+  <li><strong>فِي البَرْزَخِ:</strong> التَّثْبِيتُ عِنْدَ سُؤَالِ المَلَكَيْنِ، وَفَسْحُ القَبْرِ مَدَّ البَصَرِ.</li>
+  <li><strong>فِي الآخِرَةِ:</strong> النَّجَاةُ مِنَ الخُلُودِ فِي النَّارِ، وَدُخُولُ الجَنَّةِ، وَالفَوْزُ بِرِضْوَانِ اللهِ وَرُؤْيَةِ وَجْهِهِ الكَرِيمِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📜 القِسْمُ الأَوَّلُ: شَرْحُ المُقَدِّمَاتِ الثَّلَاثِ التَّأْسِيسِيَّةِ لِلرِّسَالَةِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: المُقَدِّمَةُ الأُولَى: المَسَائِلُ الأَرْبَعُ (مِنْ سُورَةِ العَصْرِ)</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ.</blockquote>
+<blockquote class="quote-box">اعْلَمْ - رَحِمَكَ اللهُ - أَنَّهُ يَجِبُ عَلَيْنَا تَعَلُّمُ أَرْبَعِ مَسَائِلَ:</blockquote>
+<blockquote class="quote-box">الأُولَى: العِلْمُ؛ وَهُوَ: مَعْرِفَةُ اللهِ، وَمَعْرِفَةُ نَبِيِّهِ، وَمَعْرِفَةُ دِينِ الإِسْلَامِ بِالأَدِلَّةِ.</blockquote>
+<blockquote class="quote-box">الثَّانِيَةُ: العَمَلُ بِهِ.</blockquote>
+<blockquote class="quote-box">الثَّالِثَةُ: الدَّعْوَةُ إِلَيْهِ.</blockquote>
+<blockquote class="quote-box">الرَّابِعَةُ: الصَّبْرُ عَلَى الأَذَى فِيهِ.</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَالْعَصْرِ <em> إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ </em> إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ﴾ [العصر: 1-3].</blockquote>
+<blockquote class="quote-box">قَالَ الشَّافِعِيُّ رَحِمَهُ اللهُ تَعَالَى: «لَوْ مَا أَنْزَلَ اللهُ حُجَّةً عَلَى خَلْقِهِ إِلَّا هَذِهِ السُّورَةَ لَكَفَتْهُمْ».</blockquote>
+<blockquote class="quote-box">وَقَالَ البُخَارِيُّ رَحِمَهُ اللهُ تَعَالَى: «بَابُ: العِلْمُ قَبْلَ القَوْلِ وَالعَمَلِ»؛ وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنْبِكَ﴾ [محمد: 19]، فَبَدَأَ بِالعِلْمِ قَبْلَ القَوْلِ وَالعَمَلِ.»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّفْصِيلِيُّ وَالتَّحْقِيقُ العِلْمِيُّ:</h3>
+<h4 class="sub-sub-title">1. التَّحْلِيلُ البَيَانِيُّ وَاللُّغَوِيُّ لِفَاتِحَةِ الرِّسَالَةِ:</h4>
+<ul class="content-list">
+  <li><strong>البَدْءُ بِالبَسْمَلَةِ:</strong> اقْتَدَى المُصَنِّفُ رَحِمَهُ اللهُ بِكِتَابِ اللهِ العَزِيزِ، وَبِسُنَّةِ رَسُولِ اللهِ ﷺ فِي مُكَاتَبَاتِهِ وَرَسَائِلِهِ إِلَى المُلُوكِ وَالأُمَرَاءِ؛ حَيْثُ كَانَ يَبْدَأُ كُتُبَهُ بِـ: «بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ»، طَلَبًا لِلتَّبَرُّكِ وَالِاسْتِعَانَةِ بِاسْمِ اللهِ سُبْحَانَهُ.</li>
+  <li><strong>قَوْلُهُ: «اعْلَمْ»:</strong> فِعْلُ أَمْرٍ مَبْنِيٌّ عَلَى السُّكُونِ، يُرَادُ بِهِ حَثُّ المُخَاطَبِ عَلَى اسْتِجْمَاعِ ذِهْنِهِ وَتَفْرِيغِ قَلْبِهِ لِتَلَقِّي مَا يُلْقَى إِلَيْهِ؛ لِأَنَّ المَسْأَلَةَ الآتِيَةَ مَسْأَلَةٌ مَصِيرِيَّةٌ يَتَرَتَّبُ عَلَيْهَا الفَوْزُ أَوِ الخُسْرَانُ.</li>
+  <li><strong>دُعَاؤُهُ لِلْقَارِئِ: «رَحِمَكَ اللهُ»:</strong> جُمْلَةٌ خَبَرِيَّةٌ لَفْظًا، إِنْشَائِيَّةٌ مَعْنًى (دُعَائِيَّةٌ). وَفِيهَا تَنْبِيهٌ عَلَى لُطْفِ الشَّيْخِ وَشَفَقَتِهِ بِالمُتَعَلِّمِ؛ إِذْ بَدَأَهُ بِالدُّعَاءِ لَهُ بِالرَّحْمَةِ، وَالرَّحْمَةُ تَتَضَمَّنُ: أَنْ يَغْفِرَ اللهُ لَكَ مَا مَضَى مِنْ ذُنُوبِكَ، وَأَنْ يُوَفِّقَكَ وَيَعْصِمَكَ فِيمَا يُسْتَقْبَلُ مِنْ عُمُرِكَ. وَهَذَا مِنْ أَدَبِ المُعَلِّمِ الرَّحِيمِ مَعَ طَلَبَتِهِ.</li>
+  <li><strong>قَوْلُهُ: «أَنَّهُ يَجِبُ عَلَيْنَا»:</strong> الوُجُوبُ فِي اصْطِلَاحِ الأُصُولِيِّينَ: «مَا أَمَرَ بِهِ الشَّارِعُ عَلَى وَجْهِ الحَتْمِ وَالإِلْزَامِ؛ بِحَيْثُ يُثَابُ فَاعِلُهُ امْتِثَالًا، وَيَسْتَحِقُّ العِقَابَ تَارِكُهُ». وَقَوْلُهُ «عَلَيْنَا» شَامِلٌ لِلرِّجَالِ وَالنِّسَاءِ، وَالأَحْرَارِ وَالعَبِيدِ، وَالعُلَمَاءِ وَالعَامَّةِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h4 class="sub-sub-title">2. تَفْصِيلُ المَسَائِلِ الأَرْبَعِ:</h4>
+<p>##### المَسْأَلَةُ الأُولَى: العِلْمُ الشَّرْعِيُّ</p>
+<ul class="content-list">
+  <li><strong>حَدُّهُ:</strong> هُوَ إِدْرَاكُ الشَّيْءِ عَلَى مَا هُوَ عَلَيْهِ إِدْرَاكًا جَازِمًا مُطَابِقًا لِلْوَاقِعِ عَنْ دَلِيلٍ.</li>
+  <li><strong>فُرُوعُهُ الثَّلَاثَةُ الَّتِي حَدَّدَهَا الشَّيْخُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>مَعْرِفَةُ اللهِ:</strong> مَعْرِفَةُ رُبُوبِيَّتِهِ وَأُلُوهِيَّتِهِ وَأَسْمَائِهِ وَصِفَاتِهِ، وَمَعْرِفَةُ حَقِّهِ عَلَى عِبَادِهِ.</li>
+  <li><strong>مَعْرِفَةُ نَبِيِّهِ ﷺ:</strong> مَعْرِفَةُ نَسَبِهِ، وَبِعْثَتِهِ، وَمَا جَاءَ بِهِ مِنَ الهُدَى، وَحَقِّهِ فِي الطَّاعَةِ وَالتَّأَسِّي.</li>
+  <li><strong>مَعْرِفَةُ دِينِ الإِسْلَامِ بِالأَدِلَّةِ:</strong> أَنْ يَعْرِفَ العَبْدُ أَرْكَانَ الإِسْلَامِ وَالإِيمَانِ بِأَدِلَّتِهَا مِنَ القُرْآنِ وَالسُّنَّةِ؛ فَلَا يَكُونُ إِيمَانُهُ مُجَرَّدَ تَقْلِيدٍ أَعْمَى لِلآبَاءِ وَالبِيئَةِ، بَلْ عَنْ بَصِيرَةٍ وَيَقِينٍ.</li>
+</ol>
+<p>##### المَسْأَلَةُ الثَّانِيَةُ: العَمَلُ بِهِ</p>
+<ul class="content-list">
+  <li>العَمَلُ هُوَ ثَمَرَةُ العِلْمِ وَغَايَتُهُ المَقْصُودَةُ؛ فَمَنْ عَلِمَ وَلَمْ يَعْمَلْ كَانَ حُجَّةً عَلَيْهِ يَوْمَ القِيَامَةِ، وَشَبِيهًا بِاليَهُودِ المَغْضُوبِ عَلَيْهِمْ.</li>
+  <li>قَالَ الإِمَامُ عَلِيُّ بْنُ أَبِي طَالِبٍ رَضِيَ اللهُ عَنْهُ:</li>
+</ul>
+<blockquote class="quote-box">«هَتَفَ العِلْمُ بِالعَمَلِ؛ فَإِنْ أَجَابَهُ وَإِلَّا ارْتَحَلَ!»</blockquote>
+<p><em>(جَامِعُ بَيَانِ العِلْمِ وَفَضْلِهِ لِابْنِ عَبْدِ البَرِّ: 2/705)</em>.</p>
+<p>##### المَسْأَلَةُ الثَّالِثَةُ: الدَّعْوَةُ إِلَيْهِ</p>
+<ul class="content-list">
+  <li>مَنْ حَصَّلَ العِلْمَ وَعَمِلَ بِهِ وَجَبَ عَلَيْهِ أَنْ يَسْعَى فِي نَجَاةِ أُمَّتِهِ وَإِخْوَانِهِ؛ كُلٌّ بِحَسَبِ قُدْرَتِهِ وَطَاقَتِهِ (العَالِمُ بِعِلْمِهِ، وَالمُعَلِّمُ فِي مَدْرَسَتِهِ، وَالأَبُ فِي أَهْلِ بَيْتِهِ).</li>
+  <li>قَالَ اللهُ تَعَالَى: ﴿قُلْ هَذِهِ سَبِيلِي أَدْعُو إِلَى اللَّهِ عَلَى بَصِيرَةٍ أَنَا وَمَنِ اتَّبَعَنِي وَسُبْحَانَ اللَّهِ وَمَا أَنَا مِنَ الْمُشْرِكِينَ﴾ [يوسف: 108].</li>
+  <li><strong>شُرُوطُ الدَّاعِيَةِ النَّاجِحِ:</strong> الإِخْلَاصُ للهِ، البَصِيرَةُ وَالعِلْمُ، الحِكْمَةُ وَاللِّينُ، وَمُطَابَقَةُ القَوْلِ لِلْعَمَلِ.</li>
+</ul>
+<p>##### المَسْأَلَةُ الرَّابِعَةُ: الصَّبْرُ عَلَى الأَذَى فِيهِ</p>
+<ul class="content-list">
+  <li>لَا يُمْكِنُ أَنْ يَسِيرَ دَاعِيَةُ التَّوْحِيدِ عَلَى صِرَاطِ الأَنْبِيَاءِ دُونَ أَنْ يَنَالَهُ أَذًى مِنْ أَهْلِ الأَهْوَاءِ وَالبَاطِلِ؛ فَلِذَلِكَ كَانَ الصَّبْرُ زَادَهُ الأَعْظَمَ.</li>
+  <li><strong>أَقْسَامُ الصَّبْرِ الثَّلَاثَةُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>الصَّبْرُ عَلَى طَاعَةِ اللهِ:</strong> حَتَّى يُؤَدِّيَهَا كَمَا أَمَرَ اللهُ.</li>
+  <li><strong>الصَّبْرُ عَنْ مَعْصِيَةِ اللهِ:</strong> حَتَّى يَكُفَّ نَفْسَهُ عَنِ الشَّهَوَاتِ وَالمُحَرَّمَاتِ.</li>
+  <li><strong>الصَّبْرُ عَلَى أَقْدَارِ اللهِ المُؤْلِمَةِ:</strong> وَمِنْهَا أَذَى النَّاسِ فِي سَبِيلِ الدَّعْوَةِ: ﴿وَاصْبِرْ عَلَى مَا أَصَابَكَ إِنَّ ذَلِكَ مِنْ عَزْمِ الْأُمُورِ﴾ [لقمان: 17].</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h4 class="sub-sub-title">3. فِقْهُ اسْتِدْلَالِ الإِمَامِ الشَّافِعِيِّ وَتَبْوِيبِ الإِمَامِ البُخَارِيِّ:</h4>
+<ul class="content-list">
+  <li><strong>تَفْسِيرُ سُورَةِ العَصْرِ:</strong></li>
+</ul>
+<p>أَقْسَمَ اللهُ بِـ «العَصْرِ» (وَهُوَ الزَّمَانُ مَحَلُّ أَفْعَالِ العِبَادِ) عَلَى أَنَّ كُلَّ إِنْسَانٍ خَاسِرٌ هَالِكٌ، إِلَّا مَنِ اتَّصَفَ بِهَذِهِ الصِّفَاتِ الأَرْبَعِ:</p>
+<ol class="content-list-ordered">
+  <li>﴿آمَنُوا﴾: وَهُوَ <strong>العِلْمُ</strong> (لِأَنَّ الإِيمَانَ لَا يَكُونُ إِلَّا بِعِلْمٍ).</li>
+  <li>﴿وَعَمِلُوا الصَّالِحَاتِ﴾: وَهُوَ <strong>العَمَلُ بِالعِلْمِ</strong>.</li>
+  <li>﴿وَتَوَاصَوْا بِالْحَقِّ﴾: وَهُوَ <strong>الدَّعْوَةُ إِلَى اللهِ</strong>.</li>
+  <li>﴿وَتَوَاصَوْا بِالصَّبْرِ﴾: وَهُوَ <strong>الصَّبْرُ عَلَى مَشَاقِّ الطَّرِيقِ</strong>.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>مَعْنَى قَوْلِ الشَّافِعِيِّ: «لَوْ مَا أَنْزَلَ اللهُ حُجَّةً عَلَى خَلْقِهِ إِلَّا هَذِهِ السُّورَةَ لَكَفَتْهُمْ»:</strong></li>
+</ul>
+<p>أَيْ لَكَفَتْهُمْ فِي الحَثِّ عَلَى التَّمَسُّكِ بِأَسْبَابِ النَّجَاةِ، وَبَيَانِ أَنَّ الخَلَاصَ مِنَ الخُسْرَانِ المَحْتُومِ لَا يَكُونُ إِلَّا بِاسْتِكْمَالِ هَذِهِ المَرَاتِبِ؛ وَلَيْسَ مَعْنَاهُ أَنَّهَا تُغْنِي عَنْ بَقِيَّةِ الشَّرِيعَةِ.</p>
+<ul class="content-list">
+  <li><strong>فِقْهُ تَبْوِيبِ البُخَارِيِّ: «بَابُ: العِلْمُ قَبْلَ القَوْلِ وَالعَمَلِ»:</strong></li>
+</ul>
+<p>اسْتَنْبَطَ البُخَارِيُّ رَحِمَهُ اللهُ أَنَّ اللهَ تَعَالَى بَدَأَ بِالعِلْمِ قَبْلَ كُلِّ شَيْءٍ فَقَالَ: ﴿فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا اللَّهُ﴾، ثُمَّ عَطَفَ عَلَيْهِ القَوْلَ وَالعَمَلَ فَقَالَ: ﴿وَاسْتَغْفِرْ لِذَنْبِكَ﴾؛ فَلَا يَصِحُّ قَوْلٌ وَلَا يَسْتَقِيمُ عَمَلٌ إِلَّا إِذَا كَانَ مَبْنِيًّا عَلَى عِلْمٍ شَرْعِيٍّ صَحِيحٍ.</p>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>م</th>
+      <th>المَسْأَلَةُ الشَّرْعِيَّةُ</th>
+      <th>بَيَانُهَا وَحَقِيقَتُهَا التَّأْصِيلِيَّةُ</th>
+      <th>الدَّلِيلُ مِنَ القُرْآنِ الكَرِيمِ</th>
+      <th>الثَّمَرَةُ المَتَرَتِّبَةُ عَلَيْهَا</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td><strong>العِلْمُ الشَّرْعِيُّ</strong></td>
+      <td>مَعْرِفَةُ اللهِ، وَنَبِيِّهِ، وَدِينِ الإِسْلَامِ بِالأَدِلَّةِ الصَّحِيحَةِ</td>
+      <td>﴿فَاعْلَمْ أَنَّهُ لَا إِلَهَ إِلَّا اللَّهُ﴾ [محمد: 19]</td>
+      <td>السَّلَامَةُ مِنَ الجَهْلِ وَالتَّقْلِيدِ الأَعْمَى</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td><strong>العَمَلُ بِهِ</strong></td>
+      <td>امْتِثَالُ الأَوَامِرِ وَاجْتِنَابُ النَّوَاهِي ظَاهِرًا وَبَاطِنًا</td>
+      <td>﴿إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ﴾ [العصر: 2]</td>
+      <td>البَرَاءَةُ مِنْ شَبَهِ اليَهُودِ وَالنَّجَاةُ مِنَ العَذَابِ</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td><strong>الدَّعْوَةُ إِلَيْهِ</strong></td>
+      <td>تَبْلِيغُ التَّوْحِيدِ وَالأَمْرُ بِالمَعْرُوفِ وَالنَّهْيُ عَنِ المُنْكَرِ</td>
+      <td>﴿قُلْ هَذِهِ سَبِيلِي أَدْعُو إِلَى اللَّهِ عَلَى بَصِيرَةٍ﴾ [يوسف: 108]</td>
+      <td>أَدَاءُ وَاجِبِ البَلَاغِ وَحِفْظُ الأُمَّةِ مِنَ الضَّلَالِ</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td><strong>الصَّبْرُ عَلَى الأَذَى</strong></td>
+      <td>حَبْسُ النَّفْسِ عَلَى طَاعَةِ اللهِ وَاحْتِمَالُ المَشَاقِّ فِي دِينِهِ</td>
+      <td>﴿وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ﴾ [العصر: 3]</td>
+      <td>الثَّبَاتُ عَلَى الحَقِّ حَتَّى المَمَاتِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: المُقَدِّمَةُ الثَّانِيَةُ: المَسَائِلُ الثَّلَاثُ التَّوْحِيدِيَّةُ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«اعْلَمْ - رَحِمَكَ اللهُ - أَنَّهُ يَجِبُ عَلَى كُلِّ مُسْلِمٍ وَمُسْلِمَةٍ تَعَلُّمُ هَذِهِ المَسَائِلِ الثَّلَاثِ وَالعَمَلُ بِهِنَّ:</blockquote>
+<blockquote class="quote-box">الأُولَى: أَنَّ اللهَ خَلَقَنَا، وَرَزَقَنَا، وَلَمْ يَتْرُكْنَا هَمَلًا؛ بَلْ أَرْسَلَ إِلَيْنَا رَسُولًا، فَمَنْ أَطَاعَهُ دَخَلَ الجَنَّةَ، وَمَنْ عَصَاهُ دَخَلَ النَّارَ؛ وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿إِنَّا أَرْسَلْنَا إِلَيْكُمْ رَسُولًا شَاهِدًا عَلَيْكُمْ كَمَا أَرْسَلْنَا إِلَى فِرْعَوْنَ رَسُولًا * فَعَصَى فِرْعَوْنُ الرَّسُولَ فَأَخَذْنَاهُ أَخْذًا وَبِيلًا﴾ [المزمل: 15-16].</blockquote>
+<blockquote class="quote-box">الثَّانِيَةُ: أَنَّ اللهَ لَا يَرْضَى أَنْ يُشْرَكَ مَعَهُ أَحَدٌ فِي عِبَادَتِهِ؛ لَا مَلَكٌ مُقَرَّبٌ، وَلَا نَبِيٌّ مُرْسَلٌ؛ وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا﴾ [الجن: 18].</blockquote>
+<blockquote class="quote-box">الثَّالِثَةُ: أَنَّ مَنْ أَطَاعَ الرَّسُولَ، وَوَحَّدَ اللهَ؛ لَا يَجُوزُ لَهُ مُوَالَاةُ مَنْ حَادَّ اللهَ وَرَسُولَهُ، وَلَوْ كَانَ أَقْرَبَ قَرِيبٍ؛ وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿لَا تَجِدُ قَوْمًا يُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ يُوَادُّونَ مَنْ حَادَّ اللَّهَ وَرَسُولَهُ وَلَوْ كَانُوا آبَاءَهُمْ أَوْ أَبْنَاءَهُمْ أَوْ إِخْوَانَهُمْ أَوْ عَشِيرَتَهُمْ أُولَئِكَ كَتَبَ فِي قُلُوبِهِمُ الْإِيمَانَ وَأَيَّدَهُمْ بِرُوحٍ مِنْهُ وَيُدْخِلُهُمْ جَنَّاتٍ تَجْرِي مِنْ تَحْتِهَا الْأَنْهَارُ خَالِدِينَ فِيهَا رَضِيَ اللَّهُ عَنْهُمْ وَرَضُوا عَنْهُ أُولَئِكَ حِزْبُ اللَّهِ أَلَا إِنَّ حِزْبَ اللَّهِ هُمُ الْمُفْلِحُونَ﴾ [المجادلة: 22].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِلْمَسَائِلِ الثَّلَاثِ:</h3>
+<h4 class="sub-sub-title">1. المَسْأَلَةُ الأُولَى: رِسَالَةُ النَّبِيِّ ﷺ مَانِعَةٌ مِنَ الإِهْمَالِ:</h4>
+<ul class="content-list">
+  <li><strong>اللهُ هُوَ الخَالِقُ الرَّازِقُ:</strong> خَلَقَنَا اللهُ مِنْ عَدَمٍ، وَأَسْبَغَ عَلَيْنَا نِعَمَهُ الظَّاهِرَةَ وَالبَاطِنَةَ.</li>
+  <li><strong>«وَلَمْ يَتْرُكْنَا هَمَلًا»:</strong> الهَمَلُ فِي اللُّغَةِ: الإِبِلُ السَّائِمَةُ المَتْرُوكَةُ بِلَا رَاعٍ وَلَا حَافِظٍ؛ فَاللهُ تَعَالَى لَمْ يَخْلُقِ الخَلْقَ سُدًى لِيَأْكُلُوا وَيَشْرَبُوا كَالبَهَائِمِ ثُمَّ يَمُوتُوا هَبَاءً: ﴿أَيَحْسَبُ الْإِنْسَانُ أَنْ يُتْرَكَ سُدًى﴾ [القيامة: 36]، قَالَ الإِمَامُ الشَّافِعِيُّ: «أَيْ لَا يُؤْمَرُ وَلَا يُنْهَى».</li>
+  <li><strong>إِرْسَالُ الرُّسُلِ وَعِظَةُ فِرْعَوْنَ:</strong></li>
+</ul>
+<p>أَرْسَلَ اللهُ إِلَيْنَا سَيِّدَ المُرْسَلِينَ مُحَمَّدًا ﷺ، شَاهِدًا عَلَيْنَا بِمَا عَمِلْنَا، كَمَا أَرْسَلَ مُوسَى إِلَى فِرْعَوْنَ، فَلَمَّا عَصَى فِرْعَوْنُ الرَّسُولَ أَهْلَكَهُ اللهُ بِالغَرَقِ وَأَخَذَهُ «أَخْذًا وَبِيلًا»؛ أَيْ شَدِيدًا ثَقِيلًا؛ فَكَيْفَ بِمَنْ عَصَى سَيِّدَ الأَوَّلِينَ وَالآخِرِينَ مُحَمَّدًا ﷺ؟!</p>
+<h4 class="sub-sub-title">2. المَسْأَلَةُ الثَّانِيَةُ: عَدَمُ رِضَا اللهِ بِالشِّرْكِ مُطْلَقًا:</h4>
+<ul class="content-list">
+  <li><strong>تَنْزِيهُ اللهِ عَنِ الشِّرْكِ:</strong> الشِّرْكُ أَعْظَمُ ظُلْمٍ عُصِيَ اللهُ بِهِ؛ لِأَنَّ فِيهِ تَسْوِيَةَ المَخْلُوقِ الضَّعِيفِ بِالخَالِقِ القَدِيرِ.</li>
+  <li><strong>«لَا مَلَكٌ مُقَرَّبٌ وَلَا نَبِيٌّ مُرْسَلٌ»:</strong></li>
+</ul>
+<p>خَصَّ الشَّيْخُ المَلَكَ المُقَرَّبَ وَالنَّبِيَّ المُرْسَلَ لِأَنَّهُمَا أَفْضَلُ الخَلِيقَةِ وَأَعْلَاهُمْ مَنْزِلَةً عِنْدَ اللهِ؛ فَإِذَا كَانَ اللهُ لَا يَرْضَى أَنْ يُشْرَكَ مَعَهُ جِبْرِيلُ وَلَا مُحَمَّدٌ ﷺ؛ فَكَيْفَ يَرْضَى بِصَرْفِ العِبَادَةِ لِمَنْ هُوَ دُونَهُمَا كَالأَوْلِيَاءِ وَالصَّالِحِينَ، أَوِ القُبُورِ وَالأَضْرِحَةِ وَالأَحْجَارِ؟!</p>
+<ul class="content-list">
+  <li><strong>التَّحْلِيلُ الإِعْرَابِيُّ وَالبَلَاغِيُّ لِآيَةِ الجِنِّ:</strong></li>
+</ul>
+<p>قَوْلُهُ تَعَالَى: ﴿وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا﴾:</p>
+<ul class="content-list">
+  <li>«فَلَا تَدْعُوا»: «لَا» نَاهِيَةٌ جَازِمَةٌ، «تَدْعُوا»: فِعْلٌ مُضَارِعٌ مَجْزُومٌ بِحَذْفِ النُّونِ.</li>
+  <li>«أَحَدًا»: نَكِرَةٌ فِي سِيَاقِ النَّهْيِ، وَالقَاعِدَةُ الأُصُولِيَّةُ تَقْضِي بِأَنَّ: <strong>«النَّكِرَةَ فِي سِيَاقِ النَّهْيِ تُفِيدُ العُمُومَ الشَّامِلَ لِكُلِّ أَحَدٍ»</strong>؛ فَلَا يُدْعَى مَعَ اللهِ صَنَمٌ، وَلَا قَبْرٌ، وَلَا مَلَكٌ، وَلَا وَلِيٌّ، وَلَا جِنِّيٌّ.</li>
+</ul>
+<h4 class="sub-sub-title">3. المَسْأَلَةُ الثَّالِثَةُ: عَقِيدَةُ الوَلَاءِ وَالبَرَاءِ:</h4>
+<ul class="content-list">
+  <li><strong>أَوْثَقُ عُرَى الإِيمَانِ:</strong> الحُبُّ فِي اللهِ، وَالبُغْضُ فِي اللهِ، وَمُوَالَاةُ أَوْلِيَاءِ اللهِ، وَمُعَادَاةُ أَعْدَاءِ اللهِ.</li>
+  <li><strong>مَعْنَى «مَنْ حَادَّ اللهَ وَرَسُولَهُ»:</strong></li>
+</ul>
+<p>المُحَادَّةُ مَأْخُوذَةٌ مِنَ الحَدِّ؛ وَهُوَ أَنْ يَكُونَ الإِنْسَانُ فِي حَدٍّ وَجَانِبٍ، وَاللهُ وَرَسُولُهُ فِي حَدٍّ وَجَانِبٍ آخَرَ؛ يَعْنِي: كَانَ فِي حِزْبِ الكُفَّارِ وَالمُشْرِكِينَ.</p>
+<ul class="content-list">
+  <li><strong>دَلَالَةُ آيَةِ سُورَةِ المُجَادَلَةِ:</strong></li>
+</ul>
+<p>قَطَعَ اللهُ فِي هَذِهِ الآيَةِ بِأَنَّهُ لَا يَجْتَمِعُ الإِيمَانُ الصَّادِقُ بِاللهِ وَاليَوْمِ الآخِرِ مَعَ مَوَدَّةِ مَنْ حَادَّ اللهَ وَرَسُولَهُ، وَلَوْ كَانُوا أَقْرَبَ النَّاسِ نَسَبًا كَالآبَاءِ وَالأَبْنَاءِ وَالإِخْوَانِ.</p>
+<ul class="content-list">
+  <li><strong>الفَرْقُ بَيْنَ البِرِّ الدُّنْيَوِيِّ وَالمَوَدَّةِ القَلْبِيَّةِ:</strong></li>
+</ul>
+<p>فَرَّقَ عُلَمَاءُ أَهْلِ السُّنَّةِ بَيْنَ أَمْرَيْنِ:</p>
+<ol class="content-list-ordered">
+  <li><strong>المَوَدَّةُ وَالمُوَالَاةُ الدِّينِيَّةُ:</strong> وَهَذِهِ مُحَرَّمَةٌ قَطْعًا مَعَ كُلِّ كَافِرٍ، وَتُعَدُّ كُفْرًا إِذَا كَانَتْ مُظَاهَرَةً لَهُمْ عَلَى المُسْلِمِينَ.</li>
+  <li><strong>البِرُّ وَالإِقْسَاطُ الدُّنْيَوِيُّ:</strong> كَمُعَامَلَةِ الوَالِدَيْنِ الكَافِرَيْنِ بِالإِحْسَانِ دُونَ طَاعَتِهِمَا فِي المَعْصِيَةِ، أَوِ العَدْلِ مَعَ غَيْرِ المُحَارِبِينَ، كَمَا قَالَ تَعَالَى: ﴿لَا يَنْهَاكُمُ اللَّهُ عَنِ الَّذِينَ لَمْ يُقَاتِلُوكُمْ فِي الدِّينِ وَلَمْ يُخْرِجُوكُمْ مِنْ دِيَارِكُمْ أَنْ تَبَرُّوهُمْ وَتُقْسِطُوا إِلَيْهِمْ إِنَّ اللَّهَ يُحِبُّ الْمُقْسِطِينَ﴾ [الممتحنة: 8].</li>
+</ol>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>رَقْمُ المَسْأَلَةِ</th>
+      <th>المَسْأَلَةُ التَّوْحِيدِيَّةُ</th>
+      <th>ضَابِطُهَا الشَّرْعِيُّ وَحُكْمُهَا</th>
+      <th>دَلِيلُهَا مِنَ القُرْآنِ الكَرِيمِ</th>
+      <th>خَطَرُ مُخَالَفَتِهَا</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>المَسْأَلَةُ 1</strong></td>
+      <td><strong>الرِّسَالَةُ مَانِعَةٌ مِنَ الإِهْمَالِ</strong></td>
+      <td>أَنَّ اللهَ خَلَقَنَا وَلَمْ يَتْرُكْنَا عَبَثًا بَلْ أَرْسَلَ رَسُولًا</td>
+      <td>﴿إِنَّا أَرْسَلْنَا إِلَيْكُمْ رَسُولًا شَاهِدًا عَلَيْكُمْ﴾ [المزمل: 15]</td>
+      <td>التَّعَرُّضُ لِلْأَخْذِ الوَبِيلِ كَفِرْعَوْنَ</td>
+    </tr>
+    <tr>
+      <td><strong>المَسْأَلَةُ 2</strong></td>
+      <td><strong>بُغْضُ اللهِ لِلشِّرْكِ مُطْلَقًا</strong></td>
+      <td>اللهُ لَا يَرْضَى بِالشِّرْكِ مَعَهُ لَا مِنْ مَلَكٍ وَلَا نَبِيٍّ</td>
+      <td>﴿وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا﴾ [الجن: 18]</td>
+      <td>حُبُوطُ العَمَلِ وَالخُلُودُ فِي النَّارِ</td>
+    </tr>
+    <tr>
+      <td><strong>المَسْأَلَةُ 3</strong></td>
+      <td><strong>عَقِيدَةُ الوَلَاءِ وَالبَرَاءِ</strong></td>
+      <td>تَحْرِيمُ مُوَادَّةِ وَمُوَالَاةِ مَنْ حَادَّ اللهَ وَلَوْ كَانَ أَقْرَبَ قَرِيبٍ</td>
+      <td>﴿لَا تَجِدُ قَوْمًا يُؤْمِنُونَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ يُوَادُّونَ...﴾ [المجادلة: 22]</td>
+      <td>نَقْضُ كَمَالِ الإِيمَانِ أَوِ الرِّدَّةُ عَنِ الإِسْلَامِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّالِثُ: المُقَدِّمَةُ الثَّالِثَةُ: الحَنِيفِيَّةُ مِلَّةُ إِبْرَاهِيمَ وَأَصْلُ العِبَادَةِ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«اعْلَمْ أَرْشَدَكَ اللهُ لِطَاعَتِهِ:</blockquote>
+<blockquote class="quote-box">أَنَّ الحَنِيفِيَّةَ مِلَّةَ إِبْرَاهِيمَ: أَنْ تَعْبُدَ اللهَ وَحْدَهُ مُخْلِصًا لَهُ الدِّينَ.</blockquote>
+<blockquote class="quote-box">وَبِذَلِكَ أَمَرَ اللهُ جَمِيعَ النَّاسِ، وَخَلَقَهُمْ لَهَا؛ كَمَا قَالَ تَعَالَى: ﴿وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ﴾ [الذاريات: 56].</blockquote>
+<blockquote class="quote-box">وَمَعْنَى «يَعْبُدُونِ»: يُوَحِّدُونِ.</blockquote>
+<blockquote class="quote-box">وَأَعْظَمُ مَا أَمَرَ اللهُ بِهِ: التَّوْحِيدُ؛ وَهُوَ: إِفْرَادُ اللهِ بِالعِبَادَةِ.</blockquote>
+<blockquote class="quote-box">وَأَعْظَمُ مَا نَهَى عَنْهُ: الشِّرْكُ؛ وَهُوَ: دَعْوَةُ غَيْرِهِ مَعَهُ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا﴾ [النساء: 36].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِلْمُقَدِّمَةِ الثَّالِثَةِ:</h3>
+<h4 class="sub-sub-title">1. بَيَانُ الحَنِيفِيَّةِ وَمِلَّةِ الخَلِيلِ إِبْرَاهِيمَ عَلَيْهِ السَّلَامُ:</h4>
+<ul class="content-list">
+  <li><strong>قَوْلُهُ: «أَرْشَدَكَ اللهُ لِطَاعَتِهِ»:</strong> الرُّشْدُ هُوَ الِاسْتِقَامَةُ عَلَى طَرِيقِ الحَقِّ مَعَ العِلْمِ وَالعَمَلِ، وَهُوَ ضِدُّ الغَيِّ وَالضَّلَالِ. وَهَذَا دُعَاءٌ ثَالِثٌ مِنَ المُصَنِّفِ رَحِمَهُ اللهُ لِكُلِّ مَنْ قَرَأَ رِسَالَتَهُ.</li>
+  <li><strong>مَعْنَى «الحَنِيفِيَّةِ» لُغَةً وَشَرْعًا:</strong></li>
+  <li><strong>لُغَةً:</strong> مَأْخُوذَةٌ مِنَ «الحَنَفِ»، وَهُوَ المَيَلُ فِي القَدَمِ؛ فَالـحَنِيفُ هُوَ المَائِلُ عَنِ الشِّرْكِ قَصْدًا إِلَى التَّوْحِيدِ وَالِاسْتِقَامَةِ.</li>
+  <li><strong>شَرْعًا:</strong> هِيَ المِلَّةُ المُخْلَصَةُ القَائِمَةُ عَلَى عِبَادَةِ اللهِ وَحْدَهُ لَا شَرِيكَ لَهُ، وَالبَرَاءَةِ التَّامَّةِ مِنْ كُلِّ مَا يُعْبَدُ مِنْ دُونِ اللهِ.</li>
+  <li><strong>لِمَاذَا نُسِبَتْ إِلَى إِبْرَاهِيمَ عَلَيْهِ السَّلَامُ؟</strong></li>
+</ul>
+<p>لِأَنَّ إِبْرَاهِيمَ هُوَ أَبُو الأَنْبِيَاءِ، وَإِمَامُ الحُنَفَاءِ، الَّذِي جَعَلَهُ اللهُ أُمَّةً قَانِتًا للهِ حَنِيفًا وَلَمْ يَكُ مِنَ المُشْرِكِينَ: ﴿ثُمَّ أَوْحَيْنَا إِلَيْكَ أَنِ اتَّبِعْ مِلَّةَ إِبْرَاهِيمَ حَنِيفًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ﴾ [النحل: 123]. وَقَدْ تَبَرَّأَ مِنْ قَوْمِهِ وَآلِهَتِهِمْ فَقَالَ: ﴿إِنَّنِي بَرَاءٌ مِمَّا تَعْبُدُونَ * إِلَّا الَّذِي فَطَرَنِي فَإِنَّهُ سَيَهْدِينِ﴾ [الزخرف: 26-27].</p>
+<h4 class="sub-sub-title">2. الغَايَةُ الحِكْمِيَّةُ مِنْ خَلْقِ الإِنْسِ وَالجِنِّ:</h4>
+<ul class="content-list">
+  <li><strong>تَفْسِيرُ آيَةِ الذَّارِيَاتِ:</strong> ﴿وَمَا خَلَقْتُ الْجِنَّ وَالْإِنْسَ إِلَّا لِيَعْبُدُونِ﴾ [الذاريات: 56]:</li>
+  <li>أُسْلُوبُ الآيَةِ أُسْلُوبُ حَصْرٍ وَقَصْرٍ (نَفْيٌ بِـ «مَا» وَإِثْبَاتٌ بِـ «إِلَّا»)، يُفِيدُ أَنَّ الحِكْمَةَ الوَحِيدَةَ مِنْ خَلْقِ الثَّقَلَيْنِ هِيَ: <strong>عِبَادَةُ اللهِ وَحْدَهُ</strong>.</li>
+  <li>اللهُ تَعَالَى غَنِيٌّ عَنِ العِبَادِ، لَا تَنْفَعُهُ طَاعَتُهُمْ وَلَا تَضُرُّهُ مَعْصِيَتُهُمْ؛ بَلِ العِبَادُ هُمُ الفُقَرَاءُ إِلَيْهِ: ﴿مَا أُرِيدُ مِنْهُمْ مِنْ رِزْقٍ وَمَا أُرِيدُ أَنْ يُطْعِمُونِ * إِنَّ اللَّهَ هُوَ الرَّزَّاقُ ذُو الْقُوَّةِ الْمَتِينُ﴾ [الذاريات: 57-58].</li>
+  <li><strong>أَثَرُ ابْنِ عَبَّاسٍ رَضِيَ اللهُ عَنْهُمَا:</strong></li>
+</ul>
+<p>قَالَ الحَبْرُ ابْنُ عَبَّاسٍ رَضِيَ اللهُ عَنْهُمَا:</p>
+<blockquote class="quote-box">«كُلُّ شَيْءٍ فِي القُرْآنِ مِنَ العِبَادَةِ فَمَعْنَاهُ: التَّوْحِيدُ»</blockquote>
+<p><em>(تَفْسِيرُ ابْنِ أَبِي حَاتِمٍ وَالبَغَوِيِّ: 4/255)</em>؛ لِأَنَّ العِبَادَةَ لَا تُسَمَّى عِبَادَةً مَعَ الشِّرْكِ، كَمَا أَنَّ الصَّلَاةَ لَا تُسَمَّى صَلَاةً إِلَّا مَعَ الطَّهَارَةِ.</p>
+<h4 class="sub-sub-title">3. التَّحْقِيقُ فِي «أَعْظَمِ الأَوَامِرِ» وَ«أَعْظَمِ النَّوَاهِي»:</h4>
+<ul class="content-list">
+  <li><strong>أَعْظَمُ مَا أَمَرَ اللهُ بِهِ هُوَ التَّوْحِيدُ:</strong></li>
+  <li><strong>تَعْرِيفُهُ:</strong> هُوَ إِفْرَادُ اللهِ بِالعِبَادَةِ؛ أَيْ أَلَّا تَصْرِفَ ذَرَّةً مِنْ دُعَائِكَ، أَوْ خَوْفِكَ، أَوْ رَجَائِكَ، أَوْ ذَبْحِكَ، أَوْ نَذْرِكَ لِغَيْرِهِ تَعَالَى.</li>
+  <li><strong>عِلَّةُ كَوْنِهِ أَعْظَمَ الأَوَامِرِ:</strong> لِأَنَّهُ حَقُّ اللهِ المَحْضُ الَّذِي لَا يَسْتَحِقُّهُ سِوَاهُ، وَلِأَنَّهُ أَسَاسُ قَبُولِ جَمِيعِ الأَعْمَالِ؛ فَإِذَا بَطَلَ التَّوْحِيدُ حَبِطَتِ الأَعْمَالُ كُلُّهَا.</li>
+  <li><strong>أَعْظَمُ مَا نَهَى اللهُ عَنْهُ هُوَ الشِّرْكُ:</strong></li>
+  <li><strong>تَعْرِيفُهُ:</strong> هُوَ دَعْوَةُ غَيْرِ اللهِ مَعَهُ، أَوْ صَرْفُ شَيْءٍ مِنْ خَصَائِصِ الرَّبِّ لِغَيْرِهِ.</li>
+  <li><strong>عِلَّةُ كَوْنِهِ أَعْظَمَ المَنَاهِي:</strong> لِأَنَّهُ تَنْقِيصٌ لِرَبِّ العَالَمِينَ، وَمُسَاوَاةٌ لِلْمَخْلُوقِ النَّاقِصِ بِالخَالِقِ الكَامِلِ، وَلِأَنَّهُ الذَّنْبُ الَّذِي حَكَمَ اللهُ بِأَنَّهُ لَا يَغْفِرُهُ لِمَنْ مَاتَ عَلَيْهِ: ﴿إِنَّ اللَّهَ لَا يَغْفِرُ أَنْ يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَلِكَ لِمَنْ يَشَاءُ﴾ [النساء: 48].</li>
+  <li><strong>اسْتِدْلَالُ الشَّيْخِ بِآيَةِ الحُقُوقِ العَشَرَةِ:</strong></li>
+</ul>
+<p>قَوْلُهُ تَعَالَى فِي سُورَةِ النِّسَاءِ: ﴿وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا﴾ [النساء: 36]:</p>
+<ul class="content-list">
+  <li>بَدَأَ اللهُ سُبْحَانَهُ بِالأَمْرِ بِعِبَادَتِهِ مَقْرُونًا بِالنَّهْيِ عَنِ الشِّرْكِ، ثُمَّ ثَنَّى بِحَقِّ الوَالِدَيْنِ، فَدَلَّ عَلَى أَنَّ حَقَّ التَّوْحِيدِ أَوْجَبُ الوَاجِبَاتِ وَأَعْلَى الحُقُوقِ.</li>
+  <li>قَوْلُهُ: «شَيْئًا»: نَكِرَةٌ فِي سِيَاقِ النَّهْيِ، تَعُمُّ الصَّغِيرَ وَالكَبِيرَ، وَالشِّرْكَ الأَكْبَرَ وَالأَصْغَرَ.</li>
+</ul>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>المَفْهُومُ الشَّرْعِيُّ</th>
+      <th>الحَدُّ التَّأْصِيلِيُّ</th>
+      <th>الدَّلِيلُ مِنَ القُرْآنِ الكَرِيمِ</th>
+      <th>الأَثَرُ فِي الدُّنْيَا وَالآخِرَةِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>الحَنِيفِيَّةُ</strong></td>
+      <td>مِلَّةُ إِبْرَاهِيمَ: المَيَلُ عَنِ الشِّرْكِ إِلَى عِبَادَةِ اللهِ وَحْدَهُ مُخْلِصًا</td>
+      <td>﴿قُلْ إِنَّنِي هَدَانِي رَبِّي إِلَى صِرَاطٍ مُسْتَقِيمٍ دِينًا قِيَمًا مِلَّةَ إِبْرَاهِيمَ حَنِيفًا﴾ [الأنعام: 161]</td>
+      <td>الهِدَايَةُ وَشَرَفُ الِانْتِسَابِ إِلَى صِرَاطِ الأَنْبِيَاءِ</td>
+    </tr>
+    <tr>
+      <td><strong>أَعْظَمُ الأَوَامِرِ (التَّوْحِيدُ)</strong></td>
+      <td>إِفْرَادُ اللهِ بِالرُّبُوبِيَّةِ، وَالأُلُوهِيَّةِ، وَالأَسْمَاءِ وَالصِّفَاتِ</td>
+      <td>﴿وَاعْبُدُوا اللَّهَ وَلَا تُشْرِكُوا بِهِ شَيْئًا﴾ [النساء: 36]</td>
+      <td>صِحَّةُ الأَعْمَالِ وَدُخُولُ الجَنَّةِ وَالفَوْزُ بِالرِّضْوَانِ</td>
+    </tr>
+    <tr>
+      <td><strong>أَعْظَمُ المَنَاهِي (الشِّرْكُ)</strong></td>
+      <td>تَسْوِيَةُ غَيْرِ اللهِ بِاللهِ فِيمَا هُوَ مِنْ خَصَائِصِهِ سُبْحَانَهُ</td>
+      <td>﴿إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ﴾ [لقمان: 13]</td>
+      <td>حُبُوطُ كُلِّ العَمَلِ وَحُرْمَانُ المَغْفِرَةِ وَالخُلُودُ فِي النَّارِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🧭 القِسْمُ الثَّانِي: الأَصْلُ الأَوَّلُ: مَعْرِفَةُ العَبْدِ رَبَّهُ عَزَّ وَجَلَّ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: حَقِيقَةُ الرُّبُوبِيَّةِ وَدَلَائِلُ الآفَاقِ وَالأَنْفُسِ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«فَإِذَا قِيلَ لَكَ: مَا الأُصُولُ الثَّلَاثَةُ الَّتِي يَجِبُ عَلَى الإِنْسَانِ مَعْرِفَتُهَا؟</blockquote>
+<blockquote class="quote-box">فَقُلْ: مَعْرِفَةُ العَبْدِ رَبَّهُ، وَدِينَهُ، وَنَبِيَّهُ مُحَمَّدًا ﷺ.</blockquote>
+<blockquote class="quote-box">فَإِذَا قِيلَ لَكَ: مَنْ رَبُّكَ؟</blockquote>
+<blockquote class="quote-box">فَقُلْ: رَبِّيَ اللهُ الَّذِي رَبَّانِي، وَرَبَّى جَمِيعَ العَالَمِينَ بِنِعَمِهِ، وَهُوَ مَعْبُودِي، لَيْسَ لِي مَعْبُودٌ سِوَاهُ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾ [الفاتحة: 2]؛ وَكُلُّ مَنْ سِوَى اللهِ عَالَمٌ، وَأَنَا وَاحِدٌ مِنْ ذَلِكَ العَالَمِ.</blockquote>
+<blockquote class="quote-box">فَإِذَا قِيلَ لَكَ: بِمَ عَرَفْتَ رَبَّكَ؟</blockquote>
+<blockquote class="quote-box">فَقُلْ: بِآيَاتِهِ وَمَخْلُوقَاتِهِ؛ وَمِنْ آيَاتِهِ: اللَّيْلُ، وَالنَّهَارُ، وَالشَّمْسُ، وَالقَمَرُ؛ وَمِنْ مَخْلُوقَاتِهِ: السَّمَاوَاتُ السَّبْعُ، وَالأَرَضُونَ السَّبْعُ، وَمَنْ فِيهِنَّ، وَمَا بَيْنَهُمَا؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَمِنْ آيَاتِهِ اللَّيْلُ وَالنَّهَارُ وَالشَّمْسُ وَالقَمَرُ لَا تَسْجُدُوا لِلشَّمْسِ وَلَا لِلْقَمَرِ وَاسْجُدُوا لِلَّهِ الَّذِي خَلَقَهُنَّ إِنْ كُنْتُمْ إِيَّاهُ تَعْبُدُونَ﴾ [فصلت: 37]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿إِنَّ رَبَّكُمُ اللَّهُ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ فِي سِتَّةِ أَيَّامٍ ثُمَّ اسْتَوَى عَلَى الْعَرْشِ يُغْشِي اللَّيْلَ النَّهَارَ يَطْلُبُهُ حَثِيثًا وَالشَّمْسَ وَالْقَمَرَ وَالنُّجُومَ مُسَخَّرَاتٍ بِأَمْرِهِ أَلَا لَهُ الْخَلْقُ وَالْأَمْرُ تَبَارَكَ اللَّهُ رَبُّ الْعَالَمِينَ﴾ [الأعراف: 54].</blockquote>
+<blockquote class="quote-box">وَالرَّبُّ هُوَ المَعْبُودُ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ * الَّذِي جَعَلَ لَكُمُ الْأَرْضَ فِرَاشًا وَالسَّمَاءَ بِنَاءً وَأَنْزَلَ مِنَ السَّمَاءِ مَاءً فَأَخْرَجَ بِهِ مِنَ الثَّمَرَاتِ رِزْقًا لَكُمْ فَلَا تَجْعَلُوا لِلَّهِ أَنْدَادًا وَأَنْتُمْ تَعْلَمُونَ﴾ [البقرة: 21-22].</blockquote>
+<blockquote class="quote-box">قَالَ ابْنُ كَثِيرٍ رَحِمَهُ اللهُ تَعَالَى: «الخَالِقُ لِهَذِهِ الأَشْيَاءِ هُوَ المُسْتَحِقُّ لِلْعِبَادَةِ».»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِمَعْرِفَةِ الرَّبِّ:</h3>
+<h4 class="sub-sub-title">1. طَرِيقَةُ الشَّيْخِ فِي الإِلْقَاءِ (أُسْلُوبُ السُّؤَالِ وَالجَوَابِ):</h4>
+<p>اسْتَعْمَلَ الشَّيْخُ رَحِمَهُ اللهُ أُسْلُوبَ: «فَإِذَا قِيلَ لَكَ... فَقُلْ...»؛ وَهُوَ أُسْلُوبٌ تَعْلِيمِيٌّ نَبَوِيٌّ بَدِيعٌ؛ يُلْقِي السُّؤَالَ لِيَسْتَثِيرَ فِطْنَةَ السَّامِعِ، ثُمَّ يُعْطِيهِ الجَوَابَ المُحْكَمَ المَقْرُونَ بِحُجَّتِهِ مِنَ الكِتَابِ وَالسُّنَّةِ؛ لِيَرْسَخَ فِي ذِهْنِهِ رُسُوخَ الجِبَالِ.</p>
+<h4 class="sub-sub-title">2. تَحْرِيرُ مَعْنَى «الرَّبِّ» وَالتَّرْبِيَةِ الإِلَهِيَّةِ:</h4>
+<ul class="content-list">
+  <li><strong>الرَّبُّ فِي لِسَانِ العَرَبِ:</strong> هُوَ المَالِكُ، السَّيِّدُ، المُدَبِّرُ، المُصْلِحُ لِلأَشْيَاءِ.</li>
+  <li><strong>مَعْنَى «رَبَّانِي وَرَبَّى جَمِيعَ العَالَمِينَ بِنِعَمِهِ»:</strong></li>
+  <li><strong>التَّرْبِيَةُ الخَاصَّةُ:</strong> تَرْبِيَةُ أَوْلِيَائِهِ وَأَهْلِ طَاعَتِهِ بِتَوْفِيقِهِمْ لِلإِيمَانِ، وَتَزْكِيَةِ نُفُوسِهِمْ، وَتَثْبِيتِهِمْ عَلَى الصِّرَاطِ المُسْتَقِيمِ.</li>
+  <li><strong>التَّرْبِيَةُ العَامَّةُ:</strong> تَرْبِيَةُ جَمِيعِ الخَلَائِقِ (مُؤْمِنِهِمْ وَكَافِرِهِمْ، إِنْسِهِمْ وَجِنِّهِمْ، وَحَيَوَانَاتِهِمْ) بِالخَلْقِ، وَالرِّزْقِ، وَالهِدَايَةِ لِمَصَالِحِ مَعَايِشِهِمْ فِي الدُّنْيَا.</li>
+  <li><strong>تَعْرِيفُ «العَالَمِ»:</strong> كُلُّ مَا سِوَى اللهِ تَعَالَى عَالَمٌ؛ سُمُّوا «عَالَمًا» لِأَنَّهُمْ «عَلَمٌ» وَآيَةٌ عَلَى وُجُودِ خَالِقِهِمْ وَقُدْرَتِهِ وَحِكْمَتِهِ.</li>
+</ul>
+<h4 class="sub-sub-title">3. الفَرْقُ بَيْنَ «الآيَاتِ» وَ«المَخْلُوقَاتِ»:</h4>
+<ul class="content-list">
+  <li><strong>الآيَاتُ:</strong> هِيَ العَلَامَاتُ الدَّالَّةُ، وَتُطْلَقُ غَالِبًا عَلَى الحَوَادِثِ وَالأَحْوَالِ المُتَغَيِّرَةِ المُتَعَاقِبَةِ؛ كَاللَّيْلِ وَالنَّهَارِ وَتَصْرِيفِ الرِّيَاحِ.</li>
+  <li><strong>المَخْلُوقَاتُ:</strong> هِيَ الأَجْرَامُ وَالأَعْيَانُ الثَّابِتَةُ؛ كَالسَّمَاوَاتِ، وَالأَرَضِينَ، وَالجِبَالِ، وَالبِحَارِ.</li>
+  <li>وَكُلٌّ مِنْهُمَا يَدُلُّ بِمُنْتَهَى الوُضُوحِ عَلَى كَمَالِ قُدْرَةِ اللهِ، وَاسْتِحْقَاقِهِ وَحْدَهُ أَنْ يُفْرَدَ بِالعِبَادَةِ: ﴿لَا تَسْجُدُوا لِلشَّمْسِ وَلَا لِلْقَمَرِ وَاسْجُدُوا لِلَّهِ الَّذِي خَلَقَهُنَّ إِنْ كُنْتُمْ إِيَّاهُ تَعْبُدُونَ﴾.</li>
+</ul>
+<h4 class="sub-sub-title">4. قَاعِدَةُ الحَافِظِ ابْنِ كَثِيرٍ الرَّهِيبَةُ:</h4>
+<ul class="content-list">
+  <li>قَالَ اللهُ تَعَالَى فِي أَوَّلِ نِدَاءٍ فِي المُصْحَفِ الشَّرِيفِ: ﴿يَا أَيُّهَا النَّاسُ اعْبُدُوا رَبَّكُمُ الَّذِي خَلَقَكُمْ وَالَّذِينَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ﴾ [البقرة: 21].</li>
+  <li>فَقَالَ الإِمَامُ الحَافِظُ عِمَادُ الدِّينِ ابْنُ كَثِيرٍ رَحِمَهُ اللهُ: <strong>«الخَالِقُ لِهَذِهِ الأَشْيَاءِ هُوَ المُسْتَحِقُّ لِلْعِبَادَةِ»</strong>.</li>
+  <li><strong>وَجْهُ الِاسْتِدْلَالِ العَقَدِيِّ:</strong> أَنَّ كُفَّارَ قُرَيْشٍ كَانُوا يُقِرُّونَ بِأَنَّ اللهَ هُوَ الخَالِقُ الرَّازِقُ المُحْيِي المُمِيتُ (تَوْحِيدُ الرُّبُوبِيَّةِ)؛ فَأَلْزَمَهُمُ القُرْآنُ بِأَنْ يُفْرِدُوهُ بِالعِبَادَةِ وَحْدَهُ (تَوْحِيدُ الأُلُوهِيَّةِ)؛ إِذْ كَيْفَ تَعْبُدُونَ مَنْ لَا يَخْلُقُ شَيْئًا وَتَتْرُكُونَ الخَالِقَ المُنْعِمَ الرَّازِقَ؟!</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: الاسْتِيعَابُ الشَّامِلُ لِأَنْوَاعِ العِبَادَةِ الـ 14 بِأَدِلَّتِهَا</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«وَأَنْوَاعُ العِبَادَةِ الَّتِي أَمَرَ اللهُ بِهَا؛ مِثْلُ: الإِسْلَامِ، وَالإِيمَانِ، وَالإِحْسَانِ؛</blockquote>
+<blockquote class="quote-box">وَمِنْهُ: الدُّعَاءُ، وَالخَوْفُ، وَالرَّجَاءُ، وَالتَّوَكُّلُ، وَالرَّغْبَةُ، وَالرَّهْبَةُ، وَالخُشُوعُ، وَالخَشْيَةُ، وَالإِنَابَةُ، وَالاسْتِعَانَةُ، وَالاسْتِعَاذَةُ، وَالاسْتِغَاثَةُ، وَالذَّبْحُ، وَالنَّذْرُ؛</blockquote>
+<blockquote class="quote-box">وَغَيْرُ ذَلِكَ مِنْ أَنْوَاعِ العِبَادَةِ الَّتِي أَمَرَ اللهُ بِهَا، كُلُّهَا لِلَّهِ تَعَالَى؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَأَنَّ الْمَسَاجِدَ لِلَّهِ فَلَا تَدْعُوا مَعَ اللَّهِ أَحَدًا﴾ [الجن: 18].</blockquote>
+<blockquote class="quote-box">فَمَنْ صَرَفَ مِنْهَا شَيْئًا لِغَيْرِ اللهِ؛ فَهُوَ مُشْرِكٌ كَافِرٌ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَمَنْ يَدْعُ مَعَ اللَّهِ إِلَهًا آخَرَ لَا بُرْهَانَ لَهُ بِهِ فَإِنَّمَا حِسَابُهُ عِنْدَ رَبِّهِ إِنَّهُ لَا يُفْلِحُ الْكَافِرُونَ﴾ [المؤمنون: 117].</blockquote>
+<blockquote class="quote-box">وَفِي الحَدِيثِ: «الدُّعَاءُ مُخُّ العِبَادَةِ».</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ إِنَّ الَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِي سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ﴾ [غافر: 60].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الخَوْفِ قَوْلُهُ تَعَالَى: ﴿فَلَا تَخَافُوهُمْ وَخَافُونِ إِنْ كُنْتُمْ مُؤْمِنِينَ﴾ [آل عمران: 175].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الرَّجَاءِ قَوْلُهُ تَعَالَى: ﴿فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا وَلَا يُشْرِكْ بِعِبَادَةِ رَبِّهِ أَحَدًا﴾ [الكهف: 110].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ التَّوَكُّلِ قَوْلُهُ تَعَالَى: ﴿وَعَلَى اللَّهِ فَتَوَكَّلُوا إِنْ كُنْتُمْ مُؤْمِنِينَ﴾ [المائدة: 23]، وَقَوْلُهُ: ﴿وَمَنْ يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ﴾ [الطلاق: 3].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الرَّغْبَةِ وَالرَّهْبَةِ وَالخُشُوعِ قَوْلُهُ تَعَالَى: ﴿إِنَّهُمْ كَانُوا يُسَارِعُونَ فِي الْخَيْرَاتِ وَيَدْعُونَنَا رَغَبًا وَرَهَبًا وَكَانُوا لَنَا خَاشِعِينَ﴾ [الأنبياء: 90].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الخَشْيَةِ قَوْلُهُ تَعَالَى: ﴿فَلَا تَخْشَوْهُمْ وَاخْشَوْنِي﴾ [البقرة: 150].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الإِنَابَةِ قَوْلُهُ تَعَالَى: ﴿وَأَنِيبُوا إِلَى رَبِّكُمْ وَأَسْلِمُوا لَهُ﴾ [الزمر: 54].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الاسْتِعَانَةِ قَوْلُهُ تَعَالَى: ﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾ [الفاتحة: 5]، وَفِي الحَدِيثِ: «إِذَا اسْتَعَنْتَ فَاسْتَعِنْ بِاللَّهِ».</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الاسْتِعَاذَةِ قَوْلُهُ تَعَالَى: ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ [الفلق: 1]، وَ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ﴾ [الناس: 1].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الاسْتِغَاثَةِ قَوْلُهُ تَعَالَى: ﴿إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ﴾ [الأنفال: 9].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الذَّبْحِ قَوْلُهُ تَعَالَى: ﴿قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ * لَا شَرِيكَ لَهُ﴾ [الأنعام: 162-163]، وَمِنَ السُّنَّةِ: «لَعَنَ اللَّهُ مَنْ ذَبَحَ لِغَيْرِ اللَّهِ».</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ النَّذْرِ قَوْلُهُ تَعَالَى: ﴿يُوفُونَ بِالنَّذْرِ وَيَخَافُونَ يَوْمًا كَانَ شَرُّهُ مُسْتَطِيرًا﴾ [الإنسان: 7].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 التَّفْصِيلُ التَّأْصِيلِيُّ لِأَنْوَاعِ العِبَادَاتِ الأَرْبَعَ عَشْرَةَ:</h3>
+<h4 class="sub-sub-title">ضَابِطُ العِبَادَةِ:</h4>
+<ul class="content-list">
+  <li><strong>تَعْرِيفُ شَيْخِ الإِسْلَامِ ابْنِ تَيْمِيَّةَ رَحِمَهُ اللهُ:</strong></li>
+</ul>
+<blockquote class="quote-box">«العِبَادَةُ: اسْمٌ جَامِعٌ لِكُلِّ مَا يُحِبُّهُ اللهُ وَيَرْضَاهُ؛ مِنَ الأَقْوَالِ وَالأَعْمَالِ البَاطِنَةِ وَالظَّاهِرَةِ»</blockquote>
+<p><em>(مَجْمُوعُ الفَتَاوَى: 10/149)</em>.</p>
+<ul class="content-list">
+  <li><strong>قَاعِدَةُ حُكْمِ صَرْفِ العِبَادَةِ:</strong></li>
+</ul>
+<p>كُلُّ مَا ثَبَتَ بِالدَّلِيلِ أَنَّهُ «عِبَادَةٌ»؛ فَصَرْفُهُ للهِ وَحْدَهُ <strong>تَوْحِيدٌ وَإِيمَانٌ</strong>، وَصَرْفُهُ لِغَيْرِ اللهِ (لِمَلَكٍ، أَوْ نَبِيٍّ، أَوْ وَلِيٍّ، أَوْ جِنِّيٍّ، أَوْ قَبْرٍ) هُوَ <strong>شِرْكٌ أَكْبَرُ مُخْرِجٌ عَنِ الإِسْلَامِ بِالإِجْمَاعِ</strong>.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h4 class="sub-sub-title">تَحْقِيقُ أَنْوَاعِ العِبَادَةِ كُلٍّ عَلَى حِدَةٍ:</h4>
+<p>##### 1. الدُّعَاءُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> سُؤَالُ العَبْدِ حَاجَتَهُ مِنْ رَبِّهِ خُضُوعًا وَتَذَلُّلًا.</li>
+  <li><strong>قِسْمَا الدُّعَاءِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>دُعَاءُ مَسْأَلَةٍ:</strong> طَلَبُ جَلْبِ النَّفْعِ وَدَفْعِ الضُّرِّ؛ كَقَوْلِكَ: «اللَّهُمَّ اغْفِرْ لِي، اللَّهُمَّ ارْزُقْنِي».</li>
+  <li><strong>دُعَاءُ عِبَادَةٍ:</strong> كُلُّ قُرْبَةٍ يَتَقَرَّبُ بِهَا العَبْدُ إِلَى رَبِّهِ كَالصَّلَاةِ وَالصِّيَامِ؛ لِأَنَّ العَابِدَ بِفِعْلِهِ سَائِلٌ رَحْمَةَ اللهِ.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>تَخْرِيجُ الحَدِيثِ:</strong> حَدِيثُ: «الدُّعَاءُ مُخُّ العِبَادَةِ» رَوَاهُ التِّرْمِذِيُّ (3371) بِسَنَدٍ ضَعِيفٍ، وَلَكِنْ يُغْنِي عَنْهُ الحَدِيثُ الصَّحِيحُ الصَّرِيحُ الَّذِي رَوَاهُ التِّرْمِذِيُّ (2969) وَأَبُو دَاوُدَ (1479) عَنِ النُّعْمَانِ بْنِ بَشِيرٍ رَضِيَ اللهُ عَنْهُ أَنَّ النَّبِيَّ ﷺ قَالَ: <strong>«الدُّعَاءُ هُوَ العِبَادَةُ»</strong>، ثُمَّ قَرَأَ قَوْلَهُ تَعَالَى: ﴿وَقَالَ رَبُّكُمُ ادْعُونِي أَسْتَجِبْ لَكُمْ إِنَّ الَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِي سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ﴾؛ فَسَمَّى اللهُ الدُّعَاءَ عِبَادَةً، وَتَوَعَّدَ المُسْتَكْبِرِينَ عَنْهُ بِالنَّارِ.</li>
+  <li><strong>الشِّرْكُ فِيهِ:</strong> دُعَاءُ الأَمْوَاتِ وَالغَائِبِينَ فِي المَقَابِرِ؛ مِثْلُ: «يَا سَيِّدِي فُلَانُ اشْفِ مَرِيضِي، أَوْ فَرِّجْ كَرْبِي»؛ هَذَا كُفْرٌ أَكْبَرُ مُسْتَبِينٌ.</li>
+</ul>
+<p>##### 2. الخَوْفُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> انْذِعَارُ القَلْبِ وَفَزَعُهُ مِنْ أَمْرٍ مَخُوفٍ.</li>
+  <li><strong>أَقْسَامُهُ الثَّلَاثَةُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>خَوْفُ السِّرِّ (الشِّرْكِيُّ):</strong> أَنْ يَخَافَ مِنْ مَيِّتٍ أَوْ وَلِيٍّ غَائِبٍ أَوْ جِنِّيٍّ أَنْ يُصِيبَهُ بِمَرَضٍ أَوْ عَاهَةٍ بِقُدْرَتِهِ الخَفِيَّةِ؛ وَهَذَا شِرْكٌ أَكْبَرُ؛ لِأَنَّ النَّفْعَ وَالضَّرَّ بِيَدِ اللهِ وَحْدَهُ.</li>
+  <li><strong>الخَوْفُ الطَّبِيعِيُّ الجِبِلِّيُّ:</strong> كَالخَوْفِ مِنَ الحَيَّةِ، أَوْ الأَسَدِ، أَوِ الحَرِيقِ؛ فَهَذَا لَا حَرَجَ فِيهِ: ﴿فَخَرَجَ مِنْهَا خَائِفًا يَتَرَقَّبُ﴾ [القصص: 21].</li>
+  <li><strong>الخَوْفُ الشَّرْعِيُّ الوَاجِبُ:</strong> خَوْفُ اللهِ وَعِقَابِهِ الَّذِي يَحْمِلُ العَبْدَ عَلَى فِعْلِ الوَاجِبَاتِ وَتَرْكِ المُحَرَّمَاتِ.</li>
+</ol>
+<p>##### 3. الرَّجَاءُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> طَمَعُ القَلْبِ فِي فَضْلِ اللهِ وَرَحْمَتِهِ وَجَنَّتِهِ، مَعَ بَذْلِ الأَسْبَابِ وَالطَّاعَاتِ.</li>
+  <li><strong>الفَرْقُ بَيْنَ الرَّجَاءِ وَالتَّمَنِّي:</strong></li>
+  <li><strong>الرَّجَاءُ المَحْمُودُ:</strong> هُوَ المَقْرُونُ بِالعَمَلِ الصَّالِحِ: ﴿فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا﴾.</li>
+  <li><strong>التَّمَنِّي المَذْمُومُ (الغُرُورُ):</strong> هُوَ تَمَنِّي المَغْفِرَةِ وَالجَنَّةِ مَعَ الإِقَامَةِ عَلَى المَعَاصِي وَتَرْكِ الوَاجِبَاتِ دُونَ تَوْبَةٍ.</li>
+</ul>
+<p>##### 4. التَّوَكُّلُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> صِدْقُ اعْتِمَادِ القَلْبِ عَلَى اللهِ تَعَالَى فِي اسْتِجْلَابِ المَنَافِعِ وَدَفْعِ المَضَارِّ، مَعَ فِعْلِ الأَسْبَابِ المَشْرُوعَةِ.</li>
+  <li>قَرَنَ اللهُ التَّوَكُّلَ بِالإِيمَانِ فَجَعَلَهُ شَرْطًا فِيهِ: ﴿وَعَلَى اللَّهِ فَتَوَكَّلُوا إِنْ كُنْتُمْ مُؤْمِنِينَ﴾.</li>
+  <li><strong>خَطَأُ المُعَطِّلِينَ لِلْأَسْبَابِ:</strong> تَرْكُ الأَسْبَابِ قَدْحٌ فِي الشَّرِيعَةِ، وَالِاعْتِمَادُ عَلَى الأَسْبَابِ قَدْحٌ فِي التَّوْحِيدِ؛ بَلِ السَّنَنُ النَّبَوِيُّ هُوَ اعْتِمَادُ القَلْبِ عَلَى اللهِ مَعَ مُبَاشَرَةِ الأَسْبَابِ.</li>
+</ul>
+<p>##### 5 - 7. الرَّغْبَةُ، وَالرَّهْبَةُ، وَالخُشُوعُ:</p>
+<ul class="content-list">
+  <li><strong>الرَّغْبَةُ:</strong> مَحَبَّةُ الوُصُولِ إِلَى المَرْغُوبِ فِيهِ مِنْ ثَوَابِ اللهِ وَرِضْوَانِهِ.</li>
+  <li><strong>الرَّهْبَةُ:</strong> خَوْفٌ مَقْرُونٌ بِعَمَلٍ يَحْثُّ عَلَى الهَرَبِ مِنَ المَرْهُوبِ (عَذَابِ اللهِ).</li>
+  <li><strong>الخُشُوعُ:</strong> سُكُونُ الجَوَارِحِ وَانْكِسَارُ القَلْبِ لِعَظَمَةِ اللهِ وَجَلَالِهِ.</li>
+  <li>أَثْنَى اللهُ عَلَى أَنْبِيَائِهِ بِهَذِهِ الصِّفَاتِ فَقَالَ: ﴿إِنَّهُمْ كَانُوا يُسَارِعُونَ فِي الْخَيْرَاتِ وَيَدْعُونَنَا رَغَبًا وَرَهَبًا وَكَانُوا لَنَا خَاشِعِينَ﴾ [الأنبياء: 90].</li>
+</ul>
+<p>##### 8. الخَشْيَةُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> خَوْفٌ مَبْنِيٌّ عَلَى العِلْمِ بِعَظَمَةِ المَخُوفِ وَكَمَالِ سُلْطَانِهِ؛ وَلِذَلِكَ كَانَتْ أَخَصَّ مِنَ الخَوْفِ: ﴿إِنَّمَا يَخْشَى اللَّهَ مِنْ عِبَادِهِ الْعُلَمَاءُ﴾ [فاطر: 28].</li>
+</ul>
+<p>##### 9. الإِنَابَةُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> الرُّجُوعُ إِلَى اللهِ بِالكُلِّيَّةِ، وَإِقْبَالُ القَلْبِ عَلَيْهِ بِالمَحَبَّةِ وَالتَّأَلُّهِ: ﴿وَأَنِيبُوا إِلَى رَبِّكُمْ وَأَسْلِمُوا لَهُ﴾.</li>
+</ul>
+<p>##### 10. الاسْتِعَانَةُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> طَلَبُ العَوْنِ مِنَ اللهِ فِي أُمُورِ الدِّينِ وَالدُّنْيَا.</li>
+  <li><strong>الشِّرْكُ فِيهَا:</strong> طَلَبُ العَوْنِ مِنَ الأَمْوَاتِ أَوِ الغَائِبِينَ فِيمَا لَا يَقْدِرُ عَلَيْهِ إِلَّا اللهُ. أَمَّا الاسْتِعَانَةُ بِالحَيِّ الحَاضِرِ القَادِرِ فِي أُمُورِ الدُّنْيَا فَهِيَ جَائِزَةٌ: ﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى﴾.</li>
+</ul>
+<p>##### 11. الاسْتِعَاذَةُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> طَلَبُ العِيَاذِ، وَهُوَ الِالْتِجَاءُ وَالاعْتِصَامُ بِاللهِ لِدَفْعِ شَرٍّ مَخُوفٍ: ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾، ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ﴾.</li>
+  <li>كَانَ أَهْلُ الجَاهِلِيَّةِ يَسْتَعِيذُونَ بِالجِنِّ: ﴿وَأَنَّهُ كَانَ رِجَالٌ مِنَ الْإِنْسِ يَعُوذُونَ بِرِجَالٍ مِنَ الْجِنِّ فَزَادُوهُمْ رَهَقًا﴾ [الجن: 6]، فَأَبْطَلَ الإِسْلَامُ ذَلِكَ وَأَوْجَبَ الِاسْتِعَاذَةَ بِاللهِ وَحْدَهُ.</li>
+</ul>
+<p>##### 12. الاسْتِغَاثَةُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> طَلَبُ الغَوْثِ، وَهُوَ تَفْرِيجُ الكَرْبِ وَالشِّدَّةِ العَظِيمَةِ.</li>
+  <li>دَلِيلُهَا: ﴿إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ﴾ نَزَلَتْ فِي يَوْمِ بَدْرٍ حِينَ رَفَعَ النَّبِيُّ ﷺ يَدَيْهِ إِلَى السَّمَاءِ حَتَّى سَقَطَ رِدَاؤُهُ يَسْتَغِيثُ رَبَّهُ. فَمَنِ اسْتَغَاثَ بِمَيِّتٍ أَوْ غَائِبٍ عِنْدَ الغَرَقِ أَوْ الشِّدَّةِ فَقَدْ كَفَرَ.</li>
+</ul>
+<p>##### 13. الذَّبْحُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> إِرَاقَةُ الدَّمِ تَقَرُّبًا وَتَعْظِيمًا.</li>
+  <li>أَمَرَ اللهُ أَنْ يَكُونَ الذَّبْحُ لَهُ وَحْدَهُ قَرِينًا لِلصَّلَاةِ: ﴿فَصَلِّ لِرَبِّكَ وَانْحَرْ﴾ [الكوثر: 2]، وَ﴿قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ﴾.</li>
+  <li><strong>تَخْرِيجُ حَدِيثِ مُسْلِمٍ:</strong> رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (1978) عَنْ عَلِيِّ بْنِ أَبِي طَالِبٍ رَضِيَ اللهُ عَنْهُ أَنَّ رَسُولَ اللهِ ﷺ قَالَ: <strong>«لَعَنَ اللَّهُ مَنْ ذَبَحَ لِغَيْرِ اللَّهِ»</strong>؛ فَمَنْ ذَبَحَ لِقَبْرٍ، أَوْ جِنِّيٍّ، أَوْ ضَرِيحٍ، أَوْ تَقَرُّبًا لِلْأَرْوَاحِ فَقَدْ وَقَعَ فِي اللَّعْنَةِ وَالشِّرْكِ الأَكْبَرِ.</li>
+</ul>
+<p>##### 14. النَّذْرُ:</p>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهُ:</strong> إِيجَابُ المُكَلَّفِ عَلَى نَفْسِهِ عِبَادَةً للهِ لَمْ تَكُنْ وَاجِبَةً عَلَيْهِ بِأَصْلِ الشَّرْعِ.</li>
+  <li>أَثْنَى اللهُ عَلَى المُوفِينَ بِهِ فَقَالَ: ﴿يُوفُونَ بِالنَّذْرِ وَيَخَافُونَ يَوْمًا كَانَ شَرُّهُ مُسْتَطِيرًا﴾ [الإنسان: 7]. فَلَمَّا كَانَ الوَفَاءُ بِهِ عِبَادَةً مَمْدُوحَةً، حَرُمَ صَرْفُهُ لِغَيْرِ اللهِ؛ فَمَنْ نَذَرَ لِلْمَقَابِرِ شَمْعًا أَوْ مَالًا أَوْ شَاةً كَفَرَ شِرْكًا أَكْبَرَ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 4: المَوْسُوعَةُ الشَّامِلَةُ لِأَنْوَاعِ العِبَادَةِ الـ 14 وَأَدِلَّتِهَا وَصُوَرِ الشِّرْكِ فِيهَا</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>م</th>
+      <th>نَوْعُ العِبَادَةِ</th>
+      <th>حَقِيقَتُهَا الشَّرْعِيَّةُ</th>
+      <th>الدَّلِيلُ مِنَ القُرْآنِ وَالسُّنَّةِ</th>
+      <th>صُورَةُ صَرْفِهَا لِغَيْرِ اللهِ (الشِّرْكُ الأَكْبَرُ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td><strong>الدُّعَاءُ</strong></td>
+      <td>سُؤَالُ الحَاجَاتِ وَالتَّضَرُّعُ</td>
+      <td>﴿ادْعُونِي أَسْتَجِبْ لَكُمْ﴾ / «الدُّعَاءُ هُوَ العِبَادَةُ»</td>
+      <td>دُعَاءُ الأَمْوَاتِ وَالأَوْلِيَاءِ وَالاسْتِمْدَادُ مِنْهُمْ</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td><strong>الخَوْفُ</strong></td>
+      <td>فَزَعُ القَلْبِ تَعْظِيمًا وَهَيْبَةً</td>
+      <td>﴿فَلَا تَخَافُوهُمْ وَخَافُونِ إِنْ كُنْتُمْ مُؤْمِنِينَ﴾</td>
+      <td>خَوْفُ السِّرِّ مِنَ الأَوْلِيَاءِ أَوِ الجِنِّ أَنْ يَضُرُّوهُ</td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td><strong>الرَّجَاءُ</strong></td>
+      <td>طَمَعُ القَلْبِ فِي الرَّحْمَةِ مَعَ العَمَلِ</td>
+      <td>﴿فَمَنْ كَانَ يَرْجُو لِقَاءَ رَبِّهِ فَلْيَعْمَلْ عَمَلًا صَالِحًا﴾</td>
+      <td>رَجَاءُ المَيِّتِ أَنْ يَهَبَهُ الوَلَدَ أَوِ المَغْفِرَةَ</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td><strong>التَّوَكُّلُ</strong></td>
+      <td>اعْتِمَادُ القَلْبِ مَعَ فِعْلِ الأَسْبَابِ</td>
+      <td>﴿وَعَلَى اللَّهِ فَتَوَكَّلُوا إِنْ كُنْتُمْ مُؤْمِنِينَ﴾</td>
+      <td>التَّوَكُّلُ عَلَى الأَمْوَاتِ أَوِ التَّمَائِمِ فِي جَلْبِ النَّفْعِ</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td><strong>الرَّغْبَةُ</strong></td>
+      <td>إِرَادَةُ الوُصُولِ إِلَى المَحْبُوبِ</td>
+      <td>﴿وَيَدْعُونَنَا رَغَبًا وَرَهَبًا﴾ [الأنبياء: 90]</td>
+      <td>الرَّغْبَةُ إِلَى الأَضْرِحَةِ فِيمَا لَا يُرْغَبُ إِلَّا فِيهِ إِلَى اللهِ</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td><strong>الرَّهْبَةُ</strong></td>
+      <td>خَوْفٌ يَحْمِلُ عَلَى الفِرَارِ مِنَ العَذَابِ</td>
+      <td>﴿وَإِيَّايَ فَارْهَبُونِ﴾ [البقرة: 40]</td>
+      <td>الرَّهْبَةُ مِنْ سَخَطِ أَهْلِ القُبُورِ وَغَضَبِهِمْ</td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td><strong>الخُشُوعُ</strong></td>
+      <td>خُضُوعُ القَلْبِ وَسُكُونُ الجَوَارِحِ</td>
+      <td>﴿وَكَانُوا لَنَا خَاشِعِينَ﴾ [الأنبياء: 90]</td>
+      <td>الخُشُوعُ وَالتَّذَلُّلُ أَمَامَ الأَصْنَامِ وَالأَوْلِيَاءِ كَخُشُوعِ الصَّلَاةِ</td>
+    </tr>
+    <tr>
+      <td><strong>8</strong></td>
+      <td><strong>الخَشْيَةُ</strong></td>
+      <td>خَوْفٌ مَبْنِيٌّ عَلَى العِلْمِ بِالمَخُوفِ</td>
+      <td>﴿فَلَا تَخْشَوْهُمْ وَاخْشَوْنِي﴾ [البقرة: 150]</td>
+      <td>خَشْيَةُ الأَصْنَامِ وَالأَوْلِيَاءِ كَخَشْيَةِ اللهِ</td>
+    </tr>
+    <tr>
+      <td><strong>9</strong></td>
+      <td><strong>الإِنَابَةُ</strong></td>
+      <td>الرُّجُوعُ التَّامُّ وَالإِقْبَالُ عَلَى اللهِ</td>
+      <td>﴿وَأَنِيبُوا إِلَى رَبِّكُمْ وَأَسْلِمُوا لَهُ﴾</td>
+      <td>التَّوْبَةُ وَالإِنَابَةُ إِلَى غَيْرِ اللهِ لِطَلَبِ غُفْرَانِ الذَّنْبِ</td>
+    </tr>
+    <tr>
+      <td><strong>10</strong></td>
+      <td><strong>الاسْتِعَانَةُ</strong></td>
+      <td>طَلَبُ العَوْنِ فِي الشَّدَائِدِ وَالمَهَامِّ</td>
+      <td>﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾</td>
+      <td>الِاسْتِعَانَةُ بِالغَائِبِينَ وَالأَمْوَاتِ فِيمَا لَا يَقْدِرُ عَلَيْهِ إِلَّا اللهُ</td>
+    </tr>
+    <tr>
+      <td><strong>11</strong></td>
+      <td><strong>الاسْتِعَاذَةُ</strong></td>
+      <td>الِالْتِجَاءُ وَالِاعْتِصَامُ لِدَفْعِ الشَّرِّ</td>
+      <td>﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾ [الفلق: 1]</td>
+      <td>الِاسْتِعَاذَةُ بِالجِنِّ وَالأَرْوَاحِ وَالشَّيَاطِينِ</td>
+    </tr>
+    <tr>
+      <td><strong>12</strong></td>
+      <td><strong>الاسْتِغَاثَةُ</strong></td>
+      <td>طَلَبُ النَّجَاةِ عِنْدَ حُلُولِ الكَرْبِ العَظِيمِ</td>
+      <td>﴿إِذْ تَسْتَغِيثُونَ رَبَّكُمْ فَاسْتَجَابَ لَكُمْ﴾</td>
+      <td>قَوْلُ: «الغَوْثَ الغَوْثَ يَا فُلَانُ» لِلْمَيِّتِ عِنْدَ الغَرَقِ</td>
+    </tr>
+    <tr>
+      <td><strong>13</strong></td>
+      <td><strong>الذَّبْحُ</strong></td>
+      <td>إِرَاقَةُ الدَّمِ تَقَرُّبًا وَتَعْظِيمًا</td>
+      <td>﴿فَصَلِّ لِرَبِّكَ وَانْحَرْ﴾ / «لَعَنَ اللهُ مَنْ ذَبَحَ لِغَيْرِ اللهِ»</td>
+      <td>الذَّبْحُ لِلْجِنِّ لِبِنَاءِ بَيْتٍ أَوْ لِلْقُبُورِ تَقَرُّبًا</td>
+    </tr>
+    <tr>
+      <td><strong>14</strong></td>
+      <td><strong>النَّذْرُ</strong></td>
+      <td>إِيجَابُ طَاعَةٍ عَلَى النَّفْسِ للهِ</td>
+      <td>﴿يُوفُونَ بِالنَّذْرِ﴾ [الإنسان: 7]</td>
+      <td>نَذْرُ الزَّيْتِ أَوِ المَالِ أَوْ الذَّبَائِحِ لِلْأَضْرِحَةِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الثَّالِثُ: الأَصْلُ الثَّانِي: مَعْرِفَةُ دِينِ الإِسْلَامِ بِالأَدِلَّةِ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: حَدُّ الإِسْلَامِ العَامِّ وَمَرَاتِبُ الدِّينِ الثَّلَاثُ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«الأَصْلُ الثَّانِي: مَعْرِفَةُ دِينِ الإِسْلَامِ بِالأَدِلَّةِ؛</blockquote>
+<blockquote class="quote-box">وَهُوَ: الِاسْتِسْلَامُ لِلَّهِ بِالتَّوْحِيدِ، وَالانْقِيَادُ لَهُ بِالطَّاعَةِ، وَالبَرَاءَةُ مِنَ الشِّرْكِ وَأَهْلِهِ.</blockquote>
+<blockquote class="quote-box">وَهُوَ ثَلَاثُ مَرَاتِبَ: الإِسْلَامُ، وَالإِيمَانُ، وَالإِحْسَانُ؛</blockquote>
+<blockquote class="quote-box">وَكُلُّ مَرْتَبَةٍ لَهَا أَرْكَانٌ.»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِحَدِّ الإِسْلَامِ:</h3>
+<ul class="content-list">
+  <li><strong>تَحْرِيرُ أَرْكَانِ تَعْرِيفِ الإِسْلَامِ الثَّلَاثَةِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>«الاسْتِسْلَامُ للهِ بِالتَّوْحِيدِ»:</strong> أَنْ يَخْضَعَ العَبْدُ لِرَبِّهِ تَعَالَى، وَيُفْرِدَهُ بِالعِبَادَةِ ظَاهِرًا وَبَاطِنًا، فَلَا يَكُونَ فِي قَلْبِهِ كِبْرٌ عَنْ عِبَادَةِ اللهِ (فَيَخْرُجُ المُشْرِكُونَ وَالمُسْتَكْبِرُونَ كَفِرْعَوْنَ وَإِبْلِيسَ).</li>
+  <li><strong>«الانْقِيَادُ لَهُ بِالطَّاعَةِ»:</strong> فِعْلُ أَوَامِرِ اللهِ وَاجْتِنَابُ نَوَاهِيهِ؛ لِأَنَّ التَّوْحِيدَ يَقْتَضِي العَمَلَ بِمَا أَمَرَ اللهُ بِهِ مِنْ فَرَائِضَ وَشَرَائِعَ.</li>
+  <li><strong>«البَرَاءَةُ مِنَ الشِّرْكِ وَأَهْلِهِ»:</strong> أَنْ يَبْغَضَ الشِّرْكَ، وَيَبْتَعِدَ عَنْهُ، وَيَتَبَرَّأَ مِنْ كُلِّ مَنْ يَعْبُدُ غَيْرَ اللهِ؛ إِذْ لَا يَصِحُّ إِسْلَامُ مَنْ يُوَحِّدُ اللهَ وَلَكِنَّهُ لَا يُكَفِّرُ المُشْرِكِينَ أَوْ يَشُكُّ فِي كُفْرِهِمْ أَوْ يُصَحِّحُ مَذَاهِبَهُمُ الشِّرْكِيَّةَ.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>الفَرْقُ بَيْنَ الإِسْلَامِ العَامِّ وَالإِسْلَامِ الخَاصِّ:</strong></li>
+  <li><strong>الإِسْلَامُ العَامُّ:</strong> هُوَ دِينُ جَمِيعِ الأَنْبِيَاءِ مِنْ لَدُنْ آدَمَ وَنُوحٍ إِلَى عِيسَى عَلَيْهِمُ السَّلَامُ؛ فَكُلُّهُمْ جَاءُوا بِالتَّوْحِيدِ وَالاسْتِسْلَامِ للهِ.</li>
+  <li><strong>الإِسْلَامُ الخَاصُّ:</strong> هُوَ مَا بُعِثَ بِهِ خَاتَمُ المُرْسَلِينَ نَبِيُّنَا مُحَمَّدٌ ﷺ، فَنَسَخَ جَمِيعَ الشَّرَائِعِ السَّابِقَةِ، فَلَا يُقْبَلُ مِنْ أَحَدٍ دِينٌ بَعْدَ بِعْثَتِهِ إِلَّا شَرِيعَتُهُ: ﴿وَمَنْ يَبْتَغِ غَيْرَ الْإِسْلَامِ دِينًا فَلَنْ يُقْبَلَ مِنْهُ وَهُوَ فِي الْآخِرَةِ مِنَ الْخَاسِرِينَ﴾ [آل عمران: 85].</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: المَرْتَبَةُ الأُولَى: الإِسْلَامُ (أَرْكَانُهُ الخَمْسَةُ)</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«فَأَرْكَانُ الإِسْلَامِ خَمْسَةٌ: شَهَادَةُ أَنْ لَا إِلَهَ إِلَّا اللهُ، وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَإِقَامُ الصَّلَاةِ، وَإِيتَاءُ الزَّكَاةِ، وَصَوْمُ رَمَضَانَ، وَحَجُّ بَيْتِ اللهِ الحَرَامِ.</blockquote>
+<blockquote class="quote-box">فَدَلِيلُ الشَّهَادَةِ قَوْلُهُ تَعَالَى: ﴿شَهِدَ اللَّهُ أَنَّهُ لَا إِلَهَ إِلَّا هُوَ وَالْمَلَائِكَةُ وَأُولُو الْعِلْمِ قَائِمًا بِالْقِسْطِ لَا إِلَهَ إِلَّا هُوَ الْعَزِيزُ الْحَكِيمُ﴾ [آل عمران: 18].</blockquote>
+<blockquote class="quote-box">وَمَعْنَاهَا: لَا مَعْبُودَ بِحَقٍّ إِلَّا اللهُ؛</blockquote>
+<blockquote class="quote-box">«لَا إِلَهَ» نَافِيًا جَمِيعَ مَا يُعْبَدُ مِنْ دُونِ اللهِ، «إِلَّا اللهُ» مُثْبِتًا العِبَادَةَ للهِ وَحْدَهُ، لَا شَرِيكَ لَهُ فِي عِبَادَتِهِ، كَمَا أَنَّهُ لَيْسَ لَهُ شَرِيكٌ فِي مُلْكِهِ.</blockquote>
+<blockquote class="quote-box">وَتَفْسِيرُهَا الَّذِي يُوَضِّحُهَا قَوْلُهُ تَعَالَى: ﴿وَإِذْ قَالَ إِبْرَاهِيمُ لِأَبِيهِ وَقَوْمِهِ إِنَّنِي بَرَاءٌ مِمَّا تَعْبُدُونَ <em> إِلَّا الَّذِي فَطَرَنِي فَإِنَّهُ سَيَهْدِينِ </em> وَجَعَلَهَا كَلِمَةً بَاقِيَةً فِي عَقِبِهِ لَعَلَّهُمْ يَرْجِعُونَ﴾ [الزخرف: 26-28]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿قُلْ يَا أَهْلَ الْكِتَابِ تَعَالَوْا إِلَى كَلِمَةٍ سَوَاءٍ بَيْنَنَا وَبَيْنَكُمْ أَلَّا نَعْبُدَ إِلَّا اللَّهَ وَلَا نُشْرِكَ بِهِ شَيْئًا وَلَا يَتَّخِذَ بَعْضُنَا بَعْضًا أَرْبَابًا مِنْ دُونِ اللَّهِ فَإِنْ تَوَلَّوْا فَقُولُوا اشْهَدُوا بِأَنَّا مُسْلِمُونَ﴾ [آل عمران: 64].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ شَهَادَةِ أَنَّ مُحَمَّدًا رَسُولُ اللهِ قَوْلُهُ تَعَالَى: ﴿لَقَدْ جَاءَكُمْ رَسُولٌ مِنْ أَنْفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُمْ بِالْمُؤْمِنِينَ رَءُوفٌ رَحِيمٌ﴾ [التوبة: 128].</blockquote>
+<blockquote class="quote-box">وَمَعْنَى شَهَادَةِ أَنَّ مُحَمَّدًا رَسُولُ اللهِ:</blockquote>
+<blockquote class="quote-box">طَاعَتُهُ فِيمَا أَمَرَ، وَتَصْدِيقُهُ فِيمَا أَخْبَرَ، وَاجْتِنَابُ مَا عَنْهُ نَهَى وَزَجَرَ، وَأَنْ لَا يُعْبَدَ اللهُ إِلَّا بِمَا شَرَعَ.</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الصَّلَاةِ، وَالزَّكَاةِ، وَتَفْسِيرُ التَّوْحِيدِ: قَوْلُهُ تَعَالَى: ﴿وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ وَذَلِكَ دِينُ الْقَيِّمَةِ﴾ [البينة: 5].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الصِّيَامِ قَوْلُهُ تَعَالَى: ﴿يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ﴾ [البقرة: 183].</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ الحَجِّ قَوْلُهُ تَعَالَى: ﴿وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا وَمَنْ كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ عَنِ الْعَالَمِينَ﴾ [آل عمران: 97].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّفْصِيلِيُّ لِأَرْكَانِ الإِسْلَامِ:</h3>
+<h4 class="sub-sub-title">1. تَحْقِيقُ كَلِمَةِ التَّوْحِيدِ: «لَا إِلَهَ إِلَّا اللهُ»:</h4>
+<ul class="content-list">
+  <li><strong>رُكْنَا الكَلِمَةِ العَظِيمَةِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>النَّفْيُ المَحْضُ:</strong> «لَا إِلَهَ»؛ يَبْطُلُ وَيَهْدِمُ جَمِيعَ مَا عُبِدَ مِنْ دُونِ اللهِ مِنَ الأَوْثَانِ وَالأَوْلِيَاءِ وَالأَنْبِيَاءِ.</li>
+  <li><strong>الإِثْبَاتُ المَحْضُ:</strong> «إِلَّا اللهُ»؛ يُثْبِتُ اسْتِحْقَاقَ العِبَادَةِ كُلِّهَا للهِ وَحْدَهُ لَا شَرِيكَ لَهُ.</li>
+</ol>
+<ul class="content-list">
+  <li><strong>تَقْدِيرُ الخَبَرِ المَحْذُوفِ:</strong> «لَا إِلَهَ [بِحَقٍّ] إِلَّا اللهُ»؛ أَمَّا مَنْ قَدَّرَ الخَبَرَ «لَا إِلَهَ مَوْجُودٌ» فَقَدْ أَخْطَأَ خَطَأً شَنِيعًا؛ لِأَنَّ هُنَاكَ آلِهَةً كَثِيرَةً بَاطِلَةً مَوْجُودَةً يَعْبُدُهَا النَّاسُ (كَالأَصْنَامِ وَالبَقَرِ)، وَلَكِنَّهَا آلِهَةٌ بَاطِلَةٌ؛ وَالإِلَهُ الحَقُّ هُوَ اللهُ وَحْدَهُ: ﴿ذَلِكَ بِأَنَّ اللَّهَ هُوَ الْحَقُّ وَأَنَّ مَا يَدْعُونَ مِنْ دُونِهِ هُوَ الْبَاطِلُ﴾ [الحج: 62].</li>
+  <li><strong>شُرُوطُ «لَا إِلَهَ إِلَّا اللهُ» السَّبْعَةُ الَّتِي لَا تَنْفَعُ قَائِلَهَا إِلَّا بِاجْتِمَاعِهَا:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>العِلْمُ</strong> المُنَافِي لِلْجَهْلِ.</li>
+  <li><strong>اليَقِينُ</strong> المُنَافِي لِلشَّكِّ.</li>
+  <li><strong>القَبُولُ</strong> المُنَافِي لِلرَّدِّ.</li>
+  <li><strong>الانْقِيَادُ</strong> المُنَافِي لِلتَّرْكِ.</li>
+  <li><strong>الصِّدْقُ</strong> المُنَافِي لِلْكِذْبِ (النِّفَاقِ).</li>
+  <li><strong>الإِخْلَاصُ</strong> المُنَافِي لِلشِّرْكِ وَالرِّيَاءِ.</li>
+  <li><strong>المَحَبَّةُ</strong> المُنَافِيَةُ لِلْبُغْضِ.</li>
+</ol>
+<h4 class="sub-sub-title">2. تَحْقِيقُ شَهَادَةِ أَنَّ مُحَمَّدًا رَسُولُ اللهِ:</h4>
+<ul class="content-list">
+  <li><strong>حَقِيقَتُهَا:</strong> الإِقْرَارُ الجَازِمُ بِلِسَانِهِ وَقَلْبِهِ بِأَنَّ مُحَمَّدَ بْنَ عَبْدِ اللهِ عَبْدُ اللهِ وَرَسُولُهُ إِلَى جَمِيعِ الثَّقَلَيْنِ.</li>
+  <li><strong>مُقْتَضَيَاتُهَا الأَرْبَعَةُ العَظِيمَةُ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>طَاعَتُهُ فِيمَا أَمَرَ:</strong> فَلَا يُقَدَّمُ قَوْلُ أَحَدٍ مِنَ النَّاسِ عَلَى أَمْرِهِ ﷺ.</li>
+  <li><strong>تَصْدِيقُهُ فِيمَا أَخْبَرَ:</strong> فِي أُمُورِ الغَيْبِ المَاضِيَةِ وَالمُسْتَقْبَلَةِ، كَأَحْوَالِ القَبْرِ وَيَوْمِ القِيَامَةِ.</li>
+  <li><strong>اجْتِنَابُ مَا عَنْهُ نَهَى وَزَجَرَ:</strong> مِنَ الشِّرْكِ، وَالبِدَعِ، وَالمَعَاصِي وَالمُحَرَّمَاتِ.</li>
+  <li><strong>أَلَّا يُعْبَدَ اللهُ إِلَّا بِمَا شَرَعَ:</strong> وَهَذَا هُوَ أَصْلُ رَدِّ البِدَعِ وَالمُحْدَثَاتِ فِي الدِّينِ؛ لِقَوْلِهِ ﷺ: «مَنْ عَمِلَ عَمَلًا لَيْسَ عَلَيْهِ أَمْرُنَا فَهُوَ رَدٌّ» <em>(صَحِيحُ مُسْلِمٍ: 1718)</em>.</li>
+</ol>
+<h4 class="sub-sub-title">3. فِقْهُ بَقِيَّةِ الأَرْكَانِ مِنَ القُرْآنِ:</h4>
+<ul class="content-list">
+  <li><strong>الصَّلَاةُ وَالزَّكَاةُ:</strong> جَمَعَهُمَا اللهُ فِي سُورَةِ البَيِّنَةِ لِبَيَانِ أَنَّ الصَّلَاةَ عِبَادَةُ البَدَنِ وَصِلَةُ العَبْدِ بِرَبِّهِ، وَالزَّكَاةَ عِبَادَةُ المَالِ وَإِحْسَانٌ إِلَى الفُقَرَاءِ، وَكِلَاهُمَا مِنْ دِينِ القَيِّمَةِ (المِلَّةِ المُسْتَقِيمَةِ).</li>
+  <li><strong>الصِّيَامُ:</strong> فَرْضُ شَهْرِ رَمَضَانَ تَهْذِيبًا لِلنُّفُوسِ وَتَحْقِيقًا لِلتَّقْوَى.</li>
+  <li><strong>الحَجُّ:</strong> قَصْدُ بَيْتِ اللهِ الحَرَامِ مَرَّةً فِي العُمُرِ لِمَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا، وَمَنْ جَحَدَ وُجُوبَهُ كَفَرَ بِالإِجْمَاعِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّالِثُ: المَرْتَبَةُ الثَّانِيَةُ: الإِيمَانُ (أَرْكَانُهُ السِّتَّةُ وَشُعَبُهُ)</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«المَرْتَبَةُ الثَّانِيَةُ: الإِيمَانُ؛</blockquote>
+<blockquote class="quote-box">وَهُوَ بِضْعٌ وَسَبْعُونَ شُعْبَةً، فَأَعْلَاهَا: قَوْلُ: لَا إِلَهَ إِلَّا اللهُ، وَأَدْنَاهَا: إِمَاطَةُ الأَذَى عَنِ الطَّرِيقِ، وَالحَيَاءُ شُعْبَةٌ مِنَ الإِيمَانِ.</blockquote>
+<blockquote class="quote-box">وَأَرْكَانُهُ سِتَّةٌ: أَنْ تُؤْمِنَ بِاللهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَاليَوْمِ الآخِرِ، وَتُؤْمِنَ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ.</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ عَلَى هَذِهِ الأَرْكَانِ السِّتَّةِ قَوْلُهُ تَعَالَى: ﴿لَيْسَ الْبِرَّ أَنْ تُوَلُّوا وُجُوهَكُمْ قِبَلَ الْمَشْرِقِ وَالْمَغْرِبِ وَلَكِنَّ الْبِرَّ مَنْ آمَنَ بِاللَّهِ وَالْيَوْمِ الْآخِرِ وَالْمَلَائِكَةِ وَالكِتَابِ وَالنَّبِيِّينَ﴾ [البقرة: 177]؛</blockquote>
+<blockquote class="quote-box">وَدَلِيلُ القَدَرِ قَوْلُهُ تَعَالَى: ﴿إِنَّا كُلَّ شَيْءٍ خَلَقْنَاهُ بِقَدَرٍ﴾ [القمر: 49].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِمَرْتَبَةِ الإِيمَانِ:</h3>
+<ul class="content-list">
+  <li><strong>عَقِيدَةُ أَهْلِ السُّنَّةِ فِي الإِيمَانِ:</strong></li>
+</ul>
+<p>الإِيمَانُ: <strong>قَوْلٌ بِاللِّسَانِ، وَاعْتِقَادٌ بِالجَنَانِ، وَعَمَلٌ بِالجَوَارِحِ وَالأَرْكَانِ؛ يَزِيدُ بِالطَّاعَةِ، وَيَنْقُصُ بِالعِصْيَانِ</strong>.</p>
+<ul class="content-list">
+  <li>رَدًّا عَلَى المُرْجِئَةِ الَّذِينَ أَخْرَجُوا العَمَلَ عَنْ مُسَمَّى الإِيمَانِ.</li>
+  <li>وَرَدًّا عَلَى الخَوَارِجِ وَالمُعْتَزِلَةِ الَّذِينَ يُكَفِّرُونَ بِكَبَائِرِ الذُّنُوبِ دُونَ الشِّرْكِ.</li>
+  <li><strong>فِقْهُ حَدِيثِ الشُّعَبِ:</strong></li>
+</ul>
+<p>رَوَاهُ مُسْلِمٌ (35) عَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ. وَفِيهِ دَلِيلٌ قَاطِعٌ عَلَى أَنَّ الإِيمَانَ يَتَبَعَّضُ وَيَتَفَاضَلُ:</p>
+<ul class="content-list">
+  <li>أَعْلَاهُ قَوْلُ: «لَا إِلَهَ إِلَّا اللهُ» (عَمَلُ القَلْبِ وَاللِّسَانِ).</li>
+  <li>وَأَدْنَاهُ «إِمَاطَةُ الأَذَى عَنِ الطَّرِيقِ» (عَمَلُ الجَوَارِحِ).</li>
+  <li>وَ«الحَيَاءُ» (خُلُقٌ وَاعْتِقَادٌ قَلْبِيٌّ يَبْعَثُ عَلَى تَرْكِ القَبِيحِ).</li>
+  <li><strong>أَرْكَانُ الإِيمَانِ السِّتَّةُ بِالتَّفْصِيلِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>الإِيمَانُ بِاللهِ:</strong> إِفْرَادُهُ بِالرُّبُوبِيَّةِ، وَالأُلُوهِيَّةِ، وَأَسْمَائِهِ وَصِفَاتِهِ.</li>
+  <li><strong>الإِيمَانُ بِمَلَائِكَتِهِ:</strong> أَنَّهُمْ عِبَادٌ مُكْرَمُونَ خَلَقَهُمُ اللهُ مِنْ نُورٍ، لَا يَعْصُونَ اللهَ مَا أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ (مِثْلُ جِبْرِيلَ، مِيكَائِيلَ، إِسْرَافِيلَ، مَلَكِ المَوْتِ).</li>
+  <li><strong>الإِيمَانُ بِكُتُبِهِ:</strong> أَنَّ اللهَ أَنْزَلَ كُتُبًا عَلَى رُسُلِهِ فِيهَا الهُدَى وَالنُّورُ؛ كَالتَّوْرَاةِ لِمُوسَى، وَالإِنْجِيلِ لِعِيسَى، وَالزَّبُورِ لِدَاوُدَ، وَصُحُفِ إِبْرَاهِيمَ، وَخَاتَمِهَا وَمُهَيْمِنِهَا: <strong>القُرْآنِ العَظِيمِ</strong>.</li>
+  <li><strong>الإِيمَانُ بِرُسُلِهِ:</strong> تَصْدِيقُ جَمِيعِ الرُّسُلِ مِنْ نُوحٍ إِلَى مُحَمَّدٍ ﷺ، وَأَنَّ مَنْ كَفَرَ بِرَسُولٍ وَاحِدٍ فَقَدْ كَفَرَ بِجَمِيعِ الرُّسُلِ.</li>
+  <li><strong>الإِيمَانُ بِاليَوْمِ الآخِرِ:</strong> كُلُّ مَا أَخْبَرَ بِهِ النَّبِيُّ ﷺ مِمَّا يَكُونُ بَعْدَ المَوْتِ؛ مِنْ فِتْنَةِ القَبْرِ، وَعَذَابِهِ وَنَعِيمِهِ، وَالبَعْثِ، وَالحَشْرِ، وَالصُّحُفِ، وَالمِيزَانِ، وَالحَوْضِ، وَالصِّرَاطِ، وَالجَنَّةِ وَالنَّارِ.</li>
+  <li><strong>الإِيمَانُ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ:</strong></li>
+</ol>
+<ul class="content-list">
+  <li><strong>مَرَاتِبُ القَدَرِ الأَرْبَعُ (أُصُولُ بَابِ القَدَرِ):</strong></li>
+</ul>
+<p>(1) <strong>العِلْمُ:</strong> أَنَّ اللهَ عَلِمَ جَمِيعَ الأَشْيَاءِ جُمْلَةً وَتَفْصِيلًا أَزَلًا وَأَبَدًا.</p>
+<p>(2) <strong>الكِتَابَةُ:</strong> كَتَبَ اللهُ مَقَادِيرَ كُلِّ شَيْءٍ فِي اللَّوْحِ المَحْفُوظِ: «كَتَبَ اللَّهُ مَقَادِيرَ الخَلَائِقِ قَبْلَ أَنْ يَخْلُقَ السَّمَاوَاتِ وَالأَرْضَ بِخَمْسِينَ أَلْفَ سَنَةٍ» <em>(صَحِيحُ مُسْلِمٍ: 2653)</em>.</p>
+<p>(3) <strong>المَشِيئَةُ:</strong> مَشِيئَةُ اللهِ النَّافِذَةُ الَّتِي لَا يَرُدُّهَا شَيْءٌ؛ فَمَا شَاءَ اللهُ كَانَ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ.</p>
+<p>(4) <strong>الخَلْقُ:</strong> أَنَّ اللهَ خَالِقُ كُلِّ شَيْءٍ، وَخَالِقُ العِبَادِ وَأَفْعَالِهِمْ: ﴿وَاللَّهُ خَلَقَكُمْ وَمَا تَعْمَلُونَ﴾ [الصافات: 96].</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الرَّابِعُ: المَرْتَبَةُ الثَّالِثَةُ: الإِحْسَانُ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«المَرْتَبَةُ الثَّالِثَةُ: الإِحْسَانُ؛</blockquote>
+<blockquote class="quote-box">رُكْنٌ وَاحِدٌ، وَهُوَ: «أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ».</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿إِنَّ اللَّهَ مَعَ الَّذِينَ اتَّقَوْا وَالَّذِينَ هُمْ مُحْسِنُونَ﴾ [النحل: 128]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿وَتَوَكَّلْ عَلَى الْعَزِيزِ الرَّحِيمِ <em> الَّذِي يَرَاكَ حِينَ تَقُومُ </em> وَتَقَلُّبَكَ فِي السَّاجِدِينَ * إِنَّهُ هُوَ السَّمِيعُ الْعَلِيمُ﴾ [الشعراء: 217-220]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿وَمَا تَكُونُ فِي شَأْنٍ وَمَا تَتْلُو مِنْهُ مِنْ قُرْآنٍ وَلَا تَعْمَلُونَ مِنْ عَمَلٍ إِلَّا كُنَّا عَلَيْكُمْ شُهُودًا إِذْ تُفِيضُونَ فِيهِ وَمَا يَعْزُبُ عَنْ رَبِّكَ مِنْ مِثْقَالِ ذَرَّةٍ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَلَا أَصْغَرَ مِنْ ذَلِكَ وَلَا أَكْبَرَ إِلَّا فِي كِتَابٍ مُبِينٍ﴾ [يونس: 61].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّأْصِيلِيُّ لِمَقَامِ الإِحْسَانِ:</h3>
+<ul class="content-list">
+  <li><strong>الإِحْسَانُ أَعْلَى مَرَاتِبِ الدِّينِ:</strong> فَكُلُّ مُحْسِنٍ مُؤْمِنٌ، وَكُلُّ مُؤْمِنٍ مُسْلِمٌ، وَلَيْسَ كُلُّ مُسْلِمٍ مُؤْمِنًا، وَلَا كُلُّ مُؤْمِنٍ مُحْسِنًا.</li>
+  <li><strong>دَرَجَتَا الإِحْسَانِ فِي العِبَادَةِ:</strong></li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>مَقَامُ المُشَاهَدَةِ (الدَّرَجَةُ العُلْيَا):</strong> «أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ»؛ أَنْ يَقُومَ العَبْدُ فِي عِبَادَتِهِ كَأَنَّهُ يُشَاهِدُ رَبَّهُ عِيَانًا بِقَلْبِهِ؛ فَيَمْتَلِئَ قَلْبُهُ مَحَبَّةً، وَتَعْظِيمًا، وَإِجْلَالًا، وَأُنْسًا بِاللهِ، وَهَذَا مَقَامُ خَاصَّةِ الأَوْلِيَاءِ.</li>
+  <li><strong>مَقَامُ المُرَاقَبَةِ وَالهَيْبَةِ (الدَّرَجَةُ الثَّانِيَةُ):</strong> «فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ»؛ إِذَا عَجَزَ العَبْدُ عَنِ الأُولَى فَلْيَسْتَحْضِرْ أَنَّ اللهَ مُطَّلِعٌ عَلَى سِرِّهِ وَعَلَانِيَتِهِ، يَرَى مَكَانَهُ وَيَسْمَعُ كَلَامَهُ، فَيَسْتَحِيَ مِنْهُ أَنْ يَرَاهُ حَيْثُ نَهَاهُ أَوْ يَفْقِدَهُ حَيْثُ أَمَرَهُ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الخَامِسُ: الشَّرْحُ المَوْسُوعِيُّ لِحَدِيثِ جِبْرِيلَ عَلَيْهِ السَّلَامُ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«وَالدَّلِيلُ مِنَ السُّنَّةِ: حَدِيثُ جِبْرِيلَ المَشْهُورُ؛</blockquote>
+<blockquote class="quote-box">عَنْ عُمَرَ بْنِ الخَطَّابِ رَضِيَ اللهُ عَنْهُ قَالَ:</blockquote>
+<blockquote class="quote-box">«بَيْنَمَا نَحْنُ جُلُوسٌ عِنْدَ رَسُولِ اللهِ ﷺ ذَاتَ يَوْمٍ، إِذْ طَلَعَ عَلَيْنَا رَجُلٌ شَدِيدُ بَيَاضِ الثِّيَابِ، شَدِيدُ سَوَادِ الشَّعَرِ، لَا يُرَى عَلَيْهِ أَثَرُ السَّفَرِ، وَلَا يَعْرِفُهُ مِنَّا أَحَدٌ، حَتَّى جَلَسَ إِلَى النَّبِيِّ ﷺ، فَأَسْنَدَ رُكْبَتَيْهِ إِلَى رُكْبَتَيْهِ، وَوَضَعَ كَفَّيْهِ عَلَى فَخِذَيْهِ؛</blockquote>
+<blockquote class="quote-box">وَقَالَ: يَا مُحَمَّدُ، أَخْبِرْنِي عَنِ الإِسْلَامِ؟</blockquote>
+<blockquote class="quote-box">فَقَالَ رَسُولُ اللهِ ﷺ: الإِسْلَامُ أَنْ تَشْهَدَ أَنْ لَا إِلَهَ إِلَّا اللهُ، وَأَنَّ مُحَمَّدًا رَسُولُ اللهِ، وَتُقِيمَ الصَّلَاةَ، وَتُؤْتِيَ الزَّكَاةَ، وَتَصُومَ رَمَضَانَ، وَتَحُجَّ البَيْتَ إِنِ اسْتَطَعْتَ إِلَيْهِ سَبِيلًا.</blockquote>
+<blockquote class="quote-box">قَالَ: صَدَقْتَ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَعَجِبْنَا لَهُ؛ يَسْأَلُهُ وَيُصَدِّقُهُ!</blockquote>
+<blockquote class="quote-box">قَالَ: فَأَخْبِرْنِي عَنِ الإِيمَانِ؟</blockquote>
+<blockquote class="quote-box">قَالَ: أَنْ تُؤْمِنَ بِاللهِ، وَمَلَائِكَتِهِ، وَكُتُبِهِ، وَرُسُلِهِ، وَاليَوْمِ الآخِرِ، وَتُؤْمِنَ بِالقَدَرِ خَيْرِهِ وَشَرِّهِ.</blockquote>
+<blockquote class="quote-box">قَالَ: صَدَقْتَ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَأَخْبِرْنِي عَنِ الإِحْسَانِ؟</blockquote>
+<blockquote class="quote-box">قَالَ: أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَأَخْبِرْنِي عَنِ السَّاعَةِ؟</blockquote>
+<blockquote class="quote-box">قَالَ: مَا المَسْئُولُ عَنْهَا بِأَعْلَمَ مِنَ السَّائِلِ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَأَخْبِرْنِي عَنْ أَمَارَاتِهَا؟</blockquote>
+<blockquote class="quote-box">قَالَ: أَنْ تَلِدَ الأَمَةُ رَبَّتَهَا، وَأَنْ تَرَى الحُفَاةَ العُرَاةَ العَالَةَ رِعَاءَ الشَّاءِ يَتَطَاوَلُونَ فِي البُنْيَانِ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَمَضَى، فَلَبِثْنَا مَلِيًّا؛</blockquote>
+<blockquote class="quote-box">ثُمَّ قَالَ لِي: يَا عُمَرُ، أَتَدْرِي مَنِ السَّائِلُ؟</blockquote>
+<blockquote class="quote-box">قُلْتُ: اللَّهُ وَرَسُولُهُ أَعْلَمُ.</blockquote>
+<blockquote class="quote-box">قَالَ: فَإِنَّهُ جِبْرِيلُ، أَتَاكُمْ يُعَلِّمُكُمْ دِينَكُمْ».»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 اسْتِنْبَاطُ الفَوَائِدِ العَقَدِيَّةِ وَالفِقْهِيَّةِ مِنْ حَدِيثِ جِبْرِيلَ (أُمِّ السُّنَّةِ):</h3>
+<ol class="content-list-ordered">
+  <li><strong>حُسْنُ أَدَبِ طَالِبِ العِلْمِ مَعَ شَيْخِهِ:</strong> فِي جُلُوسِ جِبْرِيلَ مُلَاصِقًا رُكْبَتَيْهِ لِرُكْبَتَيْ رَسُولِ اللهِ ﷺ خُضُوعًا وَأَدَبًا.</li>
+  <li><strong>نَظَافَةُ الثِّيَابِ وَحُسْنُ الهَيْئَةِ فِي مَجَالِسِ العِلْمِ:</strong> جَاءَ جِبْرِيلُ فِي هَيْئَةٍ حَسَنَةٍ بَيَّضَ ثَوْبَهُ وَرَجَّلَ شَعَرَهُ.</li>
+  <li><strong>التَّفْرِيقُ بَيْنَ الإِسْلَامِ وَالإِيمَانِ إِذَا اجْتَمَعَا:</strong></li>
+</ol>
+<ul class="content-list">
+  <li>القَاعِدَةُ الشَّهِيرَةُ: <strong>«إِذَا اجْتَمَعَا افْتَرَقَا، وَإِذَا افْتَرَقَا اجْتَمَعَا»</strong>؛ إِذَا ذُكِرَ الإِسْلَامُ وَحْدَهُ شَمِلَ الدِّينَ كُلَّهُ، وَإِذَا قُرِنَ بِالإِيمَانِ فُسِّرَ الإِسْلَامُ بِالأَعْمَالِ الظَّاهِرَةِ (الجَوَارِحِ)، وَالإِيمَانُ بِالأَعْمَالِ البَاطِنَةِ (القَلْبِ).</li>
+</ul>
+<ol class="content-list-ordered">
+  <li><strong>تَعْلِيمُ النَّاسِ بِالسُّؤَالِ:</strong> إِذَا كَانَ الحَاضِرُ يَعْلَمُ مَسْأَلَةً وَيَرَى النَّاسَ فِي حَاجَةٍ إِلَيْهَا، يَجُوزُ لَهُ أَنْ يَسْأَلَ العَالِمَ لِيَسْمَعَ النَّاسُ الجَوَابَ.</li>
+  <li><strong>قَوْلُ «اللهُ وَرَسُولُهُ أَعْلَمُ» فِيمَا لَا يَعْلَمُهُ العَبْدُ:</strong> مِنْ حُسْنِ الأَدَبِ وَالوَرَعِ عِنْدَ الجَهْلِ بِالمَسْأَلَةِ.</li>
+  <li><strong>اسْتِئْثَارُ اللهِ تَعَالَى بِعِلْمِ وَقْتِ السَّاعَةِ:</strong> لَمْ يُطْلِعْ عَلَيْهِ مَلَكًا مُقَرَّبًا (جِبْرِيلَ) وَلَا نَبِيًّا مُرْسَلًا (مُحَمَّدًا ﷺ).</li>
+  <li><strong>إِعْجَازُ النُّبُوَّةِ فِي أَمَارَاتِ السَّاعَةِ:</strong> كَتَطَاوُلِ رُعَاةِ الشَّاءِ الحُفَاةِ فِي البُنْيَانِ؛ وَهُوَ مَا رَآهُ النَّاسُ عَيَانًا فِي عَصْرِنَا فِي جَزِيرَةِ العَرَبِ وَغَيْرِهَا بَعْدَ ظُهُورِ النَّفْطِ.</li>
+  <li><strong>سِرُّ تَسْمِيَةِ النَّبِيِّ ﷺ هَذِهِ المَرَاتِبَ: «دِينَكُمْ»:</strong> لِيُعْلَمَ أَنَّ الدِّينَ الحَقَّ هُوَ مَا جَمَعَ عَمَلَ الظَّاهِرِ بِالشَّرِيعَةِ، وَعَمَلَ البَاطِنِ بِالعَقِيدَةِ، وَكَمَالَ المُرَاقَبَةِ بِالإِحْسَانِ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 5: مَرَاتِبُ الدِّينِ الثَّلَاثُ (أَرْكَانُهَا، خَصَائِصُهَا، وَالفُرُوقُ الجَوْهَرِيَّةُ بَيْنَهَا)</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>المَرْتَبَةُ الشَّرْعِيَّةُ</th>
+      <th>حَقِيقَتُهَا العَقَدِيَّةُ</th>
+      <th>عَدَدُ أَرْكَانِهَا</th>
+      <th>بَيَانُ الأَرْكَانِ التَّفْصِيلِيَّةِ</th>
+      <th>مَحَلُّهَا فِي الإِنْسَانِ</th>
+      <th>حُكْمُ مَنْ أَنْكَرَهَا</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. الإِسْلَامُ</strong></td>
+      <td>الاسْتِسْلَامُ لِلَّهِ بِالتَّوْحِيدِ وَالانْقِيَادُ بِالطَّاعَةِ</td>
+      <td><strong>5 أَرْكَانٍ</strong></td>
+      <td>الشَّهَادَتَانِ، إِقَامُ الصَّلَاةِ، إِيتَاءُ الزَّكَاةِ، صَوْمُ رَمَضَانَ، وَحَجُّ البَيْتِ</td>
+      <td><strong>الجَوَارِحُ وَاللِّسَانُ</strong> (أَعْمَالٌ ظَاهِرَةٌ)</td>
+      <td>كَافِرٌ مُرْتَدٌّ بِإِجْمَاعِ الأُمَّةِ</td>
+    </tr>
+    <tr>
+      <td><strong>2. الإِيمَانُ</strong></td>
+      <td>التَّصْدِيقُ الجَازِمُ مَعَ الإِقْرَارِ وَالعَمَلِ</td>
+      <td><strong>6 أَرْكَانٍ</strong></td>
+      <td>الإِيمَانُ بِاللهِ، وَالمَلَائِكَةِ، وَالكُتُبِ، وَالرُّسُلِ، وَاليَوْمِ الآخِرِ، وَالقَدَرِ</td>
+      <td><strong>القَلْبُ وَالجَنَانُ</strong> (عَقَائِدُ بَاطِنَةٌ)</td>
+      <td>كَافِرٌ خَارِجٌ عَنْ مِلَّةِ الإِسْلَامِ</td>
+    </tr>
+    <tr>
+      <td><strong>3. الإِحْسَانُ</strong></td>
+      <td>كَمَالُ إِتْقَانِ العِبَادَةِ وَاسْتِحْضَارُ مُرَاقَبَةِ اللهِ</td>
+      <td><strong>رُكْنٌ وَاحِدٌ</strong></td>
+      <td><strong>أَنْ تَعْبُدَ اللهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ</strong></td>
+      <td><strong>القَلْبُ وَالرُّوحُ</strong> (كَمَالُ الشُّهُودِ)</td>
+      <td>فَاتَهُ أَعْلَى مَنَازِلِ الأَوْلِيَاءِ وَالمُقَرَّبِينَ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">📖 القِسْمُ الرَّابِعُ: الأَصْلُ الثَّالِثُ: مَعْرِفَةُ نَبِيِّكُمْ مُحَمَّدٍ ﷺ</h1>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الأَوَّلُ: النَّسَبُ الشَّرِيفُ، المَوْلِدُ، النُّبُوَّةُ، وَالرِّسَالَةُ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«الأَصْلُ الثَّالِثُ: مَعْرِفَةُ نَبِيِّكُمْ مُحَمَّدٍ ﷺ؛</blockquote>
+<blockquote class="quote-box">وَهُوَ: مُحَمَّدُ بْنُ عَبْدِ اللهِ بْنِ عَبْدِ المُطَّلِبِ بْنِ هَاشِمٍ، وَهَاشِمٌ مِنْ قُرَيْشٍ، وَقُرَيْشٌ مِنَ العَرَبِ، وَالعَرَبُ مِنْ ذُرِّيَّةِ إِسْمَاعِيلَ بْنِ إِبْرَاهِيمَ الخَلِيلِ عَلَيْهِ وَعَلَى نَبِيِّنَا أَفْضَلُ الصَّلَاةِ وَالسَّلَامِ.</blockquote>
+<blockquote class="quote-box">وَلَهُ مِنَ العُمُرِ ثَلَاثٌ وَسِتُّونَ سَنَةً: مِنْهَا أَرْبَعُونَ قَبْلَ النُّبُوَّةِ، وَثَلَاثٌ وَعِشْرُونَ نَبِيًّا رَسُولًا.</blockquote>
+<blockquote class="quote-box">نُبِّئَ بِـ «اقْرَأْ»، وَأُرْسِلَ بِـ «المُدَّثِّرِ»، وَبَلَدُهُ مَكَّةُ، وَهَاجَرَ إِلَى المَدِينَةِ.</blockquote>
+<blockquote class="quote-box">بَعَثَهُ اللهُ بِالنِّذَارَةِ عَنِ الشِّرْكِ، وَيَدْعُو إِلَى التَّوْحِيدِ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿يَا أَيُّهَا الْمُدَّثِّرُ <em> قُمْ فَأَنْذِرْ </em> وَرَبَّكَ فَكَبِّرْ <em> وَثِيَابَكَ فَطَهِّرْ </em> وَالرُّجْزَ فَاهْجُرْ <em> وَلَا تَمْنُنْ تَسْتَكْثِرُ </em> وَلِرَبِّكَ فَاصْبِرْ﴾ [المدثر: 1-7].</blockquote>
+<blockquote class="quote-box">وَمَعْنَى «قُمْ فَأَنْذِرْ»: يُنْذِرُ عَنِ الشِّرْكِ وَيَدْعُو إِلَى التَّوْحِيدِ.</blockquote>
+<blockquote class="quote-box">«وَرَبَّكَ فَكَبِّرْ»: عَظِّمْهُ بِالتَّوْحِيدِ.</blockquote>
+<blockquote class="quote-box">«وَثِيَابَكَ فَطَهِّرْ»: طَهِّرْ أَعْمَالَكَ عَنِ الشِّرْكِ.</blockquote>
+<blockquote class="quote-box">«وَالرُّجْزَ فَاهْجُرْ»: الرُّجْزُ: الأَصْنَامُ، وَهَجْرُهَا: تَرْكُهَا، وَأَهْلِهَا، وَالبَرَاءَةُ مِنْهَا وَمِنْ أَهْلِهَا.»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 الشَّرْحُ التَّفْصِيلِيُّ لِلْبَابِ الأَوَّلِ:</h3>
+<h4 class="sub-sub-title">1. نَسَبُهُ الشَّرِيفُ وَصَفْوَةُ الخَلْقِ:</h4>
+<ul class="content-list">
+  <li><strong>سِلْسِلَةُ النَّسَبِ الطَّاهِرِ:</strong> مُحَمَّدُ بْنُ عَبْدِ اللهِ بْنِ عَبْدِ المُطَّلِبِ (وَاسْمُهُ شَيْبَةُ الحَمْدِ) بْنِ هَاشِمٍ (وَاسْمُهُ عَمْرٌو) بْنِ عَبْدِ مَنَافٍ بْنِ قُصَيِّ بْنِ كِلَابِ بْنِ مُرَّةَ بْنِ كَعْبِ بْنِ لُؤَيِّ بْنِ غَالِبِ بْنِ فِهْرٍ (وَهُوَ قُرَيْشٌ) بْنِ مَالِكِ بْنِ النَّضْرِ بْنِ كِنَانَةَ بْنِ خُزَيْمَةَ بْنِ مُدْرِكَةَ بْنِ إِلْيَاسَ بْنِ مُضَرَ بْنِ نِزَارِ بْنِ مَعَدِّ بْنِ عَدْنَانَ، وَعَدْنَانُ مِنْ صُلْبِ إِسْمَاعِيلَ بْنِ إِبْرَاهِيمَ الخَلِيلِ عَلَيْهِمَا السَّلَامُ بِإِجْمَاعِ النَّسَّابِينَ.</li>
+  <li><strong>تَخْرِيجُ حَدِيثِ اصْطِفَائِهِ ﷺ:</strong></li>
+</ul>
+<p>رَوَاهُ مُسْلِمٌ (2276) عَنْ وَاثِلَةَ بْنِ الأَسْقَعِ رَضِيَ اللهُ عَنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ ﷺ يَقُولُ: <strong>«إِنَّ اللَّهَ اصْطَفَى كِنَانَةَ مِنْ وَلَدِ إِسْمَاعِيلَ، وَاصْطَفَى قُرَيْشًا مِنْ كِنَانَةَ، وَاصْطَفَى مِنْ قُرَيْشٍ بَنِي هَاشِمٍ، وَاصْطَفَانِي مِنْ بَنِي هَاشِمٍ»</strong>؛ فَهُوَ خِيَارٌ مِنْ خِيَارٍ مِنْ خِيَارٍ ﷺ.</p>
+<h4 class="sub-sub-title">2. الفَرْقُ بَيْنَ «نُبِّئَ بِـ اقْرَأْ» وَ«أُرْسِلَ بِـ المُدَّثِّرِ»:</h4>
+<ul class="content-list">
+  <li><strong>النَّبِيُّ:</strong> هُوَ مَنْ أُوحِيَ إِلَيْهِ بِشَرْعٍ وَلَمْ يُؤْمَرْ بِتَبْلِيغِهِ (أَوْ أُرْسِلَ لِتَأْكِيدِ شَرْعٍ سَابِقٍ).</li>
+  <li><strong>الرَّسُولُ:</strong> هُوَ مَنْ أُوحِيَ إِلَيْهِ بِشَرْعٍ جَدِيدٍ وَأُمِرَ بِتَبْلِيغِهِ إِلَى قَوْمٍ مُخَالِفِينَ.</li>
+  <li>فَلَمَّا أَنْزَلَ اللهُ عَلَيْهِ: ﴿اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ﴾ صَارَ <strong>نَبِيًّا</strong>، فَلَمْ يَكُنْ مَأْمُورًا حِينَئِذٍ بِإِنْذَارِ قَوْمِهِ، فَلَمَّا أَنْزَلَ اللهُ عَلَيْهِ: ﴿يَا أَيُّهَا الْمُدَّثِّرُ * قُمْ فَأَنْذِرْ﴾ صَارَ <strong>رَسُولًا</strong> مَأْمُورًا بِالجِهَادِ وَالبَلَاغِ.</li>
+</ul>
+<h4 class="sub-sub-title">3. التَّفْسِيرُ البَيَانِيُّ لِآيَاتِ صَدْرِ سُورَةِ المُدَّثِّرِ:</h4>
+<ul class="content-list">
+  <li>﴿يَا أَيُّهَا الْمُدَّثِّرُ﴾: المُتَغَشِّي بِثِيَابِهِ؛ لَمَّا جَاءَهُ المَلَكُ بِغَارِ حِرَاءٍ وَرَجَعَ إِلَى خَدِيجَةَ يَرْجُفُ فُؤَادُهُ فَقَالَ: «زَمِّلُونِي زَمِّلُونِي».</li>
+  <li>﴿قُمْ فَأَنْذِرْ﴾: قُمْ بِعَزِيمَةٍ لِإِنْذَارِ النَّاسِ عَنِ الشِّرْكِ وَدَعْوَتِهِمْ إِلَى التَّوْحِيدِ.</li>
+  <li>﴿وَرَبَّكَ فَكَبِّرْ﴾: عَظِّمْ رَبَّكَ وَحْدَهُ دُونَ آلِهَتِهِمُ المَزْعُومَةِ.</li>
+  <li>﴿وَثِيَابَكَ فَطَهِّرْ﴾: طَهِّرْ أَعْمَالَكَ وَقَلْبَكَ عَنِ الشِّرْكِ وَالدَّنَسِ.</li>
+  <li>﴿وَالرُّجْزَ فَاهْجُرْ﴾: الرُّجْزُ بِضَمِّ الرَّاءِ وَكَسْرِهَا: الأَصْنَامُ وَالأَوْثَانُ؛ وَهَجْرُهَا يَتَضَمَّنُ: تَرْكَهَا، وَبُغْضَهَا، وَتَكْفِيرَ عَابِدِيهَا، وَالبَرَاءَةَ مِنْهُمْ.</li>
+  <li>﴿وَلَا تَمْنُنْ تَسْتَكْثِرُ﴾: لَا تُعْطِ عَطِيَّةً لِتَأْخُذَ أَكْثَرَ مِنْهَا، أَوْ لَا تَمْنُنْ بِعَمَلِكَ وَدَعْوَتِكَ تَسْتَكْثِرُهُ عَلَى اللهِ.</li>
+  <li>﴿وَلِرَبِّكَ فَاصْبِرْ﴾: اصْبِرْ عَلَى مَا يَنَالُكَ فِي طَرِيقِ الدَّعْوَةِ ابْتِغَاءَ وَجْهِ اللهِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّانِي: الدَّعْوَةُ بِمَكَّةَ، الإِسْرَاءُ، وَفَرِيضَةُ الهِجْرَةِ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«أَخَذَ عَلَى هَذَا عَشْرَ سِنِينَ يَدْعُو إِلَى التَّوْحِيدِ؛</blockquote>
+<blockquote class="quote-box">وَبَعْدَ العَشْرِ عُرِجَ بِهِ إِلَى السَّمَاءِ، وَفُرِضَتْ عَلَيْهِ الصَّلَوَاتُ الخَمْسُ، وَصَلَّى فِي مَكَّةَ ثَلَاثَ سِنِينَ، وَبَعْدَهَا أُمِرَ بِالهِجْرَةِ إِلَى المَدِينَةِ.</blockquote>
+<blockquote class="quote-box">وَالهِجْرَةُ: الِانْتِقَالُ مِنْ بَلَدِ الشِّرْكِ إِلَى بَلَدِ الإِسْلَامِ.</blockquote>
+<blockquote class="quote-box">وَالهِجْرَةُ فَرِيضَةٌ عَلَى هَذِهِ الأُمَّةِ مِنْ بَلَدِ الشِّرْكِ إِلَى بَلَدِ الإِسْلَامِ، وَهِيَ بَاقِيَةٌ إِلَى أَنْ تَقُومَ السَّاعَةُ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿إِنَّ الَّذِينَ تَوَفَّاهُمُ الْمَلَائِكَةُ ظَالِمِي أَنْفُسِهِمْ قَالُوا فِيمَ كُنْتُمْ قَالُوا كُنَّا مُسْتَضْعَفِينَ فِي الْأَرْضِ قَالُوا أَلَمْ تَكُنْ أَرْضُ اللَّهِ وَاسِعَةً فَتُهَاجِرُوا فِيهَا فَأُولَئِكَ مَأْوَاهُمْ جَهَنَّمُ وَسَاءَتْ مَصِيرًا <em> إِلَّا الْمُسْتَضْعَفِينَ مِنَ الرِّجَالِ وَالنِّسَاءِ وَالْوِلْدَانِ لَا يَسْتَطِيعُونَ حِيلَةً وَلَا يَهْتَدُونَ سَبِيلًا </em> فَأُولَئِكَ عَسَى اللَّهُ أَنْ يَعْفُوَ عَنْهُمْ وَكَانَ اللَّهُ عَفُوًّا غَفُورًا﴾ [النساء: 97-99]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿يَا عِبَادِيَ الَّذِينَ آمَنُوا إِنَّ أَرْضِي وَاسِعَةٌ فَإِيَّايَ فَاعْبُدُونِ﴾ [العنكبوت: 56]؛</blockquote>
+<blockquote class="quote-box">قَالَ البَغَوِيُّ رَحِمَهُ اللهُ تَعَالَى: «سَبَبُ نُزُولِ هَذِهِ الآيَةِ فِي المُسْلِمِينَ الَّذِينَ بِمَكَّةَ لَمْ يُهَاجِرُوا؛ نَادَاهُمُ اللهُ بِاسْمِ الإِيمَانِ».</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ عَلَى الهِجْرَةِ مِنَ السُّنَّةِ قَوْلُهُ ﷺ: «لَا تَنْقَطِعُ الهِجْرَةُ حَتَّى تَنْقَطِعَ التَّوْبَةُ، وَلَا تَنْقَطِعُ التَّوْبَةُ حَتَّى تَطْلُعَ الشَّمْسُ مِنْ مَغْرِبِهَا».»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 التَّأْصِيلُ الفِقْهِيُّ لِفَرِيضَةِ الهِجْرَةِ:</h3>
+<ul class="content-list">
+  <li><strong>العَهْدُ المَكِّيُّ (13 سَنَةً):</strong></li>
+</ul>
+<p>قَضَى ﷺ عَشْرَ سِنِينَ يَدْعُو النَّاسَ إِلَى أَصْلِ التَّوْحِيدِ: «قُولُوا لَا إِلَهَ إِلَّا اللهُ تُفْلِحُوا» دُونَ أَنْ تُفْرَضَ عَلَيْهِ الصَّلَاةُ وَلَا الزَّكَاةُ وَلَا الصِّيَامُ؛ مِمَّا يَدُلُّ عَلَى أَنَّ التَّوْحِيدَ هُوَ أَسَاسُ البِنَاءِ.</p>
+<ul class="content-list">
+  <li><strong>فَرْضُ الصَّلَوَاتِ الخَمْسِ:</strong> عُرِجَ بِهِ إِلَى السَّمَاءِ قَبْلَ الهِجْرَةِ بِثَلَاثِ سِنِينَ فِي حَادِثَةِ الإِسْرَاءِ وَالمِعْرَاجِ، وَفُرِضَتْ عَلَيْهِ الصَّلَاةُ خَمْسِينَ صَلَاةً، ثُمَّ خُفِّفَتْ إِلَى خَمْسٍ فِي العَمَلِ وَخَمْسِينَ فِي الأَجْرِ.</li>
+  <li><strong>فِقْهُ الهِجْرَةِ الشَّرْعِيَّةِ:</strong></li>
+  <li><strong>تَعْرِيفُهَا:</strong> الانْتِقَالُ مِنْ دَارِ الشِّرْكِ وَالكُفْرِ الَّتِي لَا يَسْتَطِيعُ المُسْلِمُ فِيهَا إِظْهَارَ دِينِهِ، إِلَى دَارِ الإِسْلَامِ وَالسُّنَّةِ.</li>
+  <li><strong>حُكْمُهَا:</strong> وَاجِبَةٌ عَلَى كُلِّ قَادِرٍ لَا يَسْتَطِيعُ إِظْهَارَ شَعَائِرِ دِينِهِ بِإِجْمَاعِ الفُقَهَاءِ، وَهِيَ بَاقِيَةٌ إِلَى يَوْمِ القِيَامَةِ.</li>
+  <li><strong>تَوْجِيهُ حَدِيثِ: «لَا هِجْرَةَ بَعْدَ الفَتْحِ»:</strong></li>
+</ul>
+<p>المُرَادُ بِهِ: لَا هِجْرَةَ مِنْ مَكَّةَ بَعْدَ أَنْ صَارَتْ دَارَ إِسْلَامٍ، أَمَّا الهِجْرَةُ مِنْ أَيِّ بَلَدِ كُفْرٍ لَا يَقْدِرُ فِيهِ المُسْلِمُ عَلَى إِقَامَةِ دِينِهِ فَهِيَ مَفْرُوضَةٌ إِلَى قِيَامِ السَّاعَةِ بِحَدِيثِ أَبِي دَاوُدَ وَأَحْمَدَ: «لَا تَنْقَطِعُ الهِجْرَةُ حَتَّى تَنْقَطِعَ التَّوْبَةُ».</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الثَّالِثُ: العَهْدُ المَدَنِيُّ، كَمَالُ الدِّينِ، وَوَفَاةُ النَّبِيِّ ﷺ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«فَلَمَّا اسْتَقَرَّ فِي المَدِينَةِ، أُمِرَ بِبَقِيَّةِ شَرَائِعِ الإِسْلَامِ؛ مِثْلِ: الزَّكَاةِ، وَالصَّوْمِ، وَالحَجِّ، وَالأَذَانِ، وَالجِهَادِ، وَالأَمْرِ بِالمَعْرُوفِ وَالنَّهْيِ عَنِ المُنْكَرِ، وَغَيْرِ ذَلِكَ مِنْ شَرَائِعِ الإِسْلَامِ.</blockquote>
+<blockquote class="quote-box">أَخَذَ عَلَى هَذَا عَشْرَ سِنِينَ، وَتُوُفِّيَ ﷺ وَدِينُهُ بَاقٍ، وَهَذَا دِينُهُ:</blockquote>
+<blockquote class="quote-box">لَا خَيْرَ إِلَّا دَلَّ الأُمَّةَ عَلَيْهِ، وَلَا شَرَّ إِلَّا حَذَّرَهَا مِنْهُ؛</blockquote>
+<blockquote class="quote-box">وَالخَيْرُ الَّذِي دَلَّهَا عَلَيْهِ: التَّوْحِيدُ، وَجَمِيعُ مَا يُحِبُّهُ اللهُ وَيَرْضَاهُ؛</blockquote>
+<blockquote class="quote-box">وَالشَّرُّ الَّذِي حَذَّرَهَا مِنْهُ: الشِّرْكُ، وَجَمِيعُ مَا يَكْرَهُهُ اللهُ وَيَأْبَاهُ.</blockquote>
+<blockquote class="quote-box">بَعَثَهُ اللهُ إِلَى النَّاسِ كَافَّةً، وَافْتَرَضَ طَاعَتَهُ عَلَى جَمِيعِ الثَّقَلَيْنِ: الجِنِّ وَالإِنْسِ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿قُلْ يَا أَيُّهَا النَّاسُ إِنِّي رَسُولُ اللَّهِ إِلَيْكُمْ جَمِيعًا﴾ [الأعراف: 158].</blockquote>
+<blockquote class="quote-box">وَكَمَّلَ اللهُ بِهِ الدِّينَ؛ وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِي وَرَضِيتُ لَكُمُ الْإِسْلَامَ دِينًا﴾ [المائدة: 3].</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ عَلَى مَوْتِهِ ﷺ قَوْلُهُ تَعَالَى: ﴿إِنَّكَ مَيِّتٌ وَإِنَّهُمْ مَيِّتُونَ <em> ثُمَّ إِنَّكُمْ يَوْمَ الْقِيَامَةِ عِنْدَ رَبِّكُمْ تَخْتَصِمُونَ﴾ [الزمر: 30-31].»</em>*</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 التَّأْصِيلُ العَقَدِيُّ لِكَمَالِ الشَّرِيعَةِ وَوَفَاةِ النَّبِيِّ ﷺ:</h3>
+<ul class="content-list">
+  <li><strong>العَهْدُ المَدَنِيُّ (عَشْرُ سِنِينَ):</strong></li>
+</ul>
+<p>فِيهِ اسْتُكْمِلَتْ فَرَائِضُ الإِسْلَامِ الكُبْرَى؛ فُرِضَتِ الزَّكَاةُ وَصَوْمُ رَمَضَانَ فِي السَّنَةِ الثَّانِيَةِ للهِجْرَةِ، وَشُرِعَ الأَذَانُ، وَأُذِنَ فِي الجِهَادِ لِإِعْلَاءِ كَلِمَةِ اللهِ، ثُمَّ فُرِضَ الحَجُّ.</p>
+<ul class="content-list">
+  <li><strong>كَمَالُ الدِّينِ دَلِيلٌ قَاطِعٌ عَلَى بُطْلَانِ البِدَعِ:</strong></li>
+</ul>
+<p>نَزَلَتْ آيَةُ: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ﴾ يَوْمَ عَرَفَةَ فِي حَجَّةِ الوَدَاعِ؛ قَالَ الإِمَامُ مَالِكُ بْنُ أَنَسٍ رَحِمَهُ اللهُ:</p>
+<blockquote class="quote-box">«مَنِ ابْتَدَعَ فِي الإِسْلَامِ بِدْعَةً يَرَاهَا حَسَنَةً، فَقَدْ زَعَمَ أَنَّ مُحَمَّدًا ﷺ خَانَ الرِّسَالَةَ؛ لِأَنَّ اللهَ يَقُولُ: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ﴾، فَمَا لَمْ يَكُنْ يَوْمَئِذٍ دِينًا، فَلَا يَكُونُ اليَوْمَ دِينًا!»</blockquote>
+<p><em>(الاعْتِصَامُ لِلشَّاطِبِيِّ: 1/64)</em>.</p>
+<ul class="content-list">
+  <li><strong>عُمُومُ الرِّسَالَةِ لِلثَّقَلَيْنِ:</strong></li>
+</ul>
+<p>كَانَ كُلُّ نَبِيٍّ يُبْعَثُ إِلَى قَوْمِهِ خَاصَّةً، وَبُعِثَ نَبِيُّنَا مُحَمَّدٌ ﷺ إِلَى النَّاسِ كَافَّةً، وَإِلَى الجِنِّ وَالإِنْسِ: ﴿وَمَا أَرْسَلْنَاكَ إِلَّا كَافَّةً لِلنَّاسِ بَشِيرًا وَنَذِيرًا﴾ [سبأ: 28].</p>
+<ul class="content-list">
+  <li><strong>وَفَاتُهُ الشَّرِيفَةُ:</strong></li>
+</ul>
+<p>تُوُفِّيَ النَّبِيُّ ﷺ فِي رَبِيعٍ الأَوَّلِ سَنَةَ 11 هـ، وَدُفِنَ فِي حُجْرَةِ عَائِشَةَ رَضِيَ اللهُ عَنْهَا بِالمَدِينَةِ. وَدِينُهُ بَاقٍ إِلَى قِيَامِ السَّاعَةِ، وَلَا نَبِيَّ بَعْدَهُ إِلَى يَوْمِ القِيَامَةِ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h2 class="section-title">📖 البَابُ الرَّابِعُ: البَعْثُ، الجَزَاءُ، وَإِرْسَالُ الرُّسُلِ</h2>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«وَالنَّاسُ إِذَا مَاتُوا يُبْعَثُونَ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿مِنْهَا خَلَقْنَاكُمْ وَفِيهَا نُعِيدُكُمْ وَمِنْهَا نُخْرِجُكُمْ تَارَةً أُخْرَى﴾ [طه: 55]؛</blockquote>
+<blockquote class="quote-box">وَقَوْلُهُ تَعَالَى: ﴿وَاللَّهُ أَنْبَتَكُمْ مِنَ الْأَرْضِ نَبَاتًا * ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا﴾ [نوح: 17-18].</blockquote>
+<blockquote class="quote-box">وَبَعْدَ البَعْثِ مُحَاسَبُونَ وَمَجْزِيُّونَ بِأَعْمَالِهِمْ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَلِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ لِيَجْزِيَ الَّذِينَ أَسَاؤُوا بِمَا عَمِلُوا وَيَجْزِيَ الَّذِينَ أَحْسَنُوا بِالْحُسْنَى﴾ [النجم: 31].</blockquote>
+<blockquote class="quote-box">وَمَنْ كَذَّبَ بِالبَعْثِ كَفَرَ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا قُلْ بَلَى وَرَبِّي لَتُبْعَثُنَّ ثُمَّ لَتُنَبَّؤُنَّ بِمَا عَمِلْتُمْ وَذَلِكَ عَلَى اللَّهِ يَسِيرٌ﴾ [التغابن: 7].</blockquote>
+<blockquote class="quote-box">وَأَرْسَلَ اللهُ جَمِيعَ الرُّسُلِ مُبَشِّرِينَ وَمُنْذِرِينَ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿رُسُلًا مُبَشِّرِينَ وَمُنْذِرِينَ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَى اللَّهِ حُجَّةٌ بَعْدَ الرُّسُلِ﴾ [النساء: 165].</blockquote>
+<blockquote class="quote-box">وَأَوَّلُهُمْ نُوحٌ عَلَيْهِ السَّلَامُ، وَآخِرُهُمْ مُحَمَّدٌ ﷺ وَهُوَ خَاتَمُ النَّبِيِّينَ لَا نَبِيَّ بَعْدَهُ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ عَلَى أَنَّ أَوَّلَهُمْ نُوحٌ قَوْلُهُ تَعَالَى: ﴿إِنَّا أَوْحَيْنَا إِلَيْكَ كَمَا أَوْحَيْنَا إِلَى نُوحٍ وَالنَّبِيِّينَ مِنْ بَعْدِهِ﴾ [النساء: 163].</blockquote>
+<blockquote class="quote-box">وَكُلُّ أُمَّةٍ بَعَثَ اللهُ إِلَيْهَا رَسُولًا مِنْ نُوحٍ إِلَى مُحَمَّدٍ ﷺ، يَأْمُرُهُمْ بِعِبَادَةِ اللهِ وَحْدَهُ، وَيَنْهَاهُمْ عَنْ عِبَادَةِ الطَّاغُوتِ؛</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿وَلَقَدْ بَعَثْنَا فِي كُلِّ أُمَّةٍ رَسُولًا أَنِ اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ﴾ [النحل: 36].»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 التَّحْقِيقُ العَقَدِيُّ لِمَسَائِلِ البَعْثِ وَالرِّسَالَةِ:</h3>
+<ul class="content-list">
+  <li><strong>الإِيمَانُ بِالبَعْثِ رُكْنٌ مِنْ أَرْكَانِ الإِيمَانِ:</strong></li>
+  <li><strong>حَدُّ البَعْثِ:</strong> إِحْيَاءُ المَوْتَى وَإِخْرَاجُهُمْ مِنْ قُبُورِهِمْ يَوْمَ القِيَامَةِ لِلْحِسَابِ وَالجَزَاءِ.</li>
+  <li><strong>حُكْمُ مُنْكِرِهِ:</strong> كَافِرٌ خَارِجٌ عَنِ الإِسْلَامِ بِإِجْمَاعِ أَهْلِ المِلَلِ: ﴿زَعَمَ الَّذِينَ كَفَرُوا أَنْ لَنْ يُبْعَثُوا﴾.</li>
+  <li><strong>الأَدِلَّةُ العَقْلِيَّةُ وَالقُرْآنِيَّةُ عَلَى إِمْكَانِ البَعْثِ:</strong></li>
+</ul>
+<p>(1) القُدْرَةُ عَلَى البَدْءِ دَلِيلٌ عَلَى الإِعَادَةِ: ﴿وَهُوَ الَّذِي يَبْدَأُ الْخَلْقَ ثُمَّ يُعِيدُهُ وَهُوَ أَهْوَنُ عَلَيْهِ﴾ [الروم: 27].</p>
+<p>(2) خَلْقُ السَّمَاوَاتِ وَالأَرْضِ أَعْظَمُ مِنْ خَلْقِ الإِنْسَانِ: ﴿أَوَلَمْ يَرَوْا أَنَّ اللَّهَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَلَمْ يَعْيَ بِخَلْقِهِنَّ بِقَادِرٍ عَلَى أَنْ يُحْيِيَ الْمَوْتَى بَلَى إِنَّهُ عَلَى كُلِّ شَيْءٍ قَدِيرٌ﴾ [الأحقاف: 33].</p>
+<p>(3) إِحْيَاءُ الأَرْضِ المَيْتَةِ بِالمَطَرِ: ﴿فَإِذَا أَنْزَلْنَا عَلَيْهَا الْمَاءَ اهْتَزَّتْ وَرَبَتْ إِنَّ الَّذِي أَحْيَاهَا لَمُحْيِي الْمَوْتَى﴾ [فصلت: 39].</p>
+<ul class="content-list">
+  <li><strong>أَوَّلُ الرُّسُلِ نُوحٌ عَلَيْهِ السَّلَامُ:</strong></li>
+</ul>
+<p>لِأَنَّ قَوْمَهُ هُمْ أَوَّلُ مَنْ وَقَعَ فِيهِمُ الشِّرْكُ فِي تَارِيخِ البَشَرِيَّةِ لَمَّا غَلَوْا فِي وَدٍّ وَسُوَاعٍ وَيَغُوثَ وَيَعُوقَ وَنَسْرٍ؛ فَأَرْسَلَ اللهُ إِلَيْهِمْ نُوحًا يَدْعُوهُمْ إِلَى التَّوْحِيدِ، أَمَّا آدَمُ فَكَانَ نَبِيًّا مُكَلَّمًا لَمْ يَكُنْ فِي ذُرِّيَّتِهِ شِرْكٌ لِمُدَّةِ عَشَرَةِ قُرُونٍ.</p>
+<ul class="content-list">
+  <li><strong>خَتْمُ الرِّسَالَةِ بِمُحَمَّدٍ ﷺ:</strong></li>
+</ul>
+<p>دَلِيلُهُ: ﴿مَا كَانَ مُحَمَّدٌ أَبَا أَحَدٍ مِنْ رِجَالِكُمْ وَلَكِنْ رَسُولَ اللَّهِ وَخَاتَمَ النَّبِيِّينَ﴾ [الأحزاب: 40]، فَمَنِ ادَّعَى النُّبُوَّةَ بَعْدَهُ أَوْ صَدَّقَ مُدَّعِيَهَا كَفَرَ.</p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 6: مَحَطَّاتُ السِّيرَةِ النَّبَوِيَّةِ وَمَرَاحِلُ الدَّعْوَةِ وَالتَّشْرِيعِ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>المَرْحَلَةُ التَّارِيخِيَّةُ</th>
+      <th>مُدَّتُهَا الزَّمَنِيَّةُ</th>
+      <th>أَبْرَزُ الأَحْدَاثِ وَالشَّرَائِعِ فِيهَا</th>
+      <th>وَاجِبُ الدَّعْوَةِ فِي هَذِهِ المَرْحَلَةِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>قَبْلَ النُّبُوَّةِ</strong></td>
+      <td>40 سَنَةً</td>
+      <td>مَوْلِدُهُ بِمَكَّةَ، صِيَانَتُهُ مِنَ الشِّرْكِ، التَّحَنُّثُ فِي غَارِ حِرَاءٍ</td>
+      <td>حِفْظُ اللهِ لَهُ وَتَهْيِئَتُهُ لِلرِّسَالَةِ</td>
+    </tr>
+    <tr>
+      <td><strong>النُّبُوَّةُ بِـ «اقْرَأْ»</strong></td>
+      <td>سَنَةُ 40 مِنْ عُمُرِهِ</td>
+      <td>هُبُوطُ جِبْرِيلَ بِالوَحْيِ فِي غَارِ حِرَاءٍ</td>
+      <td>مَبْدَأُ النُّبُوَّةِ بِالتَّعَلُّمِ دُونَ أَمْرٍ بِالإِنْذَارِ</td>
+    </tr>
+    <tr>
+      <td><strong>الدَّعْوَةُ المَكِّيَّةُ</strong></td>
+      <td>13 سَنَةً (10 تَأْسِيس + 3 بَعْدَ المِعْرَاجِ)</td>
+      <td>«قُمْ فَأَنْذِرْ»، إِفْرَادُ التَّوْحِيدِ، الإِسْرَاءُ وَالمِعْرَاجُ وَفَرْضُ الصَّلَاةِ</td>
+      <td>الدَّعْوَةُ إِلَى التَّوْحِيدِ وَالصَّبْرُ عَلَى الأَذَى</td>
+    </tr>
+    <tr>
+      <td><strong>الهِجْرَةُ إِلَى المَدِينَةِ</strong></td>
+      <td>السَّنَةُ 13 مِنَ البِعْثَةِ</td>
+      <td>الِانْتِقَالُ لِتَأْسِيسِ دَوْلَةِ التَّوْحِيدِ بِالمَدِينَةِ</td>
+      <td>وُجُوبُ مُفَارَقَةِ بَلَدِ الكُفْرِ إِلَى بَلَدِ الإِسْلَامِ</td>
+    </tr>
+    <tr>
+      <td><strong>الدَّعْوَةُ المَدَنِيَّةُ</strong></td>
+      <td>10 سِنِينَ (مِنْ 1 هـ إِلَى 11 هـ)</td>
+      <td>فَرْضُ الزَّكَاةِ، الصَّوْمِ، الحَجِّ، الجِهَادِ، وَالأَمْرِ بِالمَعْرُوفِ</td>
+      <td>اسْتِكْمَالُ الشَّرَائِعِ وَتَطْبِيقُ الحُدُودِ</td>
+    </tr>
+    <tr>
+      <td><strong>كَمَالُ الدِّينِ وَالوَفَاةُ</strong></td>
+      <td>ذُو الحِجَّةِ 10 هـ - رَبِيعٌ 11 هـ</td>
+      <td>نُزُولُ: ﴿الْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ﴾، وَفَاتُهُ بِالمَدِينَةِ</td>
+      <td>بَقَاءُ دِينِهِ وَكَمَالُ شَرِيعَتِهِ إِلَى قِيَامِ السَّاعَةِ</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">⚡ القِسْمُ الخَامِسُ: خَاتِمَةُ الرِّسَالَةِ: الكُفْرُ بِالطَّاغُوتِ وَرُؤُوسُهُ الخَمْسَةُ</h1>
+<h3 class="sub-title">📜 نَصُّ كَلَامِ شَيْخِ الإِسْلَامِ رَحِمَهُ اللهُ:</h3>
+<blockquote class="quote-box">**«وَافْتَرَضَ اللهُ عَلَى جَمِيعِ العِبَادِ: الكُفْرَ بِالطَّاغُوتِ، وَالإِيمَانَ بِاللهِ.</blockquote>
+<blockquote class="quote-box">قَالَ ابْنُ القَيِّمِ رَحِمَهُ اللهُ تَعَالَى: «الطَّاغُوتُ: مَا تَجَاوَزَ بِهِ العَبْدُ حَدَّهُ؛ مِنْ مَعْبُودٍ، أَوْ مَتْبُوعٍ، أَوْ مُطَاعٍ».</blockquote>
+<blockquote class="quote-box">وَالطَّوَاغِيتُ كَثِيرَةٌ، وَرُؤُوسُهُمْ خَمْسَةٌ:</blockquote>
+<blockquote class="quote-box">الأَوَّلُ: إِبْلِيسُ لَعَنَهُ اللهُ،</blockquote>
+<blockquote class="quote-box">الثَّانِي: مَنْ عُبِدَ وَهُوَ رَاضٍ،</blockquote>
+<blockquote class="quote-box">الثَّالِثُ: مَنْ دَعَا النَّاسَ إِلَى عِبَادَةِ نَفْسِهِ،</blockquote>
+<blockquote class="quote-box">الرَّابِعُ: مَنِ ادَّعَى شَيْئًا مِنْ عِلْمِ الغَيْبِ،</blockquote>
+<blockquote class="quote-box">الخَامِسُ: مَنْ حَكَمَ بِغَيْرِ مَا أَنْزَلَ اللهُ.</blockquote>
+<blockquote class="quote-box">وَالدَّلِيلُ قَوْلُهُ تَعَالَى: ﴿لَا إِكْرَاهَ فِي الدِّينِ قَدْ تَبَيَّنَ الرُّشْدُ مِنَ الْغَيِّ فَمَنْ يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِنْ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَى لَا انْفِصَامَ لَهَا وَاللَّهُ سَمِيعٌ عَلِيمٌ﴾ [البقرة: 256].</blockquote>
+<blockquote class="quote-box">وَهَذَا هُوَ مَعْنَى «لَا إِلَهَ إِلَّا اللهُ».</blockquote>
+<blockquote class="quote-box">وَفِي الحَدِيثِ: «رَأْسُ الأَمْرِ الإِسْلَامُ، وَعَمُودُهُ الصَّلَاةُ، وَذِرْوَةُ سَنَامِهِ الجِهَادُ فِي سَبِيلِ اللهِ».</blockquote>
+<blockquote class="quote-box">وَاللهُ أَعْلَمُ، وَصَلَّى اللهُ عَلَى مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ.»**</blockquote>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🔍 التَّأْصِيلُ العَقَدِيُّ الشَّامِلُ لِمَسَائِلِ الطَّاغُوتِ:</h3>
+<h4 class="sub-sub-title">1. تَقْدِيمُ الكُفْرِ بِالطَّاغُوتِ عَلَى الإِيمَانِ بِاللهِ:</h4>
+<ul class="content-list">
+  <li>فِي آيَةِ البَقَرَةِ: ﴿فَمَنْ يَكْفُرْ بِالطَّاغُوتِ وَيُؤْمِنْ بِاللَّهِ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَى﴾؛ قَدَّمَ اللهُ الكُفْرَ بِالطَّاغُوتِ عَلَى الإِيمَانِ بِهِ، وَهَذَا نَظِيرُ تَقْدِيمِ النَّفْيِ «لَا إِلَهَ» عَلَى الإِثْبَاتِ «إِلَّا اللهُ»؛ لِأَنَّ التَّخْلِيَةَ مُقَدَّمَةٌ عَلَى التَّحْلِيَةِ؛ فَلَا يَصِحُّ إِيمَانٌ بِاللهِ حَتَّى يُكَفِّرَ العَبْدُ بِكُلِّ مَا يُعْبَدُ مِنْ دُونِ اللهِ وَيَتَبَرَّأَ مِنْهُ.</li>
+</ul>
+<h4 class="sub-sub-title">2. تَحْرِيرُ حَدِّ الإِمَامِ ابْنِ القَيِّمِ رَحِمَهُ اللهُ:</h4>
+<ul class="content-list">
+  <li>قَالَ ابْنُ القَيِّمِ فِي «إِعْلَامِ المُوَقِّعِينَ» (1/50):</li>
+</ul>
+<blockquote class="quote-box">«الطَّاغُوتُ: كُلُّ مَا تَجَاوَزَ بِهِ العَبْدُ حَدَّهُ؛ مِنْ مَعْبُودٍ، أَوْ مَتْبُوعٍ، أَوْ مُطَاعٍ».</blockquote>
+<ul class="content-list">
+  <li><strong>المَعْبُودُ:</strong> كَالصَّنَمِ وَالوَلِيِّ الَّذِي يُعْبَدُ مِنْ دُونِ اللهِ وَهُوَ رَاضٍ.</li>
+  <li><strong>المَتْبُوعُ:</strong> كَالأَحْبَارِ وَالرُّهْبَانِ وَالسَّحَرَةِ وَالعُلَمَاءِ المُضِلِّينَ الَّذِينَ يُتَّبَعُونَ فِي تَحْلِيلِ الحَرَامِ وَتَحْرِيمِ الحَلَالِ.</li>
+  <li><strong>المُطَاعُ:</strong> كَالأُمَرَاءِ وَالحُكَّامِ الجَائِرِينَ الَّذِينَ يُطَاعُونَ فِي مُخَالَفَةِ شَرِيعَةِ اللهِ.</li>
+</ul>
+<h4 class="sub-sub-title">3. رُؤُوسُ الطَّوَاغِيتِ الخَمْسَةُ بِالتَّفْصِيلِ:</h4>
+<ol class="content-list-ordered">
+  <li><strong>إِبْلِيسُ لَعَنَهُ اللهُ:</strong> هُوَ رَأْسُ الطَّوَاغِيتِ كُلِّهِمْ؛ لِأَنَّهُ الدَّاعِي الأَوَّلُ إِلَى كُلِّ شِرْكٍ وَكُفْرٍ.</li>
+  <li><strong>مَنْ عُبِدَ وَهُوَ رَاضٍ:</strong> يَخْرُجُ مِنْهُ عِيسَى عَلَيْهِ السَّلَامُ، وَعُزَيْرٌ، وَالمَلَائِكَةُ، وَأَوْلِيَاءُ اللهِ الصَّالِحُونَ؛ لِأَنَّهُمْ تَبَرَّأُوا مِنْ عِبَادَةِ قَوْمِهِمْ لَهُمْ وَلَمْ يَرْضَوْا بِهَا.</li>
+  <li><strong>مَنْ دَعَا النَّاسَ إِلَى عِبَادَةِ نَفْسِهِ:</strong> كَفِرْعَوْنَ حِينَ قَالَ: ﴿مَا عَلِمْتُ لَكُمْ مِنْ إِلَهٍ غَيْرِي﴾، وَالنَّمْرُودِ.</li>
+  <li><strong>مَنِ ادَّعَى شَيْئًا مِنْ عِلْمِ الغَيْبِ:</strong> كَالكَهَنَةِ، وَالسَّحَرَةِ، وَالعَرَّافِينَ، وَالمُنَجِّمِينَ؛ لِأَنَّ الغَيْبَ خَصِيصَةٌ إِلَهِيَّةٌ خَالِصَةٌ: ﴿قُلْ لَا يَعْلَمُ مَنْ فِي السَّمَاوَاتِ وَالْأَرْضِ الْغَيْبَ إِلَّا اللَّهُ﴾ [النمل: 65].</li>
+  <li><strong>مَنْ حَكَمَ بِغَيْرِ مَا أَنْزَلَ اللهُ:</strong></li>
+</ol>
+<ul class="content-list">
+  <li><strong>تَفْصِيلُ أَهْلِ السُّنَّةِ فِي هَذِهِ المَسْأَلَةِ العَظِيمَةِ:</strong></li>
+  <li><strong>الكُفْرُ الأَكْبَرُ المُخْرِجُ مِنَ المِلَّةِ:</strong></li>
+</ul>
+<p>(1) مَنِ اسْتَحَلَّ الحُكْمَ بِغَيْرِ مَا أَنْزَلَ اللهُ.</p>
+<p>(2) أَوْ زَعَمَ أَنَّ القَوَانِينَ الوَضْعِيَّةَ خَيْرٌ مِنْ حُكْمِ اللهِ أَوْ تُسَاوِيهِ أَوْ تُمَاثِلُهُ.</p>
+<p>(3) أَوْ جَوَّزَ التَّحَاكُمَ إِلَى القَوَانِينَ الوَضْعِيَّةِ وَتَرْكَ الشَّرِيعَةِ رَأْسًا.</p>
+<ul class="content-list">
+  <li><strong>الكُفْرُ الأَصْغَرُ («كُفْرٌ دُونَ كُفْرٍ»):</strong></li>
+</ul>
+<p>أَنْ يَحْكُمَ القَاضِي أَوِ الحَاكِمُ فِي قَضِيَّةٍ مُعَيَّنَةٍ بِغَيْرِ حُكْمِ اللهِ اتِّبَاعًا لِهَوًى أَوْ رِشْوَةٍ أَوْ قَرَابَةٍ، مَعَ اعْتِرَافِهِ بِأَنَّهُ عَاصٍ لِرَبِّهِ وَأَنَّ حُكْمَ اللهِ هُوَ الحَقُّ الوَاجِبُ اتِّبَاعُهُ، فَهَذَا فِسْقٌ وَظُلْمٌ وَكُفْرٌ أَصْغَرُ لَا يَنْقُلُ عَنِ المِلَّةِ عِنْدَ ابْنِ عَبَّاسٍ وَطَاوُوسٍ وَأَئِمَّةِ السَّلَفِ.</p>
+<h4 class="sub-sub-title">4. شَرْحُ الحَدِيثِ الخِتَامِيِّ (حَدِيثِ مُعَاذٍ):</h4>
+<ul class="content-list">
+  <li>رَوَاهُ التِّرْمِذِيُّ (2616) وَأَحْمَدُ عَنْ مُعَاذِ بْنِ جَبَلٍ رَضِيَ اللهُ عَنْهُ أَنَّ النَّبِيَّ ﷺ قَالَ:</li>
+</ul>
+<blockquote class="quote-box"><strong>«رَأْسُ الأَمْرِ الإِسْلَامُ، وَعَمُودُهُ الصَّلَاةُ، وَذِرْوَةُ سَنَامِهِ الجِهَادُ فِي سَبِيلِ اللهِ»</strong>.</blockquote>
+<ul class="content-list">
+  <li><strong>رَأْسُ الشَّيْءِ إِذَا ذَهَبَ هَلَكَ الشَّيْءُ كُلُّهُ:</strong> وَكَذَلِكَ الإِسْلَامُ بِالتَّوْحِيدِ إِذَا بَطَلَ بَطَلَ كُلُّ شَيْءٍ.</li>
+  <li><strong>عَمُودُ الفُسْطَاطِ (الخَيْمَةِ):</strong> هِيَ الصَّلَاةُ الَّتِي لَا تَثْبُتُ الخَيْمَةُ إِلَّا بِهَا.</li>
+  <li><strong>ذِرْوَةُ السَّنَامِ:</strong> هُوَ أَعْلَى نُقْطَةٍ فِي الجَمَلِ؛ وَهُوَ الجِهَادُ لِنَشْرِ دِينِ اللهِ وَحِمَايَةِ حِمَى التَّوْحِيدِ.</li>
+</ul>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📊 جَدْوَلُ 7: رُؤُوسُ الطَّوَاغِيتِ الخَمْسَةِ وَأَحْكَامُهُمُ الشَّرْعِيَّةُ</h3>
+<table class="academic-table">
+  <thead>
+    <tr>
+      <th>رَأْسُ الطَّاغُوتِ</th>
+      <th>بَيَانُهُ وَصُورَتُهُ</th>
+      <th>حُكْمُهُ فِي شَرِيعَةِ الإِسْلَامِ</th>
+      <th>دَلِيلُهُ مِنَ القُرْآنِ الكَرِيمِ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. إِبْلِيسُ لَعَنَهُ اللهُ</strong></td>
+      <td>الدَّاعِي الأَوَّلُ إِلَى كُلِّ شِرْكٍ وَضَلَالٍ</td>
+      <td>رَأْسُ الكُفْرِ وَأَعْظَمُ الطَّوَاغِيتِ</td>
+      <td>﴿أَلَمْ أَعْهَدْ إِلَيْكُمْ يَا بَنِي آدَمَ أَنْ لَا تَعْبُدُوا الشَّيْطَانَ﴾ [يس: 60]</td>
+    </tr>
+    <tr>
+      <td><strong>2. مَنْ عُبِدَ وَهُوَ رَاضٍ</strong></td>
+      <td>مَنْ رَضِيَ بِأَنْ يَصْرِفَ لَهُ النَّاسُ العِبَادَةَ</td>
+      <td>طَاغُوتٌ مُشْرِكٌ كَافِرٌ (وَيَخْرُجُ الصَّالِحُونَ)</td>
+      <td>﴿وَمَنْ يَقُلْ مِنْهُمْ إِنِّي إِلَهٌ مِنْ دُونِهِ فَذَلِكَ نَجْزِيهِ جَهَنَّمَ﴾ [الأنبياء: 29]</td>
+    </tr>
+    <tr>
+      <td><strong>3. مَنْ دَعَا إِلَى عِبَادَةِ نَفْسِهِ</strong></td>
+      <td>كَفِرْعَوْنَ الَّذِي ادَّعَى الرُّبُوبِيَّةَ</td>
+      <td>كُفْرٌ أَكْبَرُ مُسْتَبِينٌ</td>
+      <td>﴿فَقَالَ أَنَا رَبُّكُمُ الْأَعْلَى * فَأَخَذَهُ اللَّهُ نَكَالَ الْآخِرَةِ وَالْأُولَى﴾ [النازعات: 24]</td>
+    </tr>
+    <tr>
+      <td><strong>4. مَنِ ادَّعَى عِلْمَ الغَيْبِ</strong></td>
+      <td>كَالسَّحَرَةِ وَالمُنَجِّمِينَ وَالعَرَّافِينَ</td>
+      <td>كُفْرٌ أَكْبَرُ لِمُنَازَعَتِهِ خَصَائِصَ الرَّبِّ</td>
+      <td>﴿عَالِمُ الْغَيْبِ فَلَا يُظْهِرُ عَلَى غَيْبِهِ أَحَدًا﴾ [الجن: 26]</td>
+    </tr>
+    <tr>
+      <td><strong>5. مَنْ حَكَمَ بِغَيْرِ مَا أَنْزَلَ اللهُ</strong></td>
+      <td>مُسْتَحِلُّ القَوَانِينِ الوَضْعِيَّةِ أَوْ مُفَضِّلُهَا</td>
+      <td><strong>كُفْرٌ أَكْبَرُ</strong> عِنْدَ الِاسْتِحْلَالِ، وَ<strong>أَصْغَرُ</strong> عِنْدَ الهَوَى</td>
+      <td>﴿وَمَنْ لَمْ يَحْكُمْ بِمَا أَنْزَلَ اللَّهُ فَأُولَئِكَ هُمُ الْكَافِرُونَ﴾ [المائدة: 44]</td>
+    </tr>
+  </tbody>
+</table>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h1 class="main-heading">🎯 القِسْمُ السَّادِسُ: الخَاتِمَةُ وَالفَهَارِسُ التَّأْصِيلِيَّةُ الشَّامِلَةُ</h1>
+<h3 class="sub-title">📜 خُلَاصَةُ الفَوَائِدِ العَقَدِيَّةِ المُسْتَنْبَطَةِ مِنَ الأُصُولِ الثَّلَاثَةِ:</h3>
+<ol class="content-list-ordered">
+  <li><strong>الوُجُوبُ العَيْنِيُّ:</strong> وُجُوبُ تَعَلُّمِ الأُصُولِ الثَّلَاثَةِ عَلَى كُلِّ مُكَلَّفٍ؛ لِأَنَّهَا هِيَ المَسَائِلُ الَّتِي سَيُسْأَلُ عَنْهَا فِي قَبْرِهِ.</li>
+  <li><strong>التَّلَازُمُ بَيْنَ العِلْمِ وَالعَمَلِ:</strong> لَا يَنْفَعُ عِلْمٌ بِلَا عَمَلٍ، وَلَا يُقْبَلُ عَمَلٌ إِلَّا إِذَا كَانَ مَبْنِيًّا عَلَى عِلْمٍ شَرْعِيٍّ صَحِيحٍ.</li>
+  <li><strong>أَهَمِّيَّةُ عَقِيدَةِ الوَلَاءِ وَالبَرَاءِ:</strong> لَا يَكْتَمِلُ التَّوْحِيدُ إِلَّا بِبُغْضِ الشِّرْكِ وَالبَرَاءَةِ مِنْ أَهْلِهِ وَلَوْ كَانُوا أَقْرَبَ قَرِيبٍ.</li>
+  <li><strong>شُمُولِيَّةُ العِبَادَةِ:</strong> أَنَّ العِبَادَةَ اسْمٌ جَامِعٌ لِكُلِّ مَا يُحِبُّهُ اللهُ وَيَرْضَاهُ؛ فَصَرْفُ أَيِّ جُزْءٍ مِنْهَا لِغَيْرِ اللهِ شِرْكٌ مُحْبِطٌ لِلْعَمَلِ.</li>
+  <li><strong>مَرَاتِبُ الدِّينِ هَرَمِيَّةٌ:</strong> أَوْسَعُهَا الإِسْلَامُ، ثُمَّ الإِيمَانُ، وَأَضْيَقُهَا وَأَعْلَاهَا شَرَفًا هُوَ الإِحْسَانُ.</li>
+  <li><strong>بَقَاءُ الهِجْرَةِ:</strong> الهِجْرَةُ مِنْ بَلَدِ الكُفْرِ إِلَى بَلَدِ الإِسْلَامِ فَرِيضَةٌ مُحْكَمَةٌ بَاقِيَةٌ إِلَى طُلُوعِ الشَّمْسِ مِنْ مَغْرِبِهَا.</li>
+  <li><strong>كَمَالُ الشَّرِيعَةِ:</strong> انْقِطَاعُ الوَحْيِ بِوَفَاةِ النَّبِيِّ ﷺ، فَلَا يَجُوزُ اسْتِحْسَانُ بِدْعَةٍ أَوْ تَبْدِيلُ حُكْمٍ فِي الدِّينِ.</li>
+  <li><strong>الكُفْرُ بِالطَّاغُوتِ رُكْنُ التَّوْحِيدِ:</strong> لَا يَصِحُّ الإِيمَانُ بِاللهِ حَتَّى يَقْتَرِنَ بِالكُفْرِ بِكُلِّ مَا يُعْبَدُ مِنْ دُونِهِ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">📚 ثَبَتُ المَصَادِرِ وَالمَرَاجِعِ المُعْتَمَدَةِ فِي الشَّرْحِ:</h3>
+<ol class="content-list-ordered">
+  <li><strong>القُرْآنُ الكَرِيمُ:</strong> كَلَامُ اللهِ تَعَالَى المُنَزَّلُ عَلَى نَبِيِّهِ ﷺ.</li>
+  <li><strong>جَامِعُ البَيَانِ فِي تَأْوِيلِ القُرْآنِ:</strong> الإِمَامُ مُحَمَّدُ بْنُ جَرِيرٍ الطَّبَرِيُّ (ت 310 هـ).</li>
+  <li><strong>مَعَالِمُ التَّنْزِيلِ (تَفْسِيرُ البَغَوِيِّ):</strong> الإِمَامُ الحُسَيْنُ بْنُ مَسْعُودٍ البَغَوِيُّ (ت 516 هـ).</li>
+  <li><strong>تَفْسِيرُ القُرْآنِ العَظِيمِ:</strong> الحَافِظُ عِمَادُ الدِّينِ إِسْمَاعِيلُ بْنُ كَثِيرٍ القُرَشِيُّ (ت 774 هـ).</li>
+  <li><strong>صَحِيحُ الإِمَامِ البُخَارِيِّ (الجَامِعُ المُسْنَدُ الصَّحِيحُ):</strong> أَبُو عَبْدِ اللهِ مُحَمَّدُ بْنُ إِسْمَاعِيلَ البُخَارِيُّ (ت 256 هـ).</li>
+  <li><strong>صَحِيحُ الإِمَامِ مُسْلِمٍ:</strong> أَبُو الحُسَيْنِ مُسْلِمُ بْنُ الحَجَّاجِ القُشَيْرِيُّ النَّيْسَابُورِيُّ (ت 261 هـ).</li>
+  <li><strong>مُسْنَدُ الإِمَامِ أَحْمَدَ بْنِ حَنْبَلٍ:</strong> الشَّيْبَانِيُّ (ت 241 هـ)، طَبْعَةُ الرِّسَالَةِ.</li>
+  <li><strong>سُنَنُ أَبِي دَاوُدَ:</strong> الإِمَامُ سُلَيْمَانُ بْنُ الأَشْعَثِ السِّجِسْتَانِيُّ (ت 275 هـ).</li>
+  <li><strong>جَامِعُ التِّرْمِذِيِّ:</strong> الإِمَامُ أَبُو عِيسَى مُحَمَّدُ بْنُ عِيسَى التِّرْمِذِيُّ (ت 279 هـ).</li>
+  <li><strong>سُنَنُ النَّسَائِيِّ (المُجْتَبَى):</strong> الإِمَامُ أَحْمَدُ بْنُ شُعَيْبٍ النَّسَائِيُّ (ت 303 هـ).</li>
+  <li><strong>سُنَنُ ابْنِ مَاجَهْ:</strong> الإِمَامُ مُحَمَّدُ بْنُ يَزِيدَ القَزْوِينِيُّ (ت 273 هـ).</li>
+  <li><strong>المُسْتَدْرَكُ عَلَى الصَّحِيحَيْنِ:</strong> أَبُو عَبْدِ اللهِ الحَاكِمُ النَّيْسَابُورِيُّ (ت 405 هـ).</li>
+  <li><strong>جَامِعُ بَيَانِ العِلْمِ وَفَضْلِهِ:</strong> الإِمَامُ ابْنُ عَبْدِ البَرِّ النَّمَرِيُّ الأَنْدَلُسِيُّ (ت 463 هـ).</li>
+  <li><strong>مَجْمُوعُ الفَتَاوَى:</strong> شَيْخُ الإِسْلَامِ أَحْمَدُ بْنُ عَبْدِ الحَلِيمِ بْنِ تَيْمِيَّةَ (ت 728 هـ).</li>
+  <li><strong>مَدَارِجُ السَّالِكِينَ بَيْنَ مَنَازِلِ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ:</strong> الإِمَامُ ابْنُ قَيِّمِ الجَوْزِيَّةِ (ت 751 هـ).</li>
+  <li><strong>إِعْلَامُ المُوَقِّعِينَ عَنْ رَبِّ العَالَمِينَ:</strong> الإِمَامُ شَمْسُ الدِّينِ ابْنُ قَيِّمِ الجَوْزِيَّةِ (ت 751 هـ).</li>
+  <li><strong>الاعْتِصَامُ:</strong> الإِمَامُ إِبْرَاهِيمُ بْنُ مُوسَى الشَّاطِبِيُّ (ت 790 هـ).</li>
+  <li><strong>فَتْحُ المَجِيدِ شَرْحُ كِتَابِ التَّوْحِيدِ:</strong> الشَّيْخُ عَبْدُ الرَّحْمَنِ بْنُ حَسَنٍ آلِ الشَّيْخِ (ت 1285 هـ).</li>
+  <li><strong>تَيْسِيرُ العَزِيزِ الحَمِيدِ فِي شَرْحِ كِتَابِ التَّوْحِيدِ:</strong> الشَّيْخُ سُلَيْمَانُ بْنُ عَبْدِ اللهِ آلِ الشَّيْخِ (ت 1233 هـ).</li>
+  <li><strong>الدُّرَرُ السَّنِيَّةُ فِي الأَجْوِبَةِ النَّجْدِيَّةِ:</strong> جَمْعُ الشَّيْخِ عَبْدِ الرَّحْمَنِ بْنِ قَاسِمٍ العَاصِمِيِّ (ت 1392 هـ).</li>
+  <li><strong>شَرْحُ ثَلَاثَةِ الأُصُولِ:</strong> سَمَاحَةُ الإِمَامِ عَبْدِ العَزِيزِ بْنِ عَبْدِ اللهِ بْنِ بَازٍ رَحِمَهُ اللهُ (ت 1420 هـ).</li>
+  <li><strong>شَرْحُ ثَلَاثَةِ الأُصُولِ:</strong> فَضِيلَةُ الشَّيْخِ العَلَّامَةِ مُحَمَّدِ بْنِ صَالِحٍ العُثَيْمِينِ رَحِمَهُ اللهُ (ت 1421 هـ).</li>
+  <li><strong>شَرْحُ ثَلَاثَةِ الأُصُولِ:</strong> مَعَالِي الشَّيْخِ الدُّكْتُورِ صَالِحِ بْنِ فَوْزَانَ الفَوْزَانِ حَفِظَهُ اللهُ.</li>
+  <li><strong>سِلْسِلَةُ الأَحَادِيثِ الصَّحِيحَةِ:</strong> الشَّيْخُ المُحَدِّثُ مُحَمَّدٌ نَاصِرُ الدِّينِ الأَلْبَانِيُّ (ت 1420 هـ).</li>
+  <li><strong>صَحِيحُ الجَامِعِ الصَّغِيرِ:</strong> الشَّيْخُ مُحَمَّدٌ نَاصِرُ الدِّينِ الأَلْبَانِيُّ رَحِمَهُ اللهُ.</li>
+</ol>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<h3 class="sub-title">🤲 كَلِمَةُ خِتَامٍ وَابْتِهَالٌ:</h3>
+<p><strong>تَمَّ بِحَمْدِ اللهِ تَعَالَى وَحُسْنِ تَوْفِيقِهِ وَمَنِّهِ وَكَرَمِهِ تَسْطِيرُ هَذَا الشَّرْحِ المَوْسُوعِيِّ المُبَارَكِ عَلَى رِسَالَةِ «ثَلَاثَةِ الأُصُولِ وَأَدِلَّتِهَا» لِشَيْخِ الإِسْلَامِ الإِمَامِ المُجَدِّدِ مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ رَحِمَهُ اللهُ تَعَالَى.</strong></p>
+<p>فَمَا كَانَ فِيهِ مِنْ صَوَابٍ وَحَقٍّ وَسَدَادٍ فَمِنَ اللهِ وَحْدَهُ المَنَّانِ ذِي الجَلَالِ وَالإِكْرَامِ، وَمَا كَانَ فِيهِ مِنْ خَطَأٍ أَوْ زَلَلٍ أَوْ تَقْصِيرٍ أَوْ نِسْيَانٍ فَمِنِّي وَمِنَ الشَّيْطَانِ، وَاللهُ وَرَسُولُهُ مِنْهُ بَرِيئَانِ، وَأَسْتَغْفِرُ اللهَ العَظِيمَ وَأَتُوبُ إِلَيْهِ.</p>
+<p>نَسْأَلُ اللهَ الكَرِيمَ رَبَّ العَرْشِ العَظِيمِ بِأَسْمَائِهِ الحُسْنَى وَصِفَاتِهِ العُلَى أَنْ يَجْعَلَ هَذَا العَمَلَ خَالِصًا لِوَجْهِهِ الكَرِيمِ، مُوجِبًا لِرِضْوَانِهِ العَظِيمِ، وَأَنْ يَجْعَلَهُ مِمَّا يُثَقِّلُ المَوَازِينَ يَوْمَ الدِّينِ، وَأَنْ يَنْفَعَ بِهِ كُلَّ مَنْ قَرَأَهُ أَوْ تَعَلَّمَهُ أَوْ عَلَّمَهُ أَوْ سَاهَمَ فِي نَشْرِهِ.</p>
+<p>اللَّهُمَّ ثَبِّتْنَا بِالقَوْلِ الثَّابِتِ فِي الحَيَاةِ الدُّنْيَا وَفِي الآخِرَةِ، وَاجْعَلْ آخِرَ كَلَامِنَا مِنَ الدُّنْيَا: لَا إِلَهَ إِلَّا اللهُ مُحَمَّدٌ رَسُولُ اللهِ، وَاحْشُرْنَا فِي زُمْرَةِ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَحَسُنَ أُولَئِكَ رَفِيقًا.</p>
+<p><em>وَصَلَّى اللهُ وَسَلَّمَ وَبَارَكَ عَلَى نَبِيِّنَا وَسَيِّدِنَا مُحَمَّدٍ إِمَامِ الحُنَفَاءِ، وَعَلَى آلِهِ الطَّيِّبِينَ، وَصَحَابَتِهِ الغُرِّ المَيَامِينِ، وَالتَّابِعِينَ لَهُمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّينِ، وَالحَمْدُ للهِ رَبِّ العَالَمِينَ.</em></p>
+<div class="section-divider"><span>&#x2766; &#x2766; &#x2766;</span></div>
+<p><em>عُنِيَ بِهِ وَحَرَّرَهُ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ)</em></p>
+<p><em>صَادِرٌ عَنْ: مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ - كَادُونَا، نَيْجِيرْيَا.</em></p>
+<p><em>قِسْمُ العِنَايَةِ بِالعَقِيدَةِ وَالنَّشْرِ العِلْمِيِّ — سِلْسِلَةُ الكُتُبِ التَّأْصِيلِيَّةِ (3)</em></p>
+  </div>
+</body>
+</html>

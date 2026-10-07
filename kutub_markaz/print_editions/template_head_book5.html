@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عُمْدَةُ المُوَحِّدِ السَّدِيدِ فِي شَرْحِ كِتَابِ التَّوْحِيدِ | مركز محمد بن إبراهيم آل الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --primary-dark: #172554;
+      --gold: #C5A059;
+      --gold-dark: #9A7B38;
+      --text-main: #1F2937;
+      --text-muted: #4B5563;
+      --bg-page: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --border-card: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      background: var(--bg-page);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      width: 100%;
+    }
+    body {
+      font-size: 19.5px;
+      line-height: 2.25;
+    }
+    .no-print-bar {
+      position: sticky;
+      top: 0;
+      background: var(--primary-dark);
+      color: white;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-family: 'Scheherazade New', serif;
+    }
+    .no-print-bar .title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.15rem;
+    }
+    .btn-action {
+      background: var(--gold);
+      color: #172554;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.05rem;
+      transition: all 0.2s ease;
+    }
+    .btn-action:hover {
+      background: #D8B26E;
+      transform: translateY(-1px);
+    }
+    .cover-container {
+      max-width: 900px;
+      margin: 40px auto 30px auto;
+      background: #FFFFFF;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      page-break-after: always;
+      break-after: page;
+    }
+    .cover-frame-outer {
+      border: 4px double var(--gold);
+      padding: 8px;
+      border-radius: 6px;
+    }
+    .cover-frame-inner {
+      border: 2px solid var(--primary-dark);
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 4px;
+      background: radial-gradient(circle at center, #FFFFFF 0%, #FAF8F5 100%);
+    }
+    .cover-header-top {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.35rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .cover-basmalah {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.9rem;
+      color: var(--gold-dark);
+      margin: 15px 0 10px 0;
+    }
+    .cover-badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: var(--primary);
+      border: 1px solid #BFDBFE;
+      padding: 4px 22px;
+      border-radius: 20px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      margin: 10px auto;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-title-main {
+      font-family: 'Scheherazade New', serif;
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.35;
+      margin: 14px 0 8px 0;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+    }
+    .cover-title-sub {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2.1rem;
+      font-weight: 700;
+      color: var(--gold-dark);
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .cover-title-desc {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin: 0 auto 18px auto;
+      line-height: 1.7;
+    }
+    .cover-ornament {
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin: 10px 0;
+      letter-spacing: 6px;
+    }
+    .cover-box-author {
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+      padding: 14px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-sharh {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-top: 3px solid var(--primary);
+      border-bottom: 3px solid var(--primary);
+      padding: 16px 22px;
+      margin: 12px auto;
+      max-width: 680px;
+      border-radius: 4px;
+    }
+    .cover-box-label {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .cover-box-name {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.65rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+      line-height: 1.4;
+    }
+    .cover-box-sheikh {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--primary);
+      line-height: 1.4;
+    }
+    .cover-box-dua {
+      font-size: 1rem;
+      color: #6B7280;
+      margin-top: 4px;
+    }
+    .cover-footer-block {
+      margin-top: 20px;
+      padding-top: 14px;
+      border-top: 1.5px solid #E2E8F0;
+      font-family: 'Scheherazade New', serif;
+    }
+    .cover-footer-center {
+      font-size: 1.45rem;
+      font-weight: bold;
+      color: var(--primary-dark);
+    }
+    .cover-footer-dept {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .cover-footer-loc {
+      font-size: 1rem;
+      color: var(--gold-dark);
+      font-weight: bold;
+      margin-top: 4px;
+    }
+    .book-wrapper {
+      max-width: 900px;
+      margin: 30px auto;
+      background: var(--bg-card);
+      padding: 55px 70px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      border: 1px solid var(--border-card);
+    }
+    h1.main-heading {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 2.3rem;
+      border-bottom: 2.5px solid var(--gold);
+      padding-bottom: 12px;
+      margin-top: 50px;
+      margin-bottom: 24px;
+      text-align: center;
+      page-break-before: always;
+    }
+    h2.section-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary);
+      font-size: 1.85rem;
+      border-right: 5px solid var(--gold);
+      padding-right: 14px;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    h3.sub-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary-dark);
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    h4.sub-sub-title {
+      font-size: 1.25rem;
+      color: var(--gold-dark);
+      margin-top: 22px;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    strong {
+      color: var(--primary-dark);
+      font-weight: bold;
+    }
+    .bayt-box {
+      background: #F8FAFC;
+      border: 1.5px solid #CBD5E1;
+      border-right: 6px solid var(--gold);
+      border-left: 6px solid var(--gold);
+      border-radius: 6px;
+      padding: 18px 24px;
+      margin: 24px 0;
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-align: center;
+      line-height: 2.2;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+    .quote-box {
+      background: #EFF6FF;
+      border-right: 4px solid var(--primary);
+      padding: 16px 22px;
+      margin: 20px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+    .scholarly-box {
+      background: #FFFBEB;
+      border: 1.5px solid #FDE68A;
+      border-right: 6px solid var(--gold);
+      border-radius: 6px;
+      padding: 22px 26px;
+      margin: 28px 0;
+      font-size: 1.15rem;
+      line-height: 2.1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .colophon-box {
+      background: #F8FAFC;
+      border: 2px dashed var(--gold);
+      border-radius: 8px;
+      padding: 24px 30px;
+      margin: 35px 0 20px 0;
+      text-align: center;
+      font-family: 'Scheherazade New', serif;
+      page-break-inside: avoid;
+    }
+    .content-list, .content-list-ordered {
+      margin: 16px 30px 24px 0;
+      line-height: 2.1;
+    }
+    .content-list li, .content-list-ordered li {
+      margin-bottom: 10px;
+    }
+    .section-divider {
+      text-align: center;
+      margin: 35px 0;
+      color: var(--gold);
+      font-size: 1.5rem;
+      letter-spacing: 8px;
+    }
+    table.academic-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 28px 0;
+      font-size: 1.05rem;
+      border: 1px solid #CBD5E1;
+      font-family: 'Amiri', serif;
+    }
+    table.academic-table thead {
+      display: table-header-group;
+    }
+    table.academic-table tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    table.academic-table th, table.academic-table td {
+      border: 1px solid #CBD5E1;
+      padding: 12px 16px;
+      text-align: right;
+      line-height: 1.85;
+      vertical-align: middle;
+    }
+    table.academic-table th {
+      background: #F1F5F9;
+      color: var(--primary-dark);
+      font-family: 'Scheherazade New', 'Amiri', serif;
+      font-size: 1.15rem;
+      font-weight: bold;
+      border-bottom: 2.5px solid var(--gold);
+      border-top: 1px solid #CBD5E1;
+    }
+    table.academic-table tr:nth-child(even) td {
+      background: #F8FAFC;
+    }
+    table.academic-table tr:hover td {
+      background: #F1F5F9;
+    }
+    .page-header-ribbon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 18px;
+      background: #F8FAFC;
+      border-bottom: 2px solid var(--gold);
+      border-radius: 6px;
+      margin: 35px 0 20px 0;
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      font-size: 1.05rem;
+      color: var(--primary-dark);
+      page-break-inside: avoid;
+    }
+    .page-header-ribbon .book-title {
+      font-weight: bold;
+      color: var(--primary-dark);
+    }
+    .page-header-ribbon .center-tag {
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+    .page-header-ribbon .page-tag {
+      background: var(--primary-dark);
+      color: #FFFFFF;
+      padding: 2px 14px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+    .page-footer-ribbon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 18px;
+      background: #FAF8F5;
+      border-top: 1.5px solid var(--gold);
+      border-radius: 4px;
+      margin: 35px 0 25px 0;
+      font-family: 'Amiri', serif;
+      font-size: 0.95rem;
+      color: #4B5563;
+      page-break-inside: avoid;
+    }
+    .page-footer-ribbon .page-num-badge {
+      color: #854D0E;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    @page {
+      size: A4;
+      margin-top: 24mm;
+      margin-bottom: 24mm;
+      margin-left: 18mm;
+      margin-right: 18mm;
+      @top-right {
+        content: "«عُمْدَةُ المُوَحِّدِ السَّدِيدِ فِي شَرْحِ كِتَابِ التَّوْحِيدِ»";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @top-left {
+        content: "عُنِيَ بِهِ وَعَلَّقَ عَلَيْهِ: إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ (عَفَا اللهُ عَنْهُ)";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+        border-bottom: 0.75pt solid #C5A059;
+        padding-bottom: 4px;
+      }
+      @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Amiri', serif;
+        font-size: 9.5pt;
+        font-weight: bold;
+        color: #854D0E;
+      }
+      @bottom-right {
+        content: "مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #1E3A8A;
+      }
+      @bottom-left {
+        content: "قِسْمُ النَّشْرِ العِلْمِيِّ";
+        font-family: 'Amiri', serif;
+        font-size: 8.5pt;
+        color: #4B5563;
+      }
+    }
+    @page :first {
+      margin: 0 !important;
+      @top-right { content: none !important; }
+      @top-left { content: none !important; }
+      @bottom-center { content: none !important; }
+      @bottom-right { content: none !important; }
+      @bottom-left { content: none !important; }
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF !important;
+        font-size: 17px !important;
+        line-height: 2.1 !important;
+      }
+      h2.section-title {
+        page-break-before: always !important;
+        break-before: page !important;
+        margin-top: 10px !important;
+        padding-top: 6px !important;
+      }
+      .no-print-bar { display: none !important; }
+      .cover-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        width: 100% !important;
+        height: 100vh !important;
+        max-width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+      }
+      .cover-frame-outer {
+        border: 3.5px double var(--gold) !important;
+        padding: 5px !important;
+        box-sizing: border-box !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-frame-inner {
+        border: 1.5px solid var(--primary-dark) !important;
+        min-height: unset !important;
+        height: auto !important;
+        padding: 16px 20px !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+      }
+      .cover-header-top {
+        font-size: 1.1rem !important;
+        margin-bottom: 2px !important;
+        line-height: 1.35 !important;
+      }
+      .cover-basmalah {
+        font-size: 1.5rem !important;
+        margin: 6px 0 4px 0 !important;
+      }
+      .cover-badge {
+        font-size: 0.95rem !important;
+        padding: 2px 18px !important;
+        margin: 4px auto !important;
+      }
+      .cover-title-main {
+        font-size: 2.6rem !important;
+        margin: 6px 0 2px 0 !important;
+        line-height: 1.2 !important;
+      }
+      .cover-title-sub {
+        font-size: 1.65rem !important;
+        margin-bottom: 6px !important;
+        line-height: 1.25 !important;
+      }
+      .cover-title-desc {
+        font-size: 1rem !important;
+        margin: 0 auto 6px auto !important;
+        line-height: 1.45 !important;
+        max-width: 650px !important;
+      }
+      .cover-ornament {
+        font-size: 1.1rem !important;
+        margin: 2px 0 !important;
+        letter-spacing: 4px !important;
+      }
+      .cover-box-author {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-sharh {
+        padding: 8px 16px !important;
+        margin: 6px auto !important;
+      }
+      .cover-box-label {
+        font-size: 0.85rem !important;
+        margin-bottom: 2px !important;
+      }
+      .cover-box-name {
+        font-size: 1.35rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-sheikh {
+        font-size: 1.6rem !important;
+        line-height: 1.3 !important;
+      }
+      .cover-box-dua {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .cover-footer-block {
+        margin-top: 10px !important;
+        padding-top: 6px !important;
+      }
+      .cover-footer-center {
+        font-size: 1.25rem !important;
+      }
+      .cover-footer-dept {
+        font-size: 1rem !important;
+        margin-top: 1px !important;
+      }
+      .cover-footer-loc {
+        font-size: 0.9rem !important;
+        margin-top: 2px !important;
+      }
+      .book-wrapper {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+      }
+      h1.main-heading {
+        page-break-before: always;
+      }
+      .bayt-box, .scholarly-box, .quote-box, .colophon-box {
+        page-break-inside: avoid;
+      }
+      table.academic-table {
+        page-break-inside: auto;
+        break-inside: auto;
+        font-size: 10.5pt !important;
+        width: 100% !important;
+        margin: 18pt 0 !important;
+      }
+      table.academic-table thead {
+        display: table-header-group;
+      }
+      table.academic-table tr {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      table.academic-table th, table.academic-table td {
+        border: 0.75pt solid #CBD5E1 !important;
+        padding: 7pt 10pt !important;
+      }
+      table.academic-table th {
+        background: #F1F5F9 !important;
+        color: #1E3A8A !important;
+        border-bottom: 2pt solid #C5A059 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      table.academic-table tr:nth-child(even) td {
+        background: #F8FAFC !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Top Bar -->
+  <div class="no-print-bar">
+    <div class="title-group">
+      <span>مركز محمد بن إبراهيم آل الشيخ رحمه الله</span>
+      <span>|</span>
+      <span>«عُمْدَةُ المُوَحِّدِ السَّدِيدِ فِي شَرْحِ كِتَابِ التَّوْحِيدِ»</span>
+    </div>
+    <div style="display: flex; gap: 10px;">
+      <a href="../pdf_editions/5_umdat_al_muwahhid.pdf" class="btn-action" target="_blank">📥 تحميل النسخة (PDF)</a>
+      <button class="btn-action" onclick="window.print()">🖨️ طباعة الكتاب</button>
+    </div>
+  </div>
+
+  <!-- HUMBLE & ELEGANT COVER PAGE -->
+  <div class="cover-container">
+    <div class="cover-frame-outer">
+      <div class="cover-frame-inner">
+        <div>
+          <div class="cover-header-top">
+            مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ<br>
+            قِسْمُ العِنَايَةِ بِالعَقِيدَةِ وَالتَّوْحِيدِ وَالنَّشْرِ العِلْمِيِّ
+          </div>
+          <div class="cover-basmalah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+          <div class="cover-badge">سِلْسِلَةُ الكُتُبِ التَّأْصِيلِيَّةِ فِي العَقِيدَةِ وَالتَّوْحِيدِ (5)</div>
+        </div>
+
+        <div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+          <div class="cover-title-main">عُمْدَةُ المُوَحِّدِ السَّدِيدِ</div>
+          <div class="cover-title-sub">فِي شَرْحِ كِتَابِ التَّوْحِيدِ الَّذِي هُوَ حَقُّ اللهِ عَلَى العَبِيدِ</div>
+          <div class="cover-title-desc">
+            شَرْحٌ عَقَدِيٌّ مُؤَصَّلٌ عَلَى مَنْهَجِ السَّلَفِ الصَّالِحِ، يَتَضَمَّنُ تَحْقِيقَ مَسَائِلِ الإِيمَانِ، وَبَيَانَ أَنْوَاعِ التَّوْحِيدِ وَالشِّرْكِ، وَتَفْصِيلَ شُرُوطِ لَا إِلَهَ إِلَّا اللهُ، وَسَدَّ ذَرَائِعِ الغُلُوِّ وَالبِدَعِ.
+          </div>
+          <div class="cover-ornament">❖ ❖ ❖</div>
+
+          <div class="cover-box-author">
+            <div class="cover-box-label">مَتْنُ «كِتَابِ التَّوْحِيدِ» لِشَيْخِ الإِسْلَامِ المُجَدِّدِ:</div>
+            <div class="cover-box-name">مُحَمَّدِ بْنِ عَبْدِ الوَهَّابِ التَّمِيمِيِّ</div>
+            <div class="cover-box-dua">رَحِمَهُ اللهُ تَعَالَى (1115 - 1206 هـ)</div>
+          </div>
+
+          <div class="cover-box-sharh">
+            <div class="cover-box-label">عُنِيَ بِهِ وَعَلَّقَ عَلَيْهِ:</div>
+            <div class="cover-box-sheikh">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ</div>
+            <div class="cover-box-dua">عَفَا اللَّهُ عَنْهُ وَعَنْ وَالِدَيْهِ وَلِمَشَايِخِهِ وَلِجَمِيعِ المُسْلِمِينَ</div>
+          </div>
+        </div>
+
+        <div class="cover-footer-block">
+          <div class="cover-footer-center">إِصْدَارَاتُ مَرْكَزِ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</div>
+          <div class="cover-footer-dept">قِسْمُ العِنَايَةِ بِالعَقِيدَةِ وَالتَّوْحِيدِ وَالنَّشْرِ العِلْمِيِّ</div>
+          <div class="cover-footer-loc">كَانُو — جُمْهُورِيَّةُ نَيْجِيرْيَا الِاتِّحَادِيَّةُ</div>
+          <div class="cover-footer-loc" style="font-size:0.95rem;color:#6B7280;margin-top:4px;">الطَّبْعَةُ الأُولَى — 1448 هـ / 2026 م</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="book-wrapper">

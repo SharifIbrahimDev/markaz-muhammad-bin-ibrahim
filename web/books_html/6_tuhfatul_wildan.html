@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>تُحْفَةُ الوِلْدَانِ مِنْ أَحَادِيثِ النَّبِيِّ ﷺ عَنِ القُرْآنِ | مركز محمد بن إبراهيم آل الشيخ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Scheherazade+New:wght@400;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1E3A8A;
+      --primary-dark: #0F172A;
+      --gold: #C5A059;
+      --gold-dark: #9A7B38;
+      --gold-light: #FDFBF7;
+      --bg-body: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --font-size: 19px;
+    }
+    .dark-mode {
+      --bg-body: #0F172A;
+      --bg-card: #1E293B;
+      --text-main: #F1F5F9;
+      --text-muted: #94A3B8;
+      --border-color: #334155;
+      --primary: #60A5FA;
+      --primary-dark: #93C5FD;
+      --gold-light: #1E293B;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      background: var(--bg-body);
+      color: var(--text-main);
+      direction: rtl;
+      text-align: right;
+      width: 100%;
+      font-size: var(--font-size);
+      line-height: 2.2;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    
+    /* Top Navbar */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      background: #0F172A;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+      font-family: 'Tajawal', sans-serif;
+    }
+    .nav-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #F8FAFC;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-nav {
+      background: rgba(255,255,255,0.12);
+      color: #FFFFFF;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
+    }
+    .btn-nav:hover {
+      background: var(--gold);
+      color: #0F172A;
+      border-color: var(--gold);
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: #0F172A;
+      font-weight: 700;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 0 16px;
+    }
+    .book-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 40px 50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      margin-bottom: 30px;
+    }
+
+    /* Cover / Hero */
+    .hero-banner {
+      text-align: center;
+      border: 3px double var(--gold);
+      border-radius: 10px;
+      padding: 35px 25px;
+      background: radial-gradient(circle at center, var(--gold-light) 0%, var(--bg-card) 100%);
+      margin-bottom: 40px;
+    }
+    .hero-dept {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .hero-basmalah {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.8rem;
+      color: var(--gold-dark);
+      margin: 10px 0;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #EFF6FF;
+      color: #1E3A8A;
+      border: 1px solid #BFDBFE;
+      padding: 3px 20px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin: 8px 0;
+      font-family: 'Tajawal', sans-serif;
+    }
+    .hero-title {
+      font-family: 'Scheherazade New', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.3;
+      margin: 10px 0 6px 0;
+    }
+    .hero-subtitle {
+      font-family: 'Scheherazade New', serif;
+      font-size: 1.8rem;
+      color: var(--gold-dark);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero-author {
+      margin-top: 15px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--gold);
+      font-size: 1.15rem;
+    }
+
+    /* Quick Search & Filter */
+    .search-box {
+      margin-bottom: 25px;
+      position: relative;
+    }
+    .search-input {
+      width: 100%;
+      padding: 12px 20px;
+      padding-left: 40px;
+      border: 2px solid var(--border-color);
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-family: 'Amiri', serif;
+      background: var(--bg-card);
+      color: var(--text-main);
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+    .search-input:focus {
+      border-color: var(--gold);
+    }
+
+    /* Headings */
+    h1.main-heading {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary);
+      font-size: 2.2rem;
+      border-bottom: 2.5px solid var(--gold);
+      padding-bottom: 10px;
+      margin: 45px 0 20px 0;
+      text-align: center;
+    }
+    h2.section-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--primary);
+      font-size: 1.75rem;
+      border-right: 5px solid var(--gold);
+      padding-right: 14px;
+      margin: 35px 0 18px 0;
+    }
+    h3.sub-title {
+      font-family: 'Scheherazade New', serif;
+      color: var(--gold-dark);
+      font-size: 1.45rem;
+      margin: 25px 0 12px 0;
+    }
+
+    /* Hadith Card */
+    .hadith-card {
+      background: var(--bg-body);
+      border: 1.5px solid var(--border-color);
+      border-right: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 22px 26px;
+      margin: 24px 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .hadith-card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .hadith-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.95rem;
+      font-weight: bold;
+      color: var(--primary);
+    }
+    .hadith-number {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+    }
+    .hadith-matn {
+      font-family: 'Amiri', 'Traditional Arabic', serif;
+      font-size: 1.35rem;
+      font-weight: bold;
+      color: var(--text-main);
+      line-height: 2.3;
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+    .hadith-takhrij {
+      font-size: 1.05rem;
+      color: var(--gold-dark);
+      font-weight: 600;
+      border-top: 1px solid var(--border-color);
+      padding-top: 8px;
+      margin-top: 8px;
+    }
+    .hadith-fawaid {
+      background: var(--bg-card);
+      border-radius: 6px;
+      padding: 12px 18px;
+      margin-top: 12px;
+      font-size: 1.05rem;
+      border: 1px solid var(--border-color);
+    }
+
+    /* Page Header & Footer Ribbons */
+    .page-header-ribbon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 16px;
+      background: #EFF6FF;
+      border-bottom: 2px solid var(--gold);
+      border-radius: 6px;
+      margin: 30px 0 15px 0;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.9rem;
+      color: #1E3A8A;
+    }
+    .dark-mode .page-header-ribbon {
+      background: #1E293B;
+      color: #93C5FD;
+    }
+    .page-footer-ribbon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 16px;
+      background: var(--gold-light);
+      border-top: 1.5px solid var(--gold);
+      border-radius: 4px;
+      margin: 30px 0 20px 0;
+      font-family: 'Tajawal', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* Floating Action Buttons for Mobile */
+    .fab-container {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
+    }
+    .fab-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: transform 0.2s ease;
+    }
+    .fab-btn:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .book-card { padding: 25px 18px; }
+      .hero-title { font-size: 2.1rem; }
+      .hero-subtitle { font-size: 1.4rem; }
+      .nav-bar { padding: 8px 12px; }
+      .nav-title span { display: none; }
+      .hadith-matn { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="nav-bar">
+    <div class="nav-title">
+      <span>📖</span>
+      <strong>مركز محمد بن إبراهيم آل الشيخ | تُحْفَةُ الوِلْدَانِ</strong>
+    </div>
+    <div class="nav-controls">
+      <button class="btn-nav" onclick="changeFontSize(1)" title="تكبير الخط">A+</button>
+      <button class="btn-nav" onclick="changeFontSize(-1)" title="تصغير الخط">A-</button>
+      <button class="btn-nav" onclick="toggleDarkMode()" title="الوضع الليلي">🌓</button>
+      <a href="../pdf/تُحْفَةُ_الوِلْدَانِ_الجزء_الأول_والثاني_Book_1_and_2.pdf" class="btn-nav btn-gold" target="_blank">📥 تحميل PDF</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="book-card">
+      
+      <!-- Hero / Cover Banner -->
+      <section class="hero-banner">
+        <div class="hero-dept">مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</div>
+        <div class="hero-basmalah">بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ</div>
+        <div class="hero-badge">سِلْسِلَةُ الكُتُبِ الحَدِيثِيَّةِ وَالقُرْآنِيَّةِ المَنْهَجِيَّةِ (6)</div>
+        <h1 class="hero-title">تُحْفَةُ الوِلْدَانِ</h1>
+        <h2 class="hero-subtitle">مِنْ أَحَادِيثِ النَّبِيِّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ عَنِ القُرْآنِ</h2>
+        <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 680px; margin: 0 auto;">
+          مَجْمُوعَةٌ حَدِيثِيَّةٌ مُؤَصَّلَةٌ تَجْمَعُ أَصَحَّ الأَحَادِيثِ النَّبَوِيَّةِ فِي فَضْلِ تِلَاوَةِ كَلَامِ اللهِ تَعَالَى، وَحِفْظِهِ، وَتَدَبُّرِهِ، وَآدَابِ حَمَلَتِهِ (الجُزْءَانِ الأَوَّلُ وَالثَّانِي كَامِلَيْنِ).
+        </p>
+        <div class="hero-author">
+          <strong>عُنِيَ بِهِ وَجَمَعَهُ وَخَرَّجَهُ:</strong><br>
+          <span style="font-size: 1.4rem; color: var(--primary); font-weight: bold;">إِبْرَاهِيم شَرِيف أَبُو بَكْرٍ</span><br>
+          <span style="font-size: 0.95rem; color: #64748B;">(عَفَا اللهُ عَنْهُ وَعَنْ وَالِدَيْهِ وَمَشَايِخِهِ وَلِجَمِيعِ المُسْلِمِينَ)</span>
+        </div>
+      </section>
+
+      <!-- Quick Filter -->
+      <div class="search-box">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 ابحث في أحاديث تُحْفَةُ الوِلْدَانِ أو فضائل السور..." onkeyup="filterHadiths()">
+      </div>
+
+      <!-- PART 1 -->
+      <div class="page-header-ribbon">
+        <span>«تُحْفَةُ الوِلْدَانِ عَنِ القُرْآنِ»</span>
+        <span>الجُزْءُ الأَوَّلُ: فَضَائِلُ القُرْآنِ وَتِلَاوَتِهِ</span>
+        <span>الصَّفَحَاتُ: 1 - 54</span>
+      </div>
+
+      <h1 class="main-heading">📖 الجُزْءُ الأَوَّلُ: فِي فَضْلِ تِلَاوَةِ القُرْآنِ وَتَعَلُّمِهِ وَتَعْلِيمِهِ</h1>
+
+      <h2 class="section-title">✨ البَابُ الأَوَّلُ: خَيْرِيَّةُ أَهْلِ القُرْآنِ وَتَعَلُّمِهِ</h2>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>فَضْلُ تَعَلُّمِ القُرْآنِ وَتَعْلِيمِهِ</span>
+          <span class="hadith-number">حَدِيث 1</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ عُثْمَانَ بْنِ عَفَّانَ رَضِيَ اللهُ عَنْهُ، عَنِ النَّبِيِّ ﷺ قَالَ: <strong>«خَيْرُكُمْ مَنْ تَعَلَّمَ القُرْآنَ وَعَلَّمَهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ البُخَارِيُّ فِي صَحِيحِهِ (كِتَابُ فَضَائِلِ القُرْآنِ، حَدِيث: 5027).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>مِنْ فِقْهِ الحَدِيثِ:</strong> هَذَا الحَدِيثُ يُبَيِّنُ أَنَّ أَعْلَى مَرَاتِبِ الخَيْرِيَّةِ فِي الأُمَّةِ تَنَالُ بِالجَمْعِ بَيْنَ تَعَلُّمِ كَلَامِ اللهِ تَعَالَى وَتَعْلِيمِهِ لِلنَّاسِ عِلْمًا وَعَمَلًا.
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>أَهْلُ القُرْآنِ هُمْ أَهْلُ اللهِ وَخَاصَّتُهُ</span>
+          <span class="hadith-number">حَدِيث 2</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَنَسِ بْنِ مَالِكٍ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«إِنَّ لِلَّهِ أَهْلِينَ مِنَ النَّاسِ»</strong>، قَالُوا: يَا رَسُولَ اللهِ، مَنْ هُمْ؟ قَالَ: <strong>«هُمْ أَهْلُ القُرْآنِ، أَهْلُ اللهِ وَخَاصَّتُهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ ابْنُ مَاجَهْ (215)، وَأَحْمَدُ (12279)، وَصَحَّحَهُ الأَلْبَانِيُّ فِي «صَحِيحِ الجَامِعِ» (2165).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>مِنْ فِقْهِ الحَدِيثِ:</strong> تَشْرِيفٌ عَظِيمٌ لِحَفَظَةِ القُرْآنِ العَامِلِينَ بِهِ بِأَنْ نَسَبَهُمُ اللهُ إِلَيْهِ نِسْبَةَ تَشْرِيفٍ وَتَكْرِيمٍ.
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>مَثَلُ المُؤْمِنِ الَّذِي يَقْرَأُ القُرْآنَ</span>
+          <span class="hadith-number">حَدِيث 3</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي مُوسَى الأَشْعَرِيِّ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«مَثَلُ المُؤْمِنِ الَّذِي يَقْرَأُ القُرْآنَ كَمَثَلِ الأُتْرُجَّةِ؛ رِيحُهَا طَيِّبٌ وَطَعْمُهَا طَيِّبٌ، وَمَثَلُ المُؤْمِنِ الَّذِي لَا يَقْرَأُ القُرْآنَ كَمَثَلِ التَّمْرَةِ؛ لَا رِيحَ لَهَا وَطَعْمُهَا حُلْوٌ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ البُخَارِيُّ (5427) وَمُسْلِمٌ (797).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>مِنْ فِقْهِ الحَدِيثِ:</strong> اسْتِحْبَابُ مُدَاوَمَةِ التِّلَاوَةِ لِيَكُونَ المُؤْمِنُ طَيِّبَ الظَّاهِرِ وَالبَاطِنِ نَافِعًا لِنَفْسِهِ وَغَيْرِهِ.
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>المَاهِرُ بِالقُرْآنِ مَعَ السَّفَرَةِ الكِرَامِ البَرَرَةِ</span>
+          <span class="hadith-number">حَدِيث 4</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ عَائِشَةَ رَضِيَ اللهُ عَنْهَا قَالَتْ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«المَاهِرُ بِالقُرْآنِ مَعَ السَّفَرَةِ الكِرَامِ البَرَرَةِ، وَالَّذِي يَقْرَأُ القُرْآنَ وَيَتَتَعْتَعُ فِيهِ وَهُوَ عَلَيْهِ شَاقٌّ لَهُ أَجْرَانِ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (4937)، وَمُسْلِمٌ (798).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>مِنْ فِقْهِ الحَدِيثِ:</strong> بِشَارَةٌ لِلْمُجْتَهِدِ المُبْتَدِئِ أَنَّ لَهُ أَجْرَيْنِ: أَجْرَ التِّلَاوَةِ وَأَجْرَ المَشَقَّةِ، وَحَثٌّ عَلَى الإِتْقَانِ.
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>شَفَاعَةُ القُرْآنِ لِأَصْحَابِهِ يَوْمَ القِيَامَةِ</span>
+          <span class="hadith-number">حَدِيث 5</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي أُمَامَةَ البَاهِلِيِّ رَضِيَ اللهُ عَنْهُ قَالَ: سَمِعْتُ رَسُولَ اللهِ ﷺ يَقُولُ: <strong>«اقْرَءُوا القُرْآنَ؛ فَإِنَّهُ يَأْتِي يَوْمَ القِيَامَةِ شَفِيعًا لِأَصْحَابِهِ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (804).
+        </div>
+      </article>
+
+      <!-- PART 2 -->
+      <div class="page-header-ribbon" style="margin-top: 50px;">
+        <span>«تُحْفَةُ الوِلْدَانِ عَنِ القُرْآنِ»</span>
+        <span>الجُزْءُ الثَّانِي: فَضَائِلُ السُّوَرِ وَالآيَاتِ المَخْصُوصَةِ</span>
+        <span>الصَّفَحَاتُ: 55 - 106</span>
+      </div>
+
+      <h1 class="main-heading">📖 الجُزْءُ الثَّانِي: فِي فَضَائِلِ سُوَرٍ وَآيَاتٍ مَخْصُوصَةٍ مِنَ الكِتَابِ العَزِيزِ</h1>
+
+      <h2 class="section-title">🌟 البَابُ الأَوَّلُ: فَضَائِلُ سُورَةِ الفَاتِحَةِ وَآيَةِ الكُرْسِيِّ</h2>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>أَعْظَمُ سُورَةٍ فِي القُرْآنِ (سُورَةُ الفَاتِحَةِ)</span>
+          <span class="hadith-number">حَدِيث 6</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي سَعِيدِ بْنِ المُعَلَّى رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ لِي رَسُولُ اللهِ ﷺ: <strong>«لَأُعَلِّمَنَّكَ أَعْظَمَ سُورَةٍ فِي القُرْآنِ قَبْلَ أَنْ تَخْرُجَ مِنَ المَسْجِدِ»</strong>، ثُمَّ قَالَ: <strong>«﴿الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ﴾ هِيَ السَّبْعُ المَثَانِي، وَالقُرْآنُ العَظِيمُ الَّذِي أُوتِيتُهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ البُخَارِيُّ فِي صَحِيحِهِ (4474).
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>أَعْظَمُ آيَةٍ فِي كِتَابِ اللهِ (آيَةُ الكُرْسِيِّ)</span>
+          <span class="hadith-number">حَدِيث 7</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أُبَيِّ بْنِ كَعْبٍ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«يَا أَبَا المُنْذِرِ! أَتَدْرِي أَيُّ آيَةٍ مِنْ كِتَابِ اللهِ مَعَكَ أَعْظَمُ؟»</strong>، قُلْتُ: ﴿اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ﴾، فَضَرَبَ فِي صَدْرِي وَقَالَ: <strong>«وَاللهِ لِيَهْنِكَ العِلْمُ أَبَا المُنْذِرِ!»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (810).
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>فَضْلُ سُورَةِ الإِخْلَاصِ وَأَنَّهَا تَعْدِلُ ثُلُثَ القُرْآنِ</span>
+          <span class="hadith-number">حَدِيث 8</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي سَعِيدٍ الخُدْرِيِّ رَضِيَ اللهُ عَنْهُ، أَنَّ رَسُولَ اللهِ ﷺ قَالَ فِي: ﴿قُلْ هُوَ اللَّهُ أَحَدٌ﴾: <strong>«وَالَّذِي نَفْسِي بِيَدِهِ إِنَّهَا لَتَعْدِلُ ثُلُثَ القُرْآنِ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ البُخَارِيُّ فِي صَحِيحِهِ (5013).
+        </div>
+        <div class="hadith-fawaid">
+          💡 <strong>مِنْ فِقْهِ الحَدِيثِ:</strong> عَدَلَتْ ثُلُثَ القُرْآنِ لِأَنَّ القُرْآنَ ثَلَاثَةُ أَثْلَاثٍ: قَصَصٌ، وَأَحْكَامٌ، وَتَوْحِيدٌ؛ وَسُورَةُ الإِخْلَاصِ خَلَصَتْ لِصِفَةِ الرَّحْمَنِ وَتَوْحِيدِهِ.
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>فَضْلُ المُعَوِّذَتَيْنِ (الفَلَقِ وَالنَّاسِ)</span>
+          <span class="hadith-number">حَدِيث 9</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ عُقْبَةَ بْنِ عَامِرٍ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«أَلَمْ تَرَ آيَاتٍ أُنْزِلَتِ اللَّيْلَةَ لَمْ يُرَ مِثْلُهُنَّ قَطُّ: ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ﴾، وَ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ﴾؟»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 رَوَاهُ مُسْلِمٌ فِي صَحِيحِهِ (814).
+        </div>
+      </article>
+
+      <article class="hadith-card">
+        <div class="hadith-header">
+          <span>فَضْلُ الآيَتَيْنِ مِنْ آخِرِ سُورَةِ البَقَرَةِ</span>
+          <span class="hadith-number">حَدِيث 10</span>
+        </div>
+        <p class="hadith-matn">
+          عَنْ أَبِي مَسْعُودٍ البَدْرِيِّ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَسُولُ اللهِ ﷺ: <strong>«مَنْ قَرَأَ بِالآيَتَيْنِ مِنْ آخِرِ سُورَةِ البَقَرَةِ فِي لَيْلَةٍ كَفَتَاهُ»</strong>.
+        </p>
+        <div class="hadith-takhrij">
+          📚 مُتَّفَقٌ عَلَيْهِ: البُخَارِيُّ (5009) وَمُسْلِمٌ (808).
+        </div>
+      </article>
+
+      <!-- Colophon Box -->
+      <div class="page-footer-ribbon">
+        <span>مَرْكَزُ مُحَمَّدِ بْنِ إِبْرَاهِيمَ آلِ الشَّيْخِ لِلْعُلُومِ الشَّرْعِيَّةِ</span>
+        <span>تَمَّ بِحَمْدِ اللهِ الجُزْءَانِ 1 وَ 2 مِنْ تُحْفَةِ الوِلْدَانِ</span>
+        <span>قِسْمُ النَّشْرِ العِلْمِيِّ</span>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Mobile Floating Action Buttons -->
+  <div class="fab-container">
+    <button class="fab-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="إلى الأعلى">⬆️</button>
+  </div>
+
+  <script>
+    function changeFontSize(delta) {
+      const root = document.documentElement;
+      let currentSize = parseInt(getComputedStyle(root).getPropertyValue('--font-size')) || 19;
+      currentSize += delta;
+      if (currentSize >= 15 && currentSize <= 28) {
+        root.style.setProperty('--font-size', currentSize + 'px');
+        localStorage.setItem('tuhfa_font_size', currentSize);
+      }
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('tuhfa_dark_mode', isDark ? 'true' : 'false');
+    }
+
+    function filterHadiths() {
+      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.hadith-card');
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        if (text.includes(q)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Restore user preferences
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('tuhfa_dark_mode');
+      if (savedTheme === 'true') document.body.classList.add('dark-mode');
+      const savedSize = localStorage.getItem('tuhfa_font_size');
+      if (savedSize) document.documentElement.style.setProperty('--font-size', savedSize + 'px');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# Build & Cache Directories
+edge_temp_user/
+**/edge_temp_user/
+*.tmp
+*.log
+*.bak
+.DS_Store
+Thumbs.db
+
+# Node & Build artifacts (if any)
+node_modules/
+dist/
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.swp

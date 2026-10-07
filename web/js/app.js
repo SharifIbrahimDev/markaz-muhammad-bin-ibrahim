@@ -230,6 +230,8 @@ function renderFeaturedHero() {
   const author = window.i18n.getLocalizedField(featuredBook, "author");
   const desc = window.i18n.getLocalizedField(featuredBook, "description");
 
+  const readUrl = featuredBook.htmlEditionUrl ? featuredBook.htmlEditionUrl : `reader.html?bookId=${featuredBook.id}`;
+
   container.innerHTML = `
     <div class="hero-featured-card glass-card">
       <div class="hero-featured-badge">🌟 ${window.i18n.t("featuredBooks")}</div>
@@ -247,7 +249,7 @@ function renderFeaturedHero() {
             <span>📥 ${featuredBook.downloads} ${window.i18n.t("downloads")}</span>
           </div>
           <div class="hero-actions">
-            <a href="reader.html?bookId=${featuredBook.id}" class="btn btn-gold">
+            <a href="${readUrl}" class="btn btn-gold">
               <span>📖 ${window.i18n.t("readBook")}</span>
             </a>
             <a href="${featuredBook.pdfUrl}" target="_blank" download class="btn btn-outline-white">
@@ -266,12 +268,20 @@ function renderFeaturedHero() {
 function renderBooks() {
   const container = document.getElementById("booksGridContainer");
   const homeFeaturedContainer = document.getElementById("homeFeaturedBooksContainer");
-  if (!container && !homeFeaturedContainer) return;
+  const homeUpcomingContainer = document.getElementById("homeUpcomingBooksContainer");
 
   let books = window.storage.getBooks();
 
+  // Render Homepage Upcoming Section (Sheikh Ibrahim Sharif Abubakar's publications)
+  if (homeUpcomingContainer) {
+    const upcomingBooks = books.filter(b => b.isUpcoming);
+    homeUpcomingContainer.innerHTML = upcomingBooks.map(book => createBookCardHTML(book)).join("");
+  }
+
   // Filter by category
-  if (activeCategory !== "all") {
+  if (activeCategory === "upcoming") {
+    books = books.filter(b => b.isUpcoming);
+  } else if (activeCategory !== "all") {
     books = books.filter(b => b.category === activeCategory);
   }
 
@@ -311,10 +321,24 @@ function renderBooks() {
   }
 
   if (homeFeaturedContainer) {
-    const featured = books.filter(b => b.featured).slice(0, 4);
+    const featured = books.filter(b => b.featured && !b.isUpcoming).slice(0, 4);
     homeFeaturedContainer.innerHTML = featured.map(book => createBookCardHTML(book)).join("");
   }
 }
+
+function filterByUpcoming() {
+  activeCategory = "upcoming";
+  switchTab("books");
+  document.querySelectorAll(".category-chip").forEach(c => {
+    if (c.dataset.category === "upcoming") {
+      c.classList.add("active");
+    } else {
+      c.classList.remove("active");
+    }
+  });
+  renderBooks();
+}
+window.filterByUpcoming = filterByUpcoming;
 
 function createBookCardHTML(book) {
   const title = window.i18n.getLocalizedField(book, "title");
@@ -323,14 +347,40 @@ function createBookCardHTML(book) {
   const catObj = INITIAL_DATA.categories.find(c => c.id === book.category);
   const catName = catObj ? window.i18n.getLocalizedField(catObj, "name") : "";
 
+  const upcomingBadgeHTML = book.isUpcoming 
+    ? `<span class="upcoming-badge">⏳ ${window.i18n.t("upcomingBadge")}</span>`
+    : "";
+
+  const readUrl = book.htmlEditionUrl ? book.htmlEditionUrl : `reader.html?bookId=${book.id}`;
+
+  const actionsHTML = book.isUpcoming
+    ? `
+      <button class="btn btn-gold btn-sm" style="flex: 1;" onclick="openBookModal('${book.id}')">
+        <span>ℹ️ ${window.i18n.t("viewDetails")}</span>
+      </button>
+      <span class="badge-status-subtle">${window.i18n.t("underPublication")}</span>
+    `
+    : `
+      <a href="${readUrl}" class="btn btn-primary btn-sm">
+        <span>📖 ${window.i18n.t("readBook")}</span>
+      </a>
+      <button class="btn btn-outline-primary btn-sm" onclick="openBookModal('${book.id}')" title="${window.i18n.t("previewInfo")}">
+        <span>ℹ️</span>
+      </button>
+      <a href="${book.pdfUrl}" target="_blank" download class="btn btn-gold btn-sm" title="${window.i18n.t("downloadPdf")}">
+        <span>⬇️</span>
+      </a>
+    `;
+
   return `
     <div class="book-card card-lift" data-id="${book.id}">
       <div class="book-card-cover-wrapper">
         <img src="${book.cover}" alt="${title}" class="book-card-cover" loading="lazy"/>
+        ${upcomingBadgeHTML}
         <button class="fav-icon-btn ${isFav ? 'is-fav' : ''}" onclick="toggleFavItem('book', '${book.id}', event)" title="${window.i18n.t('addToFavorites')}">
           ${isFav ? '❤️' : '🤍'}
         </button>
-        <span class="category-badge">${catObj ? catObj.icon : ''} ${catName}</span>
+        <span class="category-badge">${catObj ? catObj.icon : '📖'} ${catName}</span>
       </div>
       <div class="book-card-content">
         <h4 class="book-card-title" title="${title}">${title}</h4>
@@ -340,15 +390,7 @@ function createBookCardHTML(book) {
           <span>💾 ${book.size}</span>
         </div>
         <div class="book-card-actions">
-          <a href="reader.html?bookId=${book.id}" class="btn btn-primary btn-sm">
-            <span>📖 ${window.i18n.t("readBook")}</span>
-          </a>
-          <button class="btn btn-outline-primary btn-sm" onclick="openBookModal('${book.id}')">
-            <span>ℹ️</span>
-          </button>
-          <a href="${book.pdfUrl}" target="_blank" download class="btn btn-gold btn-sm" title="${window.i18n.t("downloadPdf")}">
-            <span>⬇️</span>
-          </a>
+          ${actionsHTML}
         </div>
       </div>
     </div>
@@ -633,10 +675,19 @@ function openBookModal(bookId) {
   const readBtn = document.getElementById("modalBookReadBtn");
   const dlBtn = document.getElementById("modalBookDownloadBtn");
 
-  if (readBtn) readBtn.href = `reader.html?bookId=${book.id}`;
-  if (dlBtn) {
-    dlBtn.href = book.pdfUrl;
-    dlBtn.setAttribute("download", `${title}.pdf`);
+  if (book.isUpcoming) {
+    if (readBtn) readBtn.style.display = "none";
+    if (dlBtn) dlBtn.style.display = "none";
+  } else {
+    if (readBtn) {
+      readBtn.style.display = "inline-flex";
+      readBtn.href = book.htmlEditionUrl ? book.htmlEditionUrl : `reader.html?bookId=${book.id}`;
+    }
+    if (dlBtn) {
+      dlBtn.style.display = "inline-flex";
+      dlBtn.href = book.pdfUrl;
+      dlBtn.setAttribute("download", `${title}.pdf`);
+    }
   }
 
   modal.classList.add("active");

@@ -92,49 +92,77 @@ class BookDetailsScreen extends StatelessWidget {
               style: const TextStyle(fontSize: 13, height: 1.6, color: Colors.black87),
             ),
             const SizedBox(height: 30),
-            Row(
-              children: [
-                Expanded(
-                  child: ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF0A533F),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectanglePlatform(12),
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => PdfReaderScreen(book: book),
-                        ),
-                      );
-                    },
-                    icon: const Icon(Icons.menu_book),
-                    label: const Text('Karanta PDF'),
-                  ),
+            if (book.isUpcoming)
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: const Color(0xFFC5A059).withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(12),
+                  border: Border.all(color: const Color(0xFFC5A059)),
                 ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFFC5A059),
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectanglePlatform(12),
+                child: const Column(
+                  children: [
+                    Icon(Icons.hourglass_top, color: Color(0xFFC5A059), size: 32),
+                    SizedBox(height: 8),
+                    Text(
+                      'Wannan Littafi Yana Nan Tafe (قيد الإعداد والنشر)',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, color: Color(0xFF0A533F)),
+                      textAlign: TextAlign.center,
                     ),
-                    onPressed: () async {
-                      final uri = Uri.parse(book.pdfUrl);
-                      if (await canLaunchUrl(uri)) {
-                        await launchUrl(uri, mode: LaunchMode.externalApplication);
-                      }
-                    },
-                    icon: const Icon(Icons.download),
-                    label: const Text('Sauke PDF'),
-                  ),
+                    SizedBox(height: 4),
+                    Text(
+                      'Za a wallafa shi kuma za a iya karantawa da saukewa a nan da zarar an kammala buga shi in sha Allah.',
+                      style: TextStyle(fontSize: 12, color: Colors.black87),
+                      textAlign: TextAlign.center,
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              )
+            else
+              Row(
+                children: [
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF0A533F),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectanglePlatform(12),
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PdfReaderScreen(book: book),
+                          ),
+                        );
+                      },
+                      icon: const Icon(Icons.menu_book),
+                      label: const Text('Karanta PDF'),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: ElevatedButton.icon(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFFC5A059),
+                        foregroundColor: Colors.white,
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        shape: RoundedRectanglePlatform(12),
+                      ),
+                      onPressed: () async {
+                        final uri = Uri.parse(book.pdfUrl);
+                        if (await canLaunchUrl(uri)) {
+                          await launchUrl(uri, mode: LaunchMode.externalApplication);
+                        }
+                      },
+                      icon: const Icon(Icons.download),
+                      label: const Text('Sauke PDF'),
+                    ),
+                  ),
+                ],
+              ),
           ],
         ),
       ),

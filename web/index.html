@@ -146,6 +146,43 @@
 
     <!-- TAB 1: HOME PANE -->
     <div id="tabPane-home" class="tab-pane active">
+
+      <!-- WhatsApp Live Community & Study Group Banner -->
+      <section class="glass-card whatsapp-community-banner" style="background: linear-gradient(135deg, rgba(37, 211, 102, 0.12), rgba(10, 83, 63, 0.1)); border: 1px solid rgba(37, 211, 102, 0.4); padding: 20px 24px; border-radius: var(--radius-md); margin-bottom: 35px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #fff; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);">
+            💬
+          </div>
+          <div>
+            <h4 style="color: var(--primary); font-size: 1.1rem; font-weight: 800; margin: 0;">
+              Dandalin Karatuttuka na WhatsApp (Markaz Official Group)
+            </h4>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; margin: 3px 0 0 0;">
+              Karatun <strong>تحفة الولدان</strong> da <strong>ألف حديث وحديث</strong> kai tsaye tare da Sheikh Ibrahim Sharif Abubakar
+            </p>
+          </div>
+        </div>
+        <a href="https://chat.whatsapp.com/GaPNys0J4A05hBXxJDj3V2" target="_blank" rel="noopener noreferrer" class="btn" style="background: #25D366; color: #FFFFFF; font-weight: 800; padding: 10px 20px; border-radius: var(--radius-xl); display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);">
+          <span>📲 Shiga Zauren WhatsApp</span>
+        </a>
+      </section>
+
+      <!-- Forthcoming Publications Spotlight (Sheikh Ibrahim Sharif Abubakar) -->
+      <section style="margin-bottom: 45px;">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">✨ <span data-i18n="directorPublications">Wallafe-Wallafen Sheikh Ibrahim Sharif Abubakar</span></h3>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;" data-i18n="upcomingBooks">Littattafai Masu Fitowa (Masu Zuwa)</p>
+          </div>
+          <button class="btn btn-outline-primary btn-sm" onclick="filterByUpcoming()">
+            <span data-i18n="navBooks">Duba Duka</span> (19) ➔
+          </button>
+        </div>
+        <div id="homeUpcomingBooksContainer" class="books-grid-view">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
       <!-- Featured Books Section -->
       <section style="margin-bottom: 40px;">
         <div class="section-header">
@@ -206,15 +243,38 @@
         </div>
       </section>
 
-      <!-- About Section -->
-      <section class="glass-card" style="background: var(--bg-surface); border: 1px solid var(--border-gold); padding: 30px; margin-top: 20px;">
-        <h3 style="color: var(--primary); font-size: 1.3rem; margin-bottom: 12px; font-weight: 800;" data-i18n="aboutCenter">
-          Game da Cibiyar da Sheikh Muhammad bin Ibrahim
-        </h3>
-        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;" data-i18n="aboutText">
-          An bude wannan cibiya mai albarka don yada ingantaccen ilimin addinin Musulunci, koyar da Tauhidi, Fiqhu, da Hadisi bisa tafarkin magabata na kwarai (Salafus-Salih), tare da raya ilimin babban malamin nan Sheikh Muhammad bin Ibrahim Aal Al-Sheikh (rahimahullah).
-        </p>
-      </section>
+      <!-- Director & Center Overview Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; margin-top: 25px;">
+        <!-- Director Card -->
+        <section class="glass-card" style="background: var(--bg-surface); border: 1px solid var(--border-gold); padding: 25px; border-radius: var(--radius-md);">
+          <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 14px;">
+            <div style="width: 55px; height: 55px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--gold)); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #fff; box-shadow: var(--shadow-sm);">
+              🎓
+            </div>
+            <div>
+              <h4 style="color: var(--primary); font-size: 1.15rem; font-weight: 800; margin: 0;" data-i18n="directorName">
+                إبراهيم شريف أبوبكر
+              </h4>
+              <p style="color: var(--gold-dark); font-size: 0.82rem; font-weight: 700; margin: 2px 0 0 0;" data-i18n="directorHeader">
+                رئيس المركز والمشرف العام
+              </p>
+            </div>
+          </div>
+          <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.9rem;" data-i18n="directorMessageText">
+            Muna rokon Allah Madaukakin Sarki da Ya sanya wannan cibiya ta zama hasken shiriya da alheri, kuma Ya amfanar da daliban ilimi da al'ummar Musulmi da wadannan rubuce-rubuce da darussa.
+          </p>
+        </section>
+
+        <!-- About Center Card -->
+        <section class="glass-card" style="background: var(--bg-surface); border: 1px solid var(--border-gold); padding: 25px; border-radius: var(--radius-md);">
+          <h4 style="color: var(--primary); font-size: 1.15rem; margin-bottom: 12px; font-weight: 800;" data-i18n="aboutCenter">
+            Game da Cibiyar da Sheikh Muhammad bin Ibrahim
+          </h4>
+          <p style="color: var(--text-secondary); line-height: 1.6; font-size: 0.9rem;" data-i18n="aboutText">
+            An bude wannan cibiya mai albarka don yada ingantaccen ilimin addinin Musulunci, koyar da Tauhidi, Fiqhu, da Hadisi bisa tafarkin magabata na kwarai (Salafus-Salih), tare da raya ilimin babban malamin nan Sheikh Muhammad bin Ibrahim Aal Al-Sheikh (rahimahullah).
+          </p>
+        </section>
+      </div>
     </div>
 
     <!-- TAB 2: BOOKS (PDF LIBRARY) PANE -->
@@ -466,7 +526,7 @@
       <div class="footer-links">
         <h4>Sadarwa da Wuri</h4>
         <ul>
-          <li>📍 Kano, Nigeria</li>
+          <li>📍 Kaduna, Nigeria</li>
           <li>📧 info@markaz-alsheikh.org</li>
           <li>📞 +234 800 000 0000</li>
           <li>⏰ Lokutan Karatu: Asabar zuwa Juma'a</li>
